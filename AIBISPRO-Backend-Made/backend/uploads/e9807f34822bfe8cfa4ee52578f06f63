@@ -1,0 +1,4 @@
+date,product,quantity,price,payment_method
+2026-06-25,Latte,2,24000,QRIS
+2026-06-25,Matcha Latte,1,28000,Cash
+2026-06-25,Chocolate Latte,3,25000,Debit

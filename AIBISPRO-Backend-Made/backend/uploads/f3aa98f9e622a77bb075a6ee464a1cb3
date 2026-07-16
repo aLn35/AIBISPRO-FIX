@@ -1,0 +1,4 @@
+﻿product,size,quantity,payment_method
+Espresso,R,5,cash
+Latte,L,3,card
+Croissant,Regular,2,e-wallet

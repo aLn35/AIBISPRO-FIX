@@ -1,0 +1,4 @@
+date,product,size,quantity,payment_method
+2026-06-25,Latte,Regular,2,QRIS
+2026-06-25,Matcha Latte,Large,1,Cash
+2026-06-25,Chocolate Latte,Regular,3,Debit

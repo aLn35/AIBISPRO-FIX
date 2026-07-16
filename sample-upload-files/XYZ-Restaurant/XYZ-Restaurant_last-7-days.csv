@@ -1,0 +1,197 @@
+Transaction_ID,Date,Time,Product,Category,Size,Quantity,Unit_Price_IDR,Cost_IDR,Total_IDR,Payment_Method
+TRX-XYZ-20260707-0001,2026-07-07,11:14,Nasi Goreng Wagyu Prime,Main Course,Regular,1,Rp 85.000,Rp 38.000,Rp 85.000,qris
+TRX-XYZ-20260707-0002,2026-07-07,17:53,Grilled Salmon,Main Course,Regular,1,Rp 98.000,Rp 46.000,Rp 98.000,card
+TRX-XYZ-20260707-0002,2026-07-07,17:53,Wagyu Beef Satay (10pcs),Appetizer,Regular,2,Rp 75.000,Rp 34.000,Rp 150.000,card
+TRX-XYZ-20260707-0003,2026-07-07,21:35,Wagyu Beef Satay (10pcs),Appetizer,Regular,3,Rp 75.000,Rp 34.000,Rp 225.000,card
+TRX-XYZ-20260707-0003,2026-07-07,21:35,Nasi Goreng Wagyu Prime,Main Course,Regular,3,Rp 85.000,Rp 38.000,Rp 255.000,card
+TRX-XYZ-20260707-0003,2026-07-07,21:35,Grilled Salmon,Main Course,Regular,2,Rp 98.000,Rp 46.000,Rp 196.000,card
+TRX-XYZ-20260707-0004,2026-07-07,18:29,Crispy Duck Sambal Matah,Main Course,Regular,3,Rp 110.000,Rp 50.000,Rp 330.000,card
+TRX-XYZ-20260707-0005,2026-07-07,14:05,Caesar Salad,Appetizer,Regular,1,Rp 45.000,Rp 18.000,Rp 45.000,card
+TRX-XYZ-20260707-0006,2026-07-07,10:48,Caesar Salad,Appetizer,Regular,3,Rp 45.000,Rp 18.000,Rp 135.000,cash
+TRX-XYZ-20260707-0006,2026-07-07,10:48,Cold Brew Lemongrass Tea,Beverage,Regular,2,Rp 28.000,Rp 9.000,Rp 56.000,cash
+TRX-XYZ-20260707-0006,2026-07-07,10:48,Iced Lemon Tea,Beverage,Regular,3,Rp 22.000,Rp 7.000,Rp 66.000,cash
+TRX-XYZ-20260707-0007,2026-07-07,14:03,Cold Brew Lemongrass Tea,Beverage,Regular,3,Rp 28.000,Rp 9.000,Rp 84.000,cash
+TRX-XYZ-20260707-0007,2026-07-07,14:03,Grilled Salmon,Main Course,Regular,3,Rp 98.000,Rp 46.000,Rp 294.000,cash
+TRX-XYZ-20260707-0008,2026-07-07,14:10,Truffle Butter Tagliatelle,Main Course,Regular,1,Rp 95.000,Rp 42.000,Rp 95.000,qris
+TRX-XYZ-20260707-0009,2026-07-07,11:34,Tiramisu,Dessert,Regular,1,Rp 38.000,Rp 15.000,Rp 38.000,qris
+TRX-XYZ-20260707-0009,2026-07-07,11:34,Iced Lemon Tea,Beverage,Regular,2,Rp 22.000,Rp 7.000,Rp 44.000,qris
+TRX-XYZ-20260707-0010,2026-07-07,17:25,Grilled Salmon,Main Course,Regular,1,Rp 98.000,Rp 46.000,Rp 98.000,cash
+TRX-XYZ-20260707-0010,2026-07-07,17:25,Iced Lemon Tea,Beverage,Regular,1,Rp 22.000,Rp 7.000,Rp 22.000,cash
+TRX-XYZ-20260707-0010,2026-07-07,17:25,Cold Brew Lemongrass Tea,Beverage,Regular,3,Rp 28.000,Rp 9.000,Rp 84.000,cash
+TRX-XYZ-20260707-0011,2026-07-07,19:57,Chocolate Lava Cake,Dessert,Regular,3,Rp 42.000,Rp 16.000,Rp 126.000,qris
+TRX-XYZ-20260707-0011,2026-07-07,19:57,Crispy Duck Sambal Matah,Main Course,Regular,3,Rp 110.000,Rp 50.000,Rp 330.000,qris
+TRX-XYZ-20260707-0012,2026-07-07,11:54,Nasi Goreng Wagyu Prime,Main Course,Regular,3,Rp 85.000,Rp 38.000,Rp 255.000,qris
+TRX-XYZ-20260708-0013,2026-07-08,10:12,Grilled Salmon,Main Course,Regular,1,Rp 98.000,Rp 46.000,Rp 98.000,qris
+TRX-XYZ-20260708-0013,2026-07-08,10:12,Tiramisu,Dessert,Regular,3,Rp 38.000,Rp 15.000,Rp 114.000,qris
+TRX-XYZ-20260708-0013,2026-07-08,10:12,Caesar Salad,Appetizer,Regular,2,Rp 45.000,Rp 18.000,Rp 90.000,qris
+TRX-XYZ-20260708-0014,2026-07-08,08:14,Caesar Salad,Appetizer,Regular,2,Rp 45.000,Rp 18.000,Rp 90.000,cash
+TRX-XYZ-20260708-0015,2026-07-08,21:03,Caesar Salad,Appetizer,Regular,2,Rp 45.000,Rp 18.000,Rp 90.000,card
+TRX-XYZ-20260708-0016,2026-07-08,11:09,Truffle Butter Tagliatelle,Main Course,Regular,1,Rp 95.000,Rp 42.000,Rp 95.000,qris
+TRX-XYZ-20260708-0016,2026-07-08,11:09,Wagyu Beef Satay (10pcs),Appetizer,Regular,2,Rp 75.000,Rp 34.000,Rp 150.000,qris
+TRX-XYZ-20260708-0017,2026-07-08,16:15,Nasi Goreng Wagyu Prime,Main Course,Regular,1,Rp 85.000,Rp 38.000,Rp 85.000,cash
+TRX-XYZ-20260708-0017,2026-07-08,16:15,Chocolate Lava Cake,Dessert,Regular,3,Rp 42.000,Rp 16.000,Rp 126.000,cash
+TRX-XYZ-20260708-0018,2026-07-08,08:47,Iced Lemon Tea,Beverage,Regular,2,Rp 22.000,Rp 7.000,Rp 44.000,card
+TRX-XYZ-20260708-0018,2026-07-08,08:47,Grilled Salmon,Main Course,Regular,2,Rp 98.000,Rp 46.000,Rp 196.000,card
+TRX-XYZ-20260708-0019,2026-07-08,15:22,Nasi Goreng Wagyu Prime,Main Course,Regular,3,Rp 85.000,Rp 38.000,Rp 255.000,card
+TRX-XYZ-20260708-0019,2026-07-08,15:22,Chocolate Lava Cake,Dessert,Regular,1,Rp 42.000,Rp 16.000,Rp 42.000,card
+TRX-XYZ-20260708-0020,2026-07-08,12:21,Truffle Butter Tagliatelle,Main Course,Regular,2,Rp 95.000,Rp 42.000,Rp 190.000,cash
+TRX-XYZ-20260708-0020,2026-07-08,12:21,Iced Lemon Tea,Beverage,Regular,2,Rp 22.000,Rp 7.000,Rp 44.000,cash
+TRX-XYZ-20260708-0021,2026-07-08,09:28,Truffle Butter Tagliatelle,Main Course,Regular,3,Rp 95.000,Rp 42.000,Rp 285.000,cash
+TRX-XYZ-20260709-0022,2026-07-09,09:01,Grilled Salmon,Main Course,Regular,2,Rp 98.000,Rp 46.000,Rp 196.000,cash
+TRX-XYZ-20260709-0023,2026-07-09,09:16,Crispy Duck Sambal Matah,Main Course,Regular,3,Rp 110.000,Rp 50.000,Rp 330.000,cash
+TRX-XYZ-20260709-0023,2026-07-09,09:16,Wagyu Beef Satay (10pcs),Appetizer,Regular,3,Rp 75.000,Rp 34.000,Rp 225.000,cash
+TRX-XYZ-20260709-0023,2026-07-09,09:16,Iced Lemon Tea,Beverage,Regular,3,Rp 22.000,Rp 7.000,Rp 66.000,cash
+TRX-XYZ-20260709-0024,2026-07-09,13:47,Crispy Duck Sambal Matah,Main Course,Regular,3,Rp 110.000,Rp 50.000,Rp 330.000,cash
+TRX-XYZ-20260709-0025,2026-07-09,17:27,Cold Brew Lemongrass Tea,Beverage,Regular,1,Rp 28.000,Rp 9.000,Rp 28.000,cash
+TRX-XYZ-20260709-0025,2026-07-09,17:27,Wagyu Beef Satay (10pcs),Appetizer,Regular,1,Rp 75.000,Rp 34.000,Rp 75.000,cash
+TRX-XYZ-20260709-0025,2026-07-09,17:27,Tiramisu,Dessert,Regular,2,Rp 38.000,Rp 15.000,Rp 76.000,cash
+TRX-XYZ-20260709-0026,2026-07-09,16:28,Nasi Goreng Wagyu Prime,Main Course,Regular,2,Rp 85.000,Rp 38.000,Rp 170.000,cash
+TRX-XYZ-20260709-0027,2026-07-09,21:08,Tiramisu,Dessert,Regular,3,Rp 38.000,Rp 15.000,Rp 114.000,cash
+TRX-XYZ-20260709-0028,2026-07-09,15:11,Cold Brew Lemongrass Tea,Beverage,Regular,3,Rp 28.000,Rp 9.000,Rp 84.000,cash
+TRX-XYZ-20260709-0028,2026-07-09,15:11,Nasi Goreng Wagyu Prime,Main Course,Regular,1,Rp 85.000,Rp 38.000,Rp 85.000,cash
+TRX-XYZ-20260709-0029,2026-07-09,09:32,Grilled Salmon,Main Course,Regular,3,Rp 98.000,Rp 46.000,Rp 294.000,card
+TRX-XYZ-20260709-0029,2026-07-09,09:32,Caesar Salad,Appetizer,Regular,2,Rp 45.000,Rp 18.000,Rp 90.000,card
+TRX-XYZ-20260709-0029,2026-07-09,09:32,Chocolate Lava Cake,Dessert,Regular,3,Rp 42.000,Rp 16.000,Rp 126.000,card
+TRX-XYZ-20260709-0030,2026-07-09,16:10,Caesar Salad,Appetizer,Regular,2,Rp 45.000,Rp 18.000,Rp 90.000,qris
+TRX-XYZ-20260709-0030,2026-07-09,16:10,Chocolate Lava Cake,Dessert,Regular,1,Rp 42.000,Rp 16.000,Rp 42.000,qris
+TRX-XYZ-20260709-0031,2026-07-09,10:17,Nasi Goreng Wagyu Prime,Main Course,Regular,2,Rp 85.000,Rp 38.000,Rp 170.000,card
+TRX-XYZ-20260709-0032,2026-07-09,20:00,Nasi Goreng Wagyu Prime,Main Course,Regular,1,Rp 85.000,Rp 38.000,Rp 85.000,cash
+TRX-XYZ-20260710-0033,2026-07-10,16:36,Truffle Butter Tagliatelle,Main Course,Regular,1,Rp 95.000,Rp 42.000,Rp 95.000,qris
+TRX-XYZ-20260710-0033,2026-07-10,16:36,Wagyu Beef Satay (10pcs),Appetizer,Regular,2,Rp 75.000,Rp 34.000,Rp 150.000,qris
+TRX-XYZ-20260710-0034,2026-07-10,17:24,Wagyu Beef Satay (10pcs),Appetizer,Regular,1,Rp 75.000,Rp 34.000,Rp 75.000,cash
+TRX-XYZ-20260710-0034,2026-07-10,17:24,Grilled Salmon,Main Course,Regular,2,Rp 98.000,Rp 46.000,Rp 196.000,cash
+TRX-XYZ-20260710-0034,2026-07-10,17:24,Crispy Duck Sambal Matah,Main Course,Regular,2,Rp 110.000,Rp 50.000,Rp 220.000,cash
+TRX-XYZ-20260710-0035,2026-07-10,12:38,Cold Brew Lemongrass Tea,Beverage,Regular,1,Rp 28.000,Rp 9.000,Rp 28.000,qris
+TRX-XYZ-20260710-0035,2026-07-10,12:38,Iced Lemon Tea,Beverage,Regular,3,Rp 22.000,Rp 7.000,Rp 66.000,qris
+TRX-XYZ-20260710-0035,2026-07-10,12:38,Grilled Salmon,Main Course,Regular,1,Rp 98.000,Rp 46.000,Rp 98.000,qris
+TRX-XYZ-20260710-0036,2026-07-10,18:30,Crispy Duck Sambal Matah,Main Course,Regular,2,Rp 110.000,Rp 50.000,Rp 220.000,card
+TRX-XYZ-20260710-0036,2026-07-10,18:30,Iced Lemon Tea,Beverage,Regular,2,Rp 22.000,Rp 7.000,Rp 44.000,card
+TRX-XYZ-20260710-0037,2026-07-10,21:18,Crispy Duck Sambal Matah,Main Course,Regular,2,Rp 110.000,Rp 50.000,Rp 220.000,card
+TRX-XYZ-20260710-0037,2026-07-10,21:18,Caesar Salad,Appetizer,Regular,3,Rp 45.000,Rp 18.000,Rp 135.000,card
+TRX-XYZ-20260710-0038,2026-07-10,11:39,Iced Lemon Tea,Beverage,Regular,1,Rp 22.000,Rp 7.000,Rp 22.000,card
+TRX-XYZ-20260710-0039,2026-07-10,18:01,Nasi Goreng Wagyu Prime,Main Course,Regular,1,Rp 85.000,Rp 38.000,Rp 85.000,cash
+TRX-XYZ-20260710-0040,2026-07-10,20:37,Chocolate Lava Cake,Dessert,Regular,2,Rp 42.000,Rp 16.000,Rp 84.000,qris
+TRX-XYZ-20260710-0040,2026-07-10,20:37,Tiramisu,Dessert,Regular,1,Rp 38.000,Rp 15.000,Rp 38.000,qris
+TRX-XYZ-20260710-0041,2026-07-10,20:52,Cold Brew Lemongrass Tea,Beverage,Regular,3,Rp 28.000,Rp 9.000,Rp 84.000,card
+TRX-XYZ-20260710-0041,2026-07-10,20:52,Truffle Butter Tagliatelle,Main Course,Regular,2,Rp 95.000,Rp 42.000,Rp 190.000,card
+TRX-XYZ-20260710-0041,2026-07-10,20:52,Crispy Duck Sambal Matah,Main Course,Regular,3,Rp 110.000,Rp 50.000,Rp 330.000,card
+TRX-XYZ-20260711-0042,2026-07-11,18:39,Caesar Salad,Appetizer,Regular,2,Rp 45.000,Rp 18.000,Rp 90.000,qris
+TRX-XYZ-20260711-0042,2026-07-11,18:39,Truffle Butter Tagliatelle,Main Course,Regular,1,Rp 95.000,Rp 42.000,Rp 95.000,qris
+TRX-XYZ-20260711-0043,2026-07-11,15:44,Tiramisu,Dessert,Regular,3,Rp 38.000,Rp 15.000,Rp 114.000,cash
+TRX-XYZ-20260711-0044,2026-07-11,21:13,Caesar Salad,Appetizer,Regular,1,Rp 45.000,Rp 18.000,Rp 45.000,qris
+TRX-XYZ-20260711-0044,2026-07-11,21:13,Crispy Duck Sambal Matah,Main Course,Regular,2,Rp 110.000,Rp 50.000,Rp 220.000,qris
+TRX-XYZ-20260711-0045,2026-07-11,19:34,Truffle Butter Tagliatelle,Main Course,Regular,3,Rp 95.000,Rp 42.000,Rp 285.000,qris
+TRX-XYZ-20260711-0046,2026-07-11,20:09,Crispy Duck Sambal Matah,Main Course,Regular,2,Rp 110.000,Rp 50.000,Rp 220.000,qris
+TRX-XYZ-20260711-0046,2026-07-11,20:09,Truffle Butter Tagliatelle,Main Course,Regular,3,Rp 95.000,Rp 42.000,Rp 285.000,qris
+TRX-XYZ-20260711-0046,2026-07-11,20:09,Nasi Goreng Wagyu Prime,Main Course,Regular,2,Rp 85.000,Rp 38.000,Rp 170.000,qris
+TRX-XYZ-20260711-0047,2026-07-11,18:05,Tiramisu,Dessert,Regular,2,Rp 38.000,Rp 15.000,Rp 76.000,qris
+TRX-XYZ-20260711-0047,2026-07-11,18:05,Crispy Duck Sambal Matah,Main Course,Regular,3,Rp 110.000,Rp 50.000,Rp 330.000,qris
+TRX-XYZ-20260711-0048,2026-07-11,09:39,Iced Lemon Tea,Beverage,Regular,1,Rp 22.000,Rp 7.000,Rp 22.000,cash
+TRX-XYZ-20260711-0049,2026-07-11,12:24,Caesar Salad,Appetizer,Regular,1,Rp 45.000,Rp 18.000,Rp 45.000,qris
+TRX-XYZ-20260711-0050,2026-07-11,11:55,Crispy Duck Sambal Matah,Main Course,Regular,1,Rp 110.000,Rp 50.000,Rp 110.000,cash
+TRX-XYZ-20260711-0050,2026-07-11,11:55,Tiramisu,Dessert,Regular,1,Rp 38.000,Rp 15.000,Rp 38.000,cash
+TRX-XYZ-20260711-0050,2026-07-11,11:55,Nasi Goreng Wagyu Prime,Main Course,Regular,2,Rp 85.000,Rp 38.000,Rp 170.000,cash
+TRX-XYZ-20260711-0051,2026-07-11,19:08,Iced Lemon Tea,Beverage,Regular,1,Rp 22.000,Rp 7.000,Rp 22.000,card
+TRX-XYZ-20260711-0052,2026-07-11,15:08,Nasi Goreng Wagyu Prime,Main Course,Regular,2,Rp 85.000,Rp 38.000,Rp 170.000,cash
+TRX-XYZ-20260711-0052,2026-07-11,15:08,Wagyu Beef Satay (10pcs),Appetizer,Regular,2,Rp 75.000,Rp 34.000,Rp 150.000,cash
+TRX-XYZ-20260711-0052,2026-07-11,15:08,Caesar Salad,Appetizer,Regular,3,Rp 45.000,Rp 18.000,Rp 135.000,cash
+TRX-XYZ-20260711-0053,2026-07-11,12:12,Tiramisu,Dessert,Regular,3,Rp 38.000,Rp 15.000,Rp 114.000,card
+TRX-XYZ-20260711-0053,2026-07-11,12:12,Wagyu Beef Satay (10pcs),Appetizer,Regular,1,Rp 75.000,Rp 34.000,Rp 75.000,card
+TRX-XYZ-20260711-0053,2026-07-11,12:12,Chocolate Lava Cake,Dessert,Regular,2,Rp 42.000,Rp 16.000,Rp 84.000,card
+TRX-XYZ-20260711-0054,2026-07-11,10:18,Nasi Goreng Wagyu Prime,Main Course,Regular,2,Rp 85.000,Rp 38.000,Rp 170.000,card
+TRX-XYZ-20260711-0054,2026-07-11,10:18,Tiramisu,Dessert,Regular,3,Rp 38.000,Rp 15.000,Rp 114.000,card
+TRX-XYZ-20260711-0055,2026-07-11,20:03,Tiramisu,Dessert,Regular,3,Rp 38.000,Rp 15.000,Rp 114.000,qris
+TRX-XYZ-20260711-0055,2026-07-11,20:03,Cold Brew Lemongrass Tea,Beverage,Regular,1,Rp 28.000,Rp 9.000,Rp 28.000,qris
+TRX-XYZ-20260711-0055,2026-07-11,20:03,Truffle Butter Tagliatelle,Main Course,Regular,1,Rp 95.000,Rp 42.000,Rp 95.000,qris
+TRX-XYZ-20260711-0056,2026-07-11,10:48,Caesar Salad,Appetizer,Regular,2,Rp 45.000,Rp 18.000,Rp 90.000,card
+TRX-XYZ-20260711-0056,2026-07-11,10:48,Truffle Butter Tagliatelle,Main Course,Regular,3,Rp 95.000,Rp 42.000,Rp 285.000,card
+TRX-XYZ-20260711-0056,2026-07-11,10:48,Cold Brew Lemongrass Tea,Beverage,Regular,2,Rp 28.000,Rp 9.000,Rp 56.000,card
+TRX-XYZ-20260711-0057,2026-07-11,19:01,Iced Lemon Tea,Beverage,Regular,1,Rp 22.000,Rp 7.000,Rp 22.000,card
+TRX-XYZ-20260711-0057,2026-07-11,19:01,Wagyu Beef Satay (10pcs),Appetizer,Regular,3,Rp 75.000,Rp 34.000,Rp 225.000,card
+TRX-XYZ-20260711-0058,2026-07-11,15:04,Truffle Butter Tagliatelle,Main Course,Regular,3,Rp 95.000,Rp 42.000,Rp 285.000,cash
+TRX-XYZ-20260711-0058,2026-07-11,15:04,Chocolate Lava Cake,Dessert,Regular,2,Rp 42.000,Rp 16.000,Rp 84.000,cash
+TRX-XYZ-20260711-0059,2026-07-11,12:29,Nasi Goreng Wagyu Prime,Main Course,Regular,1,Rp 85.000,Rp 38.000,Rp 85.000,qris
+TRX-XYZ-20260711-0060,2026-07-11,17:19,Iced Lemon Tea,Beverage,Regular,1,Rp 22.000,Rp 7.000,Rp 22.000,qris
+TRX-XYZ-20260711-0060,2026-07-11,17:19,Chocolate Lava Cake,Dessert,Regular,1,Rp 42.000,Rp 16.000,Rp 42.000,qris
+TRX-XYZ-20260711-0061,2026-07-11,08:51,Iced Lemon Tea,Beverage,Regular,2,Rp 22.000,Rp 7.000,Rp 44.000,card
+TRX-XYZ-20260711-0061,2026-07-11,08:51,Caesar Salad,Appetizer,Regular,2,Rp 45.000,Rp 18.000,Rp 90.000,card
+TRX-XYZ-20260711-0062,2026-07-11,21:27,Chocolate Lava Cake,Dessert,Regular,2,Rp 42.000,Rp 16.000,Rp 84.000,qris
+TRX-XYZ-20260711-0063,2026-07-11,20:01,Nasi Goreng Wagyu Prime,Main Course,Regular,3,Rp 85.000,Rp 38.000,Rp 255.000,card
+TRX-XYZ-20260711-0063,2026-07-11,20:01,Caesar Salad,Appetizer,Regular,3,Rp 45.000,Rp 18.000,Rp 135.000,card
+TRX-XYZ-20260711-0064,2026-07-11,11:06,Cold Brew Lemongrass Tea,Beverage,Regular,1,Rp 28.000,Rp 9.000,Rp 28.000,qris
+TRX-XYZ-20260711-0064,2026-07-11,11:06,Wagyu Beef Satay (10pcs),Appetizer,Regular,3,Rp 75.000,Rp 34.000,Rp 225.000,qris
+TRX-XYZ-20260712-0065,2026-07-12,12:15,Crispy Duck Sambal Matah,Main Course,Regular,3,Rp 110.000,Rp 50.000,Rp 330.000,cash
+TRX-XYZ-20260712-0065,2026-07-12,12:15,Cold Brew Lemongrass Tea,Beverage,Regular,3,Rp 28.000,Rp 9.000,Rp 84.000,cash
+TRX-XYZ-20260712-0066,2026-07-12,09:51,Wagyu Beef Satay (10pcs),Appetizer,Regular,3,Rp 75.000,Rp 34.000,Rp 225.000,cash
+TRX-XYZ-20260712-0066,2026-07-12,09:51,Chocolate Lava Cake,Dessert,Regular,3,Rp 42.000,Rp 16.000,Rp 126.000,cash
+TRX-XYZ-20260712-0067,2026-07-12,19:58,Caesar Salad,Appetizer,Regular,1,Rp 45.000,Rp 18.000,Rp 45.000,card
+TRX-XYZ-20260712-0067,2026-07-12,19:58,Iced Lemon Tea,Beverage,Regular,3,Rp 22.000,Rp 7.000,Rp 66.000,card
+TRX-XYZ-20260712-0067,2026-07-12,19:58,Cold Brew Lemongrass Tea,Beverage,Regular,3,Rp 28.000,Rp 9.000,Rp 84.000,card
+TRX-XYZ-20260712-0068,2026-07-12,15:50,Truffle Butter Tagliatelle,Main Course,Regular,2,Rp 95.000,Rp 42.000,Rp 190.000,card
+TRX-XYZ-20260712-0068,2026-07-12,15:50,Wagyu Beef Satay (10pcs),Appetizer,Regular,1,Rp 75.000,Rp 34.000,Rp 75.000,card
+TRX-XYZ-20260712-0069,2026-07-12,18:33,Crispy Duck Sambal Matah,Main Course,Regular,3,Rp 110.000,Rp 50.000,Rp 330.000,card
+TRX-XYZ-20260712-0070,2026-07-12,12:04,Nasi Goreng Wagyu Prime,Main Course,Regular,1,Rp 85.000,Rp 38.000,Rp 85.000,qris
+TRX-XYZ-20260712-0070,2026-07-12,12:04,Cold Brew Lemongrass Tea,Beverage,Regular,1,Rp 28.000,Rp 9.000,Rp 28.000,qris
+TRX-XYZ-20260712-0070,2026-07-12,12:04,Grilled Salmon,Main Course,Regular,1,Rp 98.000,Rp 46.000,Rp 98.000,qris
+TRX-XYZ-20260712-0071,2026-07-12,18:05,Caesar Salad,Appetizer,Regular,3,Rp 45.000,Rp 18.000,Rp 135.000,card
+TRX-XYZ-20260712-0072,2026-07-12,15:10,Crispy Duck Sambal Matah,Main Course,Regular,3,Rp 110.000,Rp 50.000,Rp 330.000,cash
+TRX-XYZ-20260712-0072,2026-07-12,15:10,Cold Brew Lemongrass Tea,Beverage,Regular,3,Rp 28.000,Rp 9.000,Rp 84.000,cash
+TRX-XYZ-20260712-0073,2026-07-12,10:51,Crispy Duck Sambal Matah,Main Course,Regular,2,Rp 110.000,Rp 50.000,Rp 220.000,card
+TRX-XYZ-20260712-0073,2026-07-12,10:51,Tiramisu,Dessert,Regular,2,Rp 38.000,Rp 15.000,Rp 76.000,card
+TRX-XYZ-20260712-0073,2026-07-12,10:51,Caesar Salad,Appetizer,Regular,1,Rp 45.000,Rp 18.000,Rp 45.000,card
+TRX-XYZ-20260712-0074,2026-07-12,14:29,Chocolate Lava Cake,Dessert,Regular,2,Rp 42.000,Rp 16.000,Rp 84.000,qris
+TRX-XYZ-20260712-0075,2026-07-12,08:33,Cold Brew Lemongrass Tea,Beverage,Regular,1,Rp 28.000,Rp 9.000,Rp 28.000,cash
+TRX-XYZ-20260712-0075,2026-07-12,08:33,Caesar Salad,Appetizer,Regular,1,Rp 45.000,Rp 18.000,Rp 45.000,cash
+TRX-XYZ-20260712-0076,2026-07-12,17:29,Nasi Goreng Wagyu Prime,Main Course,Regular,1,Rp 85.000,Rp 38.000,Rp 85.000,card
+TRX-XYZ-20260712-0077,2026-07-12,20:10,Iced Lemon Tea,Beverage,Regular,2,Rp 22.000,Rp 7.000,Rp 44.000,cash
+TRX-XYZ-20260712-0077,2026-07-12,20:10,Tiramisu,Dessert,Regular,2,Rp 38.000,Rp 15.000,Rp 76.000,cash
+TRX-XYZ-20260712-0077,2026-07-12,20:10,Cold Brew Lemongrass Tea,Beverage,Regular,3,Rp 28.000,Rp 9.000,Rp 84.000,cash
+TRX-XYZ-20260712-0078,2026-07-12,21:31,Nasi Goreng Wagyu Prime,Main Course,Regular,2,Rp 85.000,Rp 38.000,Rp 170.000,cash
+TRX-XYZ-20260712-0078,2026-07-12,21:31,Iced Lemon Tea,Beverage,Regular,1,Rp 22.000,Rp 7.000,Rp 22.000,cash
+TRX-XYZ-20260712-0078,2026-07-12,21:31,Truffle Butter Tagliatelle,Main Course,Regular,2,Rp 95.000,Rp 42.000,Rp 190.000,cash
+TRX-XYZ-20260712-0079,2026-07-12,11:24,Iced Lemon Tea,Beverage,Regular,1,Rp 22.000,Rp 7.000,Rp 22.000,card
+TRX-XYZ-20260712-0079,2026-07-12,11:24,Caesar Salad,Appetizer,Regular,2,Rp 45.000,Rp 18.000,Rp 90.000,card
+TRX-XYZ-20260712-0080,2026-07-12,17:59,Caesar Salad,Appetizer,Regular,2,Rp 45.000,Rp 18.000,Rp 90.000,cash
+TRX-XYZ-20260712-0080,2026-07-12,17:59,Crispy Duck Sambal Matah,Main Course,Regular,3,Rp 110.000,Rp 50.000,Rp 330.000,cash
+TRX-XYZ-20260712-0080,2026-07-12,17:59,Truffle Butter Tagliatelle,Main Course,Regular,1,Rp 95.000,Rp 42.000,Rp 95.000,cash
+TRX-XYZ-20260712-0081,2026-07-12,10:28,Cold Brew Lemongrass Tea,Beverage,Regular,1,Rp 28.000,Rp 9.000,Rp 28.000,qris
+TRX-XYZ-20260712-0081,2026-07-12,10:28,Iced Lemon Tea,Beverage,Regular,2,Rp 22.000,Rp 7.000,Rp 44.000,qris
+TRX-XYZ-20260712-0081,2026-07-12,10:28,Wagyu Beef Satay (10pcs),Appetizer,Regular,2,Rp 75.000,Rp 34.000,Rp 150.000,qris
+TRX-XYZ-20260712-0082,2026-07-12,18:09,Truffle Butter Tagliatelle,Main Course,Regular,2,Rp 95.000,Rp 42.000,Rp 190.000,qris
+TRX-XYZ-20260712-0083,2026-07-12,13:59,Cold Brew Lemongrass Tea,Beverage,Regular,1,Rp 28.000,Rp 9.000,Rp 28.000,card
+TRX-XYZ-20260712-0084,2026-07-12,17:52,Caesar Salad,Appetizer,Regular,3,Rp 45.000,Rp 18.000,Rp 135.000,card
+TRX-XYZ-20260712-0085,2026-07-12,20:15,Wagyu Beef Satay (10pcs),Appetizer,Regular,2,Rp 75.000,Rp 34.000,Rp 150.000,qris
+TRX-XYZ-20260712-0085,2026-07-12,20:15,Caesar Salad,Appetizer,Regular,3,Rp 45.000,Rp 18.000,Rp 135.000,qris
+TRX-XYZ-20260712-0086,2026-07-12,11:02,Cold Brew Lemongrass Tea,Beverage,Regular,3,Rp 28.000,Rp 9.000,Rp 84.000,cash
+TRX-XYZ-20260712-0086,2026-07-12,11:02,Nasi Goreng Wagyu Prime,Main Course,Regular,3,Rp 85.000,Rp 38.000,Rp 255.000,cash
+TRX-XYZ-20260712-0086,2026-07-12,11:02,Crispy Duck Sambal Matah,Main Course,Regular,2,Rp 110.000,Rp 50.000,Rp 220.000,cash
+TRX-XYZ-20260712-0087,2026-07-12,08:42,Grilled Salmon,Main Course,Regular,3,Rp 98.000,Rp 46.000,Rp 294.000,card
+TRX-XYZ-20260712-0088,2026-07-12,21:17,Wagyu Beef Satay (10pcs),Appetizer,Regular,2,Rp 75.000,Rp 34.000,Rp 150.000,cash
+TRX-XYZ-20260713-0089,2026-07-13,09:33,Caesar Salad,Appetizer,Regular,2,Rp 45.000,Rp 18.000,Rp 90.000,qris
+TRX-XYZ-20260713-0089,2026-07-13,09:33,Wagyu Beef Satay (10pcs),Appetizer,Regular,2,Rp 75.000,Rp 34.000,Rp 150.000,qris
+TRX-XYZ-20260713-0090,2026-07-13,21:09,Cold Brew Lemongrass Tea,Beverage,Regular,2,Rp 28.000,Rp 9.000,Rp 56.000,card
+TRX-XYZ-20260713-0090,2026-07-13,21:09,Wagyu Beef Satay (10pcs),Appetizer,Regular,3,Rp 75.000,Rp 34.000,Rp 225.000,card
+TRX-XYZ-20260713-0091,2026-07-13,18:21,Iced Lemon Tea,Beverage,Regular,2,Rp 22.000,Rp 7.000,Rp 44.000,cash
+TRX-XYZ-20260713-0091,2026-07-13,18:21,Cold Brew Lemongrass Tea,Beverage,Regular,2,Rp 28.000,Rp 9.000,Rp 56.000,cash
+TRX-XYZ-20260713-0092,2026-07-13,12:49,Caesar Salad,Appetizer,Regular,2,Rp 45.000,Rp 18.000,Rp 90.000,card
+TRX-XYZ-20260713-0092,2026-07-13,12:49,Iced Lemon Tea,Beverage,Regular,3,Rp 22.000,Rp 7.000,Rp 66.000,card
+TRX-XYZ-20260713-0093,2026-07-13,08:38,Crispy Duck Sambal Matah,Main Course,Regular,1,Rp 110.000,Rp 50.000,Rp 110.000,cash
+TRX-XYZ-20260713-0094,2026-07-13,17:26,Grilled Salmon,Main Course,Regular,2,Rp 98.000,Rp 46.000,Rp 196.000,card
+TRX-XYZ-20260713-0094,2026-07-13,17:26,Wagyu Beef Satay (10pcs),Appetizer,Regular,3,Rp 75.000,Rp 34.000,Rp 225.000,card
+TRX-XYZ-20260713-0095,2026-07-13,14:19,Crispy Duck Sambal Matah,Main Course,Regular,2,Rp 110.000,Rp 50.000,Rp 220.000,card
+TRX-XYZ-20260713-0095,2026-07-13,14:19,Grilled Salmon,Main Course,Regular,2,Rp 98.000,Rp 46.000,Rp 196.000,card
+TRX-XYZ-20260713-0096,2026-07-13,18:36,Crispy Duck Sambal Matah,Main Course,Regular,2,Rp 110.000,Rp 50.000,Rp 220.000,cash
+TRX-XYZ-20260713-0096,2026-07-13,18:36,Truffle Butter Tagliatelle,Main Course,Regular,2,Rp 95.000,Rp 42.000,Rp 190.000,cash
+TRX-XYZ-20260713-0097,2026-07-13,15:37,Cold Brew Lemongrass Tea,Beverage,Regular,1,Rp 28.000,Rp 9.000,Rp 28.000,cash
+TRX-XYZ-20260713-0097,2026-07-13,15:37,Nasi Goreng Wagyu Prime,Main Course,Regular,2,Rp 85.000,Rp 38.000,Rp 170.000,cash
+TRX-XYZ-20260713-0098,2026-07-13,14:53,Caesar Salad,Appetizer,Regular,2,Rp 45.000,Rp 18.000,Rp 90.000,card
+TRX-XYZ-20260713-0098,2026-07-13,14:53,Crispy Duck Sambal Matah,Main Course,Regular,3,Rp 110.000,Rp 50.000,Rp 330.000,card
+TRX-XYZ-20260713-0099,2026-07-13,18:06,Caesar Salad,Appetizer,Regular,2,Rp 45.000,Rp 18.000,Rp 90.000,card
+TRX-XYZ-20260713-0099,2026-07-13,18:06,Truffle Butter Tagliatelle,Main Course,Regular,1,Rp 95.000,Rp 42.000,Rp 95.000,card
+TRX-XYZ-20260713-0099,2026-07-13,18:06,Iced Lemon Tea,Beverage,Regular,2,Rp 22.000,Rp 7.000,Rp 44.000,card
+TRX-XYZ-20260713-0100,2026-07-13,19:42,Chocolate Lava Cake,Dessert,Regular,2,Rp 42.000,Rp 16.000,Rp 84.000,cash
+TRX-XYZ-20260713-0101,2026-07-13,16:47,Wagyu Beef Satay (10pcs),Appetizer,Regular,2,Rp 75.000,Rp 34.000,Rp 150.000,card
+TRX-XYZ-20260713-0102,2026-07-13,19:45,Cold Brew Lemongrass Tea,Beverage,Regular,3,Rp 28.000,Rp 9.000,Rp 84.000,cash
+TRX-XYZ-20260713-0102,2026-07-13,19:45,Tiramisu,Dessert,Regular,3,Rp 38.000,Rp 15.000,Rp 114.000,cash
+TRX-XYZ-20260713-0103,2026-07-13,12:10,Caesar Salad,Appetizer,Regular,2,Rp 45.000,Rp 18.000,Rp 90.000,qris
+TRX-XYZ-20260713-0104,2026-07-13,20:38,Nasi Goreng Wagyu Prime,Main Course,Regular,1,Rp 85.000,Rp 38.000,Rp 85.000,card

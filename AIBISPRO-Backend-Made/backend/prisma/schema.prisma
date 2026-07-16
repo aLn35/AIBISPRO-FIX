@@ -1,0 +1,295 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model companies {
+  id                   Int                  @id @default(autoincrement())
+  name                 String
+  type                 String?
+  branches             Int?                 @default(1)
+  location             String?
+  description          String?
+  avatar_emoji         String?
+  partnership_status   String               @default("active") // active | inactive - set by MAINTAINANCE
+  created_at           DateTime?            @default(now())
+  users                users[]
+  products             products[]
+  categories           categories[]
+  sales                sales[]
+  promotions           promotions[]
+  bundles              bundles[]
+  events               events[]
+  datasets             datasets[]
+  chatbot_logs         chatbot_logs[]
+  chat_sessions        chat_sessions[]
+  user_company_access  user_company_access[]
+  inbox_messages       inbox_messages[]
+}
+
+// Cascading access grants: MAINTAINANCE grants companies to OWNER, OWNER grants a subset
+// of their own companies to MANAGER. CUSTOMER/MAINTAINANCE don't need rows here (MAINTAINANCE
+// implicitly sees every active company).
+model user_company_access {
+  id          Int       @id @default(autoincrement())
+  user_id     Int
+  company_id  Int
+  granted_by  Int?
+  created_at  DateTime? @default(now())
+  users       users     @relation("access_user", fields: [user_id], references: [id], onDelete: Cascade)
+  companies   companies @relation(fields: [company_id], references: [id], onDelete: Cascade)
+  granter     users?    @relation("access_granter", fields: [granted_by], references: [id], onDelete: NoAction)
+
+  @@unique([user_id, company_id])
+}
+
+model ai_insights {
+  id                Int                @id @default(autoincrement())
+  title             String?
+  description       String?
+  priority          String?
+  generated_at      DateTime?          @default(now())
+  forecast_id       Int?
+  company_id        Int?
+  revenue_forecasts revenue_forecasts? @relation(fields: [forecast_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+}
+
+model approval_requests {
+  id                                          Int       @id @default(autoincrement())
+  request_type                                String?
+  reference_id                                Int?
+  status                                      String?   @default("pending")
+  requested_by                                Int?
+  approved_by                                 Int?
+  notes                                       String?
+  created_at                                  DateTime? @default(now())
+  users_approval_requests_approved_byTousers  users?    @relation("approval_requests_approved_byTousers", fields: [approved_by], references: [id], onDelete: NoAction, onUpdate: NoAction)
+  users_approval_requests_requested_byTousers users?    @relation("approval_requests_requested_byTousers", fields: [requested_by], references: [id], onDelete: NoAction, onUpdate: NoAction)
+}
+
+model bundles {
+  id                               Int          @id @default(autoincrement())
+  name                             String?
+  description                      String?
+  bundle_price                     Float?
+  status                           String?      @default("active")
+  created_by                       Int?
+  approved_by                      Int?
+  company_id                       Int?
+  created_at                       DateTime?    @default(now())
+  image_url                        String?
+  companies                        companies?   @relation(fields: [company_id], references: [id], onDelete: Cascade)
+  users_bundles_approved_byTousers users?       @relation("bundles_approved_byTousers", fields: [approved_by], references: [id], onDelete: NoAction, onUpdate: NoAction)
+  users_bundles_created_byTousers  users?       @relation("bundles_created_byTousers", fields: [created_by], references: [id], onDelete: NoAction, onUpdate: NoAction)
+  sale_items                       sale_items[]
+}
+
+model categories {
+  id         Int        @id @default(autoincrement())
+  name       String
+  company_id Int?
+  created_at DateTime?  @default(now())
+  companies  companies? @relation(fields: [company_id], references: [id], onDelete: Cascade)
+  products   products[]
+}
+
+model chatbot_logs {
+  id         Int            @id @default(autoincrement())
+  user_id    Int?
+  company_id Int?
+  session_id String?
+  question   String
+  answer     String
+  created_at DateTime?      @default(now())
+  users      users?         @relation(fields: [user_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+  companies  companies?     @relation(fields: [company_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+  session    chat_sessions? @relation(fields: [session_id], references: [id], onDelete: Cascade)
+}
+
+// One row per "New Chat" conversation thread, so a user's chat history is split into
+// separate, resumable sessions instead of one endless mixed log.
+model chat_sessions {
+  id           String         @id @default(uuid())
+  user_id      Int
+  company_id   Int?
+  title        String?
+  created_at   DateTime?      @default(now())
+  updated_at   DateTime?      @default(now()) @updatedAt
+  users        users          @relation(fields: [user_id], references: [id], onDelete: Cascade)
+  companies    companies?     @relation(fields: [company_id], references: [id], onDelete: Cascade)
+  chatbot_logs chatbot_logs[]
+}
+
+model datasets {
+  id          Int        @id @default(autoincrement())
+  file_name   String?
+  uploaded_by Int?
+  company_id  Int?
+  uploaded_at DateTime?  @default(now())
+  row_count   Int?       @default(0)
+  status      String?    @default("processed")
+  raw_data    Json?
+  users       users?     @relation(fields: [uploaded_by], references: [id], onDelete: NoAction, onUpdate: NoAction)
+  companies   companies? @relation(fields: [company_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+  sales       sales[]
+}
+
+model events {
+  id           Int        @id @default(autoincrement())
+  name         String?
+  event_date   DateTime?
+  event_type   String?
+  company_id   Int?
+  created_at   DateTime?  @default(now())
+  start_date   DateTime?
+  end_date     DateTime?
+  impact_score Int?       @default(1)
+  companies    companies? @relation(fields: [company_id], references: [id], onDelete: Cascade)
+}
+
+model inventory_logs {
+  id              Int            @id @default(autoincrement())
+  product_size_id Int?
+  movement_type   String?
+  quantity        Int
+  notes           String?
+  created_at      DateTime?      @default(now())
+  product_sizes   product_sizes? @relation(fields: [product_size_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+}
+
+model product_sizes {
+  id             Int              @id @default(autoincrement())
+  product_id     Int
+  size_name      String
+  selling_price  Float
+  cost_price     Float?
+  current_stock  Int?             @default(0)
+  minimum_stock  Int?             @default(10)
+  created_at     DateTime?        @default(now())
+  inventory_logs inventory_logs[]
+  products       products         @relation(fields: [product_id], references: [id], onDelete: Cascade, onUpdate: NoAction)
+  sale_items     sale_items[]
+}
+
+model products {
+  id            Int             @id @default(autoincrement())
+  category_id   Int?
+  company_id    Int?
+  name          String
+  description   String?
+  is_active     Boolean?        @default(true)
+  created_at    DateTime?       @default(now())
+  product_sizes product_sizes[]
+  categories    categories?     @relation(fields: [category_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+  companies     companies?      @relation(fields: [company_id], references: [id], onDelete: Cascade)
+  sale_items    sale_items[]
+}
+
+model promotions {
+  id                                  Int        @id @default(autoincrement())
+  title                               String
+  description                         String?
+  discount_percent                    Float?
+  start_date                          DateTime?
+  end_date                            DateTime?
+  status                              String?    @default("pending")
+  created_by                          Int?
+  approved_by                         Int?
+  company_id                          Int?
+  created_at                          DateTime?  @default(now())
+  image_url                           String?
+  companies                           companies? @relation(fields: [company_id], references: [id], onDelete: Cascade)
+  users_promotions_approved_byTousers users?     @relation("promotions_approved_byTousers", fields: [approved_by], references: [id], onDelete: NoAction, onUpdate: NoAction)
+  users_promotions_created_byTousers  users?     @relation("promotions_created_byTousers", fields: [created_by], references: [id], onDelete: NoAction, onUpdate: NoAction)
+  sales                               sales[]
+}
+
+// A per-company message thread shared by MAINTAINANCE (salesforce), OWNER, and MANAGER -
+// any of the three can post, edit their own message, or unsend (soft-delete) it. Scoped to
+// exactly one company per thread, so MAINTAINANCE picks a company before posting, while
+// OWNER/MANAGER only ever see the thread(s) for the company they're currently viewing.
+model inbox_messages {
+  id                                  Int        @id @default(autoincrement())
+  company_id                          Int
+  author_id                           Int
+  message                             String
+  ai_generated                        Boolean    @default(false)
+  is_read                             Boolean    @default(false)
+  is_edited                           Boolean    @default(false)
+  is_deleted                          Boolean    @default(false)
+  created_at                          DateTime?  @default(now())
+  updated_at                          DateTime?  @default(now()) @updatedAt
+  companies                           companies  @relation(fields: [company_id], references: [id], onDelete: Cascade)
+  users_inbox_messages_author_idTousers users     @relation("inbox_messages_author_idTousers", fields: [author_id], references: [id], onDelete: Cascade)
+}
+
+model revenue_forecasts {
+  id                Int           @id @default(autoincrement())
+  forecast_date     DateTime?
+  predicted_revenue Float?
+  confidence_score  Float?
+  method            String?       @default("linear_regression")
+  company_id        Int?
+  created_at        DateTime?     @default(now())
+  ai_insights       ai_insights[]
+}
+
+model sale_items {
+  id              Int            @id @default(autoincrement())
+  sale_id         Int?
+  product_id      Int?
+  product_size_id Int?
+  quantity        Int
+  unit_price      Float
+  subtotal        Float
+  bundle_id       Int?
+  bundles         bundles?       @relation(fields: [bundle_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+  products        products?      @relation(fields: [product_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+  product_sizes   product_sizes? @relation(fields: [product_size_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+  sales           sales?         @relation(fields: [sale_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+}
+
+model sales {
+  id               Int          @id @default(autoincrement())
+  transaction_date DateTime
+  total_amount     Float
+  created_at       DateTime?    @default(now())
+  payment_method   String?
+  total_items      Int?         @default(0)
+  promotion_id     Int?
+  company_id       Int?
+  dataset_id       Int?
+  source           String?      @default("pos")
+  sale_items       sale_items[]
+  promotions       promotions?  @relation(fields: [promotion_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+  companies        companies?   @relation(fields: [company_id], references: [id], onDelete: Cascade)
+  datasets         datasets?    @relation(fields: [dataset_id], references: [id], onDelete: SetNull)
+}
+
+model users {
+  id                                                      Int                    @id @default(autoincrement())
+  name                                                    String
+  email                                                   String                 @unique
+  password                                                String
+  role                                                    String
+  company_id                                              Int?
+  created_at                                              DateTime?              @default(now())
+  last_login                                              DateTime?
+  companies                                               companies?             @relation(fields: [company_id], references: [id], onDelete: SetNull)
+  approval_requests_approval_requests_approved_byTousers  approval_requests[]    @relation("approval_requests_approved_byTousers")
+  approval_requests_approval_requests_requested_byTousers approval_requests[]    @relation("approval_requests_requested_byTousers")
+  bundles_bundles_approved_byTousers                      bundles[]              @relation("bundles_approved_byTousers")
+  bundles_bundles_created_byTousers                       bundles[]              @relation("bundles_created_byTousers")
+  chatbot_logs                                            chatbot_logs[]
+  chat_sessions                                            chat_sessions[]
+  datasets                                                datasets[]
+  promotions_promotions_approved_byTousers                promotions[]           @relation("promotions_approved_byTousers")
+  promotions_promotions_created_byTousers                 promotions[]           @relation("promotions_created_byTousers")
+  company_access                                          user_company_access[]  @relation("access_user")
+  granted_access                                          user_company_access[]  @relation("access_granter")
+  inbox_messages_authored                                 inbox_messages[]       @relation("inbox_messages_author_idTousers")
+}

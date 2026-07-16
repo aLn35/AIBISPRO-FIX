@@ -1,0 +1,4 @@
+Transaction_ID,Date,Time,Customer_ID,Product,Category,Quantity,Unit_Price,Cost,Discount,Total,Profit,Payment_Method,Waiter,Table_No,Promo,Promo_Type,Weather,Day_Type,Dining_Type,Unit_Price_IDR,Cost_IDR,Discount_IDR,Total_IDR
+TRX000010,2025-01-01,18:12,C0978,Fries,Side,1,$4.00,$1.50,$0.00,$4.00,$2.50,Cash,Bob,2,No,None,Sunny,Weekday,Dine-In,"Rp 64.000","Rp 24.000","Rp 0",Rp 64.000
+TRX000010,2025-01-01,18:12,C0978,Coffee,Beverage,2,$4.80,$2.00,$0.00,$9.60,$5.60,Cash,Bob,2,No,None,Sunny,Weekday,Dine-In,"Rp 76.800","Rp 32.000","Rp 0",Rp 153.600
+TRX000011,2025-01-02,11:46,C1019,Pasta,Main,3,$12.00,$18.00,$0.00,$36.00,$18.00,Card,David,29,No,None,Rainy,Weekday,Takeaway,"Rp 192.000","Rp 288.000","Rp 0",Rp 576.000

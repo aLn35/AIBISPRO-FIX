@@ -1,0 +1,171 @@
+Transaction_ID,Date,Time,Product,Category,Size,Quantity,Unit_Price_IDR,Cost_IDR,Total_IDR,Payment_Method
+TRX-SUS-20260511-0001,2026-05-11,10:13,Chicken Katsu Curry,Ramen,Regular,1,Rp 58.000,Rp 26.000,Rp 58.000,cash
+TRX-SUS-20260511-0002,2026-05-11,12:23,Mochi Ice Cream (3pcs),Dessert,Regular,3,Rp 32.000,Rp 13.000,Rp 96.000,card
+TRX-SUS-20260511-0003,2026-05-11,17:04,Edamame,Appetizer,Regular,3,Rp 22.000,Rp 8.000,Rp 66.000,cash
+TRX-SUS-20260511-0003,2026-05-11,17:04,Salmon Nigiri (2pcs),Sushi,Regular,3,Rp 38.000,Rp 18.000,Rp 114.000,cash
+TRX-SUS-20260511-0004,2026-05-11,21:32,Salmon Nigiri (2pcs),Sushi,Regular,3,Rp 38.000,Rp 18.000,Rp 114.000,cash
+TRX-SUS-20260511-0005,2026-05-11,19:13,Edamame,Appetizer,Regular,3,Rp 22.000,Rp 8.000,Rp 66.000,card
+TRX-SUS-20260511-0005,2026-05-11,19:13,California Roll,Sushi,Regular,3,Rp 48.000,Rp 20.000,Rp 144.000,card
+TRX-SUS-20260511-0006,2026-05-11,21:48,Salmon Nigiri (2pcs),Sushi,Regular,1,Rp 38.000,Rp 18.000,Rp 38.000,card
+TRX-SUS-20260511-0007,2026-05-11,08:49,Chicken Katsu Curry,Ramen,Regular,1,Rp 58.000,Rp 26.000,Rp 58.000,card
+TRX-SUS-20260511-0008,2026-05-11,21:46,Tuna Sashimi (5pcs),Sashimi,Regular,2,Rp 65.000,Rp 32.000,Rp 130.000,card
+TRX-SUS-20260511-0008,2026-05-11,21:46,California Roll,Sushi,Regular,2,Rp 48.000,Rp 20.000,Rp 96.000,card
+TRX-SUS-20260511-0009,2026-05-11,14:23,Tuna Sashimi (5pcs),Sashimi,Regular,3,Rp 65.000,Rp 32.000,Rp 195.000,cash
+TRX-SUS-20260511-0010,2026-05-11,21:33,Salmon Nigiri (2pcs),Sushi,Regular,3,Rp 38.000,Rp 18.000,Rp 114.000,qris
+TRX-SUS-20260511-0010,2026-05-11,21:33,Tuna Sashimi (5pcs),Sashimi,Regular,2,Rp 65.000,Rp 32.000,Rp 130.000,qris
+TRX-SUS-20260511-0011,2026-05-11,21:35,Salmon Nigiri (2pcs),Sushi,Regular,2,Rp 38.000,Rp 18.000,Rp 76.000,card
+TRX-SUS-20260511-0011,2026-05-11,21:35,Ramen Tonkotsu,Ramen,Regular,2,Rp 65.000,Rp 29.000,Rp 130.000,card
+TRX-SUS-20260511-0011,2026-05-11,21:35,Green Tea,Beverage,Regular,3,Rp 15.000,Rp 5.000,Rp 45.000,card
+TRX-SUS-20260511-0012,2026-05-11,13:16,Tuna Sashimi (5pcs),Sashimi,Regular,3,Rp 65.000,Rp 32.000,Rp 195.000,cash
+TRX-SUS-20260511-0012,2026-05-11,13:16,Green Tea,Beverage,Regular,3,Rp 15.000,Rp 5.000,Rp 45.000,cash
+TRX-SUS-20260511-0012,2026-05-11,13:16,Salmon Nigiri (2pcs),Sushi,Regular,1,Rp 38.000,Rp 18.000,Rp 38.000,cash
+TRX-SUS-20260511-0013,2026-05-11,11:29,Edamame,Appetizer,Regular,1,Rp 22.000,Rp 8.000,Rp 22.000,qris
+TRX-SUS-20260511-0013,2026-05-11,11:29,Miso Soup,Appetizer,Regular,2,Rp 18.000,Rp 6.000,Rp 36.000,qris
+TRX-SUS-20260511-0013,2026-05-11,11:29,Salmon Nigiri (2pcs),Sushi,Regular,1,Rp 38.000,Rp 18.000,Rp 38.000,qris
+TRX-SUS-20260511-0014,2026-05-11,17:15,Salmon Nigiri (2pcs),Sushi,Regular,1,Rp 38.000,Rp 18.000,Rp 38.000,cash
+TRX-SUS-20260511-0014,2026-05-11,17:15,Ramen Tonkotsu,Ramen,Regular,3,Rp 65.000,Rp 29.000,Rp 195.000,cash
+TRX-SUS-20260511-0014,2026-05-11,17:15,Edamame,Appetizer,Regular,2,Rp 22.000,Rp 8.000,Rp 44.000,cash
+TRX-SUS-20260511-0015,2026-05-11,16:42,Salmon Nigiri (2pcs),Sushi,Regular,2,Rp 38.000,Rp 18.000,Rp 76.000,cash
+TRX-SUS-20260512-0016,2026-05-12,18:54,Green Tea,Beverage,Regular,2,Rp 15.000,Rp 5.000,Rp 30.000,cash
+TRX-SUS-20260512-0016,2026-05-12,18:54,Miso Soup,Appetizer,Regular,1,Rp 18.000,Rp 6.000,Rp 18.000,cash
+TRX-SUS-20260512-0017,2026-05-12,20:18,Edamame,Appetizer,Regular,3,Rp 22.000,Rp 8.000,Rp 66.000,qris
+TRX-SUS-20260512-0018,2026-05-12,10:18,Mochi Ice Cream (3pcs),Dessert,Regular,1,Rp 32.000,Rp 13.000,Rp 32.000,card
+TRX-SUS-20260512-0019,2026-05-12,08:29,Tuna Sashimi (5pcs),Sashimi,Regular,2,Rp 65.000,Rp 32.000,Rp 130.000,qris
+TRX-SUS-20260512-0019,2026-05-12,08:29,Chicken Katsu Curry,Ramen,Regular,3,Rp 58.000,Rp 26.000,Rp 174.000,qris
+TRX-SUS-20260512-0020,2026-05-12,17:24,Edamame,Appetizer,Regular,1,Rp 22.000,Rp 8.000,Rp 22.000,cash
+TRX-SUS-20260512-0020,2026-05-12,17:24,Tuna Sashimi (5pcs),Sashimi,Regular,2,Rp 65.000,Rp 32.000,Rp 130.000,cash
+TRX-SUS-20260512-0021,2026-05-12,16:42,Edamame,Appetizer,Regular,1,Rp 22.000,Rp 8.000,Rp 22.000,qris
+TRX-SUS-20260512-0022,2026-05-12,08:45,Chicken Katsu Curry,Ramen,Regular,2,Rp 58.000,Rp 26.000,Rp 116.000,cash
+TRX-SUS-20260512-0022,2026-05-12,08:45,Dragon Roll,Sushi,Regular,1,Rp 62.000,Rp 28.000,Rp 62.000,cash
+TRX-SUS-20260512-0023,2026-05-12,16:36,Ramen Tonkotsu,Ramen,Regular,1,Rp 65.000,Rp 29.000,Rp 65.000,cash
+TRX-SUS-20260512-0023,2026-05-12,16:36,Green Tea,Beverage,Regular,2,Rp 15.000,Rp 5.000,Rp 30.000,cash
+TRX-SUS-20260512-0023,2026-05-12,16:36,California Roll,Sushi,Regular,2,Rp 48.000,Rp 20.000,Rp 96.000,cash
+TRX-SUS-20260512-0024,2026-05-12,19:49,Ramen Tonkotsu,Ramen,Regular,2,Rp 65.000,Rp 29.000,Rp 130.000,qris
+TRX-SUS-20260512-0024,2026-05-12,19:49,Chicken Katsu Curry,Ramen,Regular,1,Rp 58.000,Rp 26.000,Rp 58.000,qris
+TRX-SUS-20260512-0025,2026-05-12,16:42,Chicken Katsu Curry,Ramen,Regular,1,Rp 58.000,Rp 26.000,Rp 58.000,card
+TRX-SUS-20260512-0026,2026-05-12,21:26,Chicken Katsu Curry,Ramen,Regular,1,Rp 58.000,Rp 26.000,Rp 58.000,card
+TRX-SUS-20260513-0027,2026-05-13,20:13,Mochi Ice Cream (3pcs),Dessert,Regular,3,Rp 32.000,Rp 13.000,Rp 96.000,qris
+TRX-SUS-20260513-0028,2026-05-13,09:58,Mochi Ice Cream (3pcs),Dessert,Regular,3,Rp 32.000,Rp 13.000,Rp 96.000,qris
+TRX-SUS-20260513-0028,2026-05-13,09:58,Green Tea,Beverage,Regular,2,Rp 15.000,Rp 5.000,Rp 30.000,qris
+TRX-SUS-20260513-0029,2026-05-13,10:25,Edamame,Appetizer,Regular,3,Rp 22.000,Rp 8.000,Rp 66.000,qris
+TRX-SUS-20260513-0030,2026-05-13,10:37,Salmon Nigiri (2pcs),Sushi,Regular,2,Rp 38.000,Rp 18.000,Rp 76.000,cash
+TRX-SUS-20260513-0031,2026-05-13,19:55,Ramen Tonkotsu,Ramen,Regular,2,Rp 65.000,Rp 29.000,Rp 130.000,qris
+TRX-SUS-20260513-0031,2026-05-13,19:55,Green Tea,Beverage,Regular,2,Rp 15.000,Rp 5.000,Rp 30.000,qris
+TRX-SUS-20260513-0032,2026-05-13,17:34,Edamame,Appetizer,Regular,2,Rp 22.000,Rp 8.000,Rp 44.000,qris
+TRX-SUS-20260513-0032,2026-05-13,17:34,Mochi Ice Cream (3pcs),Dessert,Regular,1,Rp 32.000,Rp 13.000,Rp 32.000,qris
+TRX-SUS-20260513-0032,2026-05-13,17:34,California Roll,Sushi,Regular,3,Rp 48.000,Rp 20.000,Rp 144.000,qris
+TRX-SUS-20260513-0033,2026-05-13,10:24,Mochi Ice Cream (3pcs),Dessert,Regular,1,Rp 32.000,Rp 13.000,Rp 32.000,card
+TRX-SUS-20260513-0033,2026-05-13,10:24,Tuna Sashimi (5pcs),Sashimi,Regular,2,Rp 65.000,Rp 32.000,Rp 130.000,card
+TRX-SUS-20260513-0034,2026-05-13,19:13,Dragon Roll,Sushi,Regular,1,Rp 62.000,Rp 28.000,Rp 62.000,card
+TRX-SUS-20260513-0034,2026-05-13,19:13,California Roll,Sushi,Regular,1,Rp 48.000,Rp 20.000,Rp 48.000,card
+TRX-SUS-20260513-0035,2026-05-13,14:40,Green Tea,Beverage,Regular,1,Rp 15.000,Rp 5.000,Rp 15.000,cash
+TRX-SUS-20260514-0036,2026-05-14,09:26,Tuna Sashimi (5pcs),Sashimi,Regular,3,Rp 65.000,Rp 32.000,Rp 195.000,qris
+TRX-SUS-20260514-0037,2026-05-14,13:28,Miso Soup,Appetizer,Regular,2,Rp 18.000,Rp 6.000,Rp 36.000,card
+TRX-SUS-20260514-0037,2026-05-14,13:28,Tuna Sashimi (5pcs),Sashimi,Regular,2,Rp 65.000,Rp 32.000,Rp 130.000,card
+TRX-SUS-20260514-0037,2026-05-14,13:28,Mochi Ice Cream (3pcs),Dessert,Regular,1,Rp 32.000,Rp 13.000,Rp 32.000,card
+TRX-SUS-20260514-0038,2026-05-14,11:50,Tuna Sashimi (5pcs),Sashimi,Regular,3,Rp 65.000,Rp 32.000,Rp 195.000,qris
+TRX-SUS-20260514-0039,2026-05-14,18:46,Miso Soup,Appetizer,Regular,2,Rp 18.000,Rp 6.000,Rp 36.000,card
+TRX-SUS-20260514-0039,2026-05-14,18:46,Chicken Katsu Curry,Ramen,Regular,2,Rp 58.000,Rp 26.000,Rp 116.000,card
+TRX-SUS-20260514-0040,2026-05-14,16:03,Green Tea,Beverage,Regular,1,Rp 15.000,Rp 5.000,Rp 15.000,cash
+TRX-SUS-20260514-0040,2026-05-14,16:03,California Roll,Sushi,Regular,2,Rp 48.000,Rp 20.000,Rp 96.000,cash
+TRX-SUS-20260514-0041,2026-05-14,14:58,California Roll,Sushi,Regular,1,Rp 48.000,Rp 20.000,Rp 48.000,card
+TRX-SUS-20260514-0041,2026-05-14,14:58,Edamame,Appetizer,Regular,2,Rp 22.000,Rp 8.000,Rp 44.000,card
+TRX-SUS-20260514-0041,2026-05-14,14:58,Chicken Katsu Curry,Ramen,Regular,2,Rp 58.000,Rp 26.000,Rp 116.000,card
+TRX-SUS-20260514-0042,2026-05-14,18:53,Ramen Tonkotsu,Ramen,Regular,1,Rp 65.000,Rp 29.000,Rp 65.000,cash
+TRX-SUS-20260514-0042,2026-05-14,18:53,Salmon Nigiri (2pcs),Sushi,Regular,3,Rp 38.000,Rp 18.000,Rp 114.000,cash
+TRX-SUS-20260514-0043,2026-05-14,13:55,Miso Soup,Appetizer,Regular,1,Rp 18.000,Rp 6.000,Rp 18.000,cash
+TRX-SUS-20260514-0043,2026-05-14,13:55,Tuna Sashimi (5pcs),Sashimi,Regular,2,Rp 65.000,Rp 32.000,Rp 130.000,cash
+TRX-SUS-20260514-0043,2026-05-14,13:55,California Roll,Sushi,Regular,1,Rp 48.000,Rp 20.000,Rp 48.000,cash
+TRX-SUS-20260514-0044,2026-05-14,21:46,Salmon Nigiri (2pcs),Sushi,Regular,1,Rp 38.000,Rp 18.000,Rp 38.000,qris
+TRX-SUS-20260514-0044,2026-05-14,21:46,Dragon Roll,Sushi,Regular,2,Rp 62.000,Rp 28.000,Rp 124.000,qris
+TRX-SUS-20260514-0044,2026-05-14,21:46,Mochi Ice Cream (3pcs),Dessert,Regular,3,Rp 32.000,Rp 13.000,Rp 96.000,qris
+TRX-SUS-20260514-0045,2026-05-14,21:12,Chicken Katsu Curry,Ramen,Regular,1,Rp 58.000,Rp 26.000,Rp 58.000,card
+TRX-SUS-20260514-0045,2026-05-14,21:12,Mochi Ice Cream (3pcs),Dessert,Regular,3,Rp 32.000,Rp 13.000,Rp 96.000,card
+TRX-SUS-20260514-0046,2026-05-14,09:29,Green Tea,Beverage,Regular,2,Rp 15.000,Rp 5.000,Rp 30.000,qris
+TRX-SUS-20260514-0047,2026-05-14,20:21,Salmon Nigiri (2pcs),Sushi,Regular,3,Rp 38.000,Rp 18.000,Rp 114.000,qris
+TRX-SUS-20260514-0047,2026-05-14,20:21,Miso Soup,Appetizer,Regular,3,Rp 18.000,Rp 6.000,Rp 54.000,qris
+TRX-SUS-20260514-0048,2026-05-14,14:12,Tuna Sashimi (5pcs),Sashimi,Regular,2,Rp 65.000,Rp 32.000,Rp 130.000,card
+TRX-SUS-20260514-0048,2026-05-14,14:12,Dragon Roll,Sushi,Regular,1,Rp 62.000,Rp 28.000,Rp 62.000,card
+TRX-SUS-20260514-0049,2026-05-14,20:49,Chicken Katsu Curry,Ramen,Regular,3,Rp 58.000,Rp 26.000,Rp 174.000,qris
+TRX-SUS-20260514-0050,2026-05-14,18:40,Miso Soup,Appetizer,Regular,3,Rp 18.000,Rp 6.000,Rp 54.000,card
+TRX-SUS-20260514-0050,2026-05-14,18:40,Ramen Tonkotsu,Ramen,Regular,3,Rp 65.000,Rp 29.000,Rp 195.000,card
+TRX-SUS-20260514-0050,2026-05-14,18:40,Tuna Sashimi (5pcs),Sashimi,Regular,2,Rp 65.000,Rp 32.000,Rp 130.000,card
+TRX-SUS-20260514-0051,2026-05-14,15:05,Ramen Tonkotsu,Ramen,Regular,3,Rp 65.000,Rp 29.000,Rp 195.000,qris
+TRX-SUS-20260515-0052,2026-05-15,08:17,Chicken Katsu Curry,Ramen,Regular,1,Rp 58.000,Rp 26.000,Rp 58.000,qris
+TRX-SUS-20260515-0053,2026-05-15,08:53,Dragon Roll,Sushi,Regular,2,Rp 62.000,Rp 28.000,Rp 124.000,qris
+TRX-SUS-20260515-0053,2026-05-15,08:53,California Roll,Sushi,Regular,1,Rp 48.000,Rp 20.000,Rp 48.000,qris
+TRX-SUS-20260515-0054,2026-05-15,10:56,Tuna Sashimi (5pcs),Sashimi,Regular,3,Rp 65.000,Rp 32.000,Rp 195.000,card
+TRX-SUS-20260515-0055,2026-05-15,14:45,Edamame,Appetizer,Regular,1,Rp 22.000,Rp 8.000,Rp 22.000,qris
+TRX-SUS-20260515-0055,2026-05-15,14:45,Chicken Katsu Curry,Ramen,Regular,3,Rp 58.000,Rp 26.000,Rp 174.000,qris
+TRX-SUS-20260515-0056,2026-05-15,09:34,Dragon Roll,Sushi,Regular,3,Rp 62.000,Rp 28.000,Rp 186.000,qris
+TRX-SUS-20260515-0057,2026-05-15,14:17,Chicken Katsu Curry,Ramen,Regular,2,Rp 58.000,Rp 26.000,Rp 116.000,cash
+TRX-SUS-20260515-0058,2026-05-15,08:14,Chicken Katsu Curry,Ramen,Regular,1,Rp 58.000,Rp 26.000,Rp 58.000,qris
+TRX-SUS-20260515-0059,2026-05-15,17:42,Mochi Ice Cream (3pcs),Dessert,Regular,3,Rp 32.000,Rp 13.000,Rp 96.000,card
+TRX-SUS-20260515-0059,2026-05-15,17:42,Chicken Katsu Curry,Ramen,Regular,2,Rp 58.000,Rp 26.000,Rp 116.000,card
+TRX-SUS-20260515-0060,2026-05-15,08:48,Ramen Tonkotsu,Ramen,Regular,2,Rp 65.000,Rp 29.000,Rp 130.000,card
+TRX-SUS-20260515-0060,2026-05-15,08:48,Chicken Katsu Curry,Ramen,Regular,3,Rp 58.000,Rp 26.000,Rp 174.000,card
+TRX-SUS-20260515-0060,2026-05-15,08:48,Tuna Sashimi (5pcs),Sashimi,Regular,1,Rp 65.000,Rp 32.000,Rp 65.000,card
+TRX-SUS-20260515-0061,2026-05-15,08:08,Salmon Nigiri (2pcs),Sushi,Regular,3,Rp 38.000,Rp 18.000,Rp 114.000,card
+TRX-SUS-20260515-0061,2026-05-15,08:08,Chicken Katsu Curry,Ramen,Regular,3,Rp 58.000,Rp 26.000,Rp 174.000,card
+TRX-SUS-20260515-0062,2026-05-15,18:01,Miso Soup,Appetizer,Regular,1,Rp 18.000,Rp 6.000,Rp 18.000,card
+TRX-SUS-20260515-0063,2026-05-15,20:21,California Roll,Sushi,Regular,1,Rp 48.000,Rp 20.000,Rp 48.000,cash
+TRX-SUS-20260515-0063,2026-05-15,20:21,Green Tea,Beverage,Regular,2,Rp 15.000,Rp 5.000,Rp 30.000,cash
+TRX-SUS-20260515-0063,2026-05-15,20:21,Miso Soup,Appetizer,Regular,3,Rp 18.000,Rp 6.000,Rp 54.000,cash
+TRX-SUS-20260515-0064,2026-05-15,20:20,Mochi Ice Cream (3pcs),Dessert,Regular,2,Rp 32.000,Rp 13.000,Rp 64.000,cash
+TRX-SUS-20260515-0065,2026-05-15,13:59,Edamame,Appetizer,Regular,2,Rp 22.000,Rp 8.000,Rp 44.000,qris
+TRX-SUS-20260515-0066,2026-05-15,13:08,Chicken Katsu Curry,Ramen,Regular,1,Rp 58.000,Rp 26.000,Rp 58.000,card
+TRX-SUS-20260516-0067,2026-05-16,08:08,Salmon Nigiri (2pcs),Sushi,Regular,3,Rp 38.000,Rp 18.000,Rp 114.000,card
+TRX-SUS-20260516-0067,2026-05-16,08:08,Miso Soup,Appetizer,Regular,3,Rp 18.000,Rp 6.000,Rp 54.000,card
+TRX-SUS-20260516-0068,2026-05-16,11:33,Mochi Ice Cream (3pcs),Dessert,Regular,1,Rp 32.000,Rp 13.000,Rp 32.000,cash
+TRX-SUS-20260516-0069,2026-05-16,18:14,Miso Soup,Appetizer,Regular,1,Rp 18.000,Rp 6.000,Rp 18.000,cash
+TRX-SUS-20260516-0070,2026-05-16,19:59,Ramen Tonkotsu,Ramen,Regular,1,Rp 65.000,Rp 29.000,Rp 65.000,qris
+TRX-SUS-20260516-0071,2026-05-16,11:03,Miso Soup,Appetizer,Regular,2,Rp 18.000,Rp 6.000,Rp 36.000,card
+TRX-SUS-20260516-0071,2026-05-16,11:03,Green Tea,Beverage,Regular,2,Rp 15.000,Rp 5.000,Rp 30.000,card
+TRX-SUS-20260516-0072,2026-05-16,21:19,Miso Soup,Appetizer,Regular,3,Rp 18.000,Rp 6.000,Rp 54.000,cash
+TRX-SUS-20260516-0073,2026-05-16,08:56,Dragon Roll,Sushi,Regular,1,Rp 62.000,Rp 28.000,Rp 62.000,qris
+TRX-SUS-20260516-0073,2026-05-16,08:56,Tuna Sashimi (5pcs),Sashimi,Regular,1,Rp 65.000,Rp 32.000,Rp 65.000,qris
+TRX-SUS-20260516-0074,2026-05-16,15:42,Tuna Sashimi (5pcs),Sashimi,Regular,3,Rp 65.000,Rp 32.000,Rp 195.000,card
+TRX-SUS-20260516-0074,2026-05-16,15:42,Edamame,Appetizer,Regular,3,Rp 22.000,Rp 8.000,Rp 66.000,card
+TRX-SUS-20260516-0074,2026-05-16,15:42,Green Tea,Beverage,Regular,1,Rp 15.000,Rp 5.000,Rp 15.000,card
+TRX-SUS-20260516-0075,2026-05-16,15:08,Dragon Roll,Sushi,Regular,3,Rp 62.000,Rp 28.000,Rp 186.000,cash
+TRX-SUS-20260516-0075,2026-05-16,15:08,Miso Soup,Appetizer,Regular,1,Rp 18.000,Rp 6.000,Rp 18.000,cash
+TRX-SUS-20260516-0076,2026-05-16,10:55,Green Tea,Beverage,Regular,1,Rp 15.000,Rp 5.000,Rp 15.000,card
+TRX-SUS-20260516-0076,2026-05-16,10:55,Chicken Katsu Curry,Ramen,Regular,3,Rp 58.000,Rp 26.000,Rp 174.000,card
+TRX-SUS-20260516-0077,2026-05-16,12:39,Ramen Tonkotsu,Ramen,Regular,1,Rp 65.000,Rp 29.000,Rp 65.000,card
+TRX-SUS-20260516-0077,2026-05-16,12:39,Tuna Sashimi (5pcs),Sashimi,Regular,3,Rp 65.000,Rp 32.000,Rp 195.000,card
+TRX-SUS-20260516-0077,2026-05-16,12:39,Edamame,Appetizer,Regular,1,Rp 22.000,Rp 8.000,Rp 22.000,card
+TRX-SUS-20260516-0078,2026-05-16,11:46,Chicken Katsu Curry,Ramen,Regular,2,Rp 58.000,Rp 26.000,Rp 116.000,cash
+TRX-SUS-20260516-0078,2026-05-16,11:46,California Roll,Sushi,Regular,2,Rp 48.000,Rp 20.000,Rp 96.000,cash
+TRX-SUS-20260516-0078,2026-05-16,11:46,Dragon Roll,Sushi,Regular,3,Rp 62.000,Rp 28.000,Rp 186.000,cash
+TRX-SUS-20260516-0079,2026-05-16,13:57,Edamame,Appetizer,Regular,2,Rp 22.000,Rp 8.000,Rp 44.000,card
+TRX-SUS-20260516-0080,2026-05-16,13:36,Chicken Katsu Curry,Ramen,Regular,2,Rp 58.000,Rp 26.000,Rp 116.000,cash
+TRX-SUS-20260516-0080,2026-05-16,13:36,Green Tea,Beverage,Regular,2,Rp 15.000,Rp 5.000,Rp 30.000,cash
+TRX-SUS-20260516-0081,2026-05-16,15:08,Ramen Tonkotsu,Ramen,Regular,3,Rp 65.000,Rp 29.000,Rp 195.000,qris
+TRX-SUS-20260516-0081,2026-05-16,15:08,Mochi Ice Cream (3pcs),Dessert,Regular,1,Rp 32.000,Rp 13.000,Rp 32.000,qris
+TRX-SUS-20260517-0082,2026-05-17,15:00,Mochi Ice Cream (3pcs),Dessert,Regular,2,Rp 32.000,Rp 13.000,Rp 64.000,cash
+TRX-SUS-20260517-0082,2026-05-17,15:00,Ramen Tonkotsu,Ramen,Regular,1,Rp 65.000,Rp 29.000,Rp 65.000,cash
+TRX-SUS-20260517-0083,2026-05-17,11:52,Edamame,Appetizer,Regular,2,Rp 22.000,Rp 8.000,Rp 44.000,qris
+TRX-SUS-20260517-0083,2026-05-17,11:52,California Roll,Sushi,Regular,2,Rp 48.000,Rp 20.000,Rp 96.000,qris
+TRX-SUS-20260517-0083,2026-05-17,11:52,Ramen Tonkotsu,Ramen,Regular,2,Rp 65.000,Rp 29.000,Rp 130.000,qris
+TRX-SUS-20260517-0084,2026-05-17,20:04,California Roll,Sushi,Regular,3,Rp 48.000,Rp 20.000,Rp 144.000,card
+TRX-SUS-20260517-0085,2026-05-17,19:29,Tuna Sashimi (5pcs),Sashimi,Regular,1,Rp 65.000,Rp 32.000,Rp 65.000,qris
+TRX-SUS-20260517-0086,2026-05-17,19:31,Edamame,Appetizer,Regular,2,Rp 22.000,Rp 8.000,Rp 44.000,qris
+TRX-SUS-20260517-0086,2026-05-17,19:31,Green Tea,Beverage,Regular,3,Rp 15.000,Rp 5.000,Rp 45.000,qris
+TRX-SUS-20260517-0087,2026-05-17,15:03,Miso Soup,Appetizer,Regular,1,Rp 18.000,Rp 6.000,Rp 18.000,qris
+TRX-SUS-20260517-0087,2026-05-17,15:03,Salmon Nigiri (2pcs),Sushi,Regular,3,Rp 38.000,Rp 18.000,Rp 114.000,qris
+TRX-SUS-20260517-0087,2026-05-17,15:03,Mochi Ice Cream (3pcs),Dessert,Regular,3,Rp 32.000,Rp 13.000,Rp 96.000,qris
+TRX-SUS-20260517-0088,2026-05-17,14:15,Mochi Ice Cream (3pcs),Dessert,Regular,2,Rp 32.000,Rp 13.000,Rp 64.000,cash
+TRX-SUS-20260517-0088,2026-05-17,14:15,Ramen Tonkotsu,Ramen,Regular,2,Rp 65.000,Rp 29.000,Rp 130.000,cash
+TRX-SUS-20260517-0088,2026-05-17,14:15,Green Tea,Beverage,Regular,1,Rp 15.000,Rp 5.000,Rp 15.000,cash
+TRX-SUS-20260517-0089,2026-05-17,12:39,Tuna Sashimi (5pcs),Sashimi,Regular,1,Rp 65.000,Rp 32.000,Rp 65.000,qris
+TRX-SUS-20260517-0090,2026-05-17,14:53,Edamame,Appetizer,Regular,1,Rp 22.000,Rp 8.000,Rp 22.000,cash
+TRX-SUS-20260517-0091,2026-05-17,10:33,Chicken Katsu Curry,Ramen,Regular,1,Rp 58.000,Rp 26.000,Rp 58.000,cash
+TRX-SUS-20260517-0091,2026-05-17,10:33,California Roll,Sushi,Regular,2,Rp 48.000,Rp 20.000,Rp 96.000,cash
+TRX-SUS-20260517-0092,2026-05-17,08:32,Green Tea,Beverage,Regular,3,Rp 15.000,Rp 5.000,Rp 45.000,qris
+TRX-SUS-20260517-0093,2026-05-17,16:14,Chicken Katsu Curry,Ramen,Regular,2,Rp 58.000,Rp 26.000,Rp 116.000,card
+TRX-SUS-20260517-0093,2026-05-17,16:14,Dragon Roll,Sushi,Regular,3,Rp 62.000,Rp 28.000,Rp 186.000,card
+TRX-SUS-20260517-0093,2026-05-17,16:14,Salmon Nigiri (2pcs),Sushi,Regular,1,Rp 38.000,Rp 18.000,Rp 38.000,card
+TRX-SUS-20260517-0094,2026-05-17,11:30,Miso Soup,Appetizer,Regular,1,Rp 18.000,Rp 6.000,Rp 18.000,card
+TRX-SUS-20260517-0094,2026-05-17,11:30,Tuna Sashimi (5pcs),Sashimi,Regular,3,Rp 65.000,Rp 32.000,Rp 195.000,card
+TRX-SUS-20260517-0095,2026-05-17,12:18,Mochi Ice Cream (3pcs),Dessert,Regular,2,Rp 32.000,Rp 13.000,Rp 64.000,qris
+TRX-SUS-20260517-0095,2026-05-17,12:18,Ramen Tonkotsu,Ramen,Regular,1,Rp 65.000,Rp 29.000,Rp 65.000,qris

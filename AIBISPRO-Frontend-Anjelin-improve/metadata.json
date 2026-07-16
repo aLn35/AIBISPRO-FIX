@@ -1,0 +1,6 @@
+{
+  "name": "AIBISPRO BI",
+  "description": "Multi-Company AI Business Intelligence Platform for restaurants, cafes, cloud kitchens, and franchise groups with advanced forecasting and AI assistant.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

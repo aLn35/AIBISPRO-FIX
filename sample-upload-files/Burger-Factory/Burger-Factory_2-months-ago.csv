@@ -1,0 +1,151 @@
+Transaction_ID,Date,Time,Product,Category,Size,Quantity,Unit_Price_IDR,Cost_IDR,Total_IDR,Payment_Method
+TRX-BUR-20260511-0001,2026-05-11,21:38,Onion Rings,Side,Regular,2,Rp 20.000,Rp 8.000,Rp 40.000,cash
+TRX-BUR-20260511-0002,2026-05-11,14:15,Crispy Chicken Burger,Burger,Regular,3,Rp 42.000,Rp 19.000,Rp 126.000,e-wallet
+TRX-BUR-20260511-0002,2026-05-11,14:15,BBQ Bacon Burger,Burger,Regular,3,Rp 52.000,Rp 24.000,Rp 156.000,e-wallet
+TRX-BUR-20260511-0003,2026-05-11,11:16,Vanilla Milkshake,Beverage,Regular,1,Rp 30.000,Rp 13.000,Rp 30.000,card
+TRX-BUR-20260511-0003,2026-05-11,11:16,Classic Smash Burger,Burger,Regular,1,Rp 45.000,Rp 20.000,Rp 45.000,card
+TRX-BUR-20260511-0004,2026-05-11,21:55,Crispy Chicken Burger,Burger,Regular,2,Rp 42.000,Rp 19.000,Rp 84.000,card
+TRX-BUR-20260511-0004,2026-05-11,21:55,Chocolate Milkshake,Beverage,Regular,1,Rp 32.000,Rp 14.000,Rp 32.000,card
+TRX-BUR-20260511-0004,2026-05-11,21:55,Regular Fries,Side,Regular,2,Rp 18.000,Rp 7.000,Rp 36.000,card
+TRX-BUR-20260511-0005,2026-05-11,13:38,Truffle Cheese Burger,Burger,Regular,3,Rp 58.000,Rp 26.000,Rp 174.000,cash
+TRX-BUR-20260511-0006,2026-05-11,21:49,Vanilla Milkshake,Beverage,Regular,2,Rp 30.000,Rp 13.000,Rp 60.000,cash
+TRX-BUR-20260511-0007,2026-05-11,10:31,BBQ Bacon Burger,Burger,Regular,3,Rp 52.000,Rp 24.000,Rp 156.000,e-wallet
+TRX-BUR-20260511-0008,2026-05-11,13:39,Onion Rings,Side,Regular,3,Rp 20.000,Rp 8.000,Rp 60.000,card
+TRX-BUR-20260511-0008,2026-05-11,13:39,Crispy Chicken Burger,Burger,Regular,2,Rp 42.000,Rp 19.000,Rp 84.000,card
+TRX-BUR-20260511-0009,2026-05-11,16:26,BBQ Bacon Burger,Burger,Regular,3,Rp 52.000,Rp 24.000,Rp 156.000,cash
+TRX-BUR-20260511-0009,2026-05-11,16:26,Crispy Chicken Burger,Burger,Regular,2,Rp 42.000,Rp 19.000,Rp 84.000,cash
+TRX-BUR-20260511-0010,2026-05-11,13:18,Crispy Chicken Burger,Burger,Regular,1,Rp 42.000,Rp 19.000,Rp 42.000,cash
+TRX-BUR-20260511-0010,2026-05-11,13:18,Classic Smash Burger,Burger,Regular,2,Rp 45.000,Rp 20.000,Rp 90.000,cash
+TRX-BUR-20260511-0011,2026-05-11,10:16,Regular Fries,Side,Regular,2,Rp 18.000,Rp 7.000,Rp 36.000,card
+TRX-BUR-20260511-0011,2026-05-11,10:16,Vanilla Milkshake,Beverage,Regular,3,Rp 30.000,Rp 13.000,Rp 90.000,card
+TRX-BUR-20260511-0011,2026-05-11,10:16,Truffle Cheese Burger,Burger,Regular,1,Rp 58.000,Rp 26.000,Rp 58.000,card
+TRX-BUR-20260511-0012,2026-05-11,11:07,Chocolate Milkshake,Beverage,Regular,3,Rp 32.000,Rp 14.000,Rp 96.000,e-wallet
+TRX-BUR-20260511-0012,2026-05-11,11:07,Regular Fries,Side,Regular,1,Rp 18.000,Rp 7.000,Rp 18.000,e-wallet
+TRX-BUR-20260511-0012,2026-05-11,11:07,BBQ Bacon Burger,Burger,Regular,2,Rp 52.000,Rp 24.000,Rp 104.000,e-wallet
+TRX-BUR-20260511-0013,2026-05-11,19:18,BBQ Bacon Burger,Burger,Regular,3,Rp 52.000,Rp 24.000,Rp 156.000,e-wallet
+TRX-BUR-20260511-0013,2026-05-11,19:18,Truffle Cheese Burger,Burger,Regular,2,Rp 58.000,Rp 26.000,Rp 116.000,e-wallet
+TRX-BUR-20260511-0013,2026-05-11,19:18,Regular Fries,Side,Regular,3,Rp 18.000,Rp 7.000,Rp 54.000,e-wallet
+TRX-BUR-20260511-0014,2026-05-11,08:03,BBQ Bacon Burger,Burger,Regular,1,Rp 52.000,Rp 24.000,Rp 52.000,e-wallet
+TRX-BUR-20260511-0015,2026-05-11,21:35,Truffle Cheese Burger,Burger,Regular,1,Rp 58.000,Rp 26.000,Rp 58.000,e-wallet
+TRX-BUR-20260511-0015,2026-05-11,21:35,Regular Fries,Side,Regular,2,Rp 18.000,Rp 7.000,Rp 36.000,e-wallet
+TRX-BUR-20260511-0016,2026-05-11,13:29,Truffle Cheese Burger,Burger,Regular,1,Rp 58.000,Rp 26.000,Rp 58.000,cash
+TRX-BUR-20260511-0016,2026-05-11,13:29,Vanilla Milkshake,Beverage,Regular,3,Rp 30.000,Rp 13.000,Rp 90.000,cash
+TRX-BUR-20260511-0016,2026-05-11,13:29,Onion Rings,Side,Regular,2,Rp 20.000,Rp 8.000,Rp 40.000,cash
+TRX-BUR-20260512-0017,2026-05-12,20:06,Crispy Chicken Burger,Burger,Regular,2,Rp 42.000,Rp 19.000,Rp 84.000,card
+TRX-BUR-20260512-0017,2026-05-12,20:06,BBQ Bacon Burger,Burger,Regular,2,Rp 52.000,Rp 24.000,Rp 104.000,card
+TRX-BUR-20260512-0018,2026-05-12,12:57,Regular Fries,Side,Regular,2,Rp 18.000,Rp 7.000,Rp 36.000,cash
+TRX-BUR-20260512-0018,2026-05-12,12:57,Truffle Cheese Burger,Burger,Regular,3,Rp 58.000,Rp 26.000,Rp 174.000,cash
+TRX-BUR-20260512-0019,2026-05-12,12:07,Chocolate Milkshake,Beverage,Regular,3,Rp 32.000,Rp 14.000,Rp 96.000,cash
+TRX-BUR-20260512-0020,2026-05-12,11:26,Chocolate Milkshake,Beverage,Regular,3,Rp 32.000,Rp 14.000,Rp 96.000,e-wallet
+TRX-BUR-20260512-0021,2026-05-12,16:25,BBQ Bacon Burger,Burger,Regular,2,Rp 52.000,Rp 24.000,Rp 104.000,cash
+TRX-BUR-20260512-0022,2026-05-12,11:28,Onion Rings,Side,Regular,2,Rp 20.000,Rp 8.000,Rp 40.000,card
+TRX-BUR-20260512-0022,2026-05-12,11:28,Chocolate Milkshake,Beverage,Regular,2,Rp 32.000,Rp 14.000,Rp 64.000,card
+TRX-BUR-20260512-0023,2026-05-12,19:17,Truffle Cheese Burger,Burger,Regular,3,Rp 58.000,Rp 26.000,Rp 174.000,card
+TRX-BUR-20260512-0024,2026-05-12,18:18,Crispy Chicken Burger,Burger,Regular,3,Rp 42.000,Rp 19.000,Rp 126.000,card
+TRX-BUR-20260512-0024,2026-05-12,18:18,Vanilla Milkshake,Beverage,Regular,3,Rp 30.000,Rp 13.000,Rp 90.000,card
+TRX-BUR-20260512-0025,2026-05-12,15:15,Cola,Beverage,Regular,3,Rp 12.000,Rp 4.000,Rp 36.000,cash
+TRX-BUR-20260513-0026,2026-05-13,17:25,Truffle Cheese Burger,Burger,Regular,1,Rp 58.000,Rp 26.000,Rp 58.000,card
+TRX-BUR-20260513-0026,2026-05-13,17:25,Regular Fries,Side,Regular,3,Rp 18.000,Rp 7.000,Rp 54.000,card
+TRX-BUR-20260513-0027,2026-05-13,12:16,Onion Rings,Side,Regular,2,Rp 20.000,Rp 8.000,Rp 40.000,cash
+TRX-BUR-20260513-0028,2026-05-13,09:13,Vanilla Milkshake,Beverage,Regular,1,Rp 30.000,Rp 13.000,Rp 30.000,cash
+TRX-BUR-20260513-0028,2026-05-13,09:13,BBQ Bacon Burger,Burger,Regular,1,Rp 52.000,Rp 24.000,Rp 52.000,cash
+TRX-BUR-20260513-0029,2026-05-13,12:37,Chocolate Milkshake,Beverage,Regular,2,Rp 32.000,Rp 14.000,Rp 64.000,cash
+TRX-BUR-20260513-0029,2026-05-13,12:37,Classic Smash Burger,Burger,Regular,3,Rp 45.000,Rp 20.000,Rp 135.000,cash
+TRX-BUR-20260513-0030,2026-05-13,13:24,Crispy Chicken Burger,Burger,Regular,1,Rp 42.000,Rp 19.000,Rp 42.000,e-wallet
+TRX-BUR-20260513-0031,2026-05-13,21:38,Crispy Chicken Burger,Burger,Regular,2,Rp 42.000,Rp 19.000,Rp 84.000,e-wallet
+TRX-BUR-20260513-0032,2026-05-13,12:53,Cola,Beverage,Regular,2,Rp 12.000,Rp 4.000,Rp 24.000,cash
+TRX-BUR-20260513-0032,2026-05-13,12:53,Vanilla Milkshake,Beverage,Regular,2,Rp 30.000,Rp 13.000,Rp 60.000,cash
+TRX-BUR-20260513-0033,2026-05-13,11:38,Classic Smash Burger,Burger,Regular,3,Rp 45.000,Rp 20.000,Rp 135.000,e-wallet
+TRX-BUR-20260513-0034,2026-05-13,19:42,Sweet Potato Fries,Side,Regular,2,Rp 22.000,Rp 9.000,Rp 44.000,cash
+TRX-BUR-20260513-0034,2026-05-13,19:42,Classic Smash Burger,Burger,Regular,1,Rp 45.000,Rp 20.000,Rp 45.000,cash
+TRX-BUR-20260514-0035,2026-05-14,20:35,Vanilla Milkshake,Beverage,Regular,2,Rp 30.000,Rp 13.000,Rp 60.000,cash
+TRX-BUR-20260514-0036,2026-05-14,09:00,Sweet Potato Fries,Side,Regular,2,Rp 22.000,Rp 9.000,Rp 44.000,cash
+TRX-BUR-20260514-0037,2026-05-14,14:48,Regular Fries,Side,Regular,2,Rp 18.000,Rp 7.000,Rp 36.000,card
+TRX-BUR-20260514-0038,2026-05-14,15:54,Crispy Chicken Burger,Burger,Regular,2,Rp 42.000,Rp 19.000,Rp 84.000,cash
+TRX-BUR-20260514-0039,2026-05-14,18:47,Cola,Beverage,Regular,1,Rp 12.000,Rp 4.000,Rp 12.000,card
+TRX-BUR-20260514-0040,2026-05-14,18:25,Regular Fries,Side,Regular,2,Rp 18.000,Rp 7.000,Rp 36.000,card
+TRX-BUR-20260514-0041,2026-05-14,09:42,Sweet Potato Fries,Side,Regular,3,Rp 22.000,Rp 9.000,Rp 66.000,card
+TRX-BUR-20260514-0041,2026-05-14,09:42,Cola,Beverage,Regular,1,Rp 12.000,Rp 4.000,Rp 12.000,card
+TRX-BUR-20260514-0042,2026-05-14,20:02,Classic Smash Burger,Burger,Regular,1,Rp 45.000,Rp 20.000,Rp 45.000,card
+TRX-BUR-20260514-0042,2026-05-14,20:02,Vanilla Milkshake,Beverage,Regular,1,Rp 30.000,Rp 13.000,Rp 30.000,card
+TRX-BUR-20260515-0043,2026-05-15,18:06,Classic Smash Burger,Burger,Regular,3,Rp 45.000,Rp 20.000,Rp 135.000,card
+TRX-BUR-20260515-0043,2026-05-15,18:06,Truffle Cheese Burger,Burger,Regular,2,Rp 58.000,Rp 26.000,Rp 116.000,card
+TRX-BUR-20260515-0044,2026-05-15,16:05,Truffle Cheese Burger,Burger,Regular,1,Rp 58.000,Rp 26.000,Rp 58.000,cash
+TRX-BUR-20260515-0044,2026-05-15,16:05,Chocolate Milkshake,Beverage,Regular,3,Rp 32.000,Rp 14.000,Rp 96.000,cash
+TRX-BUR-20260515-0045,2026-05-15,18:06,BBQ Bacon Burger,Burger,Regular,3,Rp 52.000,Rp 24.000,Rp 156.000,card
+TRX-BUR-20260515-0045,2026-05-15,18:06,Cola,Beverage,Regular,3,Rp 12.000,Rp 4.000,Rp 36.000,card
+TRX-BUR-20260515-0046,2026-05-15,09:59,BBQ Bacon Burger,Burger,Regular,2,Rp 52.000,Rp 24.000,Rp 104.000,card
+TRX-BUR-20260515-0046,2026-05-15,09:59,Onion Rings,Side,Regular,3,Rp 20.000,Rp 8.000,Rp 60.000,card
+TRX-BUR-20260515-0047,2026-05-15,19:21,Classic Smash Burger,Burger,Regular,2,Rp 45.000,Rp 20.000,Rp 90.000,cash
+TRX-BUR-20260515-0047,2026-05-15,19:21,Regular Fries,Side,Regular,3,Rp 18.000,Rp 7.000,Rp 54.000,cash
+TRX-BUR-20260515-0048,2026-05-15,15:35,Truffle Cheese Burger,Burger,Regular,2,Rp 58.000,Rp 26.000,Rp 116.000,card
+TRX-BUR-20260515-0049,2026-05-15,18:19,Cola,Beverage,Regular,2,Rp 12.000,Rp 4.000,Rp 24.000,e-wallet
+TRX-BUR-20260515-0050,2026-05-15,09:26,Truffle Cheese Burger,Burger,Regular,1,Rp 58.000,Rp 26.000,Rp 58.000,card
+TRX-BUR-20260515-0050,2026-05-15,09:26,Vanilla Milkshake,Beverage,Regular,2,Rp 30.000,Rp 13.000,Rp 60.000,card
+TRX-BUR-20260515-0051,2026-05-15,13:37,Regular Fries,Side,Regular,1,Rp 18.000,Rp 7.000,Rp 18.000,cash
+TRX-BUR-20260515-0052,2026-05-15,18:28,Sweet Potato Fries,Side,Regular,2,Rp 22.000,Rp 9.000,Rp 44.000,card
+TRX-BUR-20260515-0052,2026-05-15,18:28,Chocolate Milkshake,Beverage,Regular,3,Rp 32.000,Rp 14.000,Rp 96.000,card
+TRX-BUR-20260516-0053,2026-05-16,11:26,Onion Rings,Side,Regular,3,Rp 20.000,Rp 8.000,Rp 60.000,e-wallet
+TRX-BUR-20260516-0053,2026-05-16,11:26,Regular Fries,Side,Regular,2,Rp 18.000,Rp 7.000,Rp 36.000,e-wallet
+TRX-BUR-20260516-0053,2026-05-16,11:26,Chocolate Milkshake,Beverage,Regular,3,Rp 32.000,Rp 14.000,Rp 96.000,e-wallet
+TRX-BUR-20260516-0054,2026-05-16,14:19,BBQ Bacon Burger,Burger,Regular,2,Rp 52.000,Rp 24.000,Rp 104.000,e-wallet
+TRX-BUR-20260516-0054,2026-05-16,14:19,Vanilla Milkshake,Beverage,Regular,2,Rp 30.000,Rp 13.000,Rp 60.000,e-wallet
+TRX-BUR-20260516-0055,2026-05-16,15:41,Truffle Cheese Burger,Burger,Regular,2,Rp 58.000,Rp 26.000,Rp 116.000,cash
+TRX-BUR-20260516-0055,2026-05-16,15:41,Regular Fries,Side,Regular,2,Rp 18.000,Rp 7.000,Rp 36.000,cash
+TRX-BUR-20260516-0055,2026-05-16,15:41,Classic Smash Burger,Burger,Regular,2,Rp 45.000,Rp 20.000,Rp 90.000,cash
+TRX-BUR-20260516-0056,2026-05-16,09:31,Crispy Chicken Burger,Burger,Regular,1,Rp 42.000,Rp 19.000,Rp 42.000,card
+TRX-BUR-20260516-0057,2026-05-16,09:00,Crispy Chicken Burger,Burger,Regular,3,Rp 42.000,Rp 19.000,Rp 126.000,card
+TRX-BUR-20260516-0057,2026-05-16,09:00,Vanilla Milkshake,Beverage,Regular,3,Rp 30.000,Rp 13.000,Rp 90.000,card
+TRX-BUR-20260516-0057,2026-05-16,09:00,Onion Rings,Side,Regular,2,Rp 20.000,Rp 8.000,Rp 40.000,card
+TRX-BUR-20260516-0058,2026-05-16,09:01,Classic Smash Burger,Burger,Regular,1,Rp 45.000,Rp 20.000,Rp 45.000,e-wallet
+TRX-BUR-20260516-0058,2026-05-16,09:01,BBQ Bacon Burger,Burger,Regular,3,Rp 52.000,Rp 24.000,Rp 156.000,e-wallet
+TRX-BUR-20260516-0059,2026-05-16,09:54,Cola,Beverage,Regular,2,Rp 12.000,Rp 4.000,Rp 24.000,e-wallet
+TRX-BUR-20260516-0060,2026-05-16,11:47,BBQ Bacon Burger,Burger,Regular,2,Rp 52.000,Rp 24.000,Rp 104.000,cash
+TRX-BUR-20260516-0061,2026-05-16,14:56,Vanilla Milkshake,Beverage,Regular,2,Rp 30.000,Rp 13.000,Rp 60.000,card
+TRX-BUR-20260516-0062,2026-05-16,08:13,Vanilla Milkshake,Beverage,Regular,1,Rp 30.000,Rp 13.000,Rp 30.000,cash
+TRX-BUR-20260516-0062,2026-05-16,08:13,Classic Smash Burger,Burger,Regular,3,Rp 45.000,Rp 20.000,Rp 135.000,cash
+TRX-BUR-20260516-0063,2026-05-16,21:26,Vanilla Milkshake,Beverage,Regular,3,Rp 30.000,Rp 13.000,Rp 90.000,cash
+TRX-BUR-20260516-0064,2026-05-16,17:22,Onion Rings,Side,Regular,1,Rp 20.000,Rp 8.000,Rp 20.000,e-wallet
+TRX-BUR-20260516-0065,2026-05-16,10:43,Crispy Chicken Burger,Burger,Regular,2,Rp 42.000,Rp 19.000,Rp 84.000,card
+TRX-BUR-20260516-0065,2026-05-16,10:43,Vanilla Milkshake,Beverage,Regular,2,Rp 30.000,Rp 13.000,Rp 60.000,card
+TRX-BUR-20260516-0066,2026-05-16,19:28,Chocolate Milkshake,Beverage,Regular,3,Rp 32.000,Rp 14.000,Rp 96.000,cash
+TRX-BUR-20260516-0066,2026-05-16,19:28,Cola,Beverage,Regular,3,Rp 12.000,Rp 4.000,Rp 36.000,cash
+TRX-BUR-20260516-0066,2026-05-16,19:28,Classic Smash Burger,Burger,Regular,1,Rp 45.000,Rp 20.000,Rp 45.000,cash
+TRX-BUR-20260516-0067,2026-05-16,14:38,Chocolate Milkshake,Beverage,Regular,2,Rp 32.000,Rp 14.000,Rp 64.000,cash
+TRX-BUR-20260516-0067,2026-05-16,14:38,Regular Fries,Side,Regular,1,Rp 18.000,Rp 7.000,Rp 18.000,cash
+TRX-BUR-20260516-0068,2026-05-16,20:56,Sweet Potato Fries,Side,Regular,3,Rp 22.000,Rp 9.000,Rp 66.000,card
+TRX-BUR-20260516-0068,2026-05-16,20:56,Regular Fries,Side,Regular,2,Rp 18.000,Rp 7.000,Rp 36.000,card
+TRX-BUR-20260516-0068,2026-05-16,20:56,Chocolate Milkshake,Beverage,Regular,3,Rp 32.000,Rp 14.000,Rp 96.000,card
+TRX-BUR-20260516-0069,2026-05-16,12:07,Sweet Potato Fries,Side,Regular,3,Rp 22.000,Rp 9.000,Rp 66.000,e-wallet
+TRX-BUR-20260516-0070,2026-05-16,20:20,Regular Fries,Side,Regular,1,Rp 18.000,Rp 7.000,Rp 18.000,card
+TRX-BUR-20260516-0071,2026-05-16,09:59,Crispy Chicken Burger,Burger,Regular,1,Rp 42.000,Rp 19.000,Rp 42.000,cash
+TRX-BUR-20260516-0071,2026-05-16,09:59,Vanilla Milkshake,Beverage,Regular,3,Rp 30.000,Rp 13.000,Rp 90.000,cash
+TRX-BUR-20260516-0072,2026-05-16,18:41,Crispy Chicken Burger,Burger,Regular,2,Rp 42.000,Rp 19.000,Rp 84.000,card
+TRX-BUR-20260516-0072,2026-05-16,18:41,Classic Smash Burger,Burger,Regular,1,Rp 45.000,Rp 20.000,Rp 45.000,card
+TRX-BUR-20260516-0073,2026-05-16,10:36,BBQ Bacon Burger,Burger,Regular,1,Rp 52.000,Rp 24.000,Rp 52.000,card
+TRX-BUR-20260516-0073,2026-05-16,10:36,Chocolate Milkshake,Beverage,Regular,1,Rp 32.000,Rp 14.000,Rp 32.000,card
+TRX-BUR-20260516-0073,2026-05-16,10:36,Cola,Beverage,Regular,2,Rp 12.000,Rp 4.000,Rp 24.000,card
+TRX-BUR-20260517-0074,2026-05-17,08:50,BBQ Bacon Burger,Burger,Regular,1,Rp 52.000,Rp 24.000,Rp 52.000,cash
+TRX-BUR-20260517-0074,2026-05-17,08:50,Chocolate Milkshake,Beverage,Regular,2,Rp 32.000,Rp 14.000,Rp 64.000,cash
+TRX-BUR-20260517-0075,2026-05-17,14:52,Sweet Potato Fries,Side,Regular,1,Rp 22.000,Rp 9.000,Rp 22.000,cash
+TRX-BUR-20260517-0075,2026-05-17,14:52,Classic Smash Burger,Burger,Regular,2,Rp 45.000,Rp 20.000,Rp 90.000,cash
+TRX-BUR-20260517-0076,2026-05-17,14:52,Classic Smash Burger,Burger,Regular,1,Rp 45.000,Rp 20.000,Rp 45.000,cash
+TRX-BUR-20260517-0077,2026-05-17,14:00,Regular Fries,Side,Regular,3,Rp 18.000,Rp 7.000,Rp 54.000,card
+TRX-BUR-20260517-0078,2026-05-17,15:43,Crispy Chicken Burger,Burger,Regular,1,Rp 42.000,Rp 19.000,Rp 42.000,e-wallet
+TRX-BUR-20260517-0079,2026-05-17,20:46,Chocolate Milkshake,Beverage,Regular,2,Rp 32.000,Rp 14.000,Rp 64.000,e-wallet
+TRX-BUR-20260517-0080,2026-05-17,08:50,Chocolate Milkshake,Beverage,Regular,1,Rp 32.000,Rp 14.000,Rp 32.000,cash
+TRX-BUR-20260517-0080,2026-05-17,08:50,Onion Rings,Side,Regular,3,Rp 20.000,Rp 8.000,Rp 60.000,cash
+TRX-BUR-20260517-0081,2026-05-17,09:56,Sweet Potato Fries,Side,Regular,3,Rp 22.000,Rp 9.000,Rp 66.000,cash
+TRX-BUR-20260517-0081,2026-05-17,09:56,Chocolate Milkshake,Beverage,Regular,2,Rp 32.000,Rp 14.000,Rp 64.000,cash
+TRX-BUR-20260517-0082,2026-05-17,15:03,Crispy Chicken Burger,Burger,Regular,3,Rp 42.000,Rp 19.000,Rp 126.000,cash
+TRX-BUR-20260517-0082,2026-05-17,15:03,Classic Smash Burger,Burger,Regular,1,Rp 45.000,Rp 20.000,Rp 45.000,cash
+TRX-BUR-20260517-0083,2026-05-17,10:11,Vanilla Milkshake,Beverage,Regular,2,Rp 30.000,Rp 13.000,Rp 60.000,card
+TRX-BUR-20260517-0083,2026-05-17,10:11,Classic Smash Burger,Burger,Regular,2,Rp 45.000,Rp 20.000,Rp 90.000,card
+TRX-BUR-20260517-0084,2026-05-17,16:41,Truffle Cheese Burger,Burger,Regular,1,Rp 58.000,Rp 26.000,Rp 58.000,cash
+TRX-BUR-20260517-0084,2026-05-17,16:41,Regular Fries,Side,Regular,1,Rp 18.000,Rp 7.000,Rp 18.000,cash
+TRX-BUR-20260517-0085,2026-05-17,11:02,Sweet Potato Fries,Side,Regular,2,Rp 22.000,Rp 9.000,Rp 44.000,cash
+TRX-BUR-20260517-0086,2026-05-17,17:59,Truffle Cheese Burger,Burger,Regular,2,Rp 58.000,Rp 26.000,Rp 116.000,cash
+TRX-BUR-20260517-0086,2026-05-17,17:59,BBQ Bacon Burger,Burger,Regular,2,Rp 52.000,Rp 24.000,Rp 104.000,cash
+TRX-BUR-20260517-0087,2026-05-17,15:34,Chocolate Milkshake,Beverage,Regular,1,Rp 32.000,Rp 14.000,Rp 32.000,card
+TRX-BUR-20260517-0087,2026-05-17,15:34,Sweet Potato Fries,Side,Regular,3,Rp 22.000,Rp 9.000,Rp 66.000,card
+TRX-BUR-20260517-0087,2026-05-17,15:34,Truffle Cheese Burger,Burger,Regular,1,Rp 58.000,Rp 26.000,Rp 58.000,card

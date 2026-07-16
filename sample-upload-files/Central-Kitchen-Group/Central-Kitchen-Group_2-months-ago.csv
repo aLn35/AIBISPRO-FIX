@@ -1,0 +1,190 @@
+Transaction_ID,Date,Time,Product,Category,Size,Quantity,Unit_Price_IDR,Cost_IDR,Total_IDR,Payment_Method
+TRX-CEN-20260511-0001,2026-05-11,09:57,Rice Box Set,Snack Box,Regular,3,Rp 35.000,Rp 16.000,Rp 105.000,qris
+TRX-CEN-20260511-0001,2026-05-11,09:57,Bulk Chicken Box,Bulk Order,Regular,3,Rp 320.000,Rp 150.000,Rp 960.000,qris
+TRX-CEN-20260511-0002,2026-05-11,15:01,Rice Box Set,Snack Box,Regular,2,Rp 35.000,Rp 16.000,Rp 70.000,card
+TRX-CEN-20260511-0002,2026-05-11,15:01,Catering Package B (50pax),Catering,Regular,1,Rp 2.800.000,Rp 1.500.000,Rp 2.800.000,card
+TRX-CEN-20260511-0003,2026-05-11,21:48,Catering Package B (50pax),Catering,Regular,1,Rp 2.800.000,Rp 1.500.000,Rp 2.800.000,card
+TRX-CEN-20260511-0003,2026-05-11,21:48,Bulk Chicken Box,Bulk Order,Regular,2,Rp 320.000,Rp 150.000,Rp 640.000,card
+TRX-CEN-20260511-0004,2026-05-11,20:02,Catering Package B (50pax),Catering,Regular,3,Rp 2.800.000,Rp 1.500.000,Rp 8.400.000,card
+TRX-CEN-20260511-0005,2026-05-11,18:31,Catering Package A (20pax),Catering,Regular,1,Rp 1.200.000,Rp 650.000,Rp 1.200.000,bank-transfer
+TRX-CEN-20260511-0005,2026-05-11,18:31,Frozen Meatball Pack,Private Label,Regular,2,Rp 65.000,Rp 30.000,Rp 130.000,bank-transfer
+TRX-CEN-20260511-0006,2026-05-11,10:00,Bulk Chicken Box,Bulk Order,Regular,3,Rp 320.000,Rp 150.000,Rp 960.000,bank-transfer
+TRX-CEN-20260511-0007,2026-05-11,08:04,Bulk Fried Rice Tray,Bulk Order,Regular,3,Rp 250.000,Rp 110.000,Rp 750.000,qris
+TRX-CEN-20260511-0008,2026-05-11,19:56,Catering Package B (50pax),Catering,Regular,3,Rp 2.800.000,Rp 1.500.000,Rp 8.400.000,bank-transfer
+TRX-CEN-20260511-0008,2026-05-11,19:56,Bulk Fried Rice Tray,Bulk Order,Regular,3,Rp 250.000,Rp 110.000,Rp 750.000,bank-transfer
+TRX-CEN-20260512-0009,2026-05-12,20:17,Catering Package A (20pax),Catering,Regular,2,Rp 1.200.000,Rp 650.000,Rp 2.400.000,qris
+TRX-CEN-20260512-0009,2026-05-12,20:17,Bulk Fried Rice Tray,Bulk Order,Regular,2,Rp 250.000,Rp 110.000,Rp 500.000,qris
+TRX-CEN-20260512-0010,2026-05-12,12:07,Catering Package A (20pax),Catering,Regular,2,Rp 1.200.000,Rp 650.000,Rp 2.400.000,card
+TRX-CEN-20260512-0010,2026-05-12,12:07,Private Label Sauce 1L,Private Label,Regular,3,Rp 45.000,Rp 18.000,Rp 135.000,card
+TRX-CEN-20260512-0010,2026-05-12,12:07,Bulk Chicken Box,Bulk Order,Regular,1,Rp 320.000,Rp 150.000,Rp 320.000,card
+TRX-CEN-20260512-0011,2026-05-12,09:59,Catering Package B (50pax),Catering,Regular,1,Rp 2.800.000,Rp 1.500.000,Rp 2.800.000,bank-transfer
+TRX-CEN-20260512-0012,2026-05-12,11:37,Catering Package A (20pax),Catering,Regular,1,Rp 1.200.000,Rp 650.000,Rp 1.200.000,qris
+TRX-CEN-20260512-0012,2026-05-12,11:37,Bulk Fried Rice Tray,Bulk Order,Regular,3,Rp 250.000,Rp 110.000,Rp 750.000,qris
+TRX-CEN-20260512-0013,2026-05-12,12:52,Catering Package A (20pax),Catering,Regular,3,Rp 1.200.000,Rp 650.000,Rp 3.600.000,qris
+TRX-CEN-20260512-0014,2026-05-12,09:41,Catering Package A (20pax),Catering,Regular,1,Rp 1.200.000,Rp 650.000,Rp 1.200.000,bank-transfer
+TRX-CEN-20260512-0014,2026-05-12,09:41,Snack Box Corporate,Snack Box,Regular,2,Rp 85.000,Rp 38.000,Rp 170.000,bank-transfer
+TRX-CEN-20260512-0015,2026-05-12,10:37,Frozen Meatball Pack,Private Label,Regular,2,Rp 65.000,Rp 30.000,Rp 130.000,bank-transfer
+TRX-CEN-20260512-0015,2026-05-12,10:37,Rice Box Set,Snack Box,Regular,3,Rp 35.000,Rp 16.000,Rp 105.000,bank-transfer
+TRX-CEN-20260512-0015,2026-05-12,10:37,Catering Package B (50pax),Catering,Regular,2,Rp 2.800.000,Rp 1.500.000,Rp 5.600.000,bank-transfer
+TRX-CEN-20260512-0016,2026-05-12,13:08,Snack Box Corporate,Snack Box,Regular,2,Rp 85.000,Rp 38.000,Rp 170.000,card
+TRX-CEN-20260512-0016,2026-05-12,13:08,Catering Package A (20pax),Catering,Regular,1,Rp 1.200.000,Rp 650.000,Rp 1.200.000,card
+TRX-CEN-20260512-0016,2026-05-12,13:08,Bulk Fried Rice Tray,Bulk Order,Regular,3,Rp 250.000,Rp 110.000,Rp 750.000,card
+TRX-CEN-20260512-0017,2026-05-12,12:16,Bulk Fried Rice Tray,Bulk Order,Regular,3,Rp 250.000,Rp 110.000,Rp 750.000,card
+TRX-CEN-20260512-0017,2026-05-12,12:16,Catering Package B (50pax),Catering,Regular,2,Rp 2.800.000,Rp 1.500.000,Rp 5.600.000,card
+TRX-CEN-20260512-0018,2026-05-12,21:07,Bulk Fried Rice Tray,Bulk Order,Regular,3,Rp 250.000,Rp 110.000,Rp 750.000,bank-transfer
+TRX-CEN-20260512-0019,2026-05-12,21:01,Private Label Sauce 1L,Private Label,Regular,1,Rp 45.000,Rp 18.000,Rp 45.000,bank-transfer
+TRX-CEN-20260512-0019,2026-05-12,21:01,Snack Box Corporate,Snack Box,Regular,1,Rp 85.000,Rp 38.000,Rp 85.000,bank-transfer
+TRX-CEN-20260513-0020,2026-05-13,08:38,Bulk Chicken Box,Bulk Order,Regular,2,Rp 320.000,Rp 150.000,Rp 640.000,card
+TRX-CEN-20260513-0020,2026-05-13,08:38,Bulk Fried Rice Tray,Bulk Order,Regular,2,Rp 250.000,Rp 110.000,Rp 500.000,card
+TRX-CEN-20260513-0021,2026-05-13,18:46,Bulk Chicken Box,Bulk Order,Regular,1,Rp 320.000,Rp 150.000,Rp 320.000,qris
+TRX-CEN-20260513-0022,2026-05-13,11:07,Rice Box Set,Snack Box,Regular,2,Rp 35.000,Rp 16.000,Rp 70.000,bank-transfer
+TRX-CEN-20260513-0023,2026-05-13,08:18,Snack Box Corporate,Snack Box,Regular,1,Rp 85.000,Rp 38.000,Rp 85.000,bank-transfer
+TRX-CEN-20260513-0023,2026-05-13,08:18,Private Label Sauce 1L,Private Label,Regular,3,Rp 45.000,Rp 18.000,Rp 135.000,bank-transfer
+TRX-CEN-20260513-0024,2026-05-13,12:25,Private Label Sauce 1L,Private Label,Regular,1,Rp 45.000,Rp 18.000,Rp 45.000,bank-transfer
+TRX-CEN-20260513-0024,2026-05-13,12:25,Bulk Fried Rice Tray,Bulk Order,Regular,3,Rp 250.000,Rp 110.000,Rp 750.000,bank-transfer
+TRX-CEN-20260513-0025,2026-05-13,08:09,Bulk Fried Rice Tray,Bulk Order,Regular,1,Rp 250.000,Rp 110.000,Rp 250.000,bank-transfer
+TRX-CEN-20260513-0025,2026-05-13,08:09,Bulk Chicken Box,Bulk Order,Regular,2,Rp 320.000,Rp 150.000,Rp 640.000,bank-transfer
+TRX-CEN-20260513-0026,2026-05-13,11:12,Catering Package B (50pax),Catering,Regular,2,Rp 2.800.000,Rp 1.500.000,Rp 5.600.000,card
+TRX-CEN-20260513-0026,2026-05-13,11:12,Snack Box Corporate,Snack Box,Regular,1,Rp 85.000,Rp 38.000,Rp 85.000,card
+TRX-CEN-20260513-0027,2026-05-13,21:35,Catering Package B (50pax),Catering,Regular,3,Rp 2.800.000,Rp 1.500.000,Rp 8.400.000,bank-transfer
+TRX-CEN-20260513-0028,2026-05-13,14:12,Bulk Chicken Box,Bulk Order,Regular,2,Rp 320.000,Rp 150.000,Rp 640.000,bank-transfer
+TRX-CEN-20260513-0029,2026-05-13,18:09,Bulk Fried Rice Tray,Bulk Order,Regular,3,Rp 250.000,Rp 110.000,Rp 750.000,bank-transfer
+TRX-CEN-20260513-0030,2026-05-13,12:41,Frozen Meatball Pack,Private Label,Regular,1,Rp 65.000,Rp 30.000,Rp 65.000,card
+TRX-CEN-20260513-0030,2026-05-13,12:41,Private Label Sauce 1L,Private Label,Regular,2,Rp 45.000,Rp 18.000,Rp 90.000,card
+TRX-CEN-20260513-0031,2026-05-13,20:20,Snack Box Corporate,Snack Box,Regular,3,Rp 85.000,Rp 38.000,Rp 255.000,bank-transfer
+TRX-CEN-20260513-0031,2026-05-13,20:20,Frozen Meatball Pack,Private Label,Regular,1,Rp 65.000,Rp 30.000,Rp 65.000,bank-transfer
+TRX-CEN-20260513-0032,2026-05-13,08:39,Bulk Fried Rice Tray,Bulk Order,Regular,1,Rp 250.000,Rp 110.000,Rp 250.000,qris
+TRX-CEN-20260513-0032,2026-05-13,08:39,Bulk Chicken Box,Bulk Order,Regular,1,Rp 320.000,Rp 150.000,Rp 320.000,qris
+TRX-CEN-20260513-0033,2026-05-13,20:04,Rice Box Set,Snack Box,Regular,1,Rp 35.000,Rp 16.000,Rp 35.000,card
+TRX-CEN-20260513-0033,2026-05-13,20:04,Bulk Chicken Box,Bulk Order,Regular,3,Rp 320.000,Rp 150.000,Rp 960.000,card
+TRX-CEN-20260513-0033,2026-05-13,20:04,Catering Package B (50pax),Catering,Regular,3,Rp 2.800.000,Rp 1.500.000,Rp 8.400.000,card
+TRX-CEN-20260513-0034,2026-05-13,12:03,Bulk Fried Rice Tray,Bulk Order,Regular,3,Rp 250.000,Rp 110.000,Rp 750.000,bank-transfer
+TRX-CEN-20260513-0034,2026-05-13,12:03,Frozen Meatball Pack,Private Label,Regular,3,Rp 65.000,Rp 30.000,Rp 195.000,bank-transfer
+TRX-CEN-20260513-0034,2026-05-13,12:03,Bulk Chicken Box,Bulk Order,Regular,2,Rp 320.000,Rp 150.000,Rp 640.000,bank-transfer
+TRX-CEN-20260514-0035,2026-05-14,11:54,Bulk Chicken Box,Bulk Order,Regular,3,Rp 320.000,Rp 150.000,Rp 960.000,card
+TRX-CEN-20260514-0036,2026-05-14,18:26,Bulk Fried Rice Tray,Bulk Order,Regular,1,Rp 250.000,Rp 110.000,Rp 250.000,bank-transfer
+TRX-CEN-20260514-0037,2026-05-14,16:40,Snack Box Corporate,Snack Box,Regular,1,Rp 85.000,Rp 38.000,Rp 85.000,bank-transfer
+TRX-CEN-20260514-0037,2026-05-14,16:40,Frozen Meatball Pack,Private Label,Regular,2,Rp 65.000,Rp 30.000,Rp 130.000,bank-transfer
+TRX-CEN-20260514-0038,2026-05-14,16:26,Bulk Chicken Box,Bulk Order,Regular,2,Rp 320.000,Rp 150.000,Rp 640.000,bank-transfer
+TRX-CEN-20260514-0038,2026-05-14,16:26,Bulk Fried Rice Tray,Bulk Order,Regular,1,Rp 250.000,Rp 110.000,Rp 250.000,bank-transfer
+TRX-CEN-20260514-0038,2026-05-14,16:26,Snack Box Corporate,Snack Box,Regular,1,Rp 85.000,Rp 38.000,Rp 85.000,bank-transfer
+TRX-CEN-20260514-0039,2026-05-14,17:27,Private Label Sauce 1L,Private Label,Regular,3,Rp 45.000,Rp 18.000,Rp 135.000,qris
+TRX-CEN-20260514-0039,2026-05-14,17:27,Bulk Fried Rice Tray,Bulk Order,Regular,3,Rp 250.000,Rp 110.000,Rp 750.000,qris
+TRX-CEN-20260514-0040,2026-05-14,08:41,Bulk Fried Rice Tray,Bulk Order,Regular,1,Rp 250.000,Rp 110.000,Rp 250.000,card
+TRX-CEN-20260514-0040,2026-05-14,08:41,Catering Package B (50pax),Catering,Regular,2,Rp 2.800.000,Rp 1.500.000,Rp 5.600.000,card
+TRX-CEN-20260514-0041,2026-05-14,19:43,Catering Package B (50pax),Catering,Regular,3,Rp 2.800.000,Rp 1.500.000,Rp 8.400.000,bank-transfer
+TRX-CEN-20260514-0041,2026-05-14,19:43,Private Label Sauce 1L,Private Label,Regular,2,Rp 45.000,Rp 18.000,Rp 90.000,bank-transfer
+TRX-CEN-20260514-0041,2026-05-14,19:43,Snack Box Corporate,Snack Box,Regular,1,Rp 85.000,Rp 38.000,Rp 85.000,bank-transfer
+TRX-CEN-20260514-0042,2026-05-14,21:27,Snack Box Corporate,Snack Box,Regular,3,Rp 85.000,Rp 38.000,Rp 255.000,qris
+TRX-CEN-20260514-0043,2026-05-14,17:24,Bulk Fried Rice Tray,Bulk Order,Regular,3,Rp 250.000,Rp 110.000,Rp 750.000,bank-transfer
+TRX-CEN-20260514-0043,2026-05-14,17:24,Private Label Sauce 1L,Private Label,Regular,1,Rp 45.000,Rp 18.000,Rp 45.000,bank-transfer
+TRX-CEN-20260514-0044,2026-05-14,10:10,Bulk Chicken Box,Bulk Order,Regular,2,Rp 320.000,Rp 150.000,Rp 640.000,qris
+TRX-CEN-20260514-0044,2026-05-14,10:10,Private Label Sauce 1L,Private Label,Regular,2,Rp 45.000,Rp 18.000,Rp 90.000,qris
+TRX-CEN-20260514-0044,2026-05-14,10:10,Snack Box Corporate,Snack Box,Regular,3,Rp 85.000,Rp 38.000,Rp 255.000,qris
+TRX-CEN-20260514-0045,2026-05-14,13:02,Bulk Chicken Box,Bulk Order,Regular,1,Rp 320.000,Rp 150.000,Rp 320.000,bank-transfer
+TRX-CEN-20260514-0045,2026-05-14,13:02,Catering Package A (20pax),Catering,Regular,1,Rp 1.200.000,Rp 650.000,Rp 1.200.000,bank-transfer
+TRX-CEN-20260514-0045,2026-05-14,13:02,Frozen Meatball Pack,Private Label,Regular,2,Rp 65.000,Rp 30.000,Rp 130.000,bank-transfer
+TRX-CEN-20260514-0046,2026-05-14,10:30,Bulk Fried Rice Tray,Bulk Order,Regular,2,Rp 250.000,Rp 110.000,Rp 500.000,bank-transfer
+TRX-CEN-20260514-0046,2026-05-14,10:30,Snack Box Corporate,Snack Box,Regular,3,Rp 85.000,Rp 38.000,Rp 255.000,bank-transfer
+TRX-CEN-20260514-0047,2026-05-14,09:13,Private Label Sauce 1L,Private Label,Regular,2,Rp 45.000,Rp 18.000,Rp 90.000,bank-transfer
+TRX-CEN-20260514-0047,2026-05-14,09:13,Bulk Fried Rice Tray,Bulk Order,Regular,1,Rp 250.000,Rp 110.000,Rp 250.000,bank-transfer
+TRX-CEN-20260514-0048,2026-05-14,11:01,Private Label Sauce 1L,Private Label,Regular,3,Rp 45.000,Rp 18.000,Rp 135.000,bank-transfer
+TRX-CEN-20260514-0049,2026-05-14,17:48,Bulk Fried Rice Tray,Bulk Order,Regular,1,Rp 250.000,Rp 110.000,Rp 250.000,bank-transfer
+TRX-CEN-20260514-0049,2026-05-14,17:48,Catering Package B (50pax),Catering,Regular,1,Rp 2.800.000,Rp 1.500.000,Rp 2.800.000,bank-transfer
+TRX-CEN-20260515-0050,2026-05-15,17:29,Private Label Sauce 1L,Private Label,Regular,1,Rp 45.000,Rp 18.000,Rp 45.000,card
+TRX-CEN-20260515-0051,2026-05-15,19:57,Snack Box Corporate,Snack Box,Regular,1,Rp 85.000,Rp 38.000,Rp 85.000,qris
+TRX-CEN-20260515-0051,2026-05-15,19:57,Frozen Meatball Pack,Private Label,Regular,1,Rp 65.000,Rp 30.000,Rp 65.000,qris
+TRX-CEN-20260515-0052,2026-05-15,20:56,Catering Package A (20pax),Catering,Regular,3,Rp 1.200.000,Rp 650.000,Rp 3.600.000,card
+TRX-CEN-20260515-0052,2026-05-15,20:56,Private Label Sauce 1L,Private Label,Regular,2,Rp 45.000,Rp 18.000,Rp 90.000,card
+TRX-CEN-20260515-0052,2026-05-15,20:56,Bulk Fried Rice Tray,Bulk Order,Regular,2,Rp 250.000,Rp 110.000,Rp 500.000,card
+TRX-CEN-20260515-0053,2026-05-15,12:31,Snack Box Corporate,Snack Box,Regular,2,Rp 85.000,Rp 38.000,Rp 170.000,qris
+TRX-CEN-20260515-0053,2026-05-15,12:31,Catering Package A (20pax),Catering,Regular,1,Rp 1.200.000,Rp 650.000,Rp 1.200.000,qris
+TRX-CEN-20260515-0054,2026-05-15,16:55,Bulk Chicken Box,Bulk Order,Regular,2,Rp 320.000,Rp 150.000,Rp 640.000,bank-transfer
+TRX-CEN-20260515-0055,2026-05-15,12:36,Catering Package A (20pax),Catering,Regular,3,Rp 1.200.000,Rp 650.000,Rp 3.600.000,bank-transfer
+TRX-CEN-20260515-0056,2026-05-15,15:03,Private Label Sauce 1L,Private Label,Regular,1,Rp 45.000,Rp 18.000,Rp 45.000,qris
+TRX-CEN-20260515-0057,2026-05-15,08:35,Snack Box Corporate,Snack Box,Regular,3,Rp 85.000,Rp 38.000,Rp 255.000,bank-transfer
+TRX-CEN-20260515-0057,2026-05-15,08:35,Catering Package B (50pax),Catering,Regular,3,Rp 2.800.000,Rp 1.500.000,Rp 8.400.000,bank-transfer
+TRX-CEN-20260515-0058,2026-05-15,15:58,Snack Box Corporate,Snack Box,Regular,3,Rp 85.000,Rp 38.000,Rp 255.000,qris
+TRX-CEN-20260515-0058,2026-05-15,15:58,Bulk Chicken Box,Bulk Order,Regular,2,Rp 320.000,Rp 150.000,Rp 640.000,qris
+TRX-CEN-20260515-0059,2026-05-15,18:15,Catering Package B (50pax),Catering,Regular,2,Rp 2.800.000,Rp 1.500.000,Rp 5.600.000,card
+TRX-CEN-20260515-0059,2026-05-15,18:15,Private Label Sauce 1L,Private Label,Regular,1,Rp 45.000,Rp 18.000,Rp 45.000,card
+TRX-CEN-20260515-0059,2026-05-15,18:15,Catering Package A (20pax),Catering,Regular,2,Rp 1.200.000,Rp 650.000,Rp 2.400.000,card
+TRX-CEN-20260515-0060,2026-05-15,15:25,Snack Box Corporate,Snack Box,Regular,1,Rp 85.000,Rp 38.000,Rp 85.000,bank-transfer
+TRX-CEN-20260516-0061,2026-05-16,17:27,Bulk Chicken Box,Bulk Order,Regular,1,Rp 320.000,Rp 150.000,Rp 320.000,bank-transfer
+TRX-CEN-20260516-0061,2026-05-16,17:27,Catering Package B (50pax),Catering,Regular,1,Rp 2.800.000,Rp 1.500.000,Rp 2.800.000,bank-transfer
+TRX-CEN-20260516-0062,2026-05-16,16:29,Private Label Sauce 1L,Private Label,Regular,2,Rp 45.000,Rp 18.000,Rp 90.000,bank-transfer
+TRX-CEN-20260516-0062,2026-05-16,16:29,Bulk Fried Rice Tray,Bulk Order,Regular,1,Rp 250.000,Rp 110.000,Rp 250.000,bank-transfer
+TRX-CEN-20260516-0063,2026-05-16,21:40,Catering Package A (20pax),Catering,Regular,3,Rp 1.200.000,Rp 650.000,Rp 3.600.000,qris
+TRX-CEN-20260516-0063,2026-05-16,21:40,Catering Package B (50pax),Catering,Regular,3,Rp 2.800.000,Rp 1.500.000,Rp 8.400.000,qris
+TRX-CEN-20260516-0064,2026-05-16,21:45,Private Label Sauce 1L,Private Label,Regular,2,Rp 45.000,Rp 18.000,Rp 90.000,card
+TRX-CEN-20260516-0064,2026-05-16,21:45,Frozen Meatball Pack,Private Label,Regular,2,Rp 65.000,Rp 30.000,Rp 130.000,card
+TRX-CEN-20260516-0065,2026-05-16,08:53,Snack Box Corporate,Snack Box,Regular,2,Rp 85.000,Rp 38.000,Rp 170.000,qris
+TRX-CEN-20260516-0066,2026-05-16,15:47,Frozen Meatball Pack,Private Label,Regular,1,Rp 65.000,Rp 30.000,Rp 65.000,bank-transfer
+TRX-CEN-20260516-0067,2026-05-16,08:22,Bulk Fried Rice Tray,Bulk Order,Regular,3,Rp 250.000,Rp 110.000,Rp 750.000,card
+TRX-CEN-20260516-0067,2026-05-16,08:22,Private Label Sauce 1L,Private Label,Regular,1,Rp 45.000,Rp 18.000,Rp 45.000,card
+TRX-CEN-20260516-0068,2026-05-16,18:36,Catering Package B (50pax),Catering,Regular,3,Rp 2.800.000,Rp 1.500.000,Rp 8.400.000,bank-transfer
+TRX-CEN-20260516-0069,2026-05-16,18:52,Bulk Chicken Box,Bulk Order,Regular,1,Rp 320.000,Rp 150.000,Rp 320.000,card
+TRX-CEN-20260516-0070,2026-05-16,08:10,Bulk Chicken Box,Bulk Order,Regular,3,Rp 320.000,Rp 150.000,Rp 960.000,qris
+TRX-CEN-20260516-0070,2026-05-16,08:10,Bulk Fried Rice Tray,Bulk Order,Regular,2,Rp 250.000,Rp 110.000,Rp 500.000,qris
+TRX-CEN-20260516-0070,2026-05-16,08:10,Catering Package B (50pax),Catering,Regular,1,Rp 2.800.000,Rp 1.500.000,Rp 2.800.000,qris
+TRX-CEN-20260516-0071,2026-05-16,13:07,Bulk Chicken Box,Bulk Order,Regular,1,Rp 320.000,Rp 150.000,Rp 320.000,qris
+TRX-CEN-20260516-0071,2026-05-16,13:07,Rice Box Set,Snack Box,Regular,2,Rp 35.000,Rp 16.000,Rp 70.000,qris
+TRX-CEN-20260516-0072,2026-05-16,09:40,Snack Box Corporate,Snack Box,Regular,3,Rp 85.000,Rp 38.000,Rp 255.000,qris
+TRX-CEN-20260516-0073,2026-05-16,16:27,Private Label Sauce 1L,Private Label,Regular,1,Rp 45.000,Rp 18.000,Rp 45.000,qris
+TRX-CEN-20260516-0073,2026-05-16,16:27,Frozen Meatball Pack,Private Label,Regular,1,Rp 65.000,Rp 30.000,Rp 65.000,qris
+TRX-CEN-20260516-0074,2026-05-16,13:36,Catering Package B (50pax),Catering,Regular,2,Rp 2.800.000,Rp 1.500.000,Rp 5.600.000,bank-transfer
+TRX-CEN-20260516-0074,2026-05-16,13:36,Private Label Sauce 1L,Private Label,Regular,3,Rp 45.000,Rp 18.000,Rp 135.000,bank-transfer
+TRX-CEN-20260516-0075,2026-05-16,15:50,Bulk Chicken Box,Bulk Order,Regular,3,Rp 320.000,Rp 150.000,Rp 960.000,qris
+TRX-CEN-20260516-0075,2026-05-16,15:50,Catering Package B (50pax),Catering,Regular,3,Rp 2.800.000,Rp 1.500.000,Rp 8.400.000,qris
+TRX-CEN-20260516-0075,2026-05-16,15:50,Private Label Sauce 1L,Private Label,Regular,3,Rp 45.000,Rp 18.000,Rp 135.000,qris
+TRX-CEN-20260516-0076,2026-05-16,08:29,Rice Box Set,Snack Box,Regular,3,Rp 35.000,Rp 16.000,Rp 105.000,qris
+TRX-CEN-20260516-0076,2026-05-16,08:29,Bulk Fried Rice Tray,Bulk Order,Regular,1,Rp 250.000,Rp 110.000,Rp 250.000,qris
+TRX-CEN-20260516-0077,2026-05-16,17:12,Frozen Meatball Pack,Private Label,Regular,1,Rp 65.000,Rp 30.000,Rp 65.000,bank-transfer
+TRX-CEN-20260516-0077,2026-05-16,17:12,Snack Box Corporate,Snack Box,Regular,2,Rp 85.000,Rp 38.000,Rp 170.000,bank-transfer
+TRX-CEN-20260516-0078,2026-05-16,08:12,Catering Package B (50pax),Catering,Regular,2,Rp 2.800.000,Rp 1.500.000,Rp 5.600.000,qris
+TRX-CEN-20260516-0079,2026-05-16,11:14,Rice Box Set,Snack Box,Regular,3,Rp 35.000,Rp 16.000,Rp 105.000,qris
+TRX-CEN-20260516-0079,2026-05-16,11:14,Private Label Sauce 1L,Private Label,Regular,2,Rp 45.000,Rp 18.000,Rp 90.000,qris
+TRX-CEN-20260516-0080,2026-05-16,12:34,Catering Package A (20pax),Catering,Regular,1,Rp 1.200.000,Rp 650.000,Rp 1.200.000,card
+TRX-CEN-20260516-0080,2026-05-16,12:34,Private Label Sauce 1L,Private Label,Regular,3,Rp 45.000,Rp 18.000,Rp 135.000,card
+TRX-CEN-20260516-0081,2026-05-16,19:40,Catering Package B (50pax),Catering,Regular,3,Rp 2.800.000,Rp 1.500.000,Rp 8.400.000,card
+TRX-CEN-20260516-0081,2026-05-16,19:40,Catering Package A (20pax),Catering,Regular,2,Rp 1.200.000,Rp 650.000,Rp 2.400.000,card
+TRX-CEN-20260516-0081,2026-05-16,19:40,Bulk Fried Rice Tray,Bulk Order,Regular,3,Rp 250.000,Rp 110.000,Rp 750.000,card
+TRX-CEN-20260517-0082,2026-05-17,10:49,Bulk Chicken Box,Bulk Order,Regular,2,Rp 320.000,Rp 150.000,Rp 640.000,qris
+TRX-CEN-20260517-0082,2026-05-17,10:49,Frozen Meatball Pack,Private Label,Regular,2,Rp 65.000,Rp 30.000,Rp 130.000,qris
+TRX-CEN-20260517-0083,2026-05-17,10:47,Snack Box Corporate,Snack Box,Regular,3,Rp 85.000,Rp 38.000,Rp 255.000,qris
+TRX-CEN-20260517-0083,2026-05-17,10:47,Bulk Fried Rice Tray,Bulk Order,Regular,3,Rp 250.000,Rp 110.000,Rp 750.000,qris
+TRX-CEN-20260517-0083,2026-05-17,10:47,Frozen Meatball Pack,Private Label,Regular,2,Rp 65.000,Rp 30.000,Rp 130.000,qris
+TRX-CEN-20260517-0084,2026-05-17,15:07,Rice Box Set,Snack Box,Regular,2,Rp 35.000,Rp 16.000,Rp 70.000,qris
+TRX-CEN-20260517-0085,2026-05-17,14:59,Snack Box Corporate,Snack Box,Regular,1,Rp 85.000,Rp 38.000,Rp 85.000,bank-transfer
+TRX-CEN-20260517-0085,2026-05-17,14:59,Private Label Sauce 1L,Private Label,Regular,1,Rp 45.000,Rp 18.000,Rp 45.000,bank-transfer
+TRX-CEN-20260517-0086,2026-05-17,17:51,Private Label Sauce 1L,Private Label,Regular,1,Rp 45.000,Rp 18.000,Rp 45.000,bank-transfer
+TRX-CEN-20260517-0086,2026-05-17,17:51,Bulk Fried Rice Tray,Bulk Order,Regular,3,Rp 250.000,Rp 110.000,Rp 750.000,bank-transfer
+TRX-CEN-20260517-0086,2026-05-17,17:51,Catering Package B (50pax),Catering,Regular,2,Rp 2.800.000,Rp 1.500.000,Rp 5.600.000,bank-transfer
+TRX-CEN-20260517-0087,2026-05-17,14:04,Rice Box Set,Snack Box,Regular,3,Rp 35.000,Rp 16.000,Rp 105.000,card
+TRX-CEN-20260517-0088,2026-05-17,20:03,Catering Package A (20pax),Catering,Regular,1,Rp 1.200.000,Rp 650.000,Rp 1.200.000,card
+TRX-CEN-20260517-0088,2026-05-17,20:03,Bulk Fried Rice Tray,Bulk Order,Regular,1,Rp 250.000,Rp 110.000,Rp 250.000,card
+TRX-CEN-20260517-0089,2026-05-17,08:09,Catering Package B (50pax),Catering,Regular,1,Rp 2.800.000,Rp 1.500.000,Rp 2.800.000,card
+TRX-CEN-20260517-0089,2026-05-17,08:09,Frozen Meatball Pack,Private Label,Regular,1,Rp 65.000,Rp 30.000,Rp 65.000,card
+TRX-CEN-20260517-0090,2026-05-17,08:02,Bulk Fried Rice Tray,Bulk Order,Regular,2,Rp 250.000,Rp 110.000,Rp 500.000,bank-transfer
+TRX-CEN-20260517-0090,2026-05-17,08:02,Rice Box Set,Snack Box,Regular,2,Rp 35.000,Rp 16.000,Rp 70.000,bank-transfer
+TRX-CEN-20260517-0090,2026-05-17,08:02,Frozen Meatball Pack,Private Label,Regular,1,Rp 65.000,Rp 30.000,Rp 65.000,bank-transfer
+TRX-CEN-20260517-0091,2026-05-17,21:28,Bulk Chicken Box,Bulk Order,Regular,2,Rp 320.000,Rp 150.000,Rp 640.000,bank-transfer
+TRX-CEN-20260517-0091,2026-05-17,21:28,Rice Box Set,Snack Box,Regular,1,Rp 35.000,Rp 16.000,Rp 35.000,bank-transfer
+TRX-CEN-20260517-0092,2026-05-17,15:22,Private Label Sauce 1L,Private Label,Regular,2,Rp 45.000,Rp 18.000,Rp 90.000,qris
+TRX-CEN-20260517-0093,2026-05-17,09:04,Bulk Chicken Box,Bulk Order,Regular,2,Rp 320.000,Rp 150.000,Rp 640.000,qris
+TRX-CEN-20260517-0093,2026-05-17,09:04,Bulk Fried Rice Tray,Bulk Order,Regular,3,Rp 250.000,Rp 110.000,Rp 750.000,qris
+TRX-CEN-20260517-0094,2026-05-17,18:11,Catering Package A (20pax),Catering,Regular,1,Rp 1.200.000,Rp 650.000,Rp 1.200.000,qris
+TRX-CEN-20260517-0094,2026-05-17,18:11,Bulk Fried Rice Tray,Bulk Order,Regular,1,Rp 250.000,Rp 110.000,Rp 250.000,qris
+TRX-CEN-20260517-0095,2026-05-17,15:59,Bulk Fried Rice Tray,Bulk Order,Regular,1,Rp 250.000,Rp 110.000,Rp 250.000,bank-transfer
+TRX-CEN-20260517-0096,2026-05-17,09:23,Bulk Chicken Box,Bulk Order,Regular,2,Rp 320.000,Rp 150.000,Rp 640.000,qris
+TRX-CEN-20260517-0096,2026-05-17,09:23,Bulk Fried Rice Tray,Bulk Order,Regular,3,Rp 250.000,Rp 110.000,Rp 750.000,qris
+TRX-CEN-20260517-0097,2026-05-17,18:49,Snack Box Corporate,Snack Box,Regular,2,Rp 85.000,Rp 38.000,Rp 170.000,card
+TRX-CEN-20260517-0098,2026-05-17,14:19,Snack Box Corporate,Snack Box,Regular,1,Rp 85.000,Rp 38.000,Rp 85.000,qris
+TRX-CEN-20260517-0099,2026-05-17,17:03,Rice Box Set,Snack Box,Regular,2,Rp 35.000,Rp 16.000,Rp 70.000,bank-transfer
+TRX-CEN-20260517-0099,2026-05-17,17:03,Frozen Meatball Pack,Private Label,Regular,3,Rp 65.000,Rp 30.000,Rp 195.000,bank-transfer
+TRX-CEN-20260517-0099,2026-05-17,17:03,Private Label Sauce 1L,Private Label,Regular,2,Rp 45.000,Rp 18.000,Rp 90.000,bank-transfer
+TRX-CEN-20260517-0100,2026-05-17,13:12,Snack Box Corporate,Snack Box,Regular,2,Rp 85.000,Rp 38.000,Rp 170.000,card
+TRX-CEN-20260517-0100,2026-05-17,13:12,Bulk Fried Rice Tray,Bulk Order,Regular,1,Rp 250.000,Rp 110.000,Rp 250.000,card
+TRX-CEN-20260517-0100,2026-05-17,13:12,Bulk Chicken Box,Bulk Order,Regular,1,Rp 320.000,Rp 150.000,Rp 320.000,card
+TRX-CEN-20260517-0101,2026-05-17,11:42,Snack Box Corporate,Snack Box,Regular,2,Rp 85.000,Rp 38.000,Rp 170.000,bank-transfer
+TRX-CEN-20260517-0101,2026-05-17,11:42,Bulk Fried Rice Tray,Bulk Order,Regular,2,Rp 250.000,Rp 110.000,Rp 500.000,bank-transfer
