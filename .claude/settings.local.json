@@ -2,7 +2,9 @@
   "permissions": {
     "allow": [
       "Skill(run)",
-      "Skill(run:*)"
+      "Skill(run:*)",
+      "Bash(netstat -ano)",
+      "PowerShell(Start-Process \"C:\\\\Program Files\\\\Docker\\\\Docker\\\\Docker Desktop.exe\")"
     ]
   }
 }

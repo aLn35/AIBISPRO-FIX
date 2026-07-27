@@ -29,6 +29,8 @@ model companies {
   chat_sessions        chat_sessions[]
   user_company_access  user_company_access[]
   inbox_messages       inbox_messages[]
+  restock_requests     restock_requests[]
+  bundle_proposals     bundle_proposals[]
 }
 
 // Cascading access grants: MAINTAINANCE grants companies to OWNER, OWNER grants a subset
@@ -162,17 +164,70 @@ model inventory_logs {
 }
 
 model product_sizes {
-  id             Int              @id @default(autoincrement())
-  product_id     Int
-  size_name      String
-  selling_price  Float
-  cost_price     Float?
-  current_stock  Int?             @default(0)
-  minimum_stock  Int?             @default(10)
-  created_at     DateTime?        @default(now())
-  inventory_logs inventory_logs[]
-  products       products         @relation(fields: [product_id], references: [id], onDelete: Cascade, onUpdate: NoAction)
-  sale_items     sale_items[]
+  id                Int                @id @default(autoincrement())
+  product_id        Int
+  size_name         String
+  selling_price     Float
+  cost_price        Float?
+  current_stock     Int?               @default(0)
+  minimum_stock     Int?               @default(10)
+  created_at        DateTime?          @default(now())
+  inventory_logs    inventory_logs[]
+  products          products           @relation(fields: [product_id], references: [id], onDelete: Cascade, onUpdate: NoAction)
+  sale_items        sale_items[]
+  restock_requests  restock_requests[]
+}
+
+// Unified restock/purchase-order approval workflow, bidirectional between OWNER and MANAGER:
+// initiated_by_role records who created it, and the OTHER role is the one who reviews it
+// (MANAGER creates -> OWNER reviews; OWNER creates -> MANAGER reviews). This is the backing
+// store for the "Approval Center" - previously this entire flow only existed in browser
+// localStorage with no persistence, no export, and no supplier tracking.
+model restock_requests {
+  id                Int            @id @default(autoincrement())
+  company_id        Int
+  product_size_id   Int?
+  product_name      String
+  quantity          Int
+  supplier_name     String?
+  estimated_cost    Float?
+  notes             String?
+  status            String         @default("pending") // pending | approved | rejected
+  initiated_by      Int
+  initiated_by_role String // 'MANAGER' | 'OWNER'
+  reviewed_by       Int?
+  reviewed_at       DateTime?
+  review_note       String?
+  source            String         @default("manual") // manual | import
+  created_at        DateTime?      @default(now())
+  companies         companies      @relation(fields: [company_id], references: [id], onDelete: Cascade)
+  product_sizes     product_sizes? @relation(fields: [product_size_id], references: [id], onDelete: SetNull)
+  initiator         users          @relation("restock_requests_initiator", fields: [initiated_by], references: [id], onDelete: Cascade)
+  reviewer          users?         @relation("restock_requests_reviewer", fields: [reviewed_by], references: [id], onDelete: NoAction)
+}
+
+// Manager-proposed combo/bundle pricing, requiring Owner approval. Replaces the previous
+// localStorage-only "aibispro_bundle_proposals" mock - product_ids/product_names are stored as
+// JSON snapshots (not a join table) since a proposal just needs to remember which products it
+// bundled at proposal time, not maintain a live relation to them.
+model bundle_proposals {
+  id             Int       @id @default(autoincrement())
+  company_id     Int
+  name           String
+  product_ids    Json
+  product_names  Json?
+  regular_price  Float
+  bundle_price   Float
+  strategy       String?
+  status         String    @default("pending") // pending | approved | rejected
+  created_by     Int
+  reviewed_by    Int?
+  reviewed_at    DateTime?
+  review_note    String?
+  created_at     DateTime? @default(now())
+  companies      companies @relation(fields: [company_id], references: [id], onDelete: Cascade)
+  creator        users     @relation("bundle_proposals_creator", fields: [created_by], references: [id], onDelete: Cascade)
+  reviewer       users?    @relation("bundle_proposals_reviewer", fields: [reviewed_by], references: [id], onDelete: NoAction)
 }
 
 model products {
@@ -292,4 +347,34 @@ model users {
   company_access                                          user_company_access[]  @relation("access_user")
   granted_access                                          user_company_access[]  @relation("access_granter")
   inbox_messages_authored                                 inbox_messages[]       @relation("inbox_messages_author_idTousers")
+  credential_requests_target                              credential_change_requests[] @relation("credential_request_target")
+  credential_requests_made                                credential_change_requests[] @relation("credential_request_requester")
+  credential_requests_reviewed                            credential_change_requests[] @relation("credential_request_reviewer")
+  restock_requests_initiated                              restock_requests[]            @relation("restock_requests_initiator")
+  restock_requests_reviewed                               restock_requests[]            @relation("restock_requests_reviewer")
+  bundle_proposals_created                                bundle_proposals[]            @relation("bundle_proposals_creator")
+  bundle_proposals_reviewed                               bundle_proposals[]            @relation("bundle_proposals_reviewer")
+}
+
+// OWNER-initiated request to change their own email/password. MAINTAINANCE approves or
+// rejects, but a pending password change is stored already-hashed (new_password_hash) and is
+// NEVER exposed through any API response - the approver only ever sees THAT a password change
+// was requested, never its value. Email changes show the requested new_email since there's no
+// confidentiality concern there. MAINTAINANCE edits their own credentials directly (no request
+// needed), and MANAGER credentials are set directly by their OWNER - neither goes through this
+// table.
+model credential_change_requests {
+  id                 Int       @id @default(autoincrement())
+  user_id            Int
+  requested_by       Int
+  field              String // 'email' | 'password'
+  new_email          String?
+  new_password_hash  String?
+  status             String    @default("pending") // pending | approved | rejected
+  reviewed_by        Int?
+  reviewed_at        DateTime?
+  created_at         DateTime? @default(now())
+  target             users     @relation("credential_request_target", fields: [user_id], references: [id], onDelete: Cascade)
+  requester          users     @relation("credential_request_requester", fields: [requested_by], references: [id], onDelete: Cascade)
+  reviewer           users?    @relation("credential_request_reviewer", fields: [reviewed_by], references: [id], onDelete: NoAction)
 }

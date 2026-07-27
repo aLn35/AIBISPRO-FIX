@@ -35,7 +35,6 @@ import {
   Percent,
   Sparkles,
   ClipboardList,
-  Clock,
   ArrowUpRight,
   Gauge,
   UtensilsCrossed,
@@ -54,28 +53,18 @@ interface SuperAdminDashboardProps {
   onChangeView: (view: string) => void;
 }
 
-type ConsultantTab = "CLIENTS" | "DEEP_DIVE" | "HEALTH_CENTER" | "BENCHMARK" | "AI_HUB" | "AUDIT_LOG";
+type ConsultantTab = "CLIENTS" | "DEEP_DIVE" | "HEALTH_CENTER" | "BENCHMARK" | "AI_HUB";
 
 interface BundleProposal {
   id: string;
   companyId: string;
   name: string;
-  productIds: string[];
   productNames: string[];
   regularPrice: number;
   bundlePrice: number;
   strategy: string;
-  status: "PENDING_APPROVAL" | "APPROVED" | "REJECTED";
+  status: "pending" | "approved" | "rejected";
   submittedTime: string;
-}
-
-interface AuditLogEntry {
-  id: string;
-  timestamp: string;
-  action: string;
-  companyId: string;
-  companyName: string;
-  details: string;
 }
 
 const BENCHMARK_DETAILS: { [key in "food" | "waste" | "margin"]: { trend: string; actions: string[] } } = {
@@ -105,46 +94,127 @@ const BENCHMARK_DETAILS: { [key in "food" | "waste" | "margin"]: { trend: string
   }
 };
 
-const FORECAST_INSIGHTS = [
-  {
-    id: "restock",
-    tag: "Demand Prediction",
-    reliability: 94,
-    title: "Menu Restock triggers: Sumatra Arabica Beans",
-    summary: "Historical weekend transactions show a +18.4% rise in dairy and espresso drink sales. Coffee roasters must place restock logs with Sumatra Arabica vendors to satisfy the peak weekend capacity.",
-    action: "Restock log recommendation",
-    impact: "Prevents an estimated 12% stockout risk during peak Saturday-Sunday shifts.",
-    dataPoints: [
-      "Weekend espresso-based drink sales: +18.4% vs weekday average",
-      "Dairy carton depletion rate: 2.3x faster on weekends",
-      "Current Sumatra Arabica buffer: 6.4 days of coverage"
-    ],
-    nextSteps: [
-      "Submit a restock purchase order for 50kg Sumatra Arabica beans",
-      "Confirm dairy vendor delivery slot before the Friday cutoff",
-      "Review the safety stock threshold with the branch manager"
-    ]
-  },
-  {
-    id: "combo",
-    tag: "Promo Campaign ROI",
-    reliability: 89,
-    title: "Bundle Package Pricing strategy: Croissant Combo",
-    summary: "Combining Iced Palm Sugar Latte and Croissant at an aggregate rate yields +22% gross cash velocities compared to single item transactions. Recommending owner launches this combo as standard menu listing.",
-    action: "Publish Bundle menu",
-    impact: "Projected +22% gross cash velocity uplift once published as a standard combo.",
-    dataPoints: [
-      "Combo-attached transactions: +22% gross cash velocity vs single items",
-      "Croissant sell-through rate improves from 61% to 84% when bundled",
-      "Estimated adoption rate among returning customers: 35%"
-    ],
-    nextSteps: [
-      "Draft the combo pricing proposal for Owner review",
-      "Coordinate with Admin to publish the bundle in the product catalog",
-      "Track conversion for 2 weeks post-launch and report back"
-    ]
+interface ForecastCard {
+  id: string;
+  tag: string;
+  reliability: number;
+  title: string;
+  summary: string;
+  action: string;
+  impact: string;
+  dataPoints: string[];
+  nextSteps: string[];
+}
+
+function humanizeReason(reason: string): string {
+  return reason.replace(/_/g, " ");
+}
+
+/** Builds real, per-company forecast cards from live risk/promotion/demand/basket analytics -
+ * replaces what used to be 2 hardcoded generic demo insights with actual sales-driven data. */
+function buildForecastCards(
+  risk: any[],
+  promo: any[],
+  demand: any[],
+  recs: any[],
+): ForecastCard[] {
+  const cards: ForecastCard[] = [];
+
+  for (const r of risk.filter((x) => x.severity === "critical").slice(0, 3)) {
+    const reliability = r.daysToStockout !== null ? Math.min(99, 70 + (30 - Math.min(30, r.daysToStockout))) : 72;
+    cards.push({
+      id: `risk-${r.sizeId}`,
+      tag: "Demand Prediction",
+      reliability,
+      title: `Restock trigger: ${r.productName} (${r.sizeName})`,
+      summary:
+        r.daysToStockout !== null
+          ? `Selling ~${r.avgDailySales30d} units/day with only ${r.currentStock} left (minimum threshold ${r.minimumStock}). Projected to run out in ${r.daysToStockout} day(s).`
+          : `Only ${r.currentStock} units left, below the minimum threshold of ${r.minimumStock}, with negligible recent sales velocity to project a stockout date.`,
+      action: "Restock purchase order",
+      impact:
+        r.daysToStockout !== null
+          ? `Prevents a stockout within the next ${r.daysToStockout} day(s) at the current sell-through rate.`
+          : `Restores buffer above the ${r.minimumStock}-unit safety threshold.`,
+      dataPoints: [
+        `Current stock: ${r.currentStock} units (minimum: ${r.minimumStock})`,
+        `Average daily sales (last 30d): ${r.avgDailySales30d} units`,
+        r.daysToStockout !== null ? `Estimated days to stockout: ${r.daysToStockout}` : "Sales velocity too low to estimate a stockout date",
+      ],
+      nextSteps: [
+        `Submit a restock purchase order for ${r.productName} (${r.sizeName})`,
+        "Confirm vendor delivery lead time against the projected stockout date",
+        "Review the safety stock threshold with the branch manager",
+      ],
+    });
   }
-];
+
+  for (const p of promo.slice(0, 3)) {
+    cards.push({
+      id: `promo-${p.productId}-${p.sizeName}`,
+      tag: "Promo Campaign ROI",
+      reliability: Math.min(97, 60 + p.suggestedDiscountPercent),
+      title: `Discount opportunity: ${p.productName}`,
+      summary: `${p.productName} (${p.sizeName}) sold only ${p.soldLast30d} units in the last 30 days against ${p.currentStock} in stock (${humanizeReason(p.reason)}). A ${p.suggestedDiscountPercent}% discount could accelerate sell-through.`,
+      action: `Launch ${p.suggestedDiscountPercent}% discount campaign`,
+      impact: `Reduces ${humanizeReason(p.reason)} inventory risk for ${p.productName}.`,
+      dataPoints: [
+        `Units sold (last 30d): ${p.soldLast30d}`,
+        `Current stock: ${p.currentStock} (minimum: ${p.minimumStock})`,
+        `Classification: ${humanizeReason(p.reason)}`,
+      ],
+      nextSteps: [
+        "Draft the discount campaign proposal for Owner review",
+        "Coordinate with Manager to publish the promo in the catalog",
+        "Track conversion for 2 weeks post-launch and report back",
+      ],
+    });
+  }
+
+  for (const pair of recs.filter((x) => x.lift > 1).slice(0, 2)) {
+    cards.push({
+      id: `bundle-${pair.productA}-${pair.productB}`,
+      tag: "Promo Campaign ROI",
+      reliability: Math.min(98, Math.round(pair.lift * 30)),
+      title: `Bundle opportunity: ${pair.productA} + ${pair.productB}`,
+      summary: `${pair.productA} and ${pair.productB} are bought together ${pair.coOccurrenceCount} time(s) - ${pair.lift}x more often than random chance predicts. Bundling both as a combo could capture this pairing.`,
+      action: "Publish bundle menu item",
+      impact: `Co-occurrence lift of ${pair.lift}x suggests a strong cross-sell opportunity.`,
+      dataPoints: [
+        `Co-occurrence count: ${pair.coOccurrenceCount} baskets`,
+        `Lift score: ${pair.lift}x random chance`,
+      ],
+      nextSteps: [
+        "Draft the combo pricing proposal for Owner review",
+        "Coordinate with Manager to publish the bundle in the product catalog",
+        "Track conversion for 2 weeks post-launch and report back",
+      ],
+    });
+  }
+
+  for (const d of demand.filter((x) => x.trend === "rising").slice(0, 2)) {
+    cards.push({
+      id: `demand-${d.productId}`,
+      tag: "Demand Prediction",
+      reliability: 85,
+      title: `Rising demand: ${d.productName}`,
+      summary: `${d.productName} demand is trending up, averaging ${d.avgDailyDemand} units/day recently, projected at ${d.projectedDemand} units over the next 14 days.`,
+      action: "Increase stock allocation",
+      impact: "Ensures supply keeps pace with a rising demand trend before it turns into a stockout risk.",
+      dataPoints: [
+        `Average daily demand: ${d.avgDailyDemand} units`,
+        `Projected 14-day demand: ${d.projectedDemand} units`,
+        `Trend: ${d.trend}`,
+      ],
+      nextSteps: [
+        "Increase reorder quantity for the next purchase cycle",
+        "Monitor stock levels closely over the next 2 weeks",
+      ],
+    });
+  }
+
+  return cards.sort((a, b) => b.reliability - a.reliability);
+}
 
 export default function SuperAdminDashboard({
   currentUser,
@@ -158,7 +228,6 @@ export default function SuperAdminDashboard({
 }: SuperAdminDashboardProps) {
   const [activeTab, setActiveTab] = useState<ConsultantTab>("CLIENTS");
   const [selectedCompany, setSelectedCompany] = useState<Company>(companies[0] || PRESET_COMPANIES[0]);
-  const [auditLogs, setAuditLogs] = useState<AuditLogEntry[]>([]);
   const [selectedBenchmark, setSelectedBenchmark] = useState<"food" | "waste" | "margin">("food");
   const [showInsightDetail, setShowInsightDetail] = useState(false);
   const [expandedForecastId, setExpandedForecastId] = useState<string | null>(null);
@@ -187,27 +256,58 @@ export default function SuperAdminDashboard({
       .catch((e) => console.error("Failed to load portfolio snapshot:", e));
   }, [companies]);
 
-  // Existing bundle combo proposals for the selected company (shared localStorage source used
-  // across Manager creation and Owner approval flows).
+  // Real forecast/consult cards for the selected company, built from live risk/promotion/demand/
+  // basket-analysis endpoints (replaces the previous 2 hardcoded demo insights).
+  const [forecastCards, setForecastCards] = useState<ForecastCard[]>([]);
+  const [forecastLoading, setForecastLoading] = useState(false);
+  useEffect(() => {
+    if (!selectedCompany?.id) return;
+    setForecastLoading(true);
+    Promise.all([
+      apiGet(`/ai/risk?companyId=${selectedCompany.id}`),
+      apiGet(`/ai/promotion?companyId=${selectedCompany.id}`),
+      apiGet(`/ai/demand?companyId=${selectedCompany.id}`),
+      apiGet(`/ai/recommendations?companyId=${selectedCompany.id}`),
+    ])
+      .then(([risk, promo, demand, recs]) => {
+        setForecastCards(buildForecastCards(risk.data ?? [], promo.data ?? [], demand.data ?? [], recs.data ?? []));
+      })
+      .catch((e) => {
+        console.error("Failed to load forecast consult data:", e);
+        setForecastCards([]);
+      })
+      .finally(() => setForecastLoading(false));
+  }, [selectedCompany?.id]);
+
+  // Combo bundle proposals for the selected company, from the real backend.
   const [bundleProposals, setBundleProposals] = useState<BundleProposal[]>([]);
   useEffect(() => {
-    const stored = localStorage.getItem("aibispro_bundle_proposals");
-    if (!stored) return;
-    try {
-      const parsed: BundleProposal[] = JSON.parse(stored);
-      setBundleProposals(parsed.filter((p) => p.companyId === selectedCompany.id));
-    } catch (e) {
-      console.error("Failed to parse bundle proposals:", e);
-    }
+    if (!selectedCompany?.id) return;
+    apiGet(`/bundle-proposals?companyId=${selectedCompany.id}`)
+      .then((rows: any[]) =>
+        setBundleProposals(
+          rows.map((b) => ({
+            id: String(b.id),
+            companyId: String(b.company_id),
+            name: b.name,
+            productNames: b.product_names ?? [],
+            regularPrice: b.regular_price,
+            bundlePrice: b.bundle_price,
+            strategy: b.strategy ?? "",
+            status: b.status,
+            submittedTime: b.created_at,
+          }))
+        )
+      )
+      .catch((e) => console.error("Failed to load bundle proposals:", e));
   }, [selectedCompany.id]);
 
 
   // Local state for permissions per company
   const [consultantAccess, setConsultantAccess] = useState<{ [companyId: string]: any }>({});
 
-  // Sync access permissions and audit logs with localStorage
+  // Sync access permissions with localStorage
   useEffect(() => {
-    // 1. Get access permissions
     const accessMap: { [companyId: string]: any } = {};
     companies.forEach((c) => {
       const stored = localStorage.getItem(`aibispro_consultant_access_${c.id}`);
@@ -229,53 +329,7 @@ export default function SuperAdminDashboard({
       }
     });
     setConsultantAccess(accessMap);
-
-    // 2. Load audit logs
-    const storedLogs = localStorage.getItem("aibispro_consultant_audit_logs");
-    if (storedLogs) {
-      try {
-        setAuditLogs(JSON.parse(storedLogs));
-      } catch (e) {
-        console.error(e);
-      }
-    } else {
-      const initialLogs: AuditLogEntry[] = [
-        {
-          id: `LOG-${Date.now() - 3600000 * 5}`,
-          timestamp: new Date(Date.now() - 3600000 * 5).toLocaleString(),
-          action: "INITIAL_SYNC",
-          companyId: "abc_coffee",
-          companyName: "ABC Coffee Roasters",
-          details: "Salesforce CRM synchronised API nodes."
-        },
-        {
-          id: `LOG-${Date.now() - 3600000 * 3}`,
-          timestamp: new Date(Date.now() - 3600000 * 3).toLocaleString(),
-          action: "DATA_INSPECTION",
-          companyId: "xyz_restaurant",
-          companyName: "Wagyu Prime Bistro",
-          details: "Inspected inventory depletion metrics and forecast logs."
-        }
-      ];
-      localStorage.setItem("aibispro_consultant_audit_logs", JSON.stringify(initialLogs));
-      setAuditLogs(initialLogs);
-    }
   }, [companies]);
-
-  // Log action helper
-  const logConsultantAction = (action: string, companyId: string, companyName: string, details: string) => {
-    const newEntry: AuditLogEntry = {
-      id: `LOG-${Date.now()}`,
-      timestamp: new Date().toLocaleString(),
-      action,
-      companyId,
-      companyName,
-      details
-    };
-    const updated = [newEntry, ...auditLogs];
-    setAuditLogs(updated);
-    localStorage.setItem("aibispro_consultant_audit_logs", JSON.stringify(updated));
-  };
 
   // Local state for interactive To-Do Checklist (Consultant tasks)
   const [todos, setTodos] = useState<{ id: string; text: string; completed: boolean; category: string }[]>(() => {
@@ -302,13 +356,6 @@ export default function SuperAdminDashboard({
   const toggleTodo = (id: string) => {
     setTodos(prev => {
       const updated = prev.map(t => t.id === id ? { ...t, completed: !t.completed } : t);
-      
-      // Log the task action in the audit logs
-      const task = prev.find(t => t.id === id);
-      if (task) {
-        const details = `Consultant marked task [${task.text}] as ${!task.completed ? 'COMPLETED' : 'PENDING'}`;
-        logConsultantAction("TASK_TOGGLE", selectedCompany.id, selectedCompany.name, details);
-      }
       return updated;
     });
   };
@@ -429,7 +476,6 @@ export default function SuperAdminDashboard({
   // Handle active workspace switching
   const handleSelectWorkspace = (c: Company) => {
     setSelectedCompany(c);
-    logConsultantAction("WORKSPACE_SWITCH", c.id, c.name, `Consultant switched active corporate focus to ${c.name}`);
   };
 
   const currentAccess = consultantAccess[selectedCompany.id] || {
@@ -559,18 +605,6 @@ export default function SuperAdminDashboard({
           <Sparkles className="w-4 h-4" />
           <span>AI Forecast Consult Hub</span>
         </button>
-
-        <button
-          onClick={() => setActiveTab("AUDIT_LOG")}
-          className={`pb-3 px-4 text-xs font-extrabold border-b-2 transition-all cursor-pointer flex items-center gap-1.5 ${
-            activeTab === "AUDIT_LOG"
-              ? "border-[#261CC1] text-[#261CC1]"
-              : "border-transparent text-slate-500 hover:text-slate-800"
-          }`}
-        >
-          <Clock className="w-4 h-4" />
-          <span>Consultant Audit Logs</span>
-        </button>
       </div>
 
       {/* Tab Content Panels */}
@@ -642,7 +676,6 @@ export default function SuperAdminDashboard({
                             e.stopPropagation();
                             onSwitchCompany(c);
                             onChangeView("DASHBOARD");
-                            logConsultantAction("IMPERSONATE", c.id, c.name, `Consultant impersonated workspace of ${c.name}`);
                           }}
                           className="bg-[#261CC1] hover:bg-[#1C0770] text-white px-3 py-1.5 rounded-lg text-xs font-bold transition-all shadow cursor-pointer text-center"
                         >
@@ -905,9 +938,9 @@ export default function SuperAdminDashboard({
                           <div className="flex items-center justify-between gap-2">
                             <p className="text-[11px] font-bold text-slate-800 truncate">{b.name}</p>
                             <span className={`text-[8px] font-mono font-bold uppercase px-1.5 py-0.5 rounded shrink-0 ${
-                              b.status === "APPROVED" ? "bg-emerald-50 text-emerald-600" : b.status === "PENDING_APPROVAL" ? "bg-amber-50 text-amber-600" : "bg-rose-50 text-rose-600"
+                              b.status === "approved" ? "bg-emerald-50 text-emerald-600" : b.status === "pending" ? "bg-amber-50 text-amber-600" : "bg-rose-50 text-rose-600"
                             }`}>
-                              {b.status.replace("_", " ")}
+                              {b.status}
                             </span>
                           </div>
                           <p className="text-[10px] text-slate-500 mt-0.5 truncate">{(b.productNames ?? []).join(" + ")}</p>
@@ -1169,13 +1202,25 @@ export default function SuperAdminDashboard({
             <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
               <div>
                 <h3 className="font-display font-extrabold text-slate-900 text-base">Salesforce AI Consult Forecast Hub</h3>
-                <p className="text-xs text-slate-500">Access and prepare analytical recommendation logs for client consultation meetings.</p>
+                <p className="text-xs text-slate-500">
+                  Live analytical recommendations for <strong>{selectedCompany.name}</strong>, generated from real sales, stock, and basket data - prepared for client consultation meetings.
+                </p>
               </div>
               <span className="px-3 py-1 bg-indigo-50 text-[#261CC1] font-mono text-xs font-bold rounded-xl">AI-CONSULTANT v3.5-Active</span>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {FORECAST_INSIGHTS.map((forecast) => {
+            {forecastLoading && (
+              <div className="text-center py-10 text-xs font-semibold text-slate-400">Crunching live sales, stock, and basket data...</div>
+            )}
+
+            {!forecastLoading && forecastCards.length === 0 && (
+              <div className="text-center py-10 text-xs font-semibold text-slate-400">
+                Not enough sales history yet for {selectedCompany.name} to generate forecast insights.
+              </div>
+            )}
+
+            <div className="grid grid-cols-1 gap-4">
+              {!forecastLoading && forecastCards.map((forecast) => {
                 const isExpanded = expandedForecastId === forecast.id;
                 return (
                   <button
@@ -1236,43 +1281,6 @@ export default function SuperAdminDashboard({
                   </button>
                 );
               })}
-            </div>
-          </div>
-        )}
-
-        {/* TAB 6: CONSULTANT AUDIT LOGS */}
-        {activeTab === "AUDIT_LOG" && (
-          <div className="bg-white rounded-3xl border border-slate-200 p-6 shadow-sm space-y-4">
-            <div className="flex justify-between items-center border-b pb-3 border-slate-100">
-              <div>
-                <h3 className="font-display font-extrabold text-slate-900 text-base">Consultant Compliance Audit Logs</h3>
-                <p className="text-xs text-slate-500">Permanent record of all Salesforce consultant impersonation, switching, and data access.</p>
-              </div>
-              <span className="px-2 py-1 bg-emerald-50 border border-emerald-200 text-emerald-800 text-[10px] font-black rounded-lg">SECURE STORAGE ACTIVATED</span>
-            </div>
-
-            <div className="space-y-2 max-h-96 overflow-y-auto pr-1">
-              {auditLogs.length === 0 ? (
-                <p className="text-center text-slate-400 py-10 font-semibold text-xs">No entries recorded in audit log yet.</p>
-              ) : (
-                auditLogs.map((log) => (
-                  <div key={log.id} className="p-3 border border-slate-100 bg-slate-50/50 rounded-xl flex justify-between items-start text-xs">
-                    <div className="space-y-1">
-                      <div className="flex items-center gap-2">
-                        <span className={`px-2 py-0.5 rounded font-mono text-[8px] font-bold uppercase ${
-                          log.action === "INITIAL_SYNC" ? "bg-slate-100 text-slate-600" : log.action === "WORKSPACE_SWITCH" ? "bg-blue-50 text-blue-700" : "bg-indigo-50 text-indigo-700"
-                        }`}>{log.action}</span>
-                        <span className="font-bold text-slate-800">{log.companyName}</span>
-                      </div>
-                      <p className="text-slate-600 font-medium">{log.details}</p>
-                    </div>
-                    <div className="text-right text-[10px] text-slate-400 font-mono shrink-0">
-                      <p>{log.timestamp}</p>
-                      <p className="text-[8px] mt-0.5 font-bold">{log.id}</p>
-                    </div>
-                  </div>
-                ))
-              )}
             </div>
           </div>
         )}

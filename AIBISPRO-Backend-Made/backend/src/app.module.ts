@@ -16,9 +16,11 @@ import { AIModule } from './services/ai/ai.module';
 import { ChatModule } from './chat/chat.module';
 import { CompaniesModule } from './companies/companies.module';
 import { InboxModule } from './inbox/inbox.module';
+import { RestockRequestsModule } from './restock-requests/restock-requests.module';
+import { BundleProposalsModule } from './bundle-proposals/bundle-proposals.module';
 
 @Module({
-  imports: [PrismaModule, DashboardModule, ProductsModule, CategoriesModule, AnalyticsModule, SalesModule, InventoryModule, AuthModule, PromotionsModule, UsersModule, UploadModule, AIModule, ChatModule, CompaniesModule, InboxModule],
+  imports: [PrismaModule, DashboardModule, ProductsModule, CategoriesModule, AnalyticsModule, SalesModule, InventoryModule, AuthModule, PromotionsModule, UsersModule, UploadModule, AIModule, ChatModule, CompaniesModule, InboxModule, RestockRequestsModule, BundleProposalsModule],
   controllers: [AppController],
   providers: [AppService],
 })

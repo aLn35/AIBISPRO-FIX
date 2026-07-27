@@ -137,6 +137,7 @@ export async function loadCompanyData(companyId: string): Promise<RealBackendDat
       conversionRate: 0,
       revenueGenerated: 0,
       description: promo.description ?? undefined,
+      imageUrl: promo.image_url ?? undefined,
     });
   }
 
@@ -250,6 +251,7 @@ export async function loadPublicMenuData(companyIds: string[]): Promise<RealBack
           conversionRate: 0,
           revenueGenerated: 0,
           description: promo.description ?? undefined,
+          imageUrl: promo.image_url ?? undefined,
         });
       }
 

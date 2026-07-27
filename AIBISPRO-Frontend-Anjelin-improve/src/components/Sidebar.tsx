@@ -26,7 +26,6 @@ interface SidebarProps {
   activeView: string;
   onChangeView: (view: string) => void;
   lowStockCount: number;
-  pendingApprovalsCount: number;
   advisorInboxCount: number;
 }
 
@@ -37,7 +36,6 @@ export default function Sidebar({
   activeView,
   onChangeView,
   lowStockCount,
-  pendingApprovalsCount,
   advisorInboxCount,
 }: SidebarProps) {
   
@@ -54,7 +52,7 @@ export default function Sidebar({
       label: "Operations Control",
       role: ["MANAGER"],
       icon: Shield,
-      description: "Inventory approvals and monitoring",
+      description: "Executive summary, same view as Owner",
     },
     {
       id: "SUPER_ADMIN",
@@ -75,7 +73,7 @@ export default function Sidebar({
       label: "Inventory & Products",
       role: ["OWNER", "MANAGER"],
       icon: Warehouse,
-      description: "Logistics, raw materials & catalogs",
+      description: "Approval Center, catalogs & logistics",
       badge: lowStockCount > 0 ? "LOW_STOCK" : undefined,
       badgeCount: lowStockCount,
     },

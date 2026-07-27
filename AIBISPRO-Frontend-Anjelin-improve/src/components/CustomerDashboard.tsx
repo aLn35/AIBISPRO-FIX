@@ -6,6 +6,7 @@
 import React, { useState, useEffect } from "react";
 import { Company, Product, Promotion, Currency } from "../types";
 import { EXCHANGE_RATE } from "../mockData";
+import { apiGet } from "../api";
 import { 
   ShoppingBag, 
   Sparkles, 
@@ -130,80 +131,53 @@ export default function CustomerDashboard({
     setTimeout(() => setReviewSuccess(false), 3000);
   };
 
-  // Periodically check and sync approved combo proposals
+  // Load approved combo bundles for the selected company from the real backend.
   useEffect(() => {
-    const checkBundles = () => {
-      const stored = localStorage.getItem("aibispro_bundle_proposals");
-      if (stored) {
-        try {
-          const parsed = JSON.parse(stored);
-          const approved = parsed.filter(
-            (p: any) => p.companyId === selectedCompanyId && p.status === "APPROVED"
-          );
-          setApprovedBundles(approved);
-        } catch (e) {
-          console.error(e);
-        }
-      }
-    };
-    checkBundles();
-    const interval = setInterval(checkBundles, 1500);
-    return () => clearInterval(interval);
+    if (!selectedCompanyId) return;
+    apiGet(`/bundle-proposals?companyId=${selectedCompanyId}`)
+      .then((rows: any[]) => {
+        const approved = rows
+          .filter((b) => b.status === "approved")
+          .map((b) => ({
+            id: b.id,
+            name: b.name,
+            productNames: b.product_names ?? [],
+            regularPrice: b.regular_price,
+            bundlePrice: b.bundle_price,
+            strategy: b.strategy,
+          }));
+        setApprovedBundles(approved);
+      })
+      .catch((e) => console.error("Failed to load combo bundles:", e));
   }, [selectedCompanyId]);
 
   // Find currently selected company details
   const activeCompany = companies.find(c => c.id === selectedCompanyId) || companies[0];
 
-  // Load and sync any custom uploaded promo poster from localStorage
+  // Default poster illustrations, used only when the active promo has no real flyer image
+  // published yet (see ManagerFlyerUpload, which now saves flyers to promotions.image_url).
+  const DEFAULT_POSTERS = [
+    "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&q=80&w=600",
+    "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&q=80&w=600",
+    "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&q=80&w=600",
+  ];
+
   useEffect(() => {
-    const checkPosterAndPromo = () => {
-      const storedPoster = localStorage.getItem(`promo_poster_${selectedCompanyId}`);
-      const activeCompanyPromos = promotions.filter(
-        p => p.companyId === selectedCompanyId && p.status === "ACTIVE"
-      );
+    const activeCompanyPromos = promotions.filter(
+      p => p.companyId === selectedCompanyId && p.status === "ACTIVE"
+    );
 
-      if (storedPoster) {
-        setCurrentPoster(storedPoster);
-      } else {
-        // Default poster illustration based on company type
-        if (selectedCompanyId === "abc_coffee") {
-          setCurrentPoster("https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&q=80&w=600");
-        } else if (selectedCompanyId === "xyz_restaurant") {
-          setCurrentPoster("https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&q=80&w=600");
-        } else {
-          setCurrentPoster("https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&q=80&w=600");
-        }
-      }
-
-      if (activeCompanyPromos.length > 0) {
-        const firstPromo = activeCompanyPromos[0];
-        setActivePromoForPopup(firstPromo);
-        // Only trigger popup if this promo has NOT been dismissed yet by the user!
-        if (!dismissedPromoIds.includes(firstPromo.id)) {
-          setShowPromoPopup(true);
-        } else {
-          setShowPromoPopup(false);
-        }
-      } else {
-        setActivePromoForPopup(null);
-        setShowPromoPopup(false);
-      }
-    };
-
-    checkPosterAndPromo();
-
-    // Listen to localStorage updates for dynamic uploads
-    const handleStorageChange = () => {
-      checkPosterAndPromo();
-    };
-    window.addEventListener("storage", handleStorageChange);
-    // Setup interval for quick polling in single page contexts
-    const interval = setInterval(checkPosterAndPromo, 1500);
-
-    return () => {
-      window.removeEventListener("storage", handleStorageChange);
-      clearInterval(interval);
-    };
+    if (activeCompanyPromos.length > 0) {
+      const firstPromo = activeCompanyPromos[0];
+      setActivePromoForPopup(firstPromo);
+      setCurrentPoster(firstPromo.imageUrl || DEFAULT_POSTERS[Number(selectedCompanyId) % DEFAULT_POSTERS.length]);
+      // Only trigger popup if this promo has NOT been dismissed yet by the user!
+      setShowPromoPopup(!dismissedPromoIds.includes(firstPromo.id));
+    } else {
+      setActivePromoForPopup(null);
+      setShowPromoPopup(false);
+      setCurrentPoster(DEFAULT_POSTERS[Number(selectedCompanyId) % DEFAULT_POSTERS.length]);
+    }
   }, [selectedCompanyId, promotions, dismissedPromoIds]);
 
   // Filter products for selected company

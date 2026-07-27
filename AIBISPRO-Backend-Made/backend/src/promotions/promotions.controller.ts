@@ -2,7 +2,9 @@ import {
   Body,
   Controller,
   Delete,
+  ForbiddenException,
   Get,
+  NotFoundException,
   Param,
   Patch,
   Post,
@@ -83,10 +85,10 @@ export class PromotionsController {
     RolesGuard,
   )
   @ApiOperation({
-    summary: 'Update promotion (approve/reject/edit)',
+    summary: 'Update promotion details (title/description/dates/flyer image) - does not accept status changes, use /approve or /reject for that',
   })
   @Patch(':id')
-  update(
+  async update(
     @Param('id') id: string,
     @Body()
     body: {
@@ -94,12 +96,61 @@ export class PromotionsController {
       description?: string;
       discount_percent?: number;
       status?: string;
+      image_url?: string;
+      start_date?: string;
+      end_date?: string;
     },
+    @Req() req: any,
   ) {
+    const existing = await this.promotionsService.findOne(Number(id));
+    if (existing?.company_id) {
+      await this.companiesService.assertAccess(Number(req.user.id), req.user.role, existing.company_id);
+    }
+    if (body.status !== undefined && req.user.role === 'MANAGER') {
+      throw new ForbiddenException('Only Owner or Maintainance can approve or reject a promotion - use /promotions/:id/approve or /reject');
+    }
     return this.promotionsService.update(
       Number(id),
       body,
     );
+  }
+
+  @ApiBearerAuth()
+  @Roles('MAINTAINANCE', 'OWNER')
+  @UseGuards(
+    JwtAuthGuard,
+    RolesGuard,
+  )
+  @ApiOperation({
+    summary: 'Approve a pending promotion (Owner only)',
+  })
+  @Patch(':id/approve')
+  async approve(@Param('id') id: string, @Req() req: any) {
+    const existing = await this.promotionsService.findOne(Number(id));
+    if (!existing) throw new NotFoundException('Promotion not found');
+    if (existing.company_id) {
+      await this.companiesService.assertAccess(Number(req.user.id), req.user.role, existing.company_id);
+    }
+    return this.promotionsService.review(Number(id), Number(req.user.id), true);
+  }
+
+  @ApiBearerAuth()
+  @Roles('MAINTAINANCE', 'OWNER')
+  @UseGuards(
+    JwtAuthGuard,
+    RolesGuard,
+  )
+  @ApiOperation({
+    summary: 'Reject a pending promotion (Owner only)',
+  })
+  @Patch(':id/reject')
+  async reject(@Param('id') id: string, @Req() req: any) {
+    const existing = await this.promotionsService.findOne(Number(id));
+    if (!existing) throw new NotFoundException('Promotion not found');
+    if (existing.company_id) {
+      await this.companiesService.assertAccess(Number(req.user.id), req.user.role, existing.company_id);
+    }
+    return this.promotionsService.review(Number(id), Number(req.user.id), false);
   }
 
   @ApiBearerAuth()
@@ -112,7 +163,11 @@ export class PromotionsController {
     summary: 'Delete promotion',
   })
   @Delete(':id')
-  remove(@Param('id') id: string) {
+  async remove(@Param('id') id: string, @Req() req: any) {
+    const existing = await this.promotionsService.findOne(Number(id));
+    if (existing?.company_id) {
+      await this.companiesService.assertAccess(Number(req.user.id), req.user.role, existing.company_id);
+    }
     return this.promotionsService.remove(
       Number(id),
     );

@@ -4,13 +4,12 @@
  */
 
 import React, { useState, useEffect } from "react";
-import { Company, User, Currency, Product, FinancialMetric, Promotion, Bundle, RevenueForecast, AiInsight, Event, Expense, Notification, InventoryLog } from "./types";
+import { Company, User, Currency, Product, FinancialMetric, Promotion, Bundle, RevenueForecast, AiInsight, Event, Expense, Notification } from "./types";
 import {
   getInitialBundles,
   getInitialEvents,
   getInitialExpenses,
   getInitialNotifications,
-  getInitialInventoryLogs,
 } from "./mockData";
 import { loadCompanyData, loadMultiCompanyData, loadPublicMenuData, mapCompany } from "./backendMappers";
 import { apiGet, apiPost, apiPatch } from "./api";
@@ -68,7 +67,6 @@ export default function App() {
   const [events, setEvents] = useState<Event[]>([]);
   const [expenses, setExpenses] = useState<Expense[]>([]);
   const [notifications, setNotifications] = useState<Notification[]>([]);
-  const [inventoryLogs, setInventoryLogs] = useState<InventoryLog[]>([]);
   const [advisorInboxCount, setAdvisorInboxCount] = useState(0);
 
   // AI assistant network states
@@ -100,9 +98,6 @@ export default function App() {
 
     const not = localStorage.getItem("aibispro_notifications");
     if (not) setNotifications(JSON.parse(not)); else setNotifications(getInitialNotifications());
-
-    const inv = localStorage.getItem("aibispro_inventory_logs");
-    if (inv) setInventoryLogs(JSON.parse(inv)); else setInventoryLogs(getInitialInventoryLogs());
   }, []);
 
   // 2. Persist the still-local-only state slices
@@ -111,8 +106,7 @@ export default function App() {
     if (events.length > 0) localStorage.setItem("aibispro_events", JSON.stringify(events));
     if (expenses.length > 0) localStorage.setItem("aibispro_expenses", JSON.stringify(expenses));
     if (notifications.length > 0) localStorage.setItem("aibispro_notifications", JSON.stringify(notifications));
-    if (inventoryLogs.length > 0) localStorage.setItem("aibispro_inventory_logs", JSON.stringify(inventoryLogs));
-  }, [bundles, events, expenses, notifications, inventoryLogs]);
+  }, [bundles, events, expenses, notifications]);
 
   const refreshCompanies = async (user: User) => {
     try {
@@ -250,38 +244,6 @@ export default function App() {
   };
 
   // Live Operations Callbacks:
-  const handleAddProduct = (newP: Omit<Product, "id" | "companyId" | "salesCount" | "status">) => {
-    if (!currentCompany) return;
-
-    const prodId = `${currentCompany.id}_p_${Date.now()}`;
-    const productRecord: Product = {
-      ...newP,
-      id: prodId,
-      companyId: currentCompany.id,
-      salesCount: 0,
-      status: newP.stock === 0 ? "OUT_OF_STOCK" : newP.stock <= newP.minStock ? "LOW_STOCK" : "IN_STOCK",
-    };
-
-    setProducts((prev) => [productRecord, ...prev]);
-
-    apiPost("/products", {
-      name: newP.name,
-      description: "",
-      company_id: Number(currentCompany.id),
-    }).catch((e) => console.error("Failed to persist product:", e));
-
-    const logNot: Notification = {
-      id: `not_${Date.now()}`,
-      companyId: currentCompany.id,
-      title: "New Product Cataloged",
-      message: `"${newP.name}" registered with initial stock of ${newP.stock}.`,
-      type: "INFO",
-      read: false,
-      date: new Date().toISOString().split("T")[0],
-    };
-    setNotifications((prev) => [logNot, ...prev]);
-  };
-
   const handleAddPromotion = (newPromo: Omit<Promotion, "id" | "companyId" | "conversionRate" | "revenueGenerated">) => {
     if (!currentCompany) return;
 
@@ -317,46 +279,6 @@ export default function App() {
     setNotifications((prev) => [promoNot, ...prev]);
   };
 
-  const handleApproveInventoryLog = (logId: string) => {
-    if (!currentCompany) return;
-
-    const targetLog = inventoryLogs.find((l) => l.id === logId);
-    if (!targetLog) return;
-
-    setInventoryLogs((prev) =>
-      prev.map((l) => (l.id === logId ? { ...l, status: "COMPLETED", approvedBy: currentUser?.name || "Manager" } : l))
-    );
-
-    setProducts((prevProds) =>
-      prevProds.map((p) => {
-        if (p.id === targetLog.productId) {
-          const updatedStock = p.stock + targetLog.quantity;
-          return {
-            ...p,
-            stock: updatedStock,
-            status: updatedStock === 0 ? "OUT_OF_STOCK" : updatedStock <= p.minStock ? "LOW_STOCK" : "IN_STOCK",
-          };
-        }
-        return p;
-      })
-    );
-
-    const appNot: Notification = {
-      id: `not_app_${Date.now()}`,
-      companyId: currentCompany.id,
-      title: "Restock Order Approved",
-      message: `Restocking of ${targetLog.quantity} units for "${targetLog.productName}" authorized and added to inventory.`,
-      type: "SUCCESS",
-      read: false,
-      date: new Date().toISOString().split("T")[0],
-    };
-    setNotifications((prev) => [appNot, ...prev]);
-  };
-
-  const handleRejectInventoryLog = (logId: string) => {
-    setInventoryLogs((prev) => prev.map((l) => (l.id === logId ? { ...l, status: "COMPLETED", notes: "REJECTED BY MANAGER" } : l)));
-  };
-
   const handleApprovePromotion = (promoId: string) => {
     if (!currentCompany) return;
 
@@ -366,7 +288,7 @@ export default function App() {
 
     const numericId = promoId.split("_promo_")[1];
     if (numericId) {
-      apiPatch(`/promotions/${numericId}`, { status: "active" }).catch((e) => console.error("Failed to persist promotion approval:", e));
+      apiPatch(`/promotions/${numericId}/approve`).catch((e) => console.error("Failed to persist promotion approval:", e));
     }
 
     const appNot: Notification = {
@@ -387,6 +309,11 @@ export default function App() {
     setPromotions((prev) =>
       prev.map((p) => (p.id === promoId ? { ...p, status: "REJECTED", rejectReason: reason } : p))
     );
+
+    const numericId = promoId.split("_promo_")[1];
+    if (numericId) {
+      apiPatch(`/promotions/${numericId}/reject`).catch((e) => console.error("Failed to persist promotion rejection:", e));
+    }
 
     const rejNot: Notification = {
       id: `not_promo_rej_${Date.now()}`,
@@ -426,9 +353,6 @@ export default function App() {
   // Helper counts
   const currentCompanyProducts = currentCompany ? products.filter((p) => p.companyId === currentCompany.id) : products;
   const lowStockCount = currentCompanyProducts.filter((p) => p.status === "LOW_STOCK").length;
-  const pendingApprovalsCount = currentCompany
-    ? inventoryLogs.filter((l) => l.companyId === currentCompany.id && l.status === "PENDING_APPROVAL").length
-    : 0;
 
   const currentCompanyNotifications = currentCompany ? notifications.filter((n) => n.companyId === currentCompany.id) : notifications;
   const unreadNotificationCount = currentCompanyNotifications.filter((n) => !n.read).length;
@@ -479,7 +403,6 @@ export default function App() {
           }
         }}
         lowStockCount={lowStockCount}
-        pendingApprovalsCount={pendingApprovalsCount}
         advisorInboxCount={advisorInboxCount}
       />
 
@@ -517,26 +440,25 @@ export default function App() {
               company={currentCompany}
               metrics={metrics.filter((m) => m.companyId === currentCompany.id)}
               products={currentCompanyProducts}
-              promotions={promotions.filter((p) => p.companyId === currentCompany.id)}
               forecast={activeForecast}
               currency={currentCurrency}
-              onChangeView={setActiveView}
-              onApprovePromotion={handleApprovePromotion}
-              onRejectPromotion={handleRejectPromotion}
             />
           )}
 
           {activeView === "MANAGER_DASHBOARD" && currentCompany && (
             <ManagerDashboard
+              currentUser={currentUser}
               company={currentCompany}
               products={products}
-              inventoryLogs={inventoryLogs}
               promotions={promotions}
+              metrics={metrics.filter((m) => m.companyId === currentCompany.id)}
+              forecast={activeForecast}
               currency={currentCurrency}
-              onApproveInventoryLog={handleApproveInventoryLog}
-              onRejectInventoryLog={handleRejectInventoryLog}
               onApprovePromotion={handleApprovePromotion}
+              onRejectPromotion={handleRejectPromotion}
+              onAddPromotion={handleAddPromotion}
               onDataChanged={() => loadDataForCompany(currentCompany)}
+              pageMode="SUMMARY_ONLY"
             />
           )}
 
@@ -552,16 +474,17 @@ export default function App() {
 
           {activeView === "OPERATIONS" && currentCompany && (
             <InventoryProductsHub
+              currentUser={currentUser}
               company={currentCompany}
               products={products}
-              inventoryLogs={inventoryLogs}
               promotions={promotions}
+              metrics={metrics.filter((m) => m.companyId === currentCompany.id)}
+              forecast={activeForecast}
               currency={currentCurrency}
-              onApproveInventoryLog={handleApproveInventoryLog}
-              onRejectInventoryLog={handleRejectInventoryLog}
               onApprovePromotion={handleApprovePromotion}
-              onAddProduct={handleAddProduct}
+              onRejectPromotion={handleRejectPromotion}
               onAddPromotion={handleAddPromotion}
+              onDataChanged={() => loadDataForCompany(currentCompany)}
             />
           )}
 

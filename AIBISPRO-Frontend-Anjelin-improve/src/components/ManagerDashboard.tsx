@@ -4,9 +4,9 @@
  */
 
 import React, { useState, useEffect, useMemo } from "react";
-import { Company, Product, InventoryLog, Promotion, Currency } from "../types";
+import { Company, Product, Promotion, Currency, FinancialMetric, RevenueForecast, User, RestockRequest, BundleProposal } from "../types";
 import { EXCHANGE_RATE } from "../mockData";
-import { apiPost, apiPatch, apiDelete } from "../api";
+import { apiGet, apiPost, apiPatch, apiDelete, apiUpload, apiDownload } from "../api";
 import {
   ResponsiveContainer,
   BarChart,
@@ -44,11 +44,61 @@ import {
   Trash2,
   Check,
   X,
-  Plus
+  Plus,
+  Download,
+  Upload,
+  Building2,
+  Tag,
+  Boxes
 } from "lucide-react";
 import ManagerFileUploader from "./ManagerFileUploader";
 import ManagerComboCreator from "./ManagerComboCreator";
 import ManagerFlyerUpload from "./ManagerFlyerUpload";
+import ExecutiveSummaryCard from "./ExecutiveSummaryCard";
+
+type ApprovalStatus = "pending" | "approved" | "rejected";
+
+interface ApprovalItem {
+  key: string;
+  kind: "RESTOCK" | "BUNDLE" | "PROMO";
+  title: string;
+  subtitle: string;
+  status: ApprovalStatus;
+  date: string;
+  canAct: boolean;
+  restockId?: number;
+  bundleId?: number;
+  promoId?: string;
+  detail: {
+    quantity?: number;
+    supplierName?: string;
+    estimatedCost?: number;
+    notes?: string;
+    initiatedByName?: string;
+    initiatedByRole?: string;
+    reviewedByName?: string;
+    reviewedAt?: string;
+    reviewNote?: string;
+    source?: string;
+    productNames?: string[];
+    regularPrice?: number;
+    bundlePrice?: number;
+    strategy?: string;
+    discountPercent?: number;
+    promoType?: string;
+    startDate?: string;
+    endDate?: string;
+    description?: string;
+  };
+}
+
+// Distinct color per approval type, so the type badge is scannable at a glance (kept separate
+// from the status badge's amber/emerald/rose coloring to avoid the two clashing).
+const KIND_BADGE_CLASSES: Record<ApprovalItem["kind"], string> = {
+  RESTOCK: "bg-indigo-50 text-indigo-700 border-indigo-100",
+  BUNDLE: "bg-purple-50 text-purple-700 border-purple-100",
+  PROMO: "bg-sky-50 text-sky-700 border-sky-100",
+};
 
 interface SafetyProduct extends Omit<Product, "status"> {
   targetTemp: string;
@@ -117,33 +167,42 @@ const getSafetyDiagnostics = (products: Product[]): SafetyProduct[] => {
 };
 
 interface ManagerDashboardProps {
+  currentUser: User;
   company: Company;
   products: Product[];
-  inventoryLogs: InventoryLog[];
   promotions: Promotion[];
+  metrics: FinancialMetric[];
+  forecast: RevenueForecast | undefined;
   currency: Currency;
-  onApproveInventoryLog: (logId: string) => void;
-  onRejectInventoryLog: (logId: string) => void;
   onApprovePromotion: (promoId: string) => void;
+  onRejectPromotion: (promoId: string, reason: string) => void;
+  onAddPromotion: (promo: Omit<Promotion, "id" | "companyId" | "conversionRate" | "revenueGenerated">) => void;
   onDataChanged?: () => void;
+  /** "SUMMARY_ONLY" = Operations Control (Manager's own read-only Executive Summary page, no
+   * tabs). "OPERATIONS" (default) = the shared Inventory & Products page with the full tab set
+   * (Approval Center, Product & Stock Manager, Spreadsheet Feed, Customer Guess). */
+  pageMode?: "SUMMARY_ONLY" | "OPERATIONS";
 }
 
-type TabType = "INVENTORY" | "REQUEST_CENTER" | "PRODUCT_MANAGER" | "SPREADSHEET_FEED" | "CUSTOMER_GUESS";
+type TabType = "APPROVAL_CENTER" | "PRODUCT_MANAGER" | "SPREADSHEET_FEED" | "CUSTOMER_GUESS";
 type ProductSubTab = "MENU" | "COMBOS" | "FLYERS";
 
 export default function ManagerDashboard({
+  currentUser,
   company,
   products: propProducts,
-  inventoryLogs,
   promotions,
+  metrics,
+  forecast,
   currency,
-  onApproveInventoryLog,
-  onRejectInventoryLog,
   onApprovePromotion,
+  onRejectPromotion,
+  onAddPromotion,
   onDataChanged,
+  pageMode = "OPERATIONS",
 }: ManagerDashboardProps) {
-  
-  const [activeTab, setActiveTab] = useState<TabType>("INVENTORY");
+
+  const [activeTab, setActiveTab] = useState<TabType>("APPROVAL_CENTER");
   const [productSubTab, setProductSubTab] = useState<ProductSubTab>("MENU");
 
   // Local state for products to support manager's live inventory editor
@@ -208,16 +267,97 @@ export default function ManagerDashboard({
     return { high, steady, low };
   }, [localProducts]);
 
-  // Form states for submitting restocking request
+  // Form states for submitting a restock request to the Owner
   const [reqProductId, setReqProductId] = useState("");
   const [reqQuantity, setReqQuantity] = useState("");
+  const [reqUnitPrice, setReqUnitPrice] = useState("");
   const [reqCost, setReqCost] = useState("");
+  const [reqSupplier, setReqSupplier] = useState("");
   const [reqNotes, setReqNotes] = useState("");
   const [reqSuccess, setReqSuccess] = useState("");
+  const [reqError, setReqError] = useState("");
+  const [isSubmittingRequest, setIsSubmittingRequest] = useState(false);
 
-  // Track inventory request list (both Manager-to-Owner and Owner-to-Manager requests)
-  const [submittedRequests, setSubmittedRequests] = useState<any[]>([]);
-  const [ownerReqRemark, setOwnerReqRemark] = useState<{ [reqId: string]: string }>({});
+  // Auto-total: Total Cost = Order Qty x Price per Unit, recalculated live as either changes.
+  useEffect(() => {
+    const qty = parseFloat(reqQuantity);
+    const unitPrice = parseFloat(reqUnitPrice);
+    if (!isNaN(qty) && !isNaN(unitPrice) && qty > 0 && unitPrice > 0) {
+      setReqCost(String(Math.round(qty * unitPrice)));
+    } else {
+      setReqCost("");
+    }
+  }, [reqQuantity, reqUnitPrice]);
+
+  // Unified Approval Center data: real restock requests + bundle proposals, merged with
+  // promotions for one combined history view. Who can act on what depends on currentUser.role -
+  // see unifiedApprovals below (also enforced server-side).
+  const [restockRequests, setRestockRequests] = useState<RestockRequest[]>([]);
+  const [bundleProposalsList, setBundleProposalsList] = useState<BundleProposal[]>([]);
+  const [reviewRemark, setReviewRemark] = useState<{ [key: string]: string }>({});
+  const [approvalActionBusyKey, setApprovalActionBusyKey] = useState<string | null>(null);
+  const [importBusy, setImportBusy] = useState(false);
+  const [importMessage, setImportMessage] = useState("");
+  const [selectedApprovalItem, setSelectedApprovalItem] = useState<ApprovalItem | null>(null);
+
+  const loadApprovalData = () => {
+    apiGet(`/restock-requests?companyId=${company.id}`)
+      .then((rows: any[]) =>
+        setRestockRequests(
+          rows.map((r) => ({
+            id: r.id,
+            companyId: r.company_id,
+            productSizeId: r.product_size_id,
+            productName: r.product_name,
+            quantity: r.quantity,
+            supplierName: r.supplier_name ?? undefined,
+            estimatedCost: r.estimated_cost ?? undefined,
+            notes: r.notes ?? undefined,
+            status: r.status,
+            initiatedBy: r.initiated_by,
+            initiatedByRole: r.initiated_by_role,
+            initiatedByName: r.initiator?.name,
+            reviewedBy: r.reviewed_by ?? undefined,
+            reviewedByName: r.reviewer?.name,
+            reviewedAt: r.reviewed_at ?? undefined,
+            reviewNote: r.review_note ?? undefined,
+            source: r.source,
+            createdAt: r.created_at,
+          }))
+        )
+      )
+      .catch((e) => console.error("Failed to load restock requests:", e));
+
+    apiGet(`/bundle-proposals?companyId=${company.id}`)
+      .then((rows: any[]) =>
+        setBundleProposalsList(
+          rows.map((b) => ({
+            id: b.id,
+            companyId: b.company_id,
+            name: b.name,
+            productIds: b.product_ids ?? [],
+            productNames: b.product_names ?? [],
+            regularPrice: b.regular_price,
+            bundlePrice: b.bundle_price,
+            strategy: b.strategy ?? undefined,
+            status: b.status,
+            createdBy: b.created_by,
+            createdByName: b.creator?.name,
+            reviewedBy: b.reviewed_by ?? undefined,
+            reviewedByName: b.reviewer?.name,
+            reviewedAt: b.reviewed_at ?? undefined,
+            reviewNote: b.review_note ?? undefined,
+            createdAt: b.created_at,
+          }))
+        )
+      )
+      .catch((e) => console.error("Failed to load bundle proposals:", e));
+  };
+
+  useEffect(() => {
+    loadApprovalData();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [company.id]);
 
   // Customer Guess & Feedback states
   const [reviews, setReviews] = useState<any[]>([]);
@@ -258,21 +398,6 @@ export default function ManagerDashboard({
 
     // 2. Ensure the manager view follows the latest shared product state
     setLocalProducts(propProducts.filter((p) => p.companyId === company.id));
-
-    // 3. Sync inventory purchase requests
-    const syncRequests = () => {
-      const stored = localStorage.getItem("aibispro_inventory_requests");
-      if (stored) {
-        try {
-          setSubmittedRequests(JSON.parse(stored).filter((r: any) => r.companyId === company.id));
-        } catch (e) {
-          console.error(e);
-        }
-      }
-    };
-    syncRequests();
-    const interval = setInterval(syncRequests, 2000);
-    return () => clearInterval(interval);
   }, [company.id, propProducts]);
 
   // Handle direct cash transaction deduction
@@ -310,9 +435,46 @@ export default function ManagerDashboard({
 
   const handleAddProduct = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!newProdName || !newProdPrice || !newProdStock || !newProdMinStock) return;
-    setIsSavingProduct(true);
     setAddProductError("");
+
+    if (!newProdName.trim()) {
+      setAddProductError("Please enter a product name.");
+      return;
+    }
+    const price = Number(newProdPrice);
+    if (!newProdPrice.trim() || Number.isNaN(price)) {
+      setAddProductError("Selling price must be a number.");
+      return;
+    }
+    if (price <= 0) {
+      setAddProductError("Selling price cannot be negative or zero.");
+      return;
+    }
+    const cogs = newProdCogs.trim() ? Number(newProdCogs) : undefined;
+    if (newProdCogs.trim() && (Number.isNaN(cogs) || (cogs as number) < 0)) {
+      setAddProductError("Cost of goods (COGS) cannot be negative.");
+      return;
+    }
+    const stock = Number(newProdStock);
+    if (!newProdStock.trim() || Number.isNaN(stock) || !Number.isInteger(stock)) {
+      setAddProductError("Stock must be a whole number.");
+      return;
+    }
+    if (stock < 0) {
+      setAddProductError("Stock cannot be negative.");
+      return;
+    }
+    const minStock = Number(newProdMinStock);
+    if (!newProdMinStock.trim() || Number.isNaN(minStock) || !Number.isInteger(minStock)) {
+      setAddProductError("Reorder point must be a whole number.");
+      return;
+    }
+    if (minStock < 0) {
+      setAddProductError("Reorder point cannot be negative.");
+      return;
+    }
+
+    setIsSavingProduct(true);
     try {
       await apiPost("/products", {
         name: newProdName,
@@ -347,6 +509,7 @@ export default function ManagerDashboard({
   const [editCogs, setEditCogs] = useState("");
   const [editStock, setEditStock] = useState("");
   const [editMinStock, setEditMinStock] = useState("");
+  const [editError, setEditError] = useState("");
 
   const startEditProduct = (p: Product) => {
     setEditingProductId(p.id);
@@ -356,27 +519,74 @@ export default function ManagerDashboard({
     setEditCogs(String(p.cogs));
     setEditStock(String(p.stock));
     setEditMinStock(String(p.minStock));
+    setEditError("");
   };
 
-  const cancelEditProduct = () => setEditingProductId(null);
+  const cancelEditProduct = () => {
+    setEditingProductId(null);
+    setEditError("");
+  };
 
   const saveEditProduct = async (p: Product) => {
     if (p.productId === undefined || p.sizeId === undefined) return;
+    setEditError("");
+
+    if (!editName.trim()) {
+      setEditError("Item name cannot be empty.");
+      return;
+    }
+    const price = Number(editPrice);
+    if (!editPrice.trim() || Number.isNaN(price)) {
+      setEditError("Sell price must be a number.");
+      return;
+    }
+    if (price <= 0) {
+      setEditError("Sell price cannot be negative or zero.");
+      return;
+    }
+    const cogs = Number(editCogs);
+    if (!editCogs.trim() || Number.isNaN(cogs)) {
+      setEditError("Cost price must be a number.");
+      return;
+    }
+    if (cogs < 0) {
+      setEditError("Cost price cannot be negative.");
+      return;
+    }
+    const stock = Number(editStock);
+    if (!editStock.trim() || Number.isNaN(stock) || !Number.isInteger(stock)) {
+      setEditError("Current stock must be a whole number.");
+      return;
+    }
+    if (stock < 0) {
+      setEditError("Current stock cannot be negative.");
+      return;
+    }
+    const minStock = Number(editMinStock);
+    if (!editMinStock.trim() || Number.isNaN(minStock) || !Number.isInteger(minStock)) {
+      setEditError("Minimum safety stock must be a whole number.");
+      return;
+    }
+    if (minStock < 0) {
+      setEditError("Minimum safety stock cannot be negative.");
+      return;
+    }
+
     setIsSavingProduct(true);
     try {
       await Promise.all([
         apiPatch(`/products/${p.productId}`, { name: editName, category_name: editCategory || undefined }),
         apiPatch(`/inventory/${p.sizeId}`, {
-          selling_price: parseFloat(editPrice),
-          cost_price: parseFloat(editCogs),
-          current_stock: parseInt(editStock, 10),
-          minimum_stock: parseInt(editMinStock, 10),
+          selling_price: price,
+          cost_price: cogs,
+          current_stock: stock,
+          minimum_stock: minStock,
         }),
       ]);
       setEditingProductId(null);
       onDataChanged?.();
-    } catch (err) {
-      console.error("Failed to save menu item:", err);
+    } catch (err: any) {
+      setEditError(err?.message ?? "Failed to save menu item.");
     } finally {
       setIsSavingProduct(false);
     }
@@ -400,78 +610,147 @@ export default function ManagerDashboard({
     }
   };
 
-  // Submit restocking purchase order request to Owner
-  const handleRequestRestockSubmit = (e: React.FormEvent) => {
+  // Submit a restock request to the Owner (real backend record, replaces the old
+  // localStorage-only "purchase order" mock).
+  const handleRequestRestockSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!reqProductId || !reqQuantity || !reqCost) return;
+    setReqError("");
+
+    if (!reqProductId) {
+      setReqError("Please select a product to restock.");
+      return;
+    }
     const prod = localProducts.find((p) => p.id === reqProductId);
     if (!prod) return;
 
-    const newRequest = {
-      id: `REQ-${Date.now().toString().slice(-3)}`,
-      companyId: company.id,
-      productId: prod.id,
-      productName: prod.name,
-      quantity: parseInt(reqQuantity),
-      estimatedCost: parseFloat(reqCost),
-      notes: reqNotes || "Urgent ingredient replenishment required.",
-      submittedTime: new Date().toISOString(),
-      status: "PENDING_APPROVAL",
-      initiatedBy: "MANAGER",
-      rejectReason: ""
-    };
+    const qty = Number(reqQuantity);
+    if (!reqQuantity.trim() || Number.isNaN(qty)) {
+      setReqError("Order quantity must be a number.");
+      return;
+    }
+    if (qty <= 0) {
+      setReqError("Order quantity cannot be negative or zero - enter a value of 1 or more.");
+      return;
+    }
+    if (!Number.isInteger(qty)) {
+      setReqError("Order quantity must be a whole number.");
+      return;
+    }
 
-    const stored = localStorage.getItem("aibispro_inventory_requests") || "[]";
+    const unitPrice = Number(reqUnitPrice);
+    if (!reqUnitPrice.trim() || Number.isNaN(unitPrice)) {
+      setReqError("Price per unit must be a number.");
+      return;
+    }
+    if (unitPrice <= 0) {
+      setReqError("Price per unit cannot be negative or zero.");
+      return;
+    }
+
+    setIsSubmittingRequest(true);
     try {
-      const parsed = JSON.parse(stored);
-      const updated = [newRequest, ...parsed];
-      localStorage.setItem("aibispro_inventory_requests", JSON.stringify(updated));
-      setSubmittedRequests(updated.filter((r: any) => r.companyId === company.id));
+      await apiPost("/restock-requests", {
+        company_id: Number(company.id),
+        product_size_id: prod.sizeId,
+        product_name: prod.name,
+        quantity: parseInt(reqQuantity, 10),
+        supplier_name: reqSupplier.trim() || undefined,
+        estimated_cost: parseFloat(reqCost),
+        notes: reqNotes.trim() || undefined,
+      });
 
-      // Reset
       setReqProductId("");
       setReqQuantity("");
+      setReqUnitPrice("");
       setReqCost("");
+      setReqSupplier("");
       setReqNotes("");
-      setReqSuccess("Purchase order submitted successfully to Owner's approval queue!");
+      setReqSuccess(`Purchase order submitted successfully to the ${currentUser.role === "OWNER" ? "Manager's" : "Owner's"} approval queue!`);
       setTimeout(() => setReqSuccess(""), 4000);
-    } catch (err) {
-      console.error(err);
+      loadApprovalData();
+    } catch (err: any) {
+      setReqError(err?.message ?? "Failed to submit restock request.");
+    } finally {
+      setIsSubmittingRequest(false);
     }
   };
 
-  // Respond to a restock request that the Owner sent directly to the Manager
-  const handleRespondOwnerRequest = (reqId: string, action: "APPROVED" | "REJECTED") => {
-    const stored = localStorage.getItem("aibispro_inventory_requests");
-    if (!stored) return;
+  // Approve or reject a restock request - restock is bidirectional between Owner and Manager,
+  // so whichever role did NOT initiate a given request is the one allowed to act on it (the
+  // backend enforces this too). Bundle proposals and promotions are Owner-only approvals.
+  const handleReviewRestockRequest = async (id: number, approve: boolean, note?: string) => {
+    setApprovalActionBusyKey(`restock-${id}`);
     try {
-      const parsed: any[] = JSON.parse(stored);
-      const target = parsed.find((r) => r.id === reqId);
-      if (!target) return;
-
-      const remark = ownerReqRemark[reqId] || (action === "APPROVED" ? "Restocked as requested." : "Unable to fulfill this request right now.");
-      const updated = parsed.map((r) => (r.id === reqId ? { ...r, status: action, managerRemark: remark } : r));
-      localStorage.setItem("aibispro_inventory_requests", JSON.stringify(updated));
-      setSubmittedRequests(updated.filter((r) => r.companyId === company.id));
-
-      if (action === "APPROVED") {
-        const storedProducts = localStorage.getItem("aibispro_products");
-        if (storedProducts) {
-          const parsedProds = JSON.parse(storedProducts);
-          const updatedProds = parsedProds.map((p: any) => {
-            if (p.id === target.productId) {
-              const newStock = p.stock + target.quantity;
-              return { ...p, stock: newStock, status: newStock > p.minStock ? "IN_STOCK" : "LOW_STOCK" };
-            }
-            return p;
-          });
-          localStorage.setItem("aibispro_products", JSON.stringify(updatedProds));
-          setLocalProducts(updatedProds.filter((p: any) => p.companyId === company.id));
-        }
-      }
-    } catch (e) {
-      console.error(e);
+      await apiPatch(`/restock-requests/${id}/${approve ? "approve" : "reject"}`, {
+        note: note?.trim() || undefined,
+      });
+      loadApprovalData();
+      onDataChanged?.();
+    } catch (err) {
+      console.error("Failed to review restock request:", err);
+    } finally {
+      setApprovalActionBusyKey(null);
     }
+  };
+
+  const handleReviewBundleProposal = async (id: number, approve: boolean, note?: string) => {
+    setApprovalActionBusyKey(`bundle-${id}`);
+    try {
+      await apiPatch(`/bundle-proposals/${id}/${approve ? "approve" : "reject"}`, {
+        note: note?.trim() || undefined,
+      });
+      loadApprovalData();
+    } catch (err) {
+      console.error("Failed to review bundle proposal:", err);
+    } finally {
+      setApprovalActionBusyKey(null);
+    }
+  };
+
+  const handleReviewPromotion = (promoId: string, approve: boolean, note?: string) => {
+    if (approve) {
+      onApprovePromotion(promoId);
+    } else {
+      onRejectPromotion(promoId, note || "Campaign did not meet approval criteria.");
+    }
+  };
+
+  // Single dispatcher used by the detail modal - routes to the right endpoint based on the
+  // approval item's kind, so the modal doesn't need to know the underlying API shape.
+  const handleReviewItem = (item: ApprovalItem, approve: boolean) => {
+    const note = reviewRemark[item.key];
+    if (item.kind === "RESTOCK" && item.restockId !== undefined) {
+      handleReviewRestockRequest(item.restockId, approve, note);
+    } else if (item.kind === "BUNDLE" && item.bundleId !== undefined) {
+      handleReviewBundleProposal(item.bundleId, approve, note);
+    } else if (item.kind === "PROMO" && item.promoId !== undefined) {
+      handleReviewPromotion(item.promoId, approve, note);
+    }
+    setSelectedApprovalItem(null);
+  };
+
+  const handleImportRestockHistory = async (file: File) => {
+    setImportBusy(true);
+    setImportMessage("");
+    try {
+      const result = await apiUpload("/restock-requests/import", file, { companyId: Number(company.id) });
+      const parts = [`Imported ${result.imported} record(s)`];
+      if (result.duplicates?.length) parts.push(`${result.duplicates.length} duplicate(s) skipped`);
+      if (result.failed?.length) parts.push(`${result.failed.length} row(s) failed`);
+      setImportMessage(parts.join(", ") + ".");
+      loadApprovalData();
+    } catch (err: any) {
+      setImportMessage(err?.message ?? "Failed to import spreadsheet.");
+    } finally {
+      setImportBusy(false);
+      setTimeout(() => setImportMessage(""), 6000);
+    }
+  };
+
+  const handleExportRestockHistory = () => {
+    apiDownload(`/restock-requests/export?companyId=${company.id}`, `restock-requests-${company.id}.xlsx`).catch((err) =>
+      console.error("Failed to export restock history:", err)
+    );
   };
 
   // Direct Restocking handler - writes straight to the real product_sizes.current_stock via
@@ -528,18 +807,111 @@ export default function ManagerDashboard({
     }
   };
 
-  // Filter logs for active company
-  const companyLogs = inventoryLogs.filter((l) => l.companyId === company.id);
-  const pendingLogs = companyLogs.filter((l) => l.status === "PENDING_APPROVAL");
+  // Pending counts across the unified Approval Center (restock requests + bundle proposals)
+  const pendingRestockRequests = restockRequests.filter((r) => r.status === "pending");
+  const actionableRestockRequests = pendingRestockRequests.filter((r) => r.initiatedByRole !== currentUser.role);
 
   // Filter promotions for active company
   const companyPromotions = promotions.filter((p) => p.companyId === company.id);
-  const pendingPromos = companyPromotions.filter((p) => p.status === "PENDING_APPROVAL");
+
+  const mapPromoStatus = (s: Promotion["status"]): ApprovalStatus =>
+    s === "PENDING_APPROVAL" ? "pending" : s === "REJECTED" ? "rejected" : "approved";
+
+  // Unified Approval Center history: restock requests + bundle proposals + promotions, merged
+  // into one normalized, sorted list, each carrying full detail for the read-only pop-up.
+  // Who can act on what depends on role: restock is bidirectional (whoever did NOT initiate it
+  // reviews it), while bundle proposals and promotions are Owner-only approvals.
+  const unifiedApprovals: ApprovalItem[] = useMemo(() => {
+    const restockItems: ApprovalItem[] = restockRequests.map((r) => ({
+      key: `restock-${r.id}`,
+      kind: "RESTOCK",
+      title: r.productName,
+      subtitle: `${r.quantity} units${r.supplierName ? ` · Supplier: ${r.supplierName}` : ""}${r.initiatedByName ? ` · From: ${r.initiatedByName} (${r.initiatedByRole})` : ""}`,
+      status: r.status,
+      date: r.createdAt,
+      canAct: r.status === "pending" && r.initiatedByRole !== currentUser.role,
+      restockId: r.id,
+      detail: {
+        quantity: r.quantity,
+        supplierName: r.supplierName,
+        estimatedCost: r.estimatedCost,
+        notes: r.notes,
+        initiatedByName: r.initiatedByName,
+        initiatedByRole: r.initiatedByRole,
+        reviewedByName: r.reviewedByName,
+        reviewedAt: r.reviewedAt,
+        reviewNote: r.reviewNote,
+        source: r.source,
+      },
+    }));
+    const bundleItems: ApprovalItem[] = bundleProposalsList.map((b) => ({
+      key: `bundle-${b.id}`,
+      kind: "BUNDLE",
+      title: b.name,
+      subtitle: (b.productNames ?? []).join(" + ") || "Combo bundle",
+      status: b.status,
+      date: b.createdAt,
+      canAct: b.status === "pending" && currentUser.role === "OWNER",
+      bundleId: b.id,
+      detail: {
+        productNames: b.productNames,
+        regularPrice: b.regularPrice,
+        bundlePrice: b.bundlePrice,
+        strategy: b.strategy,
+        initiatedByName: b.createdByName,
+        reviewedByName: b.reviewedByName,
+        reviewedAt: b.reviewedAt,
+        reviewNote: b.reviewNote,
+      },
+    }));
+    const promoItems: ApprovalItem[] = companyPromotions.map((p) => ({
+      key: `promo-${p.id}`,
+      kind: "PROMO",
+      title: p.name,
+      subtitle: p.discountPercent !== undefined ? `${p.discountPercent}% discount campaign` : p.type,
+      status: mapPromoStatus(p.status),
+      date: p.startDate,
+      canAct: mapPromoStatus(p.status) === "pending" && currentUser.role === "OWNER",
+      promoId: p.id,
+      detail: {
+        discountPercent: p.discountPercent,
+        promoType: p.type,
+        startDate: p.startDate,
+        endDate: p.endDate,
+        description: p.description,
+        reviewNote: p.rejectReason,
+      },
+    }));
+    return [...restockItems, ...bundleItems, ...promoItems].sort(
+      (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
+    );
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [restockRequests, bundleProposalsList, companyPromotions, currentUser.role]);
 
   // Stock counters
   const lowStockProducts = localProducts.filter((p) => p.status === "LOW_STOCK");
   const outOfStockProducts = localProducts.filter((p) => p.status === "OUT_OF_STOCK");
   const safetyProducts = getSafetyDiagnostics(localProducts);
+
+  // Operations Control - Manager's own read-only Executive Summary page, mirroring the Owner's
+  // CEO Control Center. All operational work (Approval Center, Product Manager, etc.) lives
+  // exclusively in the shared "Inventory & Products" page (pageMode === "OPERATIONS" below).
+  if (pageMode === "SUMMARY_ONLY") {
+    return (
+      <div className="space-y-6">
+        <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b pb-4 border-slate-200">
+          <div>
+            <div className="flex items-center gap-2">
+              <span className="w-2.5 h-2.5 rounded-full bg-[#E14434] animate-pulse"></span>
+              <span className="text-xs font-black uppercase text-[#E14434] font-mono tracking-wider">AIBISPRO BI OPERATIONS CONTROL</span>
+            </div>
+            <h2 className="text-xl font-display font-black text-slate-950 mt-1">{company.avatarUrl} {company.name} Corporate Shell</h2>
+          </div>
+        </div>
+        <ExecutiveSummaryCard company={company} metrics={metrics} products={localProducts} forecast={forecast} currency={currency} />
+      </div>
+    );
+  }
 
   return (
     <div className="space-y-6 relative pb-16">
@@ -558,7 +930,7 @@ export default function ManagerDashboard({
           
           <div className="flex gap-4 text-xs font-mono">
             <div className="bg-white/80 border border-white/90 px-3 py-1.5 rounded-xl shadow-sm">
-              <span className="text-[#E14434] font-black">{pendingLogs.length}</span> <span className="text-slate-700 font-bold">Logs Pending</span>
+              <span className="text-[#E14434] font-black">{actionableRestockRequests.length}</span> <span className="text-slate-700 font-bold">Awaiting Your Review</span>
             </div>
           </div>
         </div>
@@ -593,7 +965,7 @@ export default function ManagerDashboard({
         <div className="bg-[#FEFBC7] border border-[#FEFBC7] text-slate-800 p-5 rounded-2xl shadow-sm">
           <p className="text-xs font-bold text-slate-600 uppercase tracking-wider">Purchase Requests</p>
           <p className="text-xl font-display font-black text-[#E14434] mt-1 font-mono">
-            {submittedRequests.filter(r => r.status === "PENDING_APPROVAL").length} Pending
+            {pendingRestockRequests.length} Pending
           </p>
           <span className="text-[10px] text-slate-500 font-bold uppercase">Awaiting Owner Approval</span>
         </div>
@@ -663,23 +1035,13 @@ export default function ManagerDashboard({
       {/* Tab Selectors */}
       <div className="flex flex-wrap gap-1 border-b border-slate-200">
         <button
-          onClick={() => setActiveTab("INVENTORY")}
+          onClick={() => setActiveTab("APPROVAL_CENTER")}
           className={`pb-3 px-4 text-xs font-black border-b-2 transition-all cursor-pointer flex items-center gap-1.5 ${
-            activeTab === "INVENTORY" ? "border-[#E14434] text-[#E14434]" : "border-transparent text-slate-500 hover:text-slate-800"
+            activeTab === "APPROVAL_CENTER" ? "border-[#E14434] text-[#E14434]" : "border-transparent text-slate-500 hover:text-slate-800"
           }`}
         >
-          <Warehouse className="w-4 h-4" />
-          <span>Inventory Approvals</span>
-        </button>
-
-        <button
-          onClick={() => setActiveTab("REQUEST_CENTER")}
-          className={`pb-3 px-4 text-xs font-black border-b-2 transition-all cursor-pointer flex items-center gap-1.5 ${
-            activeTab === "REQUEST_CENTER" ? "border-[#E14434] text-[#E14434]" : "border-transparent text-slate-500 hover:text-slate-800"
-          }`}
-        >
-          <PlusCircle className="w-4 h-4" />
-          <span>Inventory Request Center</span>
+          <ClipboardList className="w-4 h-4" />
+          <span>Approval Center</span>
         </button>
 
         <button
@@ -715,100 +1077,222 @@ export default function ManagerDashboard({
 
       {/* Tab Panels */}
       <div className="mt-4">
-        
-        {/* PANEL 1: INVENTORY APPROVALS & STOCKS */}
-        {activeTab === "INVENTORY" && (
+
+        {/* PANEL 1: APPROVAL CENTER */}
+        {activeTab === "APPROVAL_CENTER" && (
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 animate-in fade-in duration-300">
-            
+
             <div className="lg:col-span-2 space-y-6">
-              {/* Restocking Signoffs */}
+              {/* Submit Restock Request */}
+              <div className="bg-white rounded-3xl border border-slate-200 p-6 shadow-sm">
+                <div className="flex items-center gap-2 mb-2">
+                  <div className="p-2 bg-[#5EABD6]/10 text-[#5EABD6] rounded-xl">
+                    <PlusCircle className="w-5 h-5" />
+                  </div>
+                  <div>
+                    <h3 className="font-display font-black text-slate-900 text-base">Submit Restock Request</h3>
+                    <p className="text-xs text-slate-500">Send a purchase order to the {currentUser.role === "OWNER" ? "Manager's" : "Owner's"} approval queue.</p>
+                  </div>
+                </div>
+
+                {reqSuccess && (
+                  <div className="mt-4 p-3 bg-emerald-50 border border-emerald-200 text-emerald-800 text-xs font-bold rounded-xl flex items-center gap-1.5">
+                    <CheckCircle className="w-4 h-4 shrink-0" />
+                    <span>{reqSuccess}</span>
+                  </div>
+                )}
+                {reqError && (
+                  <div className="mt-4 p-3 bg-red-50 border border-red-200 text-red-700 text-xs font-bold rounded-xl flex items-center gap-1.5">
+                    <AlertTriangle className="w-4 h-4 shrink-0" />
+                    <span>{reqError}</span>
+                  </div>
+                )}
+
+                <form onSubmit={handleRequestRestockSubmit} className="mt-4 grid grid-cols-1 md:grid-cols-2 gap-3">
+                  <div className="md:col-span-2 space-y-1">
+                    <label className="text-[10px] font-black uppercase text-slate-400">Ingredient / Product</label>
+                    <select
+                      required
+                      value={reqProductId}
+                      onChange={(e) => setReqProductId(e.target.value)}
+                      className="w-full text-xs p-2.5 bg-slate-50 border border-slate-200 rounded-xl focus:outline-none font-bold"
+                    >
+                      <option value="">-- Select a product --</option>
+                      {localProducts.map((p) => (
+                        <option key={p.id} value={p.id}>{p.name} (Stock: {p.stock})</option>
+                      ))}
+                    </select>
+                  </div>
+
+                  <div className="space-y-1">
+                    <label className="text-[10px] font-black uppercase text-slate-400">Order Qty</label>
+                    <input
+                      type="number"
+                      required
+                      min="1"
+                      step="1"
+                      placeholder="e.g., 50"
+                      value={reqQuantity}
+                      onChange={(e) => setReqQuantity(e.target.value)}
+                      className="w-full text-xs p-2.5 bg-slate-50 border border-slate-200 rounded-xl focus:outline-none"
+                    />
+                  </div>
+
+                  <div className="space-y-1">
+                    <label className="text-[10px] font-black uppercase text-slate-400">Price per Unit (IDR)</label>
+                    <input
+                      type="number"
+                      required
+                      min="1"
+                      placeholder="e.g., 115000"
+                      value={reqUnitPrice}
+                      onChange={(e) => setReqUnitPrice(e.target.value)}
+                      className="w-full text-xs p-2.5 bg-slate-50 border border-slate-200 rounded-xl focus:outline-none"
+                    />
+                  </div>
+
+                  <div className="space-y-1">
+                    <label className="text-[10px] font-black uppercase text-slate-400 flex items-center gap-1">
+                      <Building2 className="w-3 h-3" /> Supplier Name
+                    </label>
+                    <input
+                      type="text"
+                      placeholder="e.g. PT Sumber Makmur"
+                      value={reqSupplier}
+                      onChange={(e) => setReqSupplier(e.target.value)}
+                      className="w-full text-xs p-2.5 bg-slate-50 border border-slate-200 rounded-xl focus:outline-none"
+                    />
+                  </div>
+
+                  <div className="space-y-1">
+                    <label className="text-[10px] font-black uppercase text-slate-400">Total Cost (IDR) - Auto-calculated</label>
+                    <input
+                      type="number"
+                      required
+                      readOnly
+                      placeholder="Fill in Order Qty and Price per Unit"
+                      value={reqCost}
+                      className="w-full text-xs p-2.5 bg-slate-100 border border-slate-200 rounded-xl focus:outline-none font-bold text-slate-700 cursor-not-allowed"
+                    />
+                  </div>
+
+                  <div className="md:col-span-2 space-y-1">
+                    <label className="text-[10px] font-black uppercase text-slate-400">Reason / Notes for Owner</label>
+                    <textarea
+                      placeholder="Provide operational context or peak demand forecasts..."
+                      value={reqNotes}
+                      onChange={(e) => setReqNotes(e.target.value)}
+                      rows={2}
+                      className="w-full text-xs p-2.5 bg-slate-50 border border-slate-200 rounded-xl focus:outline-none"
+                    />
+                  </div>
+
+                  <div className="md:col-span-2">
+                    <button
+                      type="submit"
+                      disabled={isSubmittingRequest}
+                      className="w-full bg-[#E14434] hover:bg-[#c23325] text-white py-2.5 rounded-xl text-xs font-black transition-all shadow-md cursor-pointer text-center disabled:opacity-50"
+                    >
+                      {isSubmittingRequest ? "Submitting..." : "Submit Order Proposal"}
+                    </button>
+                  </div>
+                </form>
+              </div>
+
+              {/* Import / Export */}
+              <div className="bg-white rounded-3xl border border-slate-200 p-6 shadow-sm">
+                <div className="flex items-center justify-between gap-3 flex-wrap">
+                  <div>
+                    <h3 className="font-display font-black text-slate-900 text-base">Restock History Import/Export</h3>
+                    <p className="text-xs text-slate-500">Bring in historical purchase records, or download the full log as a spreadsheet.</p>
+                  </div>
+                  <div className="flex items-center gap-2 shrink-0">
+                    <label className={`flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-xs font-black border transition-all cursor-pointer ${
+                      importBusy ? "opacity-50 cursor-not-allowed border-slate-200 text-slate-400" : "border-[#5EABD6]/40 text-[#5EABD6] hover:bg-[#5EABD6]/10"
+                    }`}>
+                      <Upload className="w-3.5 h-3.5" />
+                      {importBusy ? "Importing..." : "Import"}
+                      <input
+                        type="file"
+                        accept=".csv,.xlsx,.xls"
+                        disabled={importBusy}
+                        className="hidden"
+                        onChange={(e) => {
+                          const file = e.target.files?.[0];
+                          if (file) handleImportRestockHistory(file);
+                          e.target.value = "";
+                        }}
+                      />
+                    </label>
+                    <button
+                      onClick={handleExportRestockHistory}
+                      className="flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-xs font-black border border-slate-200 text-slate-600 hover:bg-slate-50 transition-all cursor-pointer"
+                    >
+                      <Download className="w-3.5 h-3.5" />
+                      Export
+                    </button>
+                  </div>
+                </div>
+                {importMessage && (
+                  <div className="mt-3 p-2.5 bg-slate-50 border border-slate-100 rounded-lg text-[11px] text-slate-600 font-semibold">
+                    {importMessage}
+                  </div>
+                )}
+              </div>
+
+              {/* Unified Approval History */}
               <div className="bg-white rounded-3xl border border-slate-200 p-6 shadow-sm">
                 <div className="flex items-center gap-2 mb-2">
                   <div className="p-2 bg-[#5EABD6]/10 text-[#5EABD6] rounded-xl">
                     <ClipboardList className="w-5 h-5" />
                   </div>
                   <div>
-                    <h3 className="font-display font-black text-slate-900 text-base">Material Restocking Signoffs</h3>
-                    <p className="text-xs text-slate-500">Review and authorize ingredient log entries submitted by branch crew members.</p>
+                    <h3 className="font-display font-black text-slate-900 text-base">Approval History</h3>
+                    <p className="text-xs text-slate-500">Restock requests, promo campaigns, and combo bundles - approved, rejected, or still pending.</p>
                   </div>
                 </div>
 
-                <div className="mt-6">
-                  {pendingLogs.length === 0 ? (
-                    <div className="text-center py-12 bg-slate-50/50 rounded-2xl border border-dashed border-slate-200 text-slate-500">
-                      <CheckCircle className="w-10 h-10 text-emerald-500 mx-auto mb-2.5" />
-                      <p className="font-bold text-sm text-slate-800">All Clear!</p>
-                      <p className="text-xs text-slate-400 mt-1">No pending restocking requests currently need signatures.</p>
+                <div className="mt-4 space-y-3 max-h-[520px] overflow-y-auto pr-1">
+                  {unifiedApprovals.length === 0 ? (
+                    <div className="text-center py-12 bg-slate-50/50 rounded-2xl border border-dashed border-slate-200 text-slate-400 text-xs font-semibold">
+                      No approval history yet.
                     </div>
                   ) : (
-                    <div className="space-y-3">
-                      {pendingLogs.map((log) => (
-                        <div key={log.id} className="p-4 border border-indigo-100 bg-slate-50/40 hover:bg-slate-50 hover:border-[#5EABD6]/30 transition-all rounded-2xl flex flex-col md:flex-row md:items-center justify-between gap-4">
-                          <div>
-                            <div className="flex items-center gap-2">
-                              <span className="px-2 py-0.5 bg-amber-500/10 text-amber-700 font-mono font-black rounded text-[9px] uppercase tracking-wider">PENDING SIGNOFF</span>
-                              <span className="font-mono text-[10px] text-slate-400">{log.id}</span>
+                    unifiedApprovals.map((item) => (
+                      <button
+                        key={item.key}
+                        type="button"
+                        onClick={() => setSelectedApprovalItem(item)}
+                        className={`w-full text-left p-4 border rounded-2xl transition-all cursor-pointer hover:shadow-sm ${item.canAct ? "border-[#5EABD6]/50 bg-[#5EABD6]/5 hover:border-[#5EABD6]" : "border-slate-100 bg-slate-50/40 hover:border-slate-300"}`}
+                      >
+                        <div className="flex justify-between items-start gap-3">
+                          <div className="min-w-0">
+                            <div className="flex items-center gap-1.5 flex-wrap">
+                              <span className={`px-1.5 py-0.5 rounded text-[8px] font-mono font-bold uppercase border ${KIND_BADGE_CLASSES[item.kind]}`}>
+                                {item.kind}
+                              </span>
+                              <span className={`px-1.5 py-0.5 rounded text-[8px] font-mono font-bold uppercase ${
+                                item.status === "approved"
+                                  ? "bg-emerald-50 text-emerald-700 border border-emerald-100"
+                                  : item.status === "rejected"
+                                    ? "bg-rose-50 text-rose-700 border border-rose-100"
+                                    : "bg-amber-50 text-amber-700 border border-amber-100 animate-pulse"
+                              }`}>
+                                {item.status}
+                              </span>
+                              {item.canAct && (
+                                <span className="px-1.5 py-0.5 rounded text-[8px] font-mono font-bold uppercase bg-[#5EABD6]/10 text-[#5EABD6] border border-[#5EABD6]/30">
+                                  Action needed
+                                </span>
+                              )}
                             </div>
-                            <p className="text-sm font-bold text-slate-900 mt-2">{log.productName}</p>
-                            <p className="text-xs text-slate-600 italic mt-1 bg-white border border-slate-100 p-2 rounded-lg">" {log.notes} "</p>
+                            <h4 className="font-extrabold text-slate-900 text-xs mt-1.5 truncate">{item.title}</h4>
+                            <p className="text-[11px] text-slate-500 mt-0.5 truncate">{item.subtitle}</p>
                           </div>
-                          <div className="flex items-center gap-2 shrink-0">
-                            <button
-                              onClick={() => onRejectInventoryLog(log.id)}
-                              className="p-2.5 border border-slate-200 rounded-xl text-slate-400 hover:text-rose-600 hover:bg-rose-50 hover:border-rose-100 transition-all cursor-pointer"
-                              title="Tolak Request"
-                            >
-                              <XCircle className="w-4.5 h-4.5" />
-                            </button>
-                            <button
-                              onClick={() => onApproveInventoryLog(log.id)}
-                              className="bg-[#E14434] hover:bg-[#c23325] text-white px-4 py-2.5 rounded-xl text-xs font-black flex items-center gap-1.5 transition-all shadow-sm cursor-pointer"
-                            >
-                              <CheckCircle className="w-4.5 h-4.5" /> Signoff Approve
-                            </button>
-                          </div>
+                          <span className="text-[10px] text-slate-400 font-mono shrink-0">{new Date(item.date).toLocaleDateString()}</span>
                         </div>
-                      ))}
-                    </div>
-                  )}
-                </div>
-              </div>
-
-              {/* Promotions validation */}
-              <div className="bg-white rounded-3xl border border-slate-200 p-6 shadow-sm">
-                <div className="flex items-center gap-2 mb-2">
-                  <div className="p-2 bg-[#5EABD6]/10 text-[#5EABD6] rounded-xl">
-                    <TrendingUp className="w-5 h-5" />
-                  </div>
-                  <div>
-                    <h3 className="font-display font-black text-slate-900 text-base">Campaign & Promotion Auditing</h3>
-                    <p className="text-xs text-slate-500">Draft, review, or authorize pricing discount campaign items.</p>
-                  </div>
-                </div>
-
-                <div className="mt-6">
-                  {pendingPromos.length === 0 ? (
-                    <div className="text-center py-8 bg-slate-50/50 rounded-2xl border border-dashed border-slate-200 text-slate-400 text-xs">
-                      No marketing campaign proposals require validation.
-                    </div>
-                  ) : (
-                    <div className="space-y-3">
-                      {pendingPromos.map((p) => (
-                        <div key={p.id} className="p-4 border border-slate-100 rounded-2xl bg-slate-50/30 hover:bg-slate-50 hover:border-[#5EABD6]/30 transition-all flex items-center justify-between gap-4">
-                          <div>
-                            <span className="px-2 py-0.5 bg-amber-500/10 text-amber-700 font-mono text-[9px] rounded font-black uppercase tracking-wider">Awaiting Auth</span>
-                            <h4 className="text-sm font-bold text-slate-900 mt-2">{p.name}</h4>
-                            <p className="text-[11px] text-slate-500 font-mono mt-0.5">Rate: <span className="font-bold text-[#5EABD6]">{p.discountPercent}% Discount</span></p>
-                          </div>
-                          <button
-                            onClick={() => onApprovePromotion(p.id)}
-                            className="bg-[#E14434] text-white px-4 py-2 text-xs font-black rounded-xl hover:bg-[#c23325] transition-all cursor-pointer shadow-sm shrink-0"
-                          >
-                            Approve Campaign
-                          </button>
-                        </div>
-                      ))}
-                    </div>
+                      </button>
+                    ))
                   )}
                 </div>
               </div>
@@ -848,7 +1332,7 @@ export default function ManagerDashboard({
                           <span>Rasio: <strong className={isOut ? "text-rose-600" : isLow ? "text-amber-600" : "text-emerald-600"}>{percent.toFixed(0)}%</strong></span>
                         </div>
                         <div className="w-full bg-slate-100 rounded-full h-2 overflow-hidden">
-                          <div 
+                          <div
                             className={`h-full rounded-full transition-all duration-500 ${
                               isOut ? "bg-rose-500" : isLow ? "bg-amber-500 animate-pulse" : "bg-emerald-500"
                             }`}
@@ -859,179 +1343,6 @@ export default function ManagerDashboard({
                     </div>
                   );
                 })}
-              </div>
-            </div>
-          </div>
-        )}
-
-        {/* PANEL 2: INVENTORY REQUEST CENTER */}
-        {activeTab === "REQUEST_CENTER" && (
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-            
-            {/* Left: Purchase Request Form */}
-            <div className="lg:col-span-1 bg-white border border-slate-200 rounded-2xl p-6 shadow-sm space-y-4 h-fit">
-              <div>
-                <h3 className="font-display font-extrabold text-slate-900 text-sm uppercase tracking-wider">Submit Restock Purchase Order</h3>
-                <p className="text-xs text-slate-500">Submit restocking items directly to the Owner's approval board.</p>
-              </div>
-
-              {reqSuccess && (
-                <div className="p-3 bg-emerald-50 border border-emerald-200 text-emerald-800 text-xs font-bold rounded-xl flex items-center gap-1.5 animate-pulse">
-                  <CheckCircle className="w-4 h-4 shrink-0" />
-                  <span>{reqSuccess}</span>
-                </div>
-              )}
-
-              <form onSubmit={handleRequestRestockSubmit} className="space-y-3">
-                <div className="space-y-1">
-                  <label className="text-[10px] font-black uppercase text-slate-400">Ingredient / Product</label>
-                  <select
-                    required
-                    value={reqProductId}
-                    onChange={(e) => setReqProductId(e.target.value)}
-                    className="w-full text-xs p-2.5 bg-slate-50 border border-slate-200 rounded-xl focus:outline-none font-bold"
-                  >
-                    <option value="">-- Select a product --</option>
-                    {localProducts.map((p) => (
-                      <option key={p.id} value={p.id}>{p.name} (Stock: {p.stock})</option>
-                    ))}
-                  </select>
-                </div>
-
-                <div className="grid grid-cols-2 gap-3">
-                  <div className="space-y-1">
-                    <label className="text-[10px] font-black uppercase text-slate-400">Order Qty</label>
-                    <input
-                      type="number"
-                      required
-                      placeholder="e.g., 50"
-                      value={reqQuantity}
-                      onChange={(e) => setReqQuantity(e.target.value)}
-                      className="w-full text-xs p-2.5 bg-slate-50 border border-slate-200 rounded-xl focus:outline-none"
-                    />
-                  </div>
-
-                  <div className="space-y-1">
-                    <label className="text-[10px] font-black uppercase text-slate-400">Total Cost (IDR)</label>
-                    <input
-                      type="number"
-                      required
-                      placeholder="e.g., 5750000"
-                      value={reqCost}
-                      onChange={(e) => setReqCost(e.target.value)}
-                      className="w-full text-xs p-2.5 bg-slate-50 border border-slate-200 rounded-xl focus:outline-none"
-                    />
-                  </div>
-                </div>
-
-                <div className="space-y-1">
-                  <label className="text-[10px] font-black uppercase text-slate-400">Reason / Notes for Owner</label>
-                  <textarea
-                    placeholder="Provide operational context or peak demand forecasts..."
-                    value={reqNotes}
-                    onChange={(e) => setReqNotes(e.target.value)}
-                    rows={3}
-                    className="w-full text-xs p-2.5 bg-slate-50 border border-slate-200 rounded-xl focus:outline-none"
-                  />
-                </div>
-
-                <button
-                  type="submit"
-                  className="w-full bg-[#E14434] hover:bg-[#c23325] text-white py-2.5 rounded-xl text-xs font-black transition-all shadow-md cursor-pointer text-center"
-                >
-                  Submit Order Proposal
-                </button>
-              </form>
-            </div>
-
-            {/* Right: Submitted request tracking list */}
-            <div className="lg:col-span-2 bg-white border border-slate-200 rounded-2xl p-6 shadow-sm space-y-4">
-              <div>
-                <h3 className="font-display font-extrabold text-slate-900 text-sm uppercase tracking-wider">Submitted Requests Tracking Board</h3>
-                <p className="text-xs text-slate-500">Live feed of restock requests between you and the Owner, with reasons and remarks from both sides.</p>
-              </div>
-
-              <div className="space-y-3 max-h-[460px] overflow-y-auto pr-1">
-                {submittedRequests.length === 0 ? (
-                  <p className="text-xs text-slate-400 py-20 text-center font-bold">No purchase orders submitted yet.</p>
-                ) : (
-                  submittedRequests.map((req) => {
-                    const isFromOwner = req.initiatedBy === "OWNER";
-                    const isActionable = isFromOwner && req.status === "PENDING_APPROVAL";
-
-                    return (
-                      <div key={req.id} className={`p-4 border rounded-xl space-y-2 ${isActionable ? "border-[#5EABD6]/50 bg-[#5EABD6]/5" : "border-slate-100 bg-slate-50/50"}`}>
-                        <div className="flex justify-between items-start">
-                          <div>
-                            <div className="flex flex-wrap items-center gap-1.5">
-                              <span className={`px-1.5 py-0.5 rounded text-[8px] font-mono font-bold uppercase ${
-                                isFromOwner ? "bg-indigo-50 text-indigo-700 border border-indigo-100" : "bg-slate-100 text-slate-600 border border-slate-200"
-                              }`}>
-                                {isFromOwner ? "Owner â†’ You" : "You â†’ Owner"}
-                              </span>
-                              <span className={`px-1.5 py-0.5 rounded text-[8px] font-mono font-bold uppercase ${
-                                req.status === "APPROVED"
-                                  ? "bg-emerald-50 text-emerald-700 border border-emerald-100"
-                                  : req.status === "REJECTED"
-                                    ? "bg-rose-50 text-rose-700 border border-rose-100"
-                                    : "bg-amber-50 text-amber-700 border border-amber-100 animate-pulse"
-                              }`}>
-                                {req.status === "PENDING_APPROVAL" ? "PENDING" : req.status}
-                              </span>
-                            </div>
-                            <h4 className="font-extrabold text-slate-900 text-xs mt-1.5">{req.productName}</h4>
-                            <span className="text-[9px] font-mono text-slate-400">{req.id}</span>
-                          </div>
-                          <span className="font-mono text-xs font-black text-slate-950 bg-white px-2 py-0.5 rounded border">{formatValue(req.estimatedCost)}</span>
-                        </div>
-
-                        <p className="text-xs text-slate-600 italic">" {req.notes} "</p>
-
-                        {req.rejectReason && (
-                          <div className="p-2.5 bg-white border border-rose-100 rounded-lg text-[11px] text-rose-700 font-bold">
-                            Owner remarks: {req.rejectReason}
-                          </div>
-                        )}
-                        {req.managerRemark && (
-                          <div className="p-2.5 bg-white border border-emerald-100 rounded-lg text-[11px] text-emerald-700 font-bold">
-                            Your remarks: {req.managerRemark}
-                          </div>
-                        )}
-
-                        <div className="flex justify-between items-center text-[10px] text-slate-400 font-mono border-t pt-2 border-slate-100">
-                          <span>Quantity: {req.quantity} Units</span>
-                          <span>Date: {new Date(req.submittedTime).toLocaleDateString()}</span>
-                        </div>
-
-                        {isActionable && (
-                          <div className="space-y-2 pt-2 border-t border-slate-100">
-                            <input
-                              type="text"
-                              placeholder="Add a quick remark (optional)..."
-                              value={ownerReqRemark[req.id] || ""}
-                              onChange={(e) => setOwnerReqRemark({ ...ownerReqRemark, [req.id]: e.target.value })}
-                              className="w-full text-xs p-2 bg-white border border-slate-200 rounded-lg focus:outline-none"
-                            />
-                            <div className="flex gap-2">
-                              <button
-                                onClick={() => handleRespondOwnerRequest(req.id, "REJECTED")}
-                                className="flex-1 bg-rose-50 text-rose-700 border border-rose-100 hover:bg-rose-100 py-1.5 rounded-lg text-xs font-bold transition-all cursor-pointer text-center"
-                              >
-                                Decline
-                              </button>
-                              <button
-                                onClick={() => handleRespondOwnerRequest(req.id, "APPROVED")}
-                                className="flex-1 bg-[#5EABD6] hover:bg-[#4396c2] text-white py-1.5 rounded-lg text-xs font-bold transition-all cursor-pointer text-center"
-                              >
-                                Approve & Restock
-                              </button>
-                            </div>
-                          </div>
-                        )}
-                      </div>
-                    );
-                  })
-                )}
               </div>
             </div>
           </div>
@@ -1073,11 +1384,11 @@ export default function ManagerDashboard({
             </div>
 
             {productSubTab === "COMBOS" && (
-              <ManagerComboCreator company={company} products={localProducts} currency={currency} />
+              <ManagerComboCreator company={company} products={localProducts} currency={currency} onDataChanged={onDataChanged} />
             )}
 
             {productSubTab === "FLYERS" && (
-              <ManagerFlyerUpload company={company} promotions={promotions} />
+              <ManagerFlyerUpload company={company} promotions={promotions} onAddPromotion={onAddPromotion} onDataChanged={onDataChanged} />
             )}
 
             {productSubTab === "MENU" && (
@@ -1393,6 +1704,11 @@ export default function ManagerDashboard({
                       return (
                         <div key={p.id} className="rounded-2xl border-2 border-[#261CC1] bg-indigo-50/30 p-4 shadow-sm space-y-3">
                           <p className="text-[10px] font-black uppercase tracking-wider text-[#261CC1]">Editing Menu Item</p>
+                          {editError && (
+                            <div className="p-2 bg-red-50 border border-red-200 text-red-700 text-[11px] font-bold rounded-lg">
+                              {editError}
+                            </div>
+                          )}
                           <div className="grid grid-cols-2 gap-2.5">
                             <div className="col-span-2 space-y-1">
                               <label className="text-[9px] font-black uppercase text-slate-400">Item Name</label>
@@ -1404,19 +1720,19 @@ export default function ManagerDashboard({
                             </div>
                             <div className="space-y-1">
                               <label className="text-[9px] font-black uppercase text-slate-400">Sell Price (Rp)</label>
-                              <input type="number" value={editPrice} onChange={(e) => setEditPrice(e.target.value)} placeholder="0" className="w-full text-xs p-2 bg-white border border-slate-200 rounded-lg focus:outline-none focus:ring-1 focus:ring-[#261CC1] font-bold" />
+                              <input type="number" min="0" step="1" value={editPrice} onChange={(e) => setEditPrice(e.target.value)} placeholder="0" className="w-full text-xs p-2 bg-white border border-slate-200 rounded-lg focus:outline-none focus:ring-1 focus:ring-[#261CC1] font-bold" />
                             </div>
                             <div className="space-y-1">
                               <label className="text-[9px] font-black uppercase text-slate-400">Cost Price (Rp)</label>
-                              <input type="number" value={editCogs} onChange={(e) => setEditCogs(e.target.value)} placeholder="0" className="w-full text-xs p-2 bg-white border border-slate-200 rounded-lg focus:outline-none focus:ring-1 focus:ring-[#261CC1] font-bold" />
+                              <input type="number" min="0" step="1" value={editCogs} onChange={(e) => setEditCogs(e.target.value)} placeholder="0" className="w-full text-xs p-2 bg-white border border-slate-200 rounded-lg focus:outline-none focus:ring-1 focus:ring-[#261CC1] font-bold" />
                             </div>
                             <div className="space-y-1">
                               <label className="text-[9px] font-black uppercase text-slate-400">Current Stock</label>
-                              <input type="number" value={editStock} onChange={(e) => setEditStock(e.target.value)} placeholder="0" className="w-full text-xs p-2 bg-white border border-slate-200 rounded-lg focus:outline-none focus:ring-1 focus:ring-[#261CC1] font-bold" />
+                              <input type="number" min="0" step="1" value={editStock} onChange={(e) => setEditStock(e.target.value)} placeholder="0" className="w-full text-xs p-2 bg-white border border-slate-200 rounded-lg focus:outline-none focus:ring-1 focus:ring-[#261CC1] font-bold" />
                             </div>
                             <div className="col-span-2 space-y-1">
                               <label className="text-[9px] font-black uppercase text-slate-400">Minimum Safety Stock</label>
-                              <input type="number" value={editMinStock} onChange={(e) => setEditMinStock(e.target.value)} placeholder="0" className="w-full text-xs p-2 bg-white border border-slate-200 rounded-lg focus:outline-none focus:ring-1 focus:ring-[#261CC1] font-bold" />
+                              <input type="number" min="0" step="1" value={editMinStock} onChange={(e) => setEditMinStock(e.target.value)} placeholder="0" className="w-full text-xs p-2 bg-white border border-slate-200 rounded-lg focus:outline-none focus:ring-1 focus:ring-[#261CC1] font-bold" />
                             </div>
                           </div>
                           <div className="flex justify-end gap-1.5">
@@ -1884,6 +2200,173 @@ export default function ManagerDashboard({
         )}
 
       </div>
+
+      {/* Approval detail pop-up - read-only view of the full record, with Approve/Reject only
+          when the current user is allowed to act on it (never an editable form). */}
+      {selectedApprovalItem && (
+        <div
+          className="fixed inset-0 z-50 bg-slate-900/50 flex items-center justify-center p-4"
+          onClick={() => setSelectedApprovalItem(null)}
+        >
+          <div
+            className="bg-white rounded-3xl shadow-xl max-w-lg w-full max-h-[85vh] overflow-y-auto p-6 space-y-4"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <div className="flex items-start justify-between gap-3">
+              <div>
+                <div className="flex items-center gap-1.5 flex-wrap">
+                  <span className={`px-1.5 py-0.5 rounded text-[8px] font-mono font-bold uppercase border ${KIND_BADGE_CLASSES[selectedApprovalItem.kind]}`}>
+                    {selectedApprovalItem.kind}
+                  </span>
+                  <span className={`px-1.5 py-0.5 rounded text-[8px] font-mono font-bold uppercase ${
+                    selectedApprovalItem.status === "approved"
+                      ? "bg-emerald-50 text-emerald-700 border border-emerald-100"
+                      : selectedApprovalItem.status === "rejected"
+                        ? "bg-rose-50 text-rose-700 border border-rose-100"
+                        : "bg-amber-50 text-amber-700 border border-amber-100"
+                  }`}>
+                    {selectedApprovalItem.status}
+                  </span>
+                </div>
+                <h3 className="font-display font-black text-slate-900 text-base mt-1.5">{selectedApprovalItem.title}</h3>
+              </div>
+              <button
+                onClick={() => setSelectedApprovalItem(null)}
+                className="p-1.5 rounded-lg text-slate-400 hover:text-slate-700 hover:bg-slate-100 cursor-pointer shrink-0"
+              >
+                <X className="w-4 h-4" />
+              </button>
+            </div>
+
+            <div className="grid grid-cols-2 gap-3 text-xs">
+              {selectedApprovalItem.detail.quantity !== undefined && (
+                <div className="p-2.5 bg-slate-50 border border-slate-100 rounded-xl">
+                  <p className="text-[9px] font-black uppercase text-slate-400">Quantity</p>
+                  <p className="font-bold text-slate-800 mt-0.5">{selectedApprovalItem.detail.quantity} units</p>
+                </div>
+              )}
+              {selectedApprovalItem.detail.supplierName && (
+                <div className="p-2.5 bg-slate-50 border border-slate-100 rounded-xl">
+                  <p className="text-[9px] font-black uppercase text-slate-400">Supplier</p>
+                  <p className="font-bold text-slate-800 mt-0.5">{selectedApprovalItem.detail.supplierName}</p>
+                </div>
+              )}
+              {selectedApprovalItem.detail.estimatedCost !== undefined && (
+                <div className="p-2.5 bg-slate-50 border border-slate-100 rounded-xl">
+                  <p className="text-[9px] font-black uppercase text-slate-400">Estimated Cost</p>
+                  <p className="font-bold text-slate-800 mt-0.5">{formatValue(selectedApprovalItem.detail.estimatedCost)}</p>
+                </div>
+              )}
+              {selectedApprovalItem.detail.regularPrice !== undefined && (
+                <div className="p-2.5 bg-slate-50 border border-slate-100 rounded-xl">
+                  <p className="text-[9px] font-black uppercase text-slate-400">Regular Price</p>
+                  <p className="font-bold text-slate-800 mt-0.5 line-through">{formatValue(selectedApprovalItem.detail.regularPrice)}</p>
+                </div>
+              )}
+              {selectedApprovalItem.detail.bundlePrice !== undefined && (
+                <div className="p-2.5 bg-slate-50 border border-slate-100 rounded-xl">
+                  <p className="text-[9px] font-black uppercase text-slate-400">Bundle Price</p>
+                  <p className="font-bold text-slate-800 mt-0.5">{formatValue(selectedApprovalItem.detail.bundlePrice)}</p>
+                </div>
+              )}
+              {selectedApprovalItem.detail.discountPercent !== undefined && (
+                <div className="p-2.5 bg-slate-50 border border-slate-100 rounded-xl">
+                  <p className="text-[9px] font-black uppercase text-slate-400">Discount</p>
+                  <p className="font-bold text-slate-800 mt-0.5">{selectedApprovalItem.detail.discountPercent}%</p>
+                </div>
+              )}
+              {selectedApprovalItem.detail.startDate && (
+                <div className="p-2.5 bg-slate-50 border border-slate-100 rounded-xl">
+                  <p className="text-[9px] font-black uppercase text-slate-400">Campaign Dates</p>
+                  <p className="font-bold text-slate-800 mt-0.5">{selectedApprovalItem.detail.startDate} &rarr; {selectedApprovalItem.detail.endDate}</p>
+                </div>
+              )}
+              {selectedApprovalItem.detail.initiatedByName && (
+                <div className="p-2.5 bg-slate-50 border border-slate-100 rounded-xl">
+                  <p className="text-[9px] font-black uppercase text-slate-400">Submitted By</p>
+                  <p className="font-bold text-slate-800 mt-0.5">{selectedApprovalItem.detail.initiatedByName}{selectedApprovalItem.detail.initiatedByRole ? ` (${selectedApprovalItem.detail.initiatedByRole})` : ""}</p>
+                </div>
+              )}
+              <div className="p-2.5 bg-slate-50 border border-slate-100 rounded-xl">
+                <p className="text-[9px] font-black uppercase text-slate-400">Submitted Date</p>
+                <p className="font-bold text-slate-800 mt-0.5">{new Date(selectedApprovalItem.date).toLocaleString()}</p>
+              </div>
+              {selectedApprovalItem.detail.reviewedByName && (
+                <div className="p-2.5 bg-slate-50 border border-slate-100 rounded-xl">
+                  <p className="text-[9px] font-black uppercase text-slate-400">Reviewed By</p>
+                  <p className="font-bold text-slate-800 mt-0.5">{selectedApprovalItem.detail.reviewedByName}</p>
+                </div>
+              )}
+              {selectedApprovalItem.detail.reviewedAt && (
+                <div className="p-2.5 bg-slate-50 border border-slate-100 rounded-xl">
+                  <p className="text-[9px] font-black uppercase text-slate-400">Reviewed Date</p>
+                  <p className="font-bold text-slate-800 mt-0.5">{new Date(selectedApprovalItem.detail.reviewedAt).toLocaleString()}</p>
+                </div>
+              )}
+              {selectedApprovalItem.detail.source === "import" && (
+                <div className="p-2.5 bg-slate-50 border border-slate-100 rounded-xl">
+                  <p className="text-[9px] font-black uppercase text-slate-400">Source</p>
+                  <p className="font-bold text-slate-800 mt-0.5">Imported from spreadsheet</p>
+                </div>
+              )}
+              {(selectedApprovalItem.detail.productNames?.length ?? 0) > 0 && (
+                <div className="p-2.5 bg-slate-50 border border-slate-100 rounded-xl col-span-2">
+                  <p className="text-[9px] font-black uppercase text-slate-400">Bundled Items</p>
+                  <div className="flex flex-wrap gap-1 mt-1">
+                    {selectedApprovalItem.detail.productNames!.map((n) => (
+                      <span key={n} className="px-1.5 py-0.5 bg-white border border-slate-200 rounded text-[9px] font-bold text-slate-600">{n}</span>
+                    ))}
+                  </div>
+                </div>
+              )}
+            </div>
+
+            {(selectedApprovalItem.detail.notes || selectedApprovalItem.detail.description || selectedApprovalItem.detail.strategy) && (
+              <div className="p-3 bg-indigo-50/50 border border-indigo-100 rounded-xl">
+                <p className="text-[9px] font-black uppercase text-indigo-400">Notes / Reason</p>
+                <p className="text-xs text-slate-700 mt-1 leading-relaxed italic">
+                  " {selectedApprovalItem.detail.notes || selectedApprovalItem.detail.description || selectedApprovalItem.detail.strategy} "
+                </p>
+              </div>
+            )}
+
+            {selectedApprovalItem.detail.reviewNote && (
+              <div className="p-3 bg-slate-50 border border-slate-200 rounded-xl">
+                <p className="text-[9px] font-black uppercase text-slate-400">Reviewer's Note</p>
+                <p className="text-xs text-slate-700 mt-1 leading-relaxed">{selectedApprovalItem.detail.reviewNote}</p>
+              </div>
+            )}
+
+            {selectedApprovalItem.canAct && (
+              <div className="space-y-2 pt-3 border-t border-slate-100">
+                <input
+                  type="text"
+                  placeholder="Add a quick remark (optional)..."
+                  value={reviewRemark[selectedApprovalItem.key] || ""}
+                  onChange={(e) => setReviewRemark({ ...reviewRemark, [selectedApprovalItem.key]: e.target.value })}
+                  className="w-full text-xs p-2.5 bg-slate-50 border border-slate-200 rounded-xl focus:outline-none"
+                />
+                <div className="flex gap-2">
+                  <button
+                    disabled={approvalActionBusyKey === selectedApprovalItem.key}
+                    onClick={() => handleReviewItem(selectedApprovalItem, false)}
+                    className="flex-1 bg-rose-50 text-rose-700 border border-rose-100 hover:bg-rose-100 py-2 rounded-xl text-xs font-bold transition-all cursor-pointer text-center disabled:opacity-50"
+                  >
+                    Reject
+                  </button>
+                  <button
+                    disabled={approvalActionBusyKey === selectedApprovalItem.key}
+                    onClick={() => handleReviewItem(selectedApprovalItem, true)}
+                    className="flex-1 bg-[#5EABD6] hover:bg-[#4396c2] text-white py-2 rounded-xl text-xs font-bold transition-all cursor-pointer text-center disabled:opacity-50"
+                  >
+                    Approve
+                  </button>
+                </div>
+              </div>
+            )}
+          </div>
+        </div>
+      )}
 
     </div>
   );

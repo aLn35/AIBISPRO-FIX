@@ -1,0 +1,4 @@
+Product,Quantity,Supplier,Cost,Status,Date,Notes
+Milk Whole 1L,200,PT Greenfields,2400000,approved,2026-06-01,Monthly stock replenishment
+Sugar Cane 5kg,80,PT Gula Nusantara,960000,rejected,2026-06-05,Budget exceeded this cycle
+Coffee Cups 12oz,1000,PT Kemasan Prima,3500000,pending,2026-07-10,Awaiting owner review

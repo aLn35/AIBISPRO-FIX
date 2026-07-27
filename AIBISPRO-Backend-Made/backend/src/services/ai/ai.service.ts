@@ -37,13 +37,16 @@ function linearRegression(xs: number[], ys: number[]) {
 export class AIService {
   constructor(private readonly prisma: PrismaService) {}
 
-  /** Buckets raw `sales` rows into a { date -> totalRevenue } map for the last N days, for one company. */
+  /** Buckets raw `sales` rows into a { date -> totalRevenue } map for the last N days, for one
+   * company. Scoped to `source: 'upload'` only, so financial KPIs/forecasts reflect real
+   * uploaded sales data - never the fabricated demo rows the seed script inserts (those are
+   * tagged `source: 'pos'` and have no `dataset_id`). */
   private async getDailyRevenue(companyId: number, daysBack: number) {
     const since = new Date();
     since.setDate(since.getDate() - daysBack);
 
     const sales = await this.prisma.sales.findMany({
-      where: { company_id: companyId, transaction_date: { gte: since } },
+      where: { company_id: companyId, transaction_date: { gte: since }, source: 'upload' },
       select: { transaction_date: true, total_amount: true },
     });
 

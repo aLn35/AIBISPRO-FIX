@@ -71,19 +71,6 @@ export interface SaleItem {
   cogs: number;
 }
 
-export interface InventoryLog {
-  id: string;
-  companyId: string;
-  productId: string;
-  productName: string;
-  type: "IN" | "OUT"; // stock replenishment or sale
-  quantity: number;
-  date: string;
-  notes: string;
-  approvedBy?: string;
-  status: "APPROVED" | "PENDING_APPROVAL" | "COMPLETED";
-}
-
 export interface Promotion {
   id: string;
   companyId: string;
@@ -97,6 +84,47 @@ export interface Promotion {
   revenueGenerated: number;
   description?: string;
   rejectReason?: string;
+  imageUrl?: string;
+}
+
+export interface RestockRequest {
+  id: number;
+  companyId: number;
+  productSizeId: number | null;
+  productName: string;
+  quantity: number;
+  supplierName?: string;
+  estimatedCost?: number;
+  notes?: string;
+  status: "pending" | "approved" | "rejected";
+  initiatedBy: number;
+  initiatedByRole: "MANAGER" | "OWNER";
+  initiatedByName?: string;
+  reviewedBy?: number;
+  reviewedByName?: string;
+  reviewedAt?: string;
+  reviewNote?: string;
+  source: "manual" | "import";
+  createdAt: string;
+}
+
+export interface BundleProposal {
+  id: number;
+  companyId: number;
+  name: string;
+  productIds: number[];
+  productNames?: string[];
+  regularPrice: number;
+  bundlePrice: number;
+  strategy?: string;
+  status: "pending" | "approved" | "rejected";
+  createdBy: number;
+  createdByName?: string;
+  reviewedBy?: number;
+  reviewedByName?: string;
+  reviewedAt?: string;
+  reviewNote?: string;
+  createdAt: string;
 }
 
 export interface Bundle {

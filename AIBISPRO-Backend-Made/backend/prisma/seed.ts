@@ -280,7 +280,7 @@ async function main() {
   console.log('Seeding users...');
   const passwordHash = await bcrypt.hash('password123', 10);
 
-  const maintainance = await prisma.users.create({ data: { name: 'Sales Ops Lead', email: 'maintainance@aibispro.com', password: passwordHash, role: 'MAINTAINANCE' } });
+  const maintainance = await prisma.users.create({ data: { name: 'Salesforce Ops Lead', email: 'maintainance@aibispro.com', password: passwordHash, role: 'MAINTAINANCE' } });
   const owner = await prisma.users.create({ data: { name: 'Business Owner', email: 'owner@aibispro.com', password: passwordHash, role: 'OWNER' } });
   const manager = await prisma.users.create({ data: { name: 'Store Manager', email: 'manager@aibispro.com', password: passwordHash, role: 'MANAGER' } });
   const customer = await prisma.users.create({ data: { name: 'Guest Customer', email: 'customer@aibispro.com', password: passwordHash, role: 'CUSTOMER' } });

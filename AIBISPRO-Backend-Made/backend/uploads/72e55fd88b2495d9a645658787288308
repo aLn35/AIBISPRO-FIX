@@ -1,0 +1,4 @@
+Product,Quantity,Supplier,Cost,Status,Date,Notes
+Test Widget A,25,PT Uji Coba,500000,pending,2026-07-01,First batch
+Test Widget A,25,PT Uji Coba,500000,pending,2026-07-01,Duplicate row in same file
+Test Widget B,10,PT Lain,200000,approved,2026-07-02,Different product

@@ -4,34 +4,52 @@
  */
 
 import React, { useState, useEffect } from "react";
-import { Company, Product, Currency } from "../types";
+import { Company, Product, Currency, BundleProposal } from "../types";
 import { EXCHANGE_RATE } from "../mockData";
-import { Sparkles, ShoppingCart, HelpCircle, Check, ArrowRight, Hourglass, Plus, X, Trash2, ShieldAlert } from "lucide-react";
-import { motion, AnimatePresence } from "motion/react";
-
-interface BundleProposal {
-  id: string;
-  companyId: string;
-  name: string;
-  productIds: string[];
-  productNames: string[];
-  regularPrice: number;
-  bundlePrice: number;
-  strategy: string;
-  status: "PENDING_APPROVAL" | "APPROVED" | "REJECTED";
-  submittedTime: string;
-}
+import { Sparkles, Check, Trash2 } from "lucide-react";
+import { apiGet, apiPost, apiDelete } from "../api";
 
 interface ManagerComboCreatorProps {
   company: Company;
   products: Product[];
   currency: Currency;
+  onDataChanged?: () => void;
+}
+
+interface BackendBundleProposal {
+  id: number;
+  company_id: number;
+  name: string;
+  product_ids: number[];
+  product_names?: string[];
+  regular_price: number;
+  bundle_price: number;
+  strategy: string | null;
+  status: string;
+  created_at: string;
+}
+
+function mapProposal(raw: BackendBundleProposal): BundleProposal {
+  return {
+    id: raw.id,
+    companyId: raw.company_id,
+    name: raw.name,
+    productIds: raw.product_ids ?? [],
+    productNames: raw.product_names ?? [],
+    regularPrice: raw.regular_price,
+    bundlePrice: raw.bundle_price,
+    strategy: raw.strategy ?? undefined,
+    status: (raw.status as BundleProposal["status"]) ?? "pending",
+    createdBy: 0,
+    createdAt: raw.created_at,
+  };
 }
 
 export default function ManagerComboCreator({
   company,
   products,
   currency,
+  onDataChanged,
 }: ManagerComboCreatorProps) {
   const [proposals, setProposals] = useState<BundleProposal[]>([]);
   const [bundleName, setBundleName] = useState("");
@@ -40,45 +58,19 @@ export default function ManagerComboCreator({
   const [strategy, setStrategy] = useState("");
   const [error, setError] = useState("");
   const [success, setSuccess] = useState("");
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
-  // Get matching company products
   const companyProducts = products.filter(p => p.companyId === company.id);
 
-  // Sync with localStorage
-  useEffect(() => {
-    const checkProposals = () => {
-      const stored = localStorage.getItem("aibispro_bundle_proposals");
-      if (stored) {
-        try {
-          const parsed = JSON.parse(stored);
-          setProposals(parsed.filter((p: any) => p.companyId === company.id));
-        } catch (e) {
-          console.error("Failed to parse bundle proposals", e);
-        }
-      } else {
-        // Seed an initial pending bundle proposal for realism
-        const initialProposals: BundleProposal[] = [
-          {
-            id: "BNDL-101",
-            companyId: company.id,
-            name: "Premium Coffee & Pastry Morning Set",
-            productIds: companyProducts.slice(0, 2).map(p => p.id),
-            productNames: companyProducts.slice(0, 2).map(p => p.name),
-            regularPrice: companyProducts.slice(0, 2).reduce((sum, p) => sum + p.price, 0),
-            bundlePrice: Math.round(companyProducts.slice(0, 2).reduce((sum, p) => sum + p.price, 0) * 0.8), // 20% discount
-            strategy: "High-margin cross-sell campaign targeting morning corporate executives. Promoted via push-alerts.",
-            status: "PENDING_APPROVAL",
-            submittedTime: new Date(Date.now() - 3600000 * 5).toISOString()
-          }
-        ];
-        localStorage.setItem("aibispro_bundle_proposals", JSON.stringify(initialProposals));
-        setProposals(initialProposals.filter((p: any) => p.companyId === company.id));
-      }
-    };
+  const loadProposals = () => {
+    apiGet(`/bundle-proposals?companyId=${company.id}`)
+      .then((data: BackendBundleProposal[]) => setProposals(data.map(mapProposal)))
+      .catch((e) => console.error("Failed to load bundle proposals:", e));
+  };
 
-    checkProposals();
-    const interval = setInterval(checkProposals, 1500);
-    return () => clearInterval(interval);
+  useEffect(() => {
+    loadProposals();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [company.id]);
 
   const handleAddProductToBundle = (productId: string) => {
@@ -96,7 +88,7 @@ export default function ManagerComboCreator({
     }, 0);
   };
 
-  const handleSubmitProposal = (e: React.FormEvent) => {
+  const handleSubmitProposal = async (e: React.FormEvent) => {
     e.preventDefault();
     setError("");
     setSuccess("");
@@ -125,63 +117,47 @@ export default function ManagerComboCreator({
       return;
     }
 
-    const userStored = localStorage.getItem("aibispro_user");
-    let isOwner = false;
-    if (userStored) {
-      try {
-        const u = JSON.parse(userStored);
-        if (u.role === "OWNER") {
-          isOwner = true;
-        }
-      } catch (e) {}
+    const selectedProducts = selectedProductIds
+      .map((id) => companyProducts.find((p) => p.id === id))
+      .filter((p): p is Product => !!p && p.productId !== undefined);
+
+    if (selectedProducts.length !== selectedProductIds.length) {
+      setError("One or more selected items could not be resolved to a real product. Please re-select.");
+      return;
     }
 
-    const newProposal: BundleProposal = {
-      id: "BNDL-" + Math.floor(100 + Math.random() * 900),
-      companyId: company.id,
-      name: bundleName,
-      productIds: selectedProductIds,
-      productNames: selectedProductIds.map(id => companyProducts.find(p => p.id === id)?.name || ""),
-      regularPrice: regularTotal,
-      bundlePrice: Number(bundlePrice),
-      strategy,
-      status: isOwner ? "APPROVED" : "PENDING_APPROVAL",
-      submittedTime: new Date().toISOString()
-    };
+    setIsSubmitting(true);
+    try {
+      await apiPost("/bundle-proposals", {
+        company_id: Number(company.id),
+        name: bundleName,
+        product_ids: selectedProducts.map((p) => p.productId),
+        product_names: selectedProducts.map((p) => p.name),
+        regular_price: regularTotal,
+        bundle_price: Number(bundlePrice),
+        strategy,
+      });
 
-    // Load full list across all companies, prepend new, and store
-    const stored = localStorage.getItem("aibispro_bundle_proposals");
-    let allProposals: BundleProposal[] = [];
-    if (stored) {
-      try {
-        allProposals = JSON.parse(stored);
-      } catch (e) {
-        console.error(e);
-      }
+      setBundleName("");
+      setSelectedProductIds([]);
+      setBundlePrice(0);
+      setStrategy("");
+      setSuccess("Package combo proposal submitted successfully! Owner approval is pending.");
+      loadProposals();
+      onDataChanged?.();
+    } catch (err: any) {
+      setError(err?.message ?? "Failed to submit bundle proposal.");
+    } finally {
+      setIsSubmitting(false);
     }
-    const updated = [newProposal, ...allProposals];
-    localStorage.setItem("aibispro_bundle_proposals", JSON.stringify(updated));
-
-    // Reset Form
-    setBundleName("");
-    setSelectedProductIds([]);
-    setBundlePrice(0);
-    setStrategy("");
-    setSuccess(isOwner ? "Package combo registered and active instantly!" : "Package combo proposal submitted successfully! Owner approval is pending.");
-    setProposals(updated.filter(p => p.companyId === company.id));
   };
 
-  const handleDeleteProposal = (id: string) => {
-    const stored = localStorage.getItem("aibispro_bundle_proposals");
-    if (stored) {
-      try {
-        const parsed: BundleProposal[] = JSON.parse(stored);
-        const updated = parsed.filter(p => p.id !== id);
-        localStorage.setItem("aibispro_bundle_proposals", JSON.stringify(updated));
-        setProposals(updated.filter(p => p.companyId === company.id));
-      } catch (e) {
-        console.error(e);
-      }
+  const handleDeleteProposal = async (id: number) => {
+    try {
+      await apiDelete(`/bundle-proposals/${id}`);
+      loadProposals();
+    } catch (e) {
+      console.error("Failed to delete bundle proposal:", e);
     }
   };
 
@@ -206,7 +182,7 @@ export default function ManagerComboCreator({
 
   return (
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-      
+
       {/* Bundle Proposal Creation form */}
       <div className="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm space-y-4">
         <div>
@@ -215,7 +191,7 @@ export default function ManagerComboCreator({
             Build Strategic Menu Combo
           </h3>
           <p className="text-xs text-slate-500 mt-1">
-            Bundle several popular items/food with strategic discount rates. Bundle proposals are sent to the Admin Owner for review and live activation.
+            Bundle several popular items/food with strategic discount rates. Bundle proposals are sent to the Owner for review and live activation.
           </p>
         </div>
 
@@ -256,8 +232,8 @@ export default function ManagerComboCreator({
                     type="button"
                     onClick={() => handleAddProductToBundle(product.id)}
                     className={`p-2 border text-left rounded-lg text-xs transition-all flex justify-between items-center ${
-                      isSelected 
-                        ? "border-[#261CC1] bg-indigo-50/20 text-[#261CC1] font-bold" 
+                      isSelected
+                        ? "border-[#261CC1] bg-indigo-50/20 text-[#261CC1] font-bold"
                         : "border-slate-100 hover:border-slate-300 bg-slate-50 text-slate-700"
                     }`}
                   >
@@ -323,9 +299,10 @@ export default function ManagerComboCreator({
 
           <button
             type="submit"
-            className="w-full flex justify-center py-2 px-4 border border-transparent rounded-lg shadow-sm text-xs font-bold text-white bg-[#261CC1] hover:bg-[#1C0770] focus:outline-none focus:ring-2 focus:ring-[#261CC1] transition-all cursor-pointer"
+            disabled={isSubmitting}
+            className="w-full flex justify-center py-2 px-4 border border-transparent rounded-lg shadow-sm text-xs font-bold text-white bg-[#261CC1] hover:bg-[#1C0770] focus:outline-none focus:ring-2 focus:ring-[#261CC1] transition-all cursor-pointer disabled:opacity-50"
           >
-            Submit Bundle to Owner
+            {isSubmitting ? "Submitting..." : "Submit Bundle to Owner"}
           </button>
         </form>
       </div>
@@ -348,8 +325,8 @@ export default function ManagerComboCreator({
         ) : (
           <div className="space-y-3 max-h-[380px] overflow-y-auto pr-1">
             {proposals.map((proposal) => {
-              const discount = proposal.regularPrice > 0 
-                ? Math.round(((proposal.regularPrice - proposal.bundlePrice) / proposal.regularPrice) * 100) 
+              const discount = proposal.regularPrice > 0
+                ? Math.round(((proposal.regularPrice - proposal.bundlePrice) / proposal.regularPrice) * 100)
                 : 0;
 
               return (
@@ -358,15 +335,15 @@ export default function ManagerComboCreator({
                     <div>
                       <div className="flex items-center gap-1.5 flex-wrap">
                         <span className={`px-2 py-0.5 rounded text-[8px] font-extrabold uppercase ${
-                          proposal.status === "APPROVED" 
-                            ? "bg-emerald-100 text-emerald-700" 
-                            : proposal.status === "REJECTED" 
-                            ? "bg-red-100 text-red-700" 
+                          proposal.status === "approved"
+                            ? "bg-emerald-100 text-emerald-700"
+                            : proposal.status === "rejected"
+                            ? "bg-red-100 text-red-700"
                             : "bg-amber-100 text-amber-700 animate-pulse"
                         }`}>
-                          {proposal.status.replace("_", " ")}
+                          {proposal.status}
                         </span>
-                        <span className="font-mono text-[9px] text-slate-400">{proposal.id}</span>
+                        <span className="font-mono text-[9px] text-slate-400">BNDL-{proposal.id}</span>
                       </div>
                       <h4 className="text-xs font-black text-slate-800 mt-1.5">{proposal.name}</h4>
                     </div>
@@ -381,7 +358,7 @@ export default function ManagerComboCreator({
                   <div className="bg-white p-2 border border-slate-100 rounded-lg">
                     <p className="text-[9px] text-slate-400 font-bold uppercase mb-1">Bundled Foods/Drinks</p>
                     <div className="flex flex-wrap gap-1">
-                      {proposal.productNames.map(name => (
+                      {(proposal.productNames ?? []).map(name => (
                         <span key={name} className="px-1.5 py-0.5 bg-slate-50 border border-slate-100 rounded text-[9px] text-slate-600 font-bold">
                           {name}
                         </span>
@@ -396,8 +373,8 @@ export default function ManagerComboCreator({
                   <div className="pt-2 border-t border-slate-100 flex justify-between items-center text-[9px] text-slate-400 font-bold">
                     <span>Discount pitch: -{discount}%</span>
                     <div className="flex items-center gap-2">
-                      <span>Submitted: {new Date(proposal.submittedTime).toLocaleDateString()}</span>
-                      {proposal.status !== "APPROVED" && (
+                      <span>Submitted: {new Date(proposal.createdAt).toLocaleDateString()}</span>
+                      {proposal.status !== "approved" && (
                         <button
                           onClick={() => handleDeleteProposal(proposal.id)}
                           className="text-slate-300 hover:text-red-500 p-1 rounded transition-colors cursor-pointer"
