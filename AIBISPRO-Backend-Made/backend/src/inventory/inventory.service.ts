@@ -1,5 +1,5 @@
-import { Injectable, NotFoundException } from '@nestjs/common';
-import { PrismaService } from '../prisma/prisma.service';
+import { Injectable, NotFoundException } from "@nestjs/common";
+import { PrismaService } from "../prisma/prisma.service";
 
 @Injectable()
 export class InventoryService {
@@ -12,7 +12,7 @@ export class InventoryService {
         products: true,
       },
       orderBy: {
-        current_stock: 'asc',
+        current_stock: "asc",
       },
     });
   }
@@ -29,33 +29,29 @@ export class InventoryService {
     quantity: number;
     notes?: string;
   }) {
-    const productSize =
-      await this.prisma.product_sizes.findUnique({
-        where: {
-          id: Number(data.product_size_id),
-        },
-      });
+    const productSize = await this.prisma.product_sizes.findUnique({
+      where: {
+        id: Number(data.product_size_id),
+      },
+    });
 
     if (!productSize) {
-      throw new NotFoundException('Product size not found');
+      throw new NotFoundException("Product size not found");
     }
 
-    const updated =
-      await this.prisma.product_sizes.update({
-        where: {
-          id: productSize.id,
-        },
-        data: {
-          current_stock:
-            (productSize.current_stock ?? 0) +
-            data.quantity,
-        },
-      });
+    const updated = await this.prisma.product_sizes.update({
+      where: {
+        id: productSize.id,
+      },
+      data: {
+        current_stock: (productSize.current_stock ?? 0) + data.quantity,
+      },
+    });
 
     await this.prisma.inventory_logs.create({
       data: {
         product_size_id: productSize.id,
-        movement_type: 'IN',
+        movement_type: "IN",
         quantity: data.quantity,
         notes: data.notes,
       },
@@ -79,10 +75,18 @@ export class InventoryService {
       where: { id },
       data: {
         ...(data.size_name !== undefined ? { size_name: data.size_name } : {}),
-        ...(data.selling_price !== undefined ? { selling_price: data.selling_price } : {}),
-        ...(data.cost_price !== undefined ? { cost_price: data.cost_price } : {}),
-        ...(data.current_stock !== undefined ? { current_stock: data.current_stock } : {}),
-        ...(data.minimum_stock !== undefined ? { minimum_stock: data.minimum_stock } : {}),
+        ...(data.selling_price !== undefined
+          ? { selling_price: data.selling_price }
+          : {}),
+        ...(data.cost_price !== undefined
+          ? { cost_price: data.cost_price }
+          : {}),
+        ...(data.current_stock !== undefined
+          ? { current_stock: data.current_stock }
+          : {}),
+        ...(data.minimum_stock !== undefined
+          ? { minimum_stock: data.minimum_stock }
+          : {}),
       },
     });
   }

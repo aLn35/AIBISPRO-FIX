@@ -1,0 +1,19 @@
+flowchart TD
+    A["User requests forecast / demand /<br/>stock risk / promotion suggestion"] --> B["NestJS Gateway:<br/>assertAccess(userId, role, companyId)"]
+    B --> C["AIService calls FastAPI:<br/>GET /ai/&lt;endpoint&gt;?company_id=…"]
+    C --> D{"ML call succeeds within 5s<br/>AND company has enough<br/>real (source='upload') data?"}
+    D -->|Yes| E["Use ML result:<br/>Random Forest / Holt-Winters / Apriori<br/>method: 'ml_*'"]
+    D -->|"No — timeout, error,<br/>or insufficient data"| F["Fallback: deterministic<br/>rule-based computation<br/>method: 'rule_based_*'"]
+    E --> G["Shape response into the<br/>existing frontend contract"]
+    F --> G
+    G --> H["Return to frontend<br/>(AI Forecast Consult Hub, dashboards)"]
+    H --> I{"Restock / bundle / promotion<br/>suggestion?"}
+    I -->|Yes| J["Manager or Owner reviews in<br/>the Approval Center"]
+    I -->|"No — informational only"| M["Displayed directly<br/>(e.g. revenue forecast, chat answer)"]
+    J -->|Approve| K["Applied: stock updated,<br/>bundle/promo activated"]
+    J -->|Reject| L["Discarded and logged,<br/>no system change"]
+
+    style D fill:#fff4f0,stroke:#E14434
+    style I fill:#fff4f0,stroke:#E14434
+    style E fill:#eef6ff,stroke:#5EABD6
+    style F fill:#f5f5f5,stroke:#94a3b8

@@ -4,9 +4,9 @@ import {
   Injectable,
   NotFoundException,
   UnauthorizedException,
-} from '@nestjs/common';
-import { PrismaService } from '../prisma/prisma.service';
-import * as bcrypt from 'bcrypt';
+} from "@nestjs/common";
+import { PrismaService } from "../prisma/prisma.service";
+import * as bcrypt from "bcrypt";
 
 const USER_SELECT = {
   id: true,
@@ -19,15 +19,13 @@ const USER_SELECT = {
 
 @Injectable()
 export class UsersService {
-  constructor(
-    private readonly prisma: PrismaService,
-  ) {}
+  constructor(private readonly prisma: PrismaService) {}
 
   async findAll() {
     return this.prisma.users.findMany({
       select: USER_SELECT,
       orderBy: {
-        id: 'asc',
+        id: "asc",
       },
     });
   }
@@ -39,18 +37,13 @@ export class UsersService {
     });
 
     if (!user) {
-      throw new NotFoundException(
-        'User not found',
-      );
+      throw new NotFoundException("User not found");
     }
 
     return user;
   }
 
-  async updateRole(
-    id: number,
-    role: string,
-  ) {
+  async updateRole(id: number, role: string) {
     return this.prisma.users.update({
       where: { id },
       data: { role },
@@ -76,9 +69,10 @@ export class UsersService {
 
   private async verifyPassword(userId: number, currentPassword: string) {
     const user = await this.prisma.users.findUnique({ where: { id: userId } });
-    if (!user) throw new NotFoundException('User not found');
+    if (!user) throw new NotFoundException("User not found");
     const matches = await bcrypt.compare(currentPassword, user.password);
-    if (!matches) throw new UnauthorizedException('Current password is incorrect');
+    if (!matches)
+      throw new UnauthorizedException("Current password is incorrect");
     return user;
   }
 
@@ -86,16 +80,24 @@ export class UsersService {
    * MAINTAINANCE-only: edit your own email/password directly, no approval needed since
    * there's no one above MAINTAINANCE in the hierarchy.
    */
-  async selfUpdateCredentials(userId: number, data: { currentPassword: string; newEmail?: string; newPassword?: string }) {
+  async selfUpdateCredentials(
+    userId: number,
+    data: { currentPassword: string; newEmail?: string; newPassword?: string },
+  ) {
     await this.verifyPassword(userId, data.currentPassword);
     if (!data.newEmail && !data.newPassword) {
-      throw new BadRequestException('Provide a new email or new password');
+      throw new BadRequestException("Provide a new email or new password");
     }
     if (data.newEmail) {
-      const existing = await this.prisma.users.findUnique({ where: { email: data.newEmail } });
-      if (existing && existing.id !== userId) throw new BadRequestException('Email already in use');
+      const existing = await this.prisma.users.findUnique({
+        where: { email: data.newEmail },
+      });
+      if (existing && existing.id !== userId)
+        throw new BadRequestException("Email already in use");
     }
-    const newPasswordHash = data.newPassword ? await bcrypt.hash(data.newPassword, 10) : undefined;
+    const newPasswordHash = data.newPassword
+      ? await bcrypt.hash(data.newPassword, 10)
+      : undefined;
     return this.prisma.users.update({
       where: { id: userId },
       data: {
@@ -111,30 +113,51 @@ export class UsersService {
    * immediately and stored as new_password_hash - MAINTAINANCE (the approver) never sees the
    * plaintext, and the hash itself is never returned by any read endpoint below.
    */
-  async requestCredentialChange(ownerId: number, data: { currentPassword: string; field: 'email' | 'password'; newEmail?: string; newPassword?: string }) {
+  async requestCredentialChange(
+    ownerId: number,
+    data: {
+      currentPassword: string;
+      field: "email" | "password";
+      newEmail?: string;
+      newPassword?: string;
+    },
+  ) {
     await this.verifyPassword(ownerId, data.currentPassword);
 
-    if (data.field === 'email') {
-      if (!data.newEmail) throw new BadRequestException('newEmail is required');
-      const existing = await this.prisma.users.findUnique({ where: { email: data.newEmail } });
-      if (existing && existing.id !== ownerId) throw new BadRequestException('Email already in use');
-    } else if (data.field === 'password') {
-      if (!data.newPassword) throw new BadRequestException('newPassword is required');
+    if (data.field === "email") {
+      if (!data.newEmail) throw new BadRequestException("newEmail is required");
+      const existing = await this.prisma.users.findUnique({
+        where: { email: data.newEmail },
+      });
+      if (existing && existing.id !== ownerId)
+        throw new BadRequestException("Email already in use");
+    } else if (data.field === "password") {
+      if (!data.newPassword)
+        throw new BadRequestException("newPassword is required");
     } else {
       throw new BadRequestException('field must be "email" or "password"');
     }
 
-    const newPasswordHash = data.field === 'password' ? await bcrypt.hash(data.newPassword!, 10) : undefined;
+    const newPasswordHash =
+      data.field === "password"
+        ? await bcrypt.hash(data.newPassword!, 10)
+        : undefined;
 
     return this.prisma.credential_change_requests.create({
       data: {
         user_id: ownerId,
         requested_by: ownerId,
         field: data.field,
-        new_email: data.field === 'email' ? data.newEmail : undefined,
+        new_email: data.field === "email" ? data.newEmail : undefined,
         new_password_hash: newPasswordHash,
       },
-      select: { id: true, field: true, new_email: true, status: true, created_at: true },
+      select: {
+        id: true,
+        field: true,
+        new_email: true,
+        status: true,
+        created_at: true,
+      },
     });
   }
 
@@ -142,7 +165,7 @@ export class UsersService {
   async listCredentialRequests(status?: string) {
     return this.prisma.credential_change_requests.findMany({
       where: status ? { status } : undefined,
-      orderBy: { created_at: 'desc' },
+      orderBy: { created_at: "desc" },
       select: {
         id: true,
         field: true,
@@ -157,17 +180,26 @@ export class UsersService {
     });
   }
 
-  async reviewCredentialRequest(requestId: number, reviewerId: number, approve: boolean) {
-    const request = await this.prisma.credential_change_requests.findUnique({ where: { id: requestId } });
-    if (!request) throw new NotFoundException('Request not found');
-    if (request.status !== 'pending') throw new BadRequestException('This request has already been reviewed');
+  async reviewCredentialRequest(
+    requestId: number,
+    reviewerId: number,
+    approve: boolean,
+  ) {
+    const request = await this.prisma.credential_change_requests.findUnique({
+      where: { id: requestId },
+    });
+    if (!request) throw new NotFoundException("Request not found");
+    if (request.status !== "pending")
+      throw new BadRequestException("This request has already been reviewed");
 
     if (approve) {
       await this.prisma.users.update({
         where: { id: request.user_id },
         data: {
-          ...(request.field === 'email' ? { email: request.new_email! } : {}),
-          ...(request.field === 'password' ? { password: request.new_password_hash! } : {}),
+          ...(request.field === "email" ? { email: request.new_email! } : {}),
+          ...(request.field === "password"
+            ? { password: request.new_password_hash! }
+            : {}),
         },
       });
     }
@@ -175,7 +207,7 @@ export class UsersService {
     return this.prisma.credential_change_requests.update({
       where: { id: requestId },
       data: {
-        status: approve ? 'approved' : 'rejected',
+        status: approve ? "approved" : "rejected",
         reviewed_by: reviewerId,
         reviewed_at: new Date(),
       },
@@ -187,21 +219,38 @@ export class UsersService {
    * OWNER: set a MANAGER's email/password directly - no approval flow, since OWNER already
    * has full authority over the managers they granted company access to.
    */
-  async ownerSetManagerCredentials(ownerId: number, managerId: number, data: { newEmail?: string; newPassword?: string }) {
-    const manager = await this.prisma.users.findUnique({ where: { id: managerId } });
-    if (!manager || manager.role !== 'MANAGER') throw new BadRequestException('Target user is not a Manager account');
+  async ownerSetManagerCredentials(
+    ownerId: number,
+    managerId: number,
+    data: { newEmail?: string; newPassword?: string },
+  ) {
+    const manager = await this.prisma.users.findUnique({
+      where: { id: managerId },
+    });
+    if (!manager || manager.role !== "MANAGER")
+      throw new BadRequestException("Target user is not a Manager account");
 
-    const grant = await this.prisma.user_company_access.findFirst({ where: { user_id: managerId, granted_by: ownerId } });
-    if (!grant) throw new ForbiddenException('You can only manage credentials for Managers you granted company access to');
+    const grant = await this.prisma.user_company_access.findFirst({
+      where: { user_id: managerId, granted_by: ownerId },
+    });
+    if (!grant)
+      throw new ForbiddenException(
+        "You can only manage credentials for Managers you granted company access to",
+      );
 
     if (!data.newEmail && !data.newPassword) {
-      throw new BadRequestException('Provide a new email or new password');
+      throw new BadRequestException("Provide a new email or new password");
     }
     if (data.newEmail) {
-      const existing = await this.prisma.users.findUnique({ where: { email: data.newEmail } });
-      if (existing && existing.id !== managerId) throw new BadRequestException('Email already in use');
+      const existing = await this.prisma.users.findUnique({
+        where: { email: data.newEmail },
+      });
+      if (existing && existing.id !== managerId)
+        throw new BadRequestException("Email already in use");
     }
-    const newPasswordHash = data.newPassword ? await bcrypt.hash(data.newPassword, 10) : undefined;
+    const newPasswordHash = data.newPassword
+      ? await bcrypt.hash(data.newPassword, 10)
+      : undefined;
 
     return this.prisma.users.update({
       where: { id: managerId },

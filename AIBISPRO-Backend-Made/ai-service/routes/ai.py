@@ -37,9 +37,9 @@ def health():
 # SALES DATA
 # =========================================================
 @router.get("/sales")
-def sales():
+def sales(company_id: int):
     try:
-        df = load_sales()
+        df = load_sales(company_id)
 
         return success({
             "rows": len(df),
@@ -56,9 +56,9 @@ def sales():
 # DASHBOARD
 # =========================================================
 @router.get("/dashboard")
-def dashboard():
+def dashboard(company_id: int):
     try:
-        return success(dashboard_summary())
+        return success(dashboard_summary(company_id))
 
     except Exception as e:
         logger.exception("Dashboard failed")
@@ -69,9 +69,9 @@ def dashboard():
 # FORECAST
 # =========================================================
 @router.get("/forecast")
-def forecast():
+def forecast(company_id: int):
     try:
-        return success(forecast_sales())
+        return success(forecast_sales(company_id))
 
     except Exception as e:
         logger.exception("Forecast failed")
@@ -82,10 +82,10 @@ def forecast():
 # RESTOCK
 # =========================================================
 @router.get("/restock")
-def restock():
+def restock(company_id: int):
     try:
         return success({
-            "products": restock_prediction()
+            "products": restock_prediction(company_id)
         })
 
     except Exception as e:
@@ -97,9 +97,9 @@ def restock():
 # DEMAND (ML CORE ENDPOINT)
 # =========================================================
 @router.get("/demand")
-def demand():
+def demand(company_id: int):
     try:
-        predictions = predict_demand()
+        predictions = predict_demand(company_id)
 
         return success({
             "count": len(predictions),
@@ -115,9 +115,9 @@ def demand():
 # RECOMMENDATION ENGINE
 # =========================================================
 @router.get("/recommendations")
-def recommendations():
+def recommendations(company_id: int):
     try:
-        return success(recommendation_engine())
+        return success(recommendation_engine(company_id))
 
     except Exception as e:
         logger.exception("Recommendation failed")
@@ -128,9 +128,9 @@ def recommendations():
 # BUSINESS INSIGHTS
 # =========================================================
 @router.get("/insights")
-def insights():
+def insights(company_id: int):
     try:
-        return success(generate_business_insights())
+        return success(generate_business_insights(company_id))
 
     except Exception as e:
         logger.exception("Insights failed")
@@ -141,9 +141,9 @@ def insights():
 # LOW STOCK RISK
 # =========================================================
 @router.get("/risk")
-def risk():
+def risk(company_id: int):
     try:
-        return success(low_stock_risk())
+        return success(low_stock_risk(company_id))
 
     except Exception as e:
         logger.exception("Risk failed")
@@ -154,9 +154,9 @@ def risk():
 # MARKET BASKET ANALYSIS
 # =========================================================
 @router.get("/basket")
-def basket():
+def basket(company_id: int):
     try:
-        return success(market_basket_analysis())
+        return success(market_basket_analysis(company_id))
 
     except Exception as e:
         logger.exception("Basket failed")
@@ -167,9 +167,9 @@ def basket():
 # PROMOTION ENGINE (MAIN FEATURE)
 # =========================================================
 @router.get("/promotion")
-def promotion():
+def promotion(company_id: int):
     try:
-        return success(promotion_recommendation())
+        return success(promotion_recommendation(company_id))
 
     except Exception as e:
         logger.exception("Promotion failed")

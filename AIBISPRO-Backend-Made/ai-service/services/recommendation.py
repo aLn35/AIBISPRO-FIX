@@ -4,7 +4,7 @@ from database import engine
 from services.ml import predict_demand
 
 
-def recommendation_engine():
+def recommendation_engine(company_id: int):
 
     stock_query = """
     SELECT
@@ -14,14 +14,19 @@ def recommendation_engine():
     FROM product_sizes ps
 
     JOIN products p
-        ON p.id = ps.product_id;
+        ON p.id = ps.product_id
+
+    WHERE p.company_id = %(company_id)s;
     """
 
-    stock = pd.read_sql(stock_query, engine)
+    stock = pd.read_sql(stock_query, engine, params={"company_id": company_id})
 
     demand = pd.DataFrame(
-        predict_demand()
+        predict_demand(company_id)
     )
+
+    if demand.empty:
+        return []
 
     df = stock.merge(
         demand,

@@ -1,5 +1,9 @@
-import { BadRequestException, Injectable, NotFoundException } from '@nestjs/common';
-import { PrismaService } from '../prisma/prisma.service';
+import {
+  BadRequestException,
+  Injectable,
+  NotFoundException,
+} from "@nestjs/common";
+import { PrismaService } from "../prisma/prisma.service";
 
 @Injectable()
 export class BundleProposalsService {
@@ -21,7 +25,7 @@ export class BundleProposalsService {
   async findAll(companyId?: number) {
     return this.prisma.bundle_proposals.findMany({
       where: companyId ? { company_id: companyId } : undefined,
-      orderBy: { created_at: 'desc' },
+      orderBy: { created_at: "desc" },
       include: {
         creator: { select: { id: true, name: true, role: true } },
         reviewer: { select: { id: true, name: true } },
@@ -33,15 +37,23 @@ export class BundleProposalsService {
     return this.prisma.bundle_proposals.findUnique({ where: { id } });
   }
 
-  async review(id: number, reviewerId: number, approve: boolean, reviewNote?: string) {
-    const proposal = await this.prisma.bundle_proposals.findUnique({ where: { id } });
-    if (!proposal) throw new NotFoundException('Bundle proposal not found');
-    if (proposal.status !== 'pending') throw new BadRequestException('This proposal has already been reviewed');
+  async review(
+    id: number,
+    reviewerId: number,
+    approve: boolean,
+    reviewNote?: string,
+  ) {
+    const proposal = await this.prisma.bundle_proposals.findUnique({
+      where: { id },
+    });
+    if (!proposal) throw new NotFoundException("Bundle proposal not found");
+    if (proposal.status !== "pending")
+      throw new BadRequestException("This proposal has already been reviewed");
 
     return this.prisma.bundle_proposals.update({
       where: { id },
       data: {
-        status: approve ? 'approved' : 'rejected',
+        status: approve ? "approved" : "rejected",
         reviewed_by: reviewerId,
         reviewed_at: new Date(),
         review_note: reviewNote,

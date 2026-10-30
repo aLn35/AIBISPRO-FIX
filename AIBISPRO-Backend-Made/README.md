@@ -1,91 +1,26 @@
-# AIBISPRO - Setup Guide
+# AIBISPRO Backend + AI Microservice
 
-## REQUIREMENTS
-- Node.js 18+
-- Python 3.9–3.11
+See the [project root README](../README.md) for full system documentation (architecture, features, ML details, troubleshooting).
 
----
+## Quick Start
 
-## 1. BACKEND (Node.js)
-
+**Backend Gateway (NestJS)** — runs on port `3000`:
+```bash
 cd backend
 npm install
-
-# run
+npx prisma migrate dev
+npx prisma db seed
 npm run dev
-# OR if missing script:
-node index.js
+```
 
-If missing dev script add to package.json:
-"scripts": {
-  "dev": "nodemon index.js",
-  "start": "node index.js"
-}
-
-npm install nodemon --save-dev
-
----
-
-## 2. AI SERVICE (FastAPI)
-
+**AI Microservice (FastAPI)** — runs on port `8000`:
+```bash
 cd ai-service
-
-# create venv (first time only)
-python3 -m venv .venv
-source .venv/bin/activate
-
-# install deps
+python -m venv venv
+venv\Scripts\activate      # Windows; `source venv/bin/activate` on macOS/Linux
 pip install -r requirements.txt
-pip install uvicorn
+python scripts/train.py
+uvicorn app:app --host 0.0.0.0 --port 8000
+```
 
-# RUN (IMPORTANT)
-uvicorn app:app --reload --port 8001
-
-❌ WRONG:
-uvicorn main:app
-
----
-
-## 3. ENV FILES
-
-backend/.env
-PORT=3000
-AI_SERVICE_URL=http://localhost:8001
-
----
-
-## 4. RUN FULL SYSTEM (3 TERMINALS)
-
-Terminal 1:
-cd ai-service
-source .venv/bin/activate
-uvicorn app:app --reload --port 8001
-
-Terminal 2:
-cd backend
-npm run dev
-
-Terminal 3:
-cd frontend
-npm run dev
-
----
-
-## 6. COMMON FIXES
-
-Blank UI:
-- check backend (3000)
-- check ai-service (8001)
-- open browser console (F12)
-
-uvicorn not found:
-pip install uvicorn
-
-venv missing:
-python3 -m venv .venv
-
----
-
-## FINAL RESULT
-Frontend: http://localhost:5173  
-Backend: http://localhost:3000  
+Requires PostgreSQL running via Compose (see root README) and `AIBISPRO-Backend-Made/.env` copied from `.env.example`. The backend also loads the legacy `backend/.env` as a local fallback. Do not commit credentials.

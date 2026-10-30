@@ -9,22 +9,18 @@ import {
   Query,
   Req,
   UseGuards,
-} from '@nestjs/common';
+} from "@nestjs/common";
 
-import {
-  ApiBearerAuth,
-  ApiOperation,
-  ApiTags,
-} from '@nestjs/swagger';
+import { ApiBearerAuth, ApiOperation, ApiTags } from "@nestjs/swagger";
 
-import { ProductsService } from './products.service';
-import { CompaniesService } from '../companies/companies.service';
-import { JwtAuthGuard } from '../auth/jwt-auth.guard';
-import { Roles } from '../auth/roles.decorator';
-import { RolesGuard } from '../auth/roles.guard';
+import { ProductsService } from "./products.service";
+import { CompaniesService } from "../companies/companies.service";
+import { JwtAuthGuard } from "../auth/jwt-auth.guard";
+import { Roles } from "../auth/roles.decorator";
+import { RolesGuard } from "../auth/roles.guard";
 
-@ApiTags('Products')
-@Controller('products')
+@ApiTags("Products")
+@Controller("products")
 export class ProductsController {
   constructor(
     private readonly productsService: ProductsService,
@@ -32,32 +28,29 @@ export class ProductsController {
   ) {}
 
   @ApiOperation({
-    summary: 'Get all products (optionally filtered by companyId)',
+    summary: "Get all products (optionally filtered by companyId)",
   })
   @Get()
-  findAll(@Query('companyId') companyId?: string) {
-    return this.productsService.findAll(companyId ? Number(companyId) : undefined);
+  findAll(@Query("companyId") companyId?: string) {
+    return this.productsService.findAll(
+      companyId ? Number(companyId) : undefined,
+    );
   }
 
   @ApiOperation({
-    summary: 'Get product by ID',
+    summary: "Get product by ID",
   })
-  @Get(':id')
-  findOne(@Param('id') id: string) {
-    return this.productsService.findOne(
-      Number(id),
-    );
+  @Get(":id")
+  findOne(@Param("id") id: string) {
+    return this.productsService.findOne(Number(id));
   }
 
   @ApiBearerAuth()
   @ApiOperation({
-    summary: 'Create product',
+    summary: "Create product",
   })
-  @Roles('MAINTAINANCE', 'OWNER', 'MANAGER')
-  @UseGuards(
-    JwtAuthGuard,
-    RolesGuard,
-  )
+  @Roles("MAINTAINANCE", "OWNER", "MANAGER")
+  @UseGuards(JwtAuthGuard, RolesGuard)
   @Post()
   async create(
     @Body()
@@ -75,22 +68,23 @@ export class ProductsController {
     },
     @Req() req: any,
   ) {
-    await this.companiesService.assertAccess(Number(req.user.id), req.user.role, Number(body.company_id));
+    await this.companiesService.assertAccess(
+      Number(req.user.id),
+      req.user.role,
+      Number(body.company_id),
+    );
     return this.productsService.create(body);
   }
 
   @ApiBearerAuth()
   @ApiOperation({
-    summary: 'Update product',
+    summary: "Update product",
   })
-  @Roles('MAINTAINANCE', 'OWNER', 'MANAGER')
-  @UseGuards(
-    JwtAuthGuard,
-    RolesGuard,
-  )
-  @Patch(':id')
+  @Roles("MAINTAINANCE", "OWNER", "MANAGER")
+  @UseGuards(JwtAuthGuard, RolesGuard)
+  @Patch(":id")
   async update(
-    @Param('id') id: string,
+    @Param("id") id: string,
     @Body()
     body: {
       name?: string;
@@ -102,31 +96,32 @@ export class ProductsController {
   ) {
     const existing = await this.productsService.findOne(Number(id));
     if (existing?.company_id) {
-      await this.companiesService.assertAccess(Number(req.user.id), req.user.role, existing.company_id);
+      await this.companiesService.assertAccess(
+        Number(req.user.id),
+        req.user.role,
+        existing.company_id,
+      );
     }
-    return this.productsService.update(
-      Number(id),
-      body,
-    );
+    return this.productsService.update(Number(id), body);
   }
 
   @ApiBearerAuth()
   @ApiOperation({
-    summary: 'Remove a product from the active menu (soft delete - keeps historical sales intact)',
+    summary:
+      "Remove a product from the active menu (soft delete - keeps historical sales intact)",
   })
-  @Roles('MAINTAINANCE', 'OWNER', 'MANAGER')
-  @UseGuards(
-    JwtAuthGuard,
-    RolesGuard,
-  )
-  @Delete(':id')
-  async remove(@Param('id') id: string, @Req() req: any) {
+  @Roles("MAINTAINANCE", "OWNER", "MANAGER")
+  @UseGuards(JwtAuthGuard, RolesGuard)
+  @Delete(":id")
+  async remove(@Param("id") id: string, @Req() req: any) {
     const existing = await this.productsService.findOne(Number(id));
     if (existing?.company_id) {
-      await this.companiesService.assertAccess(Number(req.user.id), req.user.role, existing.company_id);
+      await this.companiesService.assertAccess(
+        Number(req.user.id),
+        req.user.role,
+        existing.company_id,
+      );
     }
-    return this.productsService.remove(
-      Number(id),
-    );
+    return this.productsService.remove(Number(id));
   }
 }

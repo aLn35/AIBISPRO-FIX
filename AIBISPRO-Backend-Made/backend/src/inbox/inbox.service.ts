@@ -1,15 +1,22 @@
-import { Injectable } from '@nestjs/common';
-import { PrismaService } from '../prisma/prisma.service';
+import { Injectable } from "@nestjs/common";
+import { PrismaService } from "../prisma/prisma.service";
 
 const AUTHOR_SELECT = {
-  users_inbox_messages_author_idTousers: { select: { id: true, name: true, role: true } },
+  users_inbox_messages_author_idTousers: {
+    select: { id: true, name: true, role: true },
+  },
 };
 
 @Injectable()
 export class InboxService {
   constructor(private readonly prisma: PrismaService) {}
 
-  async create(data: { company_id: number; author_id: number; message: string; ai_generated?: boolean }) {
+  async create(data: {
+    company_id: number;
+    author_id: number;
+    message: string;
+    ai_generated?: boolean;
+  }) {
     return this.prisma.inbox_messages.create({
       data: {
         company_id: data.company_id,
@@ -24,7 +31,7 @@ export class InboxService {
   async findForCompany(companyId: number) {
     return this.prisma.inbox_messages.findMany({
       where: { company_id: companyId, is_deleted: false },
-      orderBy: { created_at: 'asc' },
+      orderBy: { created_at: "asc" },
       include: AUTHOR_SELECT,
     });
   }
@@ -50,14 +57,24 @@ export class InboxService {
 
   async markThreadRead(companyId: number, currentUserId: number) {
     return this.prisma.inbox_messages.updateMany({
-      where: { company_id: companyId, author_id: { not: currentUserId }, is_read: false, is_deleted: false },
+      where: {
+        company_id: companyId,
+        author_id: { not: currentUserId },
+        is_read: false,
+        is_deleted: false,
+      },
       data: { is_read: true },
     });
   }
 
   async countUnread(companyId: number, currentUserId: number) {
     return this.prisma.inbox_messages.count({
-      where: { company_id: companyId, author_id: { not: currentUserId }, is_read: false, is_deleted: false },
+      where: {
+        company_id: companyId,
+        author_id: { not: currentUserId },
+        is_read: false,
+        is_deleted: false,
+      },
     });
   }
 }

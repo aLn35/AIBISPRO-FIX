@@ -1,6 +1,7 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from contextlib import asynccontextmanager
+import os
 
 from routes.ai import router as ai_router
 from services.model_loader import load_assets
@@ -42,7 +43,11 @@ app = FastAPI(
 # =====================================================
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # change to frontend domain in production
+    allow_origins=[
+        origin.strip()
+        for origin in os.getenv("AI_CORS_ORIGINS", "").split(",")
+        if origin.strip()
+    ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],

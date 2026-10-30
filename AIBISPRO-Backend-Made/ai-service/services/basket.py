@@ -6,20 +6,24 @@ from mlxtend.frequent_patterns import association_rules
 from database import engine
 
 
-def market_basket_analysis():
+def market_basket_analysis(company_id: int):
 
     query = """
     SELECT
         si.sale_id,
         p.name
     FROM sale_items si
+    JOIN sales s
+        ON s.id = si.sale_id
     JOIN products p
         ON p.id = si.product_id
+    WHERE p.company_id = %(company_id)s
+      AND s.source = 'upload'
     ORDER BY
         si.sale_id;
     """
 
-    df = pd.read_sql(query, engine)
+    df = pd.read_sql(query, engine, params={"company_id": company_id})
 
     print("=" * 60)
     print("Sales rows:", len(df))

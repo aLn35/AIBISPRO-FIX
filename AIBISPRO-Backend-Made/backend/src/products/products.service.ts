@@ -1,5 +1,5 @@
-import { Injectable } from '@nestjs/common';
-import { PrismaService } from '../prisma/prisma.service';
+import { Injectable } from "@nestjs/common";
+import { PrismaService } from "../prisma/prisma.service";
 
 @Injectable()
 export class ProductsService {
@@ -7,13 +7,16 @@ export class ProductsService {
 
   async findAll(companyId?: number) {
     return this.prisma.products.findMany({
-      where: { is_active: true, ...(companyId ? { company_id: companyId } : {}) },
+      where: {
+        is_active: true,
+        ...(companyId ? { company_id: companyId } : {}),
+      },
       include: {
         categories: true,
         product_sizes: true,
       },
       orderBy: {
-        id: 'asc',
+        id: "asc",
       },
     });
   }
@@ -29,11 +32,18 @@ export class ProductsService {
   }
 
   /** Finds a category by name for this company, creating it if it doesn't exist yet. */
-  private async resolveCategoryId(companyId: number, categoryName?: string): Promise<number | undefined> {
+  private async resolveCategoryId(
+    companyId: number,
+    categoryName?: string,
+  ): Promise<number | undefined> {
     if (!categoryName) return undefined;
-    const existing = await this.prisma.categories.findFirst({ where: { company_id: companyId, name: categoryName } });
+    const existing = await this.prisma.categories.findFirst({
+      where: { company_id: companyId, name: categoryName },
+    });
     if (existing) return existing.id;
-    const created = await this.prisma.categories.create({ data: { name: categoryName, company_id: companyId } });
+    const created = await this.prisma.categories.create({
+      data: { name: categoryName, company_id: companyId },
+    });
     return created.id;
   }
 
@@ -91,15 +101,22 @@ export class ProductsService {
     if (data.category_id !== undefined) {
       categoryId = Number(data.category_id);
     } else if (data.category_name !== undefined) {
-      const existing = await this.prisma.products.findUnique({ where: { id }, select: { company_id: true } });
-      categoryId = existing?.company_id ? await this.resolveCategoryId(existing.company_id, data.category_name) : undefined;
+      const existing = await this.prisma.products.findUnique({
+        where: { id },
+        select: { company_id: true },
+      });
+      categoryId = existing?.company_id
+        ? await this.resolveCategoryId(existing.company_id, data.category_name)
+        : undefined;
     }
 
     return this.prisma.products.update({
       where: { id },
       data: {
         ...(data.name !== undefined ? { name: data.name } : {}),
-        ...(data.description !== undefined ? { description: data.description } : {}),
+        ...(data.description !== undefined
+          ? { description: data.description }
+          : {}),
         ...(categoryId !== undefined ? { category_id: categoryId } : {}),
       },
     });

@@ -1,0 +1,31 @@
+flowchart TD
+    UI["Web App / Role Dashboards<br/>Frontend — React + Vite + TypeScript<br/>(Maintenance / Owner / Manager / Customer)"]
+
+    subgraph Gateway["NestJS API Gateway (:3000)"]
+        direction TB
+        Auth["JWT Auth + Role-Based<br/>Access Control"]
+        Chat["ChatService"]
+        AIService["AIService<br/>callAiService()"]
+        Auth --> Chat
+        Auth --> AIService
+    end
+
+    subgraph MLService["Python AI Microservice — FastAPI (:8000)"]
+        direction LR
+        RF["Random Forest<br/>(demand / risk)"]
+        HW["Holt-Winters<br/>(revenue forecast)"]
+        AP["Apriori<br/>(basket / promotion)"]
+    end
+
+    Gemini["Google Gemini API<br/>(bilingual chat)"]
+    DB[("PostgreSQL<br/>via Prisma ORM")]
+
+    UI -->|"HTTPS REST + JWT"| Auth
+    AIService -->|"GET /ai/* ?company_id=…<br/>5s timeout"| MLService
+    Chat --> Gemini
+    Chat --> AIService
+    Auth --> DB
+    MLService -->|"trained on real,<br/>company-scoped sales history"| DB
+
+    style MLService fill:#eef6ff,stroke:#5EABD6
+    style Gateway fill:#fff4f0,stroke:#E14434

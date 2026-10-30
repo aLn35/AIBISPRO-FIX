@@ -30,13 +30,16 @@ SIZE_ENCODER_PATH = "models/size_encoder.pkl"
 
 
 # =========================================================
-# LOAD TRAINING DATA
+# LOAD TRAINING DATA (all companies - company_id is a feature,
+# not a filter, so one global model stays tenant-aware instead
+# of needing a separate data-starved model per company)
 # =========================================================
 def load_training_data():
 
     query = """
     SELECT
         DATE(s.transaction_date) AS date,
+        s.company_id AS company_id,
         p.name AS product,
         ps.size_name,
         SUM(si.quantity) AS quantity
@@ -44,7 +47,8 @@ def load_training_data():
     JOIN sales s ON s.id = si.sale_id
     JOIN product_sizes ps ON ps.id = si.product_size_id
     JOIN products p ON p.id = ps.product_id
-    GROUP BY DATE(s.transaction_date), p.name, ps.size_name
+    WHERE s.source = 'upload'
+    GROUP BY DATE(s.transaction_date), s.company_id, p.name, ps.size_name
     ORDER BY date;
     """
 
@@ -74,6 +78,7 @@ def prepare_training_data():
         "day",
         "month",
         "weekday",
+        "company_id",
         "product_id",
         "size_id"
     ]]
@@ -140,12 +145,12 @@ def load_model_assets():
 # =========================================================
 # PREDICT DEMAND (CACHE + OPTIMIZED)
 # =========================================================
-def predict_demand():
+def predict_demand(company_id: int):
 
     today = pd.Timestamp.today()
 
     cache_key = hashlib.md5(
-        f"demand:{today.date()}".encode()
+        f"demand:{company_id}:{today.date()}".encode()
     ).hexdigest()
 
     cached = get_cache(cache_key)
@@ -164,10 +169,11 @@ def predict_demand():
         ps.size_name
     FROM product_sizes ps
     JOIN products p ON p.id = ps.product_id
+    WHERE p.company_id = %(company_id)s
     ORDER BY p.name, ps.size_name;
     """
 
-    products = pd.read_sql(query, engine)
+    products = pd.read_sql(query, engine, params={"company_id": company_id})
 
     predictions = []
 
@@ -192,6 +198,7 @@ def predict_demand():
             "day": day,
             "month": month,
             "weekday": weekday,
+            "company_id": company_id,
             "product_id": product_id,
             "size_id": size_id,
         }])

@@ -4,7 +4,7 @@ from database import engine
 from services.ml import predict_demand
 
 
-def low_stock_risk():
+def low_stock_risk(company_id: int):
 
     stock_query = """
     SELECT
@@ -14,17 +14,23 @@ def low_stock_risk():
     FROM product_sizes ps
 
     JOIN products p
-        ON p.id = ps.product_id;
+        ON p.id = ps.product_id
+
+    WHERE p.company_id = %(company_id)s;
     """
 
     stock = pd.read_sql(
         stock_query,
         engine,
+        params={"company_id": company_id},
     )
 
     demand = pd.DataFrame(
-        predict_demand()
+        predict_demand(company_id)
     )
+
+    if demand.empty:
+        return {"products": []}
 
     df = stock.merge(
         demand,

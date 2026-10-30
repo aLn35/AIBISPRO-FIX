@@ -4,11 +4,11 @@ from services.basket import market_basket_analysis
 from services.scoring import calculate_scores
 
 
-def promotion_recommendation():
+def promotion_recommendation(company_id: int):
 
-    demand = predict_demand()
-    risk = low_stock_risk()["products"]
-    basket = market_basket_analysis()["rules"]
+    demand = predict_demand(company_id)
+    risk = low_stock_risk(company_id)["products"]
+    basket = market_basket_analysis(company_id)["rules"]
 
     risk_lookup = {
         (r["product"], r["size"]): r

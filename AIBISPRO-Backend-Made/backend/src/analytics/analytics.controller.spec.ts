@@ -1,18 +1,16 @@
-import { Controller, Get } from '@nestjs/common';
-import { AnalyticsService } from './analytics.service';
+import { Controller, Get } from "@nestjs/common";
+import { AnalyticsService } from "./analytics.service";
 
-@Controller('analytics')
+@Controller("analytics")
 export class AnalyticsController {
-  constructor(
-    private readonly analyticsService: AnalyticsService,
-  ) {}
+  constructor(private readonly analyticsService: AnalyticsService) {}
 
-  @Get('top-products')
+  @Get("top-products")
   getTopProducts() {
     return this.analyticsService.getTopProducts();
   }
 
-  @Get('revenue-summary')
+  @Get("revenue-summary")
   getRevenueSummary() {
     return this.analyticsService.getRevenueSummary();
   }

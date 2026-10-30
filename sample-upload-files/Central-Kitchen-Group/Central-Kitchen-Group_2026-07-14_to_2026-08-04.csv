@@ -1,0 +1,184 @@
+Transaction_ID,Date,Time,Product,Category,Size,Quantity,Unit_Price_IDR,Cost_IDR,Total_IDR,Payment_Method
+TRX-CENTRAL-20260714-0001,2026-07-14,08:13,Snack Box Corporate,Snack Box,Regular,3,Rp 85.000,Rp 38.000,Rp 255.000,card
+TRX-CENTRAL-20260714-0002,2026-07-14,09:16,Bulk Chicken Box,Bulk Order,Regular,3,Rp 320.000,Rp 150.000,Rp 960.000,e-wallet
+TRX-CENTRAL-20260714-0002,2026-07-14,09:16,Catering Package A (20pax),Catering,Regular,3,Rp 1.200.000,Rp 650.000,Rp 3.600.000,e-wallet
+TRX-CENTRAL-20260714-0003,2026-07-14,08:35,Catering Package A (20pax),Catering,Regular,2,Rp 1.200.000,Rp 650.000,Rp 2.400.000,cash
+TRX-CENTRAL-20260714-0003,2026-07-14,08:35,Rice Box Set,Snack Box,Regular,3,Rp 35.000,Rp 16.000,Rp 105.000,cash
+TRX-CENTRAL-20260714-0004,2026-07-14,14:21,Bulk Chicken Box,Bulk Order,Regular,3,Rp 320.000,Rp 150.000,Rp 960.000,e-wallet
+TRX-CENTRAL-20260714-0005,2026-07-14,14:16,Bulk Chicken Box,Bulk Order,Regular,1,Rp 320.000,Rp 150.000,Rp 320.000,cash
+TRX-CENTRAL-20260714-0005,2026-07-14,14:16,Private Label Sauce 1L,Private Label,Regular,2,Rp 45.000,Rp 18.000,Rp 90.000,cash
+TRX-CENTRAL-20260714-0006,2026-07-14,11:09,Bulk Chicken Box,Bulk Order,Regular,2,Rp 320.000,Rp 150.000,Rp 640.000,e-wallet
+TRX-CENTRAL-20260715-0001,2026-07-15,09:33,Private Label Sauce 1L,Private Label,Regular,2,Rp 45.000,Rp 18.000,Rp 90.000,card
+TRX-CENTRAL-20260715-0002,2026-07-15,11:26,Bulk Fried Rice Tray,Bulk Order,Regular,3,Rp 250.000,Rp 110.000,Rp 750.000,e-wallet
+TRX-CENTRAL-20260715-0002,2026-07-15,11:26,Catering Package A (20pax),Catering,Regular,2,Rp 1.200.000,Rp 650.000,Rp 2.400.000,e-wallet
+TRX-CENTRAL-20260715-0003,2026-07-15,08:49,Private Label Sauce 1L,Private Label,Regular,3,Rp 45.000,Rp 18.000,Rp 135.000,card
+TRX-CENTRAL-20260715-0003,2026-07-15,08:49,Bulk Chicken Box,Bulk Order,Regular,3,Rp 320.000,Rp 150.000,Rp 960.000,card
+TRX-CENTRAL-20260715-0004,2026-07-15,11:23,Private Label Sauce 1L,Private Label,Regular,1,Rp 45.000,Rp 18.000,Rp 45.000,e-wallet
+TRX-CENTRAL-20260715-0005,2026-07-15,13:24,Bulk Chicken Box,Bulk Order,Regular,3,Rp 320.000,Rp 150.000,Rp 960.000,card
+TRX-CENTRAL-20260716-0001,2026-07-16,12:55,Catering Package A (20pax),Catering,Regular,3,Rp 1.200.000,Rp 650.000,Rp 3.600.000,e-wallet
+TRX-CENTRAL-20260716-0001,2026-07-16,12:55,Frozen Meatball Pack,Private Label,Regular,3,Rp 65.000,Rp 30.000,Rp 195.000,e-wallet
+TRX-CENTRAL-20260716-0002,2026-07-16,16:59,Catering Package B (50pax),Catering,Regular,2,Rp 2.800.000,Rp 1.500.000,Rp 5.600.000,card
+TRX-CENTRAL-20260716-0003,2026-07-16,16:54,Catering Package B (50pax),Catering,Regular,3,Rp 2.800.000,Rp 1.500.000,Rp 8.400.000,e-wallet
+TRX-CENTRAL-20260716-0004,2026-07-16,14:56,Bulk Chicken Box,Bulk Order,Regular,3,Rp 320.000,Rp 150.000,Rp 960.000,e-wallet
+TRX-CENTRAL-20260716-0005,2026-07-16,09:44,Catering Package A (20pax),Catering,Regular,1,Rp 1.200.000,Rp 650.000,Rp 1.200.000,e-wallet
+TRX-CENTRAL-20260716-0006,2026-07-16,11:52,Catering Package B (50pax),Catering,Regular,2,Rp 2.800.000,Rp 1.500.000,Rp 5.600.000,e-wallet
+TRX-CENTRAL-20260716-0006,2026-07-16,11:52,Rice Box Set,Snack Box,Regular,1,Rp 35.000,Rp 16.000,Rp 35.000,e-wallet
+TRX-CENTRAL-20260716-0007,2026-07-16,13:44,Catering Package B (50pax),Catering,Regular,3,Rp 2.800.000,Rp 1.500.000,Rp 8.400.000,e-wallet
+TRX-CENTRAL-20260716-0007,2026-07-16,13:44,Bulk Chicken Box,Bulk Order,Regular,1,Rp 320.000,Rp 150.000,Rp 320.000,e-wallet
+TRX-CENTRAL-20260717-0001,2026-07-17,09:51,Frozen Meatball Pack,Private Label,Regular,3,Rp 65.000,Rp 30.000,Rp 195.000,card
+TRX-CENTRAL-20260717-0001,2026-07-17,09:51,Catering Package B (50pax),Catering,Regular,3,Rp 2.800.000,Rp 1.500.000,Rp 8.400.000,card
+TRX-CENTRAL-20260717-0002,2026-07-17,14:09,Catering Package B (50pax),Catering,Regular,2,Rp 2.800.000,Rp 1.500.000,Rp 5.600.000,e-wallet
+TRX-CENTRAL-20260717-0002,2026-07-17,14:09,Bulk Chicken Box,Bulk Order,Regular,3,Rp 320.000,Rp 150.000,Rp 960.000,e-wallet
+TRX-CENTRAL-20260717-0003,2026-07-17,13:34,Catering Package A (20pax),Catering,Regular,2,Rp 1.200.000,Rp 650.000,Rp 2.400.000,cash
+TRX-CENTRAL-20260717-0004,2026-07-17,15:24,Bulk Chicken Box,Bulk Order,Regular,2,Rp 320.000,Rp 150.000,Rp 640.000,e-wallet
+TRX-CENTRAL-20260717-0005,2026-07-17,11:33,Rice Box Set,Snack Box,Regular,3,Rp 35.000,Rp 16.000,Rp 105.000,e-wallet
+TRX-CENTRAL-20260717-0006,2026-07-17,12:49,Snack Box Corporate,Snack Box,Regular,1,Rp 85.000,Rp 38.000,Rp 85.000,card
+TRX-CENTRAL-20260718-0001,2026-07-18,15:54,Bulk Chicken Box,Bulk Order,Regular,2,Rp 320.000,Rp 150.000,Rp 640.000,e-wallet
+TRX-CENTRAL-20260718-0001,2026-07-18,15:54,Catering Package A (20pax),Catering,Regular,3,Rp 1.200.000,Rp 650.000,Rp 3.600.000,e-wallet
+TRX-CENTRAL-20260718-0002,2026-07-18,08:51,Bulk Chicken Box,Bulk Order,Regular,2,Rp 320.000,Rp 150.000,Rp 640.000,e-wallet
+TRX-CENTRAL-20260718-0003,2026-07-18,13:21,Catering Package B (50pax),Catering,Regular,1,Rp 2.800.000,Rp 1.500.000,Rp 2.800.000,cash
+TRX-CENTRAL-20260719-0001,2026-07-19,10:35,Bulk Chicken Box,Bulk Order,Regular,3,Rp 320.000,Rp 150.000,Rp 960.000,card
+TRX-CENTRAL-20260719-0001,2026-07-19,10:35,Catering Package B (50pax),Catering,Regular,1,Rp 2.800.000,Rp 1.500.000,Rp 2.800.000,card
+TRX-CENTRAL-20260719-0002,2026-07-19,14:02,Bulk Chicken Box,Bulk Order,Regular,2,Rp 320.000,Rp 150.000,Rp 640.000,card
+TRX-CENTRAL-20260720-0001,2026-07-20,10:11,Bulk Fried Rice Tray,Bulk Order,Regular,2,Rp 250.000,Rp 110.000,Rp 500.000,cash
+TRX-CENTRAL-20260720-0001,2026-07-20,10:11,Frozen Meatball Pack,Private Label,Regular,3,Rp 65.000,Rp 30.000,Rp 195.000,cash
+TRX-CENTRAL-20260720-0002,2026-07-20,17:45,Bulk Chicken Box,Bulk Order,Regular,3,Rp 320.000,Rp 150.000,Rp 960.000,e-wallet
+TRX-CENTRAL-20260720-0003,2026-07-20,10:50,Catering Package B (50pax),Catering,Regular,3,Rp 2.800.000,Rp 1.500.000,Rp 8.400.000,card
+TRX-CENTRAL-20260720-0003,2026-07-20,10:50,Catering Package A (20pax),Catering,Regular,1,Rp 1.200.000,Rp 650.000,Rp 1.200.000,card
+TRX-CENTRAL-20260720-0004,2026-07-20,08:30,Catering Package A (20pax),Catering,Regular,3,Rp 1.200.000,Rp 650.000,Rp 3.600.000,e-wallet
+TRX-CENTRAL-20260720-0004,2026-07-20,08:30,Bulk Fried Rice Tray,Bulk Order,Regular,2,Rp 250.000,Rp 110.000,Rp 500.000,e-wallet
+TRX-CENTRAL-20260720-0005,2026-07-20,11:29,Catering Package B (50pax),Catering,Regular,3,Rp 2.800.000,Rp 1.500.000,Rp 8.400.000,cash
+TRX-CENTRAL-20260720-0006,2026-07-20,08:01,Bulk Chicken Box,Bulk Order,Regular,3,Rp 320.000,Rp 150.000,Rp 960.000,e-wallet
+TRX-CENTRAL-20260720-0006,2026-07-20,08:01,Snack Box Corporate,Snack Box,Regular,1,Rp 85.000,Rp 38.000,Rp 85.000,e-wallet
+TRX-CENTRAL-20260721-0001,2026-07-21,08:00,Catering Package B (50pax),Catering,Regular,1,Rp 2.800.000,Rp 1.500.000,Rp 2.800.000,e-wallet
+TRX-CENTRAL-20260721-0001,2026-07-21,08:00,Frozen Meatball Pack,Private Label,Regular,2,Rp 65.000,Rp 30.000,Rp 130.000,e-wallet
+TRX-CENTRAL-20260721-0002,2026-07-21,14:45,Rice Box Set,Snack Box,Regular,2,Rp 35.000,Rp 16.000,Rp 70.000,e-wallet
+TRX-CENTRAL-20260721-0002,2026-07-21,14:45,Snack Box Corporate,Snack Box,Regular,1,Rp 85.000,Rp 38.000,Rp 85.000,e-wallet
+TRX-CENTRAL-20260721-0003,2026-07-21,09:07,Catering Package A (20pax),Catering,Regular,1,Rp 1.200.000,Rp 650.000,Rp 1.200.000,cash
+TRX-CENTRAL-20260722-0001,2026-07-22,16:49,Catering Package B (50pax),Catering,Regular,1,Rp 2.800.000,Rp 1.500.000,Rp 2.800.000,e-wallet
+TRX-CENTRAL-20260722-0002,2026-07-22,17:21,Catering Package B (50pax),Catering,Regular,3,Rp 2.800.000,Rp 1.500.000,Rp 8.400.000,cash
+TRX-CENTRAL-20260722-0002,2026-07-22,17:21,Bulk Chicken Box,Bulk Order,Regular,3,Rp 320.000,Rp 150.000,Rp 960.000,cash
+TRX-CENTRAL-20260722-0003,2026-07-22,15:06,Private Label Sauce 1L,Private Label,Regular,3,Rp 45.000,Rp 18.000,Rp 135.000,card
+TRX-CENTRAL-20260722-0003,2026-07-22,15:06,Bulk Chicken Box,Bulk Order,Regular,2,Rp 320.000,Rp 150.000,Rp 640.000,card
+TRX-CENTRAL-20260723-0001,2026-07-23,16:42,Catering Package A (20pax),Catering,Regular,2,Rp 1.200.000,Rp 650.000,Rp 2.400.000,e-wallet
+TRX-CENTRAL-20260723-0002,2026-07-23,12:54,Catering Package B (50pax),Catering,Regular,1,Rp 2.800.000,Rp 1.500.000,Rp 2.800.000,cash
+TRX-CENTRAL-20260723-0002,2026-07-23,12:54,Private Label Sauce 1L,Private Label,Regular,1,Rp 45.000,Rp 18.000,Rp 45.000,cash
+TRX-CENTRAL-20260723-0003,2026-07-23,16:21,Bulk Chicken Box,Bulk Order,Regular,3,Rp 320.000,Rp 150.000,Rp 960.000,card
+TRX-CENTRAL-20260723-0003,2026-07-23,16:21,Catering Package A (20pax),Catering,Regular,2,Rp 1.200.000,Rp 650.000,Rp 2.400.000,card
+TRX-CENTRAL-20260723-0004,2026-07-23,12:41,Catering Package A (20pax),Catering,Regular,3,Rp 1.200.000,Rp 650.000,Rp 3.600.000,e-wallet
+TRX-CENTRAL-20260724-0001,2026-07-24,10:55,Bulk Chicken Box,Bulk Order,Regular,2,Rp 320.000,Rp 150.000,Rp 640.000,card
+TRX-CENTRAL-20260724-0002,2026-07-24,10:29,Catering Package A (20pax),Catering,Regular,3,Rp 1.200.000,Rp 650.000,Rp 3.600.000,e-wallet
+TRX-CENTRAL-20260724-0002,2026-07-24,10:29,Snack Box Corporate,Snack Box,Regular,1,Rp 85.000,Rp 38.000,Rp 85.000,e-wallet
+TRX-CENTRAL-20260724-0003,2026-07-24,15:55,Catering Package A (20pax),Catering,Regular,1,Rp 1.200.000,Rp 650.000,Rp 1.200.000,e-wallet
+TRX-CENTRAL-20260724-0004,2026-07-24,08:31,Catering Package A (20pax),Catering,Regular,3,Rp 1.200.000,Rp 650.000,Rp 3.600.000,e-wallet
+TRX-CENTRAL-20260724-0004,2026-07-24,08:31,Catering Package B (50pax),Catering,Regular,2,Rp 2.800.000,Rp 1.500.000,Rp 5.600.000,e-wallet
+TRX-CENTRAL-20260724-0005,2026-07-24,10:27,Bulk Fried Rice Tray,Bulk Order,Regular,2,Rp 250.000,Rp 110.000,Rp 500.000,e-wallet
+TRX-CENTRAL-20260724-0005,2026-07-24,10:27,Bulk Chicken Box,Bulk Order,Regular,1,Rp 320.000,Rp 150.000,Rp 320.000,e-wallet
+TRX-CENTRAL-20260724-0006,2026-07-24,08:52,Catering Package A (20pax),Catering,Regular,2,Rp 1.200.000,Rp 650.000,Rp 2.400.000,e-wallet
+TRX-CENTRAL-20260724-0006,2026-07-24,08:52,Catering Package B (50pax),Catering,Regular,2,Rp 2.800.000,Rp 1.500.000,Rp 5.600.000,e-wallet
+TRX-CENTRAL-20260724-0007,2026-07-24,17:10,Catering Package A (20pax),Catering,Regular,2,Rp 1.200.000,Rp 650.000,Rp 2.400.000,e-wallet
+TRX-CENTRAL-20260724-0007,2026-07-24,17:10,Catering Package B (50pax),Catering,Regular,2,Rp 2.800.000,Rp 1.500.000,Rp 5.600.000,e-wallet
+TRX-CENTRAL-20260724-0008,2026-07-24,14:27,Catering Package B (50pax),Catering,Regular,1,Rp 2.800.000,Rp 1.500.000,Rp 2.800.000,e-wallet
+TRX-CENTRAL-20260724-0008,2026-07-24,14:27,Bulk Chicken Box,Bulk Order,Regular,1,Rp 320.000,Rp 150.000,Rp 320.000,e-wallet
+TRX-CENTRAL-20260725-0001,2026-07-25,15:19,Catering Package B (50pax),Catering,Regular,3,Rp 2.800.000,Rp 1.500.000,Rp 8.400.000,card
+TRX-CENTRAL-20260725-0002,2026-07-25,16:37,Catering Package A (20pax),Catering,Regular,1,Rp 1.200.000,Rp 650.000,Rp 1.200.000,cash
+TRX-CENTRAL-20260726-0001,2026-07-26,11:50,Catering Package A (20pax),Catering,Regular,2,Rp 1.200.000,Rp 650.000,Rp 2.400.000,card
+TRX-CENTRAL-20260726-0001,2026-07-26,11:50,Catering Package B (50pax),Catering,Regular,1,Rp 2.800.000,Rp 1.500.000,Rp 2.800.000,card
+TRX-CENTRAL-20260726-0002,2026-07-26,17:04,Bulk Chicken Box,Bulk Order,Regular,3,Rp 320.000,Rp 150.000,Rp 960.000,e-wallet
+TRX-CENTRAL-20260726-0003,2026-07-26,17:07,Bulk Chicken Box,Bulk Order,Regular,1,Rp 320.000,Rp 150.000,Rp 320.000,e-wallet
+TRX-CENTRAL-20260726-0003,2026-07-26,17:07,Bulk Fried Rice Tray,Bulk Order,Regular,2,Rp 250.000,Rp 110.000,Rp 500.000,e-wallet
+TRX-CENTRAL-20260726-0004,2026-07-26,16:07,Catering Package B (50pax),Catering,Regular,1,Rp 2.800.000,Rp 1.500.000,Rp 2.800.000,e-wallet
+TRX-CENTRAL-20260726-0004,2026-07-26,16:07,Bulk Chicken Box,Bulk Order,Regular,3,Rp 320.000,Rp 150.000,Rp 960.000,e-wallet
+TRX-CENTRAL-20260727-0001,2026-07-27,17:51,Bulk Chicken Box,Bulk Order,Regular,2,Rp 320.000,Rp 150.000,Rp 640.000,cash
+TRX-CENTRAL-20260727-0002,2026-07-27,08:08,Catering Package A (20pax),Catering,Regular,1,Rp 1.200.000,Rp 650.000,Rp 1.200.000,e-wallet
+TRX-CENTRAL-20260727-0002,2026-07-27,08:08,Private Label Sauce 1L,Private Label,Regular,3,Rp 45.000,Rp 18.000,Rp 135.000,e-wallet
+TRX-CENTRAL-20260727-0003,2026-07-27,13:49,Catering Package B (50pax),Catering,Regular,3,Rp 2.800.000,Rp 1.500.000,Rp 8.400.000,e-wallet
+TRX-CENTRAL-20260727-0004,2026-07-27,17:24,Catering Package B (50pax),Catering,Regular,2,Rp 2.800.000,Rp 1.500.000,Rp 5.600.000,e-wallet
+TRX-CENTRAL-20260727-0004,2026-07-27,17:24,Bulk Chicken Box,Bulk Order,Regular,1,Rp 320.000,Rp 150.000,Rp 320.000,e-wallet
+TRX-CENTRAL-20260727-0005,2026-07-27,09:14,Catering Package B (50pax),Catering,Regular,1,Rp 2.800.000,Rp 1.500.000,Rp 2.800.000,e-wallet
+TRX-CENTRAL-20260728-0001,2026-07-28,14:00,Catering Package B (50pax),Catering,Regular,3,Rp 2.800.000,Rp 1.500.000,Rp 8.400.000,e-wallet
+TRX-CENTRAL-20260728-0002,2026-07-28,12:56,Catering Package A (20pax),Catering,Regular,3,Rp 1.200.000,Rp 650.000,Rp 3.600.000,e-wallet
+TRX-CENTRAL-20260728-0002,2026-07-28,12:56,Bulk Chicken Box,Bulk Order,Regular,1,Rp 320.000,Rp 150.000,Rp 320.000,e-wallet
+TRX-CENTRAL-20260728-0003,2026-07-28,12:51,Bulk Chicken Box,Bulk Order,Regular,3,Rp 320.000,Rp 150.000,Rp 960.000,card
+TRX-CENTRAL-20260728-0003,2026-07-28,12:51,Rice Box Set,Snack Box,Regular,3,Rp 35.000,Rp 16.000,Rp 105.000,card
+TRX-CENTRAL-20260728-0004,2026-07-28,11:24,Catering Package B (50pax),Catering,Regular,2,Rp 2.800.000,Rp 1.500.000,Rp 5.600.000,e-wallet
+TRX-CENTRAL-20260728-0004,2026-07-28,11:24,Bulk Chicken Box,Bulk Order,Regular,1,Rp 320.000,Rp 150.000,Rp 320.000,e-wallet
+TRX-CENTRAL-20260728-0005,2026-07-28,13:01,Catering Package B (50pax),Catering,Regular,1,Rp 2.800.000,Rp 1.500.000,Rp 2.800.000,e-wallet
+TRX-CENTRAL-20260728-0005,2026-07-28,13:01,Bulk Chicken Box,Bulk Order,Regular,3,Rp 320.000,Rp 150.000,Rp 960.000,e-wallet
+TRX-CENTRAL-20260728-0006,2026-07-28,15:28,Private Label Sauce 1L,Private Label,Regular,1,Rp 45.000,Rp 18.000,Rp 45.000,e-wallet
+TRX-CENTRAL-20260728-0007,2026-07-28,11:46,Catering Package A (20pax),Catering,Regular,3,Rp 1.200.000,Rp 650.000,Rp 3.600.000,card
+TRX-CENTRAL-20260728-0007,2026-07-28,11:46,Frozen Meatball Pack,Private Label,Regular,2,Rp 65.000,Rp 30.000,Rp 130.000,card
+TRX-CENTRAL-20260728-0008,2026-07-28,17:20,Bulk Chicken Box,Bulk Order,Regular,3,Rp 320.000,Rp 150.000,Rp 960.000,e-wallet
+TRX-CENTRAL-20260728-0009,2026-07-28,12:51,Catering Package A (20pax),Catering,Regular,3,Rp 1.200.000,Rp 650.000,Rp 3.600.000,cash
+TRX-CENTRAL-20260729-0001,2026-07-29,08:28,Catering Package B (50pax),Catering,Regular,2,Rp 2.800.000,Rp 1.500.000,Rp 5.600.000,card
+TRX-CENTRAL-20260729-0001,2026-07-29,08:28,Snack Box Corporate,Snack Box,Regular,3,Rp 85.000,Rp 38.000,Rp 255.000,card
+TRX-CENTRAL-20260729-0002,2026-07-29,16:39,Catering Package A (20pax),Catering,Regular,2,Rp 1.200.000,Rp 650.000,Rp 2.400.000,cash
+TRX-CENTRAL-20260729-0002,2026-07-29,16:39,Rice Box Set,Snack Box,Regular,2,Rp 35.000,Rp 16.000,Rp 70.000,cash
+TRX-CENTRAL-20260729-0003,2026-07-29,12:24,Catering Package B (50pax),Catering,Regular,1,Rp 2.800.000,Rp 1.500.000,Rp 2.800.000,cash
+TRX-CENTRAL-20260729-0003,2026-07-29,12:24,Bulk Chicken Box,Bulk Order,Regular,1,Rp 320.000,Rp 150.000,Rp 320.000,cash
+TRX-CENTRAL-20260729-0004,2026-07-29,16:06,Bulk Fried Rice Tray,Bulk Order,Regular,2,Rp 250.000,Rp 110.000,Rp 500.000,cash
+TRX-CENTRAL-20260729-0005,2026-07-29,12:47,Catering Package A (20pax),Catering,Regular,1,Rp 1.200.000,Rp 650.000,Rp 1.200.000,e-wallet
+TRX-CENTRAL-20260730-0001,2026-07-30,15:30,Catering Package B (50pax),Catering,Regular,3,Rp 2.800.000,Rp 1.500.000,Rp 8.400.000,e-wallet
+TRX-CENTRAL-20260730-0001,2026-07-30,15:30,Snack Box Corporate,Snack Box,Regular,1,Rp 85.000,Rp 38.000,Rp 85.000,e-wallet
+TRX-CENTRAL-20260730-0002,2026-07-30,11:03,Snack Box Corporate,Snack Box,Regular,1,Rp 85.000,Rp 38.000,Rp 85.000,e-wallet
+TRX-CENTRAL-20260730-0003,2026-07-30,17:25,Catering Package A (20pax),Catering,Regular,3,Rp 1.200.000,Rp 650.000,Rp 3.600.000,e-wallet
+TRX-CENTRAL-20260730-0003,2026-07-30,17:25,Snack Box Corporate,Snack Box,Regular,2,Rp 85.000,Rp 38.000,Rp 170.000,e-wallet
+TRX-CENTRAL-20260730-0004,2026-07-30,10:03,Catering Package A (20pax),Catering,Regular,2,Rp 1.200.000,Rp 650.000,Rp 2.400.000,e-wallet
+TRX-CENTRAL-20260730-0005,2026-07-30,10:27,Catering Package B (50pax),Catering,Regular,1,Rp 2.800.000,Rp 1.500.000,Rp 2.800.000,cash
+TRX-CENTRAL-20260730-0005,2026-07-30,10:27,Private Label Sauce 1L,Private Label,Regular,2,Rp 45.000,Rp 18.000,Rp 90.000,cash
+TRX-CENTRAL-20260730-0006,2026-07-30,09:05,Catering Package B (50pax),Catering,Regular,2,Rp 2.800.000,Rp 1.500.000,Rp 5.600.000,e-wallet
+TRX-CENTRAL-20260730-0006,2026-07-30,09:05,Catering Package A (20pax),Catering,Regular,2,Rp 1.200.000,Rp 650.000,Rp 2.400.000,e-wallet
+TRX-CENTRAL-20260731-0001,2026-07-31,10:49,Bulk Chicken Box,Bulk Order,Regular,1,Rp 320.000,Rp 150.000,Rp 320.000,e-wallet
+TRX-CENTRAL-20260731-0002,2026-07-31,17:57,Catering Package A (20pax),Catering,Regular,1,Rp 1.200.000,Rp 650.000,Rp 1.200.000,e-wallet
+TRX-CENTRAL-20260731-0002,2026-07-31,17:57,Catering Package B (50pax),Catering,Regular,3,Rp 2.800.000,Rp 1.500.000,Rp 8.400.000,e-wallet
+TRX-CENTRAL-20260731-0003,2026-07-31,08:40,Catering Package B (50pax),Catering,Regular,3,Rp 2.800.000,Rp 1.500.000,Rp 8.400.000,card
+TRX-CENTRAL-20260731-0003,2026-07-31,08:40,Frozen Meatball Pack,Private Label,Regular,1,Rp 65.000,Rp 30.000,Rp 65.000,card
+TRX-CENTRAL-20260731-0004,2026-07-31,08:15,Bulk Fried Rice Tray,Bulk Order,Regular,1,Rp 250.000,Rp 110.000,Rp 250.000,card
+TRX-CENTRAL-20260731-0004,2026-07-31,08:15,Snack Box Corporate,Snack Box,Regular,1,Rp 85.000,Rp 38.000,Rp 85.000,card
+TRX-CENTRAL-20260731-0005,2026-07-31,08:54,Catering Package A (20pax),Catering,Regular,1,Rp 1.200.000,Rp 650.000,Rp 1.200.000,card
+TRX-CENTRAL-20260731-0006,2026-07-31,10:14,Catering Package A (20pax),Catering,Regular,3,Rp 1.200.000,Rp 650.000,Rp 3.600.000,card
+TRX-CENTRAL-20260731-0007,2026-07-31,15:52,Catering Package A (20pax),Catering,Regular,2,Rp 1.200.000,Rp 650.000,Rp 2.400.000,e-wallet
+TRX-CENTRAL-20260731-0007,2026-07-31,15:52,Catering Package B (50pax),Catering,Regular,2,Rp 2.800.000,Rp 1.500.000,Rp 5.600.000,e-wallet
+TRX-CENTRAL-20260731-0008,2026-07-31,12:57,Bulk Chicken Box,Bulk Order,Regular,3,Rp 320.000,Rp 150.000,Rp 960.000,cash
+TRX-CENTRAL-20260731-0009,2026-07-31,17:32,Catering Package B (50pax),Catering,Regular,3,Rp 2.800.000,Rp 1.500.000,Rp 8.400.000,cash
+TRX-CENTRAL-20260731-0009,2026-07-31,17:32,Catering Package A (20pax),Catering,Regular,1,Rp 1.200.000,Rp 650.000,Rp 1.200.000,cash
+TRX-CENTRAL-20260801-0001,2026-08-01,15:15,Catering Package B (50pax),Catering,Regular,2,Rp 2.800.000,Rp 1.500.000,Rp 5.600.000,card
+TRX-CENTRAL-20260801-0002,2026-08-01,11:50,Bulk Chicken Box,Bulk Order,Regular,3,Rp 320.000,Rp 150.000,Rp 960.000,e-wallet
+TRX-CENTRAL-20260801-0002,2026-08-01,11:50,Catering Package A (20pax),Catering,Regular,1,Rp 1.200.000,Rp 650.000,Rp 1.200.000,e-wallet
+TRX-CENTRAL-20260801-0003,2026-08-01,15:28,Catering Package A (20pax),Catering,Regular,2,Rp 1.200.000,Rp 650.000,Rp 2.400.000,cash
+TRX-CENTRAL-20260801-0003,2026-08-01,15:28,Bulk Chicken Box,Bulk Order,Regular,3,Rp 320.000,Rp 150.000,Rp 960.000,cash
+TRX-CENTRAL-20260801-0004,2026-08-01,13:19,Bulk Fried Rice Tray,Bulk Order,Regular,3,Rp 250.000,Rp 110.000,Rp 750.000,e-wallet
+TRX-CENTRAL-20260801-0005,2026-08-01,13:09,Catering Package B (50pax),Catering,Regular,2,Rp 2.800.000,Rp 1.500.000,Rp 5.600.000,card
+TRX-CENTRAL-20260801-0006,2026-08-01,11:00,Catering Package A (20pax),Catering,Regular,2,Rp 1.200.000,Rp 650.000,Rp 2.400.000,e-wallet
+TRX-CENTRAL-20260801-0007,2026-08-01,14:54,Catering Package B (50pax),Catering,Regular,2,Rp 2.800.000,Rp 1.500.000,Rp 5.600.000,e-wallet
+TRX-CENTRAL-20260802-0001,2026-08-02,16:06,Frozen Meatball Pack,Private Label,Regular,2,Rp 65.000,Rp 30.000,Rp 130.000,e-wallet
+TRX-CENTRAL-20260802-0001,2026-08-02,16:06,Bulk Chicken Box,Bulk Order,Regular,2,Rp 320.000,Rp 150.000,Rp 640.000,e-wallet
+TRX-CENTRAL-20260802-0002,2026-08-02,12:57,Catering Package A (20pax),Catering,Regular,1,Rp 1.200.000,Rp 650.000,Rp 1.200.000,e-wallet
+TRX-CENTRAL-20260802-0002,2026-08-02,12:57,Bulk Fried Rice Tray,Bulk Order,Regular,1,Rp 250.000,Rp 110.000,Rp 250.000,e-wallet
+TRX-CENTRAL-20260802-0003,2026-08-02,09:15,Frozen Meatball Pack,Private Label,Regular,3,Rp 65.000,Rp 30.000,Rp 195.000,e-wallet
+TRX-CENTRAL-20260802-0003,2026-08-02,09:15,Bulk Chicken Box,Bulk Order,Regular,1,Rp 320.000,Rp 150.000,Rp 320.000,e-wallet
+TRX-CENTRAL-20260802-0004,2026-08-02,14:26,Bulk Chicken Box,Bulk Order,Regular,3,Rp 320.000,Rp 150.000,Rp 960.000,e-wallet
+TRX-CENTRAL-20260802-0005,2026-08-02,10:58,Catering Package A (20pax),Catering,Regular,2,Rp 1.200.000,Rp 650.000,Rp 2.400.000,card
+TRX-CENTRAL-20260802-0006,2026-08-02,14:28,Catering Package A (20pax),Catering,Regular,1,Rp 1.200.000,Rp 650.000,Rp 1.200.000,card
+TRX-CENTRAL-20260802-0006,2026-08-02,14:28,Bulk Chicken Box,Bulk Order,Regular,2,Rp 320.000,Rp 150.000,Rp 640.000,card
+TRX-CENTRAL-20260803-0001,2026-08-03,16:46,Catering Package A (20pax),Catering,Regular,1,Rp 1.200.000,Rp 650.000,Rp 1.200.000,cash
+TRX-CENTRAL-20260803-0002,2026-08-03,13:21,Private Label Sauce 1L,Private Label,Regular,3,Rp 45.000,Rp 18.000,Rp 135.000,e-wallet
+TRX-CENTRAL-20260803-0003,2026-08-03,17:47,Bulk Chicken Box,Bulk Order,Regular,2,Rp 320.000,Rp 150.000,Rp 640.000,e-wallet
+TRX-CENTRAL-20260803-0004,2026-08-03,11:40,Frozen Meatball Pack,Private Label,Regular,2,Rp 65.000,Rp 30.000,Rp 130.000,card
+TRX-CENTRAL-20260803-0005,2026-08-03,13:25,Catering Package B (50pax),Catering,Regular,1,Rp 2.800.000,Rp 1.500.000,Rp 2.800.000,cash
+TRX-CENTRAL-20260803-0006,2026-08-03,14:55,Catering Package B (50pax),Catering,Regular,3,Rp 2.800.000,Rp 1.500.000,Rp 8.400.000,cash
+TRX-CENTRAL-20260803-0006,2026-08-03,14:55,Bulk Chicken Box,Bulk Order,Regular,1,Rp 320.000,Rp 150.000,Rp 320.000,cash
+TRX-CENTRAL-20260803-0007,2026-08-03,16:19,Private Label Sauce 1L,Private Label,Regular,2,Rp 45.000,Rp 18.000,Rp 90.000,e-wallet
+TRX-CENTRAL-20260804-0001,2026-08-04,11:10,Catering Package A (20pax),Catering,Regular,3,Rp 1.200.000,Rp 650.000,Rp 3.600.000,cash
+TRX-CENTRAL-20260804-0001,2026-08-04,11:10,Catering Package B (50pax),Catering,Regular,3,Rp 2.800.000,Rp 1.500.000,Rp 8.400.000,cash
+TRX-CENTRAL-20260804-0002,2026-08-04,08:22,Catering Package A (20pax),Catering,Regular,3,Rp 1.200.000,Rp 650.000,Rp 3.600.000,card
+TRX-CENTRAL-20260804-0002,2026-08-04,08:22,Catering Package B (50pax),Catering,Regular,2,Rp 2.800.000,Rp 1.500.000,Rp 5.600.000,card
+TRX-CENTRAL-20260804-0003,2026-08-04,16:41,Catering Package B (50pax),Catering,Regular,2,Rp 2.800.000,Rp 1.500.000,Rp 5.600.000,e-wallet
+TRX-CENTRAL-20260804-0004,2026-08-04,10:34,Catering Package A (20pax),Catering,Regular,1,Rp 1.200.000,Rp 650.000,Rp 1.200.000,e-wallet
+TRX-CENTRAL-20260804-0005,2026-08-04,15:37,Catering Package A (20pax),Catering,Regular,2,Rp 1.200.000,Rp 650.000,Rp 2.400.000,cash
+TRX-CENTRAL-20260804-0005,2026-08-04,15:37,Catering Package B (50pax),Catering,Regular,2,Rp 2.800.000,Rp 1.500.000,Rp 5.600.000,cash
+TRX-CENTRAL-20260804-0006,2026-08-04,16:54,Catering Package A (20pax),Catering,Regular,3,Rp 1.200.000,Rp 650.000,Rp 3.600.000,card
+TRX-CENTRAL-20260804-0007,2026-08-04,13:38,Bulk Chicken Box,Bulk Order,Regular,2,Rp 320.000,Rp 150.000,Rp 640.000,cash
+TRX-CENTRAL-20260804-0008,2026-08-04,15:28,Snack Box Corporate,Snack Box,Regular,1,Rp 85.000,Rp 38.000,Rp 85.000,e-wallet
+TRX-CENTRAL-20260804-0009,2026-08-04,17:48,Catering Package B (50pax),Catering,Regular,3,Rp 2.800.000,Rp 1.500.000,Rp 8.400.000,e-wallet
+TRX-CENTRAL-20260804-0009,2026-08-04,17:48,Bulk Chicken Box,Bulk Order,Regular,1,Rp 320.000,Rp 150.000,Rp 320.000,e-wallet

@@ -2,10 +2,10 @@ import {
   BadRequestException,
   Injectable,
   UnauthorizedException,
-} from '@nestjs/common';
-import { PrismaService } from '../prisma/prisma.service';
-import * as bcrypt from 'bcrypt';
-import { JwtService } from '@nestjs/jwt';
+} from "@nestjs/common";
+import { PrismaService } from "../prisma/prisma.service";
+import * as bcrypt from "bcrypt";
+import { JwtService } from "@nestjs/jwt";
 
 @Injectable()
 export class AuthService {
@@ -20,31 +20,26 @@ export class AuthService {
     password: string;
     role: string;
   }) {
-    const existingUser =
-      await this.prisma.users.findUnique({
-        where: {
-          email: data.email,
-        },
-      });
+    const existingUser = await this.prisma.users.findUnique({
+      where: {
+        email: data.email,
+      },
+    });
 
     if (existingUser) {
-      throw new BadRequestException(
-        'Email already exists',
-      );
+      throw new BadRequestException("Email already exists");
     }
 
-    const hashedPassword =
-      await bcrypt.hash(data.password, 10);
+    const hashedPassword = await bcrypt.hash(data.password, 10);
 
-    const user =
-      await this.prisma.users.create({
-        data: {
-          name: data.name,
-          email: data.email,
-          password: hashedPassword,
-          role: data.role,
-        },
-      });
+    const user = await this.prisma.users.create({
+      data: {
+        name: data.name,
+        email: data.email,
+        password: hashedPassword,
+        role: data.role,
+      },
+    });
 
     return {
       id: user.id,
@@ -54,33 +49,21 @@ export class AuthService {
     };
   }
 
-  async login(data: {
-    email: string;
-    password: string;
-  }) {
-    const user =
-      await this.prisma.users.findUnique({
-        where: {
-          email: data.email,
-        },
-      });
+  async login(data: { email: string; password: string }) {
+    const user = await this.prisma.users.findUnique({
+      where: {
+        email: data.email,
+      },
+    });
 
     if (!user) {
-      throw new UnauthorizedException(
-        'Invalid credentials',
-      );
+      throw new UnauthorizedException("Invalid credentials");
     }
 
-    const isMatch =
-      await bcrypt.compare(
-        data.password,
-        user.password,
-      );
+    const isMatch = await bcrypt.compare(data.password, user.password);
 
     if (!isMatch) {
-      throw new UnauthorizedException(
-        'Invalid credentials',
-      );
+      throw new UnauthorizedException("Invalid credentials");
     }
 
     await this.prisma.users.update({
@@ -92,12 +75,11 @@ export class AuthService {
       },
     });
 
-    const token =
-      await this.jwtService.signAsync({
-        sub: user.id.toString(),
-        email: user.email,
-        role: user.role,
-      });
+    const token = await this.jwtService.signAsync({
+      sub: user.id.toString(),
+      email: user.email,
+      role: user.role,
+    });
 
     return {
       access_token: token,

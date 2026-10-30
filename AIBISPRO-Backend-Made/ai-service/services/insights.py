@@ -4,12 +4,12 @@ from services.ml import predict_demand
 from services.recommendation import recommendation_engine
 
 
-def generate_business_insights():
+def generate_business_insights(company_id: int):
 
-    dashboard = dashboard_summary()
-    forecast = forecast_sales(days=7)
-    demand = predict_demand()
-    recommendations = recommendation_engine()
+    dashboard = dashboard_summary(company_id)
+    forecast = forecast_sales(company_id, days=7)
+    demand = predict_demand(company_id)
+    recommendations = recommendation_engine(company_id)
 
     insights = []
 
@@ -31,23 +31,25 @@ def generate_business_insights():
     # -------------------------
     # Forecast
     # -------------------------
-    tomorrow = forecast["forecast"][0]
+    if forecast["forecast"]:
+        tomorrow = forecast["forecast"][0]
 
-    insights.append(
-        f"Tomorrow's predicted revenue is Rp {tomorrow['predicted_revenue']:,.0f}."
-    )
+        insights.append(
+            f"Tomorrow's predicted revenue is Rp {tomorrow['predicted_revenue']:,.0f}."
+        )
 
     # -------------------------
     # Demand
     # -------------------------
-    top_product = max(
-        demand,
-        key=lambda x: x["predicted_quantity"]
-    )
+    if demand:
+        top_product = max(
+            demand,
+            key=lambda x: x["predicted_quantity"]
+        )
 
-    insights.append(
-        f"{top_product['product']} ({top_product['size']}) is expected to have the highest demand with approximately {top_product['predicted_quantity']:.1f} sales."
-    )
+        insights.append(
+            f"{top_product['product']} ({top_product['size']}) is expected to have the highest demand with approximately {top_product['predicted_quantity']:.1f} sales."
+        )
 
     # -------------------------
     # Recommendations

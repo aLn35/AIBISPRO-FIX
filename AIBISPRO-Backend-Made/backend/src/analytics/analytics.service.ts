@@ -1,5 +1,5 @@
-import { Injectable } from '@nestjs/common';
-import { PrismaService } from '../prisma/prisma.service';
+import { Injectable } from "@nestjs/common";
+import { PrismaService } from "../prisma/prisma.service";
 
 @Injectable()
 export class AnalyticsService {
@@ -7,14 +7,14 @@ export class AnalyticsService {
 
   async getTopProducts(companyId?: number) {
     const result = await this.prisma.sale_items.groupBy({
-      by: ['product_id'],
+      by: ["product_id"],
       where: companyId ? { products: { company_id: companyId } } : undefined,
       _sum: {
         quantity: true,
       },
       orderBy: {
         _sum: {
-          quantity: 'desc',
+          quantity: "desc",
         },
       },
       take: 10,
@@ -60,21 +60,20 @@ export class AnalyticsService {
   }
 
   async getLowStock(companyId?: number) {
-    const lowStockItems =
-      await this.prisma.product_sizes.findMany({
-        where: {
-          current_stock: {
-            lte: 10,
-          },
-          ...(companyId ? { products: { company_id: companyId } } : {}),
+    const lowStockItems = await this.prisma.product_sizes.findMany({
+      where: {
+        current_stock: {
+          lte: 10,
         },
-        include: {
-          products: true,
-        },
-        orderBy: {
-          current_stock: 'asc',
-        },
-      });
+        ...(companyId ? { products: { company_id: companyId } } : {}),
+      },
+      include: {
+        products: true,
+      },
+      orderBy: {
+        current_stock: "asc",
+      },
+    });
 
     return lowStockItems.map((item) => ({
       product: item.products.name,

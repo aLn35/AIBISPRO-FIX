@@ -1,0 +1,1643 @@
+Transaction_ID,Date,Time,Product,Category,Size,Quantity,Unit_Price_IDR,Cost_IDR,Total_IDR,Payment_Method
+TRX-SUSHI-20260714-0001,2026-07-14,14:54,Tuna Sashimi (5pcs),Sashimi,Regular,2,Rp 65.000,Rp 32.000,Rp 130.000,e-wallet
+TRX-SUSHI-20260714-0002,2026-07-14,20:33,California Roll,Sushi,Regular,3,Rp 48.000,Rp 20.000,Rp 144.000,e-wallet
+TRX-SUSHI-20260714-0002,2026-07-14,20:33,Salmon Nigiri (2pcs),Sushi,Regular,1,Rp 38.000,Rp 18.000,Rp 38.000,e-wallet
+TRX-SUSHI-20260714-0002,2026-07-14,20:33,Edamame,Appetizer,Regular,3,Rp 22.000,Rp 8.000,Rp 66.000,e-wallet
+TRX-SUSHI-20260714-0003,2026-07-14,12:51,Dragon Roll,Sushi,Regular,2,Rp 62.000,Rp 28.000,Rp 124.000,e-wallet
+TRX-SUSHI-20260714-0003,2026-07-14,12:51,Chicken Katsu Curry,Ramen,Regular,2,Rp 58.000,Rp 26.000,Rp 116.000,e-wallet
+TRX-SUSHI-20260714-0004,2026-07-14,15:39,Dragon Roll,Sushi,Regular,1,Rp 62.000,Rp 28.000,Rp 62.000,cash
+TRX-SUSHI-20260714-0005,2026-07-14,18:17,California Roll,Sushi,Regular,1,Rp 48.000,Rp 20.000,Rp 48.000,cash
+TRX-SUSHI-20260714-0006,2026-07-14,11:29,Tuna Sashimi (5pcs),Sashimi,Regular,3,Rp 65.000,Rp 32.000,Rp 195.000,e-wallet
+TRX-SUSHI-20260714-0006,2026-07-14,11:29,Edamame,Appetizer,Regular,3,Rp 22.000,Rp 8.000,Rp 66.000,e-wallet
+TRX-SUSHI-20260714-0007,2026-07-14,14:09,California Roll,Sushi,Regular,1,Rp 48.000,Rp 20.000,Rp 48.000,card
+TRX-SUSHI-20260714-0007,2026-07-14,14:09,Dragon Roll,Sushi,Regular,2,Rp 62.000,Rp 28.000,Rp 124.000,card
+TRX-SUSHI-20260714-0007,2026-07-14,14:09,Tuna Sashimi (5pcs),Sashimi,Regular,2,Rp 65.000,Rp 32.000,Rp 130.000,card
+TRX-SUSHI-20260714-0008,2026-07-14,20:01,Green Tea,Beverage,Regular,1,Rp 15.000,Rp 5.000,Rp 15.000,card
+TRX-SUSHI-20260714-0008,2026-07-14,20:01,Tuna Sashimi (5pcs),Sashimi,Regular,1,Rp 65.000,Rp 32.000,Rp 65.000,card
+TRX-SUSHI-20260714-0009,2026-07-14,16:08,Dragon Roll,Sushi,Regular,3,Rp 62.000,Rp 28.000,Rp 186.000,cash
+TRX-SUSHI-20260714-0009,2026-07-14,16:08,Edamame,Appetizer,Regular,3,Rp 22.000,Rp 8.000,Rp 66.000,cash
+TRX-SUSHI-20260714-0010,2026-07-14,19:24,Ramen Tonkotsu,Ramen,Regular,2,Rp 65.000,Rp 29.000,Rp 130.000,e-wallet
+TRX-SUSHI-20260714-0011,2026-07-14,11:17,Tuna Sashimi (5pcs),Sashimi,Regular,2,Rp 65.000,Rp 32.000,Rp 130.000,card
+TRX-SUSHI-20260714-0012,2026-07-14,13:54,Salmon Nigiri (2pcs),Sushi,Regular,2,Rp 38.000,Rp 18.000,Rp 76.000,cash
+TRX-SUSHI-20260714-0012,2026-07-14,13:54,California Roll,Sushi,Regular,2,Rp 48.000,Rp 20.000,Rp 96.000,cash
+TRX-SUSHI-20260714-0012,2026-07-14,13:54,Dragon Roll,Sushi,Regular,2,Rp 62.000,Rp 28.000,Rp 124.000,cash
+TRX-SUSHI-20260714-0013,2026-07-14,20:18,California Roll,Sushi,Regular,2,Rp 48.000,Rp 20.000,Rp 96.000,e-wallet
+TRX-SUSHI-20260714-0013,2026-07-14,20:18,Tuna Sashimi (5pcs),Sashimi,Regular,1,Rp 65.000,Rp 32.000,Rp 65.000,e-wallet
+TRX-SUSHI-20260714-0013,2026-07-14,20:18,Salmon Nigiri (2pcs),Sushi,Regular,3,Rp 38.000,Rp 18.000,Rp 114.000,e-wallet
+TRX-SUSHI-20260714-0014,2026-07-14,18:15,California Roll,Sushi,Regular,2,Rp 48.000,Rp 20.000,Rp 96.000,card
+TRX-SUSHI-20260714-0015,2026-07-14,20:13,Ramen Tonkotsu,Ramen,Regular,2,Rp 65.000,Rp 29.000,Rp 130.000,e-wallet
+TRX-SUSHI-20260714-0016,2026-07-14,14:52,Tuna Sashimi (5pcs),Sashimi,Regular,1,Rp 65.000,Rp 32.000,Rp 65.000,card
+TRX-SUSHI-20260714-0016,2026-07-14,14:52,Salmon Nigiri (2pcs),Sushi,Regular,3,Rp 38.000,Rp 18.000,Rp 114.000,card
+TRX-SUSHI-20260714-0016,2026-07-14,14:52,Dragon Roll,Sushi,Regular,3,Rp 62.000,Rp 28.000,Rp 186.000,card
+TRX-SUSHI-20260714-0017,2026-07-14,18:18,Dragon Roll,Sushi,Regular,3,Rp 62.000,Rp 28.000,Rp 186.000,e-wallet
+TRX-SUSHI-20260714-0017,2026-07-14,18:18,Ramen Tonkotsu,Ramen,Regular,1,Rp 65.000,Rp 29.000,Rp 65.000,e-wallet
+TRX-SUSHI-20260714-0018,2026-07-14,12:00,Tuna Sashimi (5pcs),Sashimi,Regular,2,Rp 65.000,Rp 32.000,Rp 130.000,card
+TRX-SUSHI-20260714-0018,2026-07-14,12:00,Dragon Roll,Sushi,Regular,3,Rp 62.000,Rp 28.000,Rp 186.000,card
+TRX-SUSHI-20260714-0019,2026-07-14,19:38,Dragon Roll,Sushi,Regular,2,Rp 62.000,Rp 28.000,Rp 124.000,card
+TRX-SUSHI-20260714-0019,2026-07-14,19:38,California Roll,Sushi,Regular,1,Rp 48.000,Rp 20.000,Rp 48.000,card
+TRX-SUSHI-20260714-0020,2026-07-14,18:15,Salmon Nigiri (2pcs),Sushi,Regular,2,Rp 38.000,Rp 18.000,Rp 76.000,card
+TRX-SUSHI-20260714-0021,2026-07-14,12:18,California Roll,Sushi,Regular,1,Rp 48.000,Rp 20.000,Rp 48.000,card
+TRX-SUSHI-20260714-0021,2026-07-14,12:18,Dragon Roll,Sushi,Regular,2,Rp 62.000,Rp 28.000,Rp 124.000,card
+TRX-SUSHI-20260714-0022,2026-07-14,13:54,Tuna Sashimi (5pcs),Sashimi,Regular,1,Rp 65.000,Rp 32.000,Rp 65.000,card
+TRX-SUSHI-20260714-0023,2026-07-14,17:32,California Roll,Sushi,Regular,3,Rp 48.000,Rp 20.000,Rp 144.000,e-wallet
+TRX-SUSHI-20260714-0023,2026-07-14,17:32,Salmon Nigiri (2pcs),Sushi,Regular,3,Rp 38.000,Rp 18.000,Rp 114.000,e-wallet
+TRX-SUSHI-20260714-0024,2026-07-14,20:27,Dragon Roll,Sushi,Regular,3,Rp 62.000,Rp 28.000,Rp 186.000,e-wallet
+TRX-SUSHI-20260714-0024,2026-07-14,20:27,Tuna Sashimi (5pcs),Sashimi,Regular,3,Rp 65.000,Rp 32.000,Rp 195.000,e-wallet
+TRX-SUSHI-20260714-0024,2026-07-14,20:27,Salmon Nigiri (2pcs),Sushi,Regular,2,Rp 38.000,Rp 18.000,Rp 76.000,e-wallet
+TRX-SUSHI-20260714-0025,2026-07-14,14:24,Tuna Sashimi (5pcs),Sashimi,Regular,2,Rp 65.000,Rp 32.000,Rp 130.000,e-wallet
+TRX-SUSHI-20260714-0025,2026-07-14,14:24,Ramen Tonkotsu,Ramen,Regular,3,Rp 65.000,Rp 29.000,Rp 195.000,e-wallet
+TRX-SUSHI-20260714-0026,2026-07-14,14:31,Salmon Nigiri (2pcs),Sushi,Regular,3,Rp 38.000,Rp 18.000,Rp 114.000,cash
+TRX-SUSHI-20260714-0026,2026-07-14,14:31,California Roll,Sushi,Regular,2,Rp 48.000,Rp 20.000,Rp 96.000,cash
+TRX-SUSHI-20260714-0026,2026-07-14,14:31,Tuna Sashimi (5pcs),Sashimi,Regular,2,Rp 65.000,Rp 32.000,Rp 130.000,cash
+TRX-SUSHI-20260714-0027,2026-07-14,17:03,Tuna Sashimi (5pcs),Sashimi,Regular,1,Rp 65.000,Rp 32.000,Rp 65.000,e-wallet
+TRX-SUSHI-20260714-0027,2026-07-14,17:03,California Roll,Sushi,Regular,3,Rp 48.000,Rp 20.000,Rp 144.000,e-wallet
+TRX-SUSHI-20260714-0028,2026-07-14,12:20,Salmon Nigiri (2pcs),Sushi,Regular,1,Rp 38.000,Rp 18.000,Rp 38.000,card
+TRX-SUSHI-20260714-0028,2026-07-14,12:20,Tuna Sashimi (5pcs),Sashimi,Regular,1,Rp 65.000,Rp 32.000,Rp 65.000,card
+TRX-SUSHI-20260714-0028,2026-07-14,12:20,Mochi Ice Cream (3pcs),Dessert,Regular,3,Rp 32.000,Rp 13.000,Rp 96.000,card
+TRX-SUSHI-20260714-0029,2026-07-14,17:52,Dragon Roll,Sushi,Regular,3,Rp 62.000,Rp 28.000,Rp 186.000,card
+TRX-SUSHI-20260714-0029,2026-07-14,17:52,Tuna Sashimi (5pcs),Sashimi,Regular,1,Rp 65.000,Rp 32.000,Rp 65.000,card
+TRX-SUSHI-20260714-0029,2026-07-14,17:52,Green Tea,Beverage,Regular,3,Rp 15.000,Rp 5.000,Rp 45.000,card
+TRX-SUSHI-20260714-0030,2026-07-14,18:32,Tuna Sashimi (5pcs),Sashimi,Regular,2,Rp 65.000,Rp 32.000,Rp 130.000,cash
+TRX-SUSHI-20260714-0030,2026-07-14,18:32,Salmon Nigiri (2pcs),Sushi,Regular,2,Rp 38.000,Rp 18.000,Rp 76.000,cash
+TRX-SUSHI-20260714-0031,2026-07-14,16:50,Salmon Nigiri (2pcs),Sushi,Regular,3,Rp 38.000,Rp 18.000,Rp 114.000,e-wallet
+TRX-SUSHI-20260714-0031,2026-07-14,16:50,California Roll,Sushi,Regular,2,Rp 48.000,Rp 20.000,Rp 96.000,e-wallet
+TRX-SUSHI-20260714-0031,2026-07-14,16:50,Mochi Ice Cream (3pcs),Dessert,Regular,1,Rp 32.000,Rp 13.000,Rp 32.000,e-wallet
+TRX-SUSHI-20260714-0032,2026-07-14,11:49,California Roll,Sushi,Regular,2,Rp 48.000,Rp 20.000,Rp 96.000,e-wallet
+TRX-SUSHI-20260714-0033,2026-07-14,15:45,California Roll,Sushi,Regular,2,Rp 48.000,Rp 20.000,Rp 96.000,e-wallet
+TRX-SUSHI-20260714-0034,2026-07-14,11:03,Ramen Tonkotsu,Ramen,Regular,1,Rp 65.000,Rp 29.000,Rp 65.000,e-wallet
+TRX-SUSHI-20260714-0034,2026-07-14,11:03,Dragon Roll,Sushi,Regular,1,Rp 62.000,Rp 28.000,Rp 62.000,e-wallet
+TRX-SUSHI-20260714-0034,2026-07-14,11:03,Salmon Nigiri (2pcs),Sushi,Regular,1,Rp 38.000,Rp 18.000,Rp 38.000,e-wallet
+TRX-SUSHI-20260714-0035,2026-07-14,14:47,California Roll,Sushi,Regular,1,Rp 48.000,Rp 20.000,Rp 48.000,cash
+TRX-SUSHI-20260714-0035,2026-07-14,14:47,Salmon Nigiri (2pcs),Sushi,Regular,1,Rp 38.000,Rp 18.000,Rp 38.000,cash
+TRX-SUSHI-20260714-0036,2026-07-14,12:45,California Roll,Sushi,Regular,1,Rp 48.000,Rp 20.000,Rp 48.000,cash
+TRX-SUSHI-20260714-0036,2026-07-14,12:45,Tuna Sashimi (5pcs),Sashimi,Regular,3,Rp 65.000,Rp 32.000,Rp 195.000,cash
+TRX-SUSHI-20260714-0037,2026-07-14,15:38,Salmon Nigiri (2pcs),Sushi,Regular,1,Rp 38.000,Rp 18.000,Rp 38.000,e-wallet
+TRX-SUSHI-20260714-0037,2026-07-14,15:38,Dragon Roll,Sushi,Regular,2,Rp 62.000,Rp 28.000,Rp 124.000,e-wallet
+TRX-SUSHI-20260714-0037,2026-07-14,15:38,Edamame,Appetizer,Regular,3,Rp 22.000,Rp 8.000,Rp 66.000,e-wallet
+TRX-SUSHI-20260714-0038,2026-07-14,15:05,Salmon Nigiri (2pcs),Sushi,Regular,2,Rp 38.000,Rp 18.000,Rp 76.000,e-wallet
+TRX-SUSHI-20260714-0038,2026-07-14,15:05,Dragon Roll,Sushi,Regular,2,Rp 62.000,Rp 28.000,Rp 124.000,e-wallet
+TRX-SUSHI-20260714-0039,2026-07-14,17:01,Tuna Sashimi (5pcs),Sashimi,Regular,2,Rp 65.000,Rp 32.000,Rp 130.000,card
+TRX-SUSHI-20260714-0039,2026-07-14,17:01,California Roll,Sushi,Regular,2,Rp 48.000,Rp 20.000,Rp 96.000,card
+TRX-SUSHI-20260714-0040,2026-07-14,16:59,Dragon Roll,Sushi,Regular,3,Rp 62.000,Rp 28.000,Rp 186.000,cash
+TRX-SUSHI-20260714-0041,2026-07-14,18:09,Salmon Nigiri (2pcs),Sushi,Regular,3,Rp 38.000,Rp 18.000,Rp 114.000,card
+TRX-SUSHI-20260714-0041,2026-07-14,18:09,California Roll,Sushi,Regular,2,Rp 48.000,Rp 20.000,Rp 96.000,card
+TRX-SUSHI-20260715-0001,2026-07-15,18:52,Salmon Nigiri (2pcs),Sushi,Regular,2,Rp 38.000,Rp 18.000,Rp 76.000,card
+TRX-SUSHI-20260715-0001,2026-07-15,18:52,California Roll,Sushi,Regular,2,Rp 48.000,Rp 20.000,Rp 96.000,card
+TRX-SUSHI-20260715-0001,2026-07-15,18:52,Dragon Roll,Sushi,Regular,2,Rp 62.000,Rp 28.000,Rp 124.000,card
+TRX-SUSHI-20260715-0002,2026-07-15,18:48,Salmon Nigiri (2pcs),Sushi,Regular,1,Rp 38.000,Rp 18.000,Rp 38.000,cash
+TRX-SUSHI-20260715-0003,2026-07-15,11:57,Tuna Sashimi (5pcs),Sashimi,Regular,1,Rp 65.000,Rp 32.000,Rp 65.000,card
+TRX-SUSHI-20260715-0003,2026-07-15,11:57,Dragon Roll,Sushi,Regular,2,Rp 62.000,Rp 28.000,Rp 124.000,card
+TRX-SUSHI-20260715-0004,2026-07-15,17:22,Dragon Roll,Sushi,Regular,3,Rp 62.000,Rp 28.000,Rp 186.000,cash
+TRX-SUSHI-20260715-0004,2026-07-15,17:22,Tuna Sashimi (5pcs),Sashimi,Regular,3,Rp 65.000,Rp 32.000,Rp 195.000,cash
+TRX-SUSHI-20260715-0004,2026-07-15,17:22,Mochi Ice Cream (3pcs),Dessert,Regular,1,Rp 32.000,Rp 13.000,Rp 32.000,cash
+TRX-SUSHI-20260715-0005,2026-07-15,12:23,Tuna Sashimi (5pcs),Sashimi,Regular,3,Rp 65.000,Rp 32.000,Rp 195.000,e-wallet
+TRX-SUSHI-20260715-0005,2026-07-15,12:23,California Roll,Sushi,Regular,1,Rp 48.000,Rp 20.000,Rp 48.000,e-wallet
+TRX-SUSHI-20260715-0005,2026-07-15,12:23,Dragon Roll,Sushi,Regular,2,Rp 62.000,Rp 28.000,Rp 124.000,e-wallet
+TRX-SUSHI-20260715-0006,2026-07-15,19:14,Tuna Sashimi (5pcs),Sashimi,Regular,1,Rp 65.000,Rp 32.000,Rp 65.000,e-wallet
+TRX-SUSHI-20260715-0006,2026-07-15,19:14,California Roll,Sushi,Regular,2,Rp 48.000,Rp 20.000,Rp 96.000,e-wallet
+TRX-SUSHI-20260715-0006,2026-07-15,19:14,Salmon Nigiri (2pcs),Sushi,Regular,3,Rp 38.000,Rp 18.000,Rp 114.000,e-wallet
+TRX-SUSHI-20260715-0007,2026-07-15,14:00,Mochi Ice Cream (3pcs),Dessert,Regular,3,Rp 32.000,Rp 13.000,Rp 96.000,card
+TRX-SUSHI-20260715-0007,2026-07-15,14:00,California Roll,Sushi,Regular,3,Rp 48.000,Rp 20.000,Rp 144.000,card
+TRX-SUSHI-20260715-0007,2026-07-15,14:00,Salmon Nigiri (2pcs),Sushi,Regular,3,Rp 38.000,Rp 18.000,Rp 114.000,card
+TRX-SUSHI-20260715-0008,2026-07-15,16:59,Salmon Nigiri (2pcs),Sushi,Regular,2,Rp 38.000,Rp 18.000,Rp 76.000,cash
+TRX-SUSHI-20260715-0008,2026-07-15,16:59,California Roll,Sushi,Regular,2,Rp 48.000,Rp 20.000,Rp 96.000,cash
+TRX-SUSHI-20260715-0008,2026-07-15,16:59,Dragon Roll,Sushi,Regular,1,Rp 62.000,Rp 28.000,Rp 62.000,cash
+TRX-SUSHI-20260715-0009,2026-07-15,12:29,Miso Soup,Appetizer,Regular,1,Rp 18.000,Rp 6.000,Rp 18.000,e-wallet
+TRX-SUSHI-20260715-0009,2026-07-15,12:29,Tuna Sashimi (5pcs),Sashimi,Regular,3,Rp 65.000,Rp 32.000,Rp 195.000,e-wallet
+TRX-SUSHI-20260715-0009,2026-07-15,12:29,Mochi Ice Cream (3pcs),Dessert,Regular,2,Rp 32.000,Rp 13.000,Rp 64.000,e-wallet
+TRX-SUSHI-20260715-0010,2026-07-15,13:26,Salmon Nigiri (2pcs),Sushi,Regular,2,Rp 38.000,Rp 18.000,Rp 76.000,card
+TRX-SUSHI-20260715-0011,2026-07-15,11:11,California Roll,Sushi,Regular,1,Rp 48.000,Rp 20.000,Rp 48.000,e-wallet
+TRX-SUSHI-20260715-0011,2026-07-15,11:11,Salmon Nigiri (2pcs),Sushi,Regular,1,Rp 38.000,Rp 18.000,Rp 38.000,e-wallet
+TRX-SUSHI-20260715-0012,2026-07-15,14:43,Edamame,Appetizer,Regular,2,Rp 22.000,Rp 8.000,Rp 44.000,e-wallet
+TRX-SUSHI-20260715-0013,2026-07-15,15:49,Tuna Sashimi (5pcs),Sashimi,Regular,1,Rp 65.000,Rp 32.000,Rp 65.000,card
+TRX-SUSHI-20260715-0014,2026-07-15,15:28,Green Tea,Beverage,Regular,3,Rp 15.000,Rp 5.000,Rp 45.000,e-wallet
+TRX-SUSHI-20260715-0014,2026-07-15,15:28,Salmon Nigiri (2pcs),Sushi,Regular,3,Rp 38.000,Rp 18.000,Rp 114.000,e-wallet
+TRX-SUSHI-20260715-0015,2026-07-15,15:29,Dragon Roll,Sushi,Regular,2,Rp 62.000,Rp 28.000,Rp 124.000,card
+TRX-SUSHI-20260715-0016,2026-07-15,20:32,Mochi Ice Cream (3pcs),Dessert,Regular,2,Rp 32.000,Rp 13.000,Rp 64.000,cash
+TRX-SUSHI-20260715-0017,2026-07-15,14:15,California Roll,Sushi,Regular,1,Rp 48.000,Rp 20.000,Rp 48.000,card
+TRX-SUSHI-20260715-0017,2026-07-15,14:15,Green Tea,Beverage,Regular,1,Rp 15.000,Rp 5.000,Rp 15.000,card
+TRX-SUSHI-20260715-0017,2026-07-15,14:15,Tuna Sashimi (5pcs),Sashimi,Regular,3,Rp 65.000,Rp 32.000,Rp 195.000,card
+TRX-SUSHI-20260715-0018,2026-07-15,12:15,Dragon Roll,Sushi,Regular,2,Rp 62.000,Rp 28.000,Rp 124.000,e-wallet
+TRX-SUSHI-20260715-0018,2026-07-15,12:15,Tuna Sashimi (5pcs),Sashimi,Regular,1,Rp 65.000,Rp 32.000,Rp 65.000,e-wallet
+TRX-SUSHI-20260715-0018,2026-07-15,12:15,Salmon Nigiri (2pcs),Sushi,Regular,1,Rp 38.000,Rp 18.000,Rp 38.000,e-wallet
+TRX-SUSHI-20260715-0019,2026-07-15,16:51,Dragon Roll,Sushi,Regular,3,Rp 62.000,Rp 28.000,Rp 186.000,card
+TRX-SUSHI-20260715-0019,2026-07-15,16:51,Miso Soup,Appetizer,Regular,2,Rp 18.000,Rp 6.000,Rp 36.000,card
+TRX-SUSHI-20260715-0020,2026-07-15,18:01,Tuna Sashimi (5pcs),Sashimi,Regular,2,Rp 65.000,Rp 32.000,Rp 130.000,e-wallet
+TRX-SUSHI-20260715-0020,2026-07-15,18:01,Salmon Nigiri (2pcs),Sushi,Regular,1,Rp 38.000,Rp 18.000,Rp 38.000,e-wallet
+TRX-SUSHI-20260715-0021,2026-07-15,17:46,Tuna Sashimi (5pcs),Sashimi,Regular,3,Rp 65.000,Rp 32.000,Rp 195.000,e-wallet
+TRX-SUSHI-20260715-0021,2026-07-15,17:46,California Roll,Sushi,Regular,2,Rp 48.000,Rp 20.000,Rp 96.000,e-wallet
+TRX-SUSHI-20260715-0021,2026-07-15,17:46,Salmon Nigiri (2pcs),Sushi,Regular,2,Rp 38.000,Rp 18.000,Rp 76.000,e-wallet
+TRX-SUSHI-20260715-0022,2026-07-15,13:49,California Roll,Sushi,Regular,3,Rp 48.000,Rp 20.000,Rp 144.000,e-wallet
+TRX-SUSHI-20260715-0023,2026-07-15,16:46,Salmon Nigiri (2pcs),Sushi,Regular,1,Rp 38.000,Rp 18.000,Rp 38.000,cash
+TRX-SUSHI-20260715-0023,2026-07-15,16:46,Green Tea,Beverage,Regular,2,Rp 15.000,Rp 5.000,Rp 30.000,cash
+TRX-SUSHI-20260715-0023,2026-07-15,16:46,Dragon Roll,Sushi,Regular,3,Rp 62.000,Rp 28.000,Rp 186.000,cash
+TRX-SUSHI-20260715-0024,2026-07-15,13:58,Ramen Tonkotsu,Ramen,Regular,3,Rp 65.000,Rp 29.000,Rp 195.000,e-wallet
+TRX-SUSHI-20260715-0025,2026-07-15,20:03,California Roll,Sushi,Regular,2,Rp 48.000,Rp 20.000,Rp 96.000,e-wallet
+TRX-SUSHI-20260715-0025,2026-07-15,20:03,Dragon Roll,Sushi,Regular,2,Rp 62.000,Rp 28.000,Rp 124.000,e-wallet
+TRX-SUSHI-20260715-0026,2026-07-15,12:39,Tuna Sashimi (5pcs),Sashimi,Regular,1,Rp 65.000,Rp 32.000,Rp 65.000,e-wallet
+TRX-SUSHI-20260715-0026,2026-07-15,12:39,Salmon Nigiri (2pcs),Sushi,Regular,2,Rp 38.000,Rp 18.000,Rp 76.000,e-wallet
+TRX-SUSHI-20260715-0026,2026-07-15,12:39,California Roll,Sushi,Regular,1,Rp 48.000,Rp 20.000,Rp 48.000,e-wallet
+TRX-SUSHI-20260715-0027,2026-07-15,14:26,Tuna Sashimi (5pcs),Sashimi,Regular,3,Rp 65.000,Rp 32.000,Rp 195.000,e-wallet
+TRX-SUSHI-20260715-0027,2026-07-15,14:26,Dragon Roll,Sushi,Regular,3,Rp 62.000,Rp 28.000,Rp 186.000,e-wallet
+TRX-SUSHI-20260715-0028,2026-07-15,19:59,Salmon Nigiri (2pcs),Sushi,Regular,2,Rp 38.000,Rp 18.000,Rp 76.000,cash
+TRX-SUSHI-20260715-0028,2026-07-15,19:59,Tuna Sashimi (5pcs),Sashimi,Regular,3,Rp 65.000,Rp 32.000,Rp 195.000,cash
+TRX-SUSHI-20260715-0028,2026-07-15,19:59,California Roll,Sushi,Regular,2,Rp 48.000,Rp 20.000,Rp 96.000,cash
+TRX-SUSHI-20260715-0029,2026-07-15,20:36,California Roll,Sushi,Regular,2,Rp 48.000,Rp 20.000,Rp 96.000,cash
+TRX-SUSHI-20260715-0030,2026-07-15,12:28,Tuna Sashimi (5pcs),Sashimi,Regular,3,Rp 65.000,Rp 32.000,Rp 195.000,card
+TRX-SUSHI-20260715-0030,2026-07-15,12:28,California Roll,Sushi,Regular,1,Rp 48.000,Rp 20.000,Rp 48.000,card
+TRX-SUSHI-20260715-0030,2026-07-15,12:28,Ramen Tonkotsu,Ramen,Regular,1,Rp 65.000,Rp 29.000,Rp 65.000,card
+TRX-SUSHI-20260715-0031,2026-07-15,16:53,Salmon Nigiri (2pcs),Sushi,Regular,1,Rp 38.000,Rp 18.000,Rp 38.000,card
+TRX-SUSHI-20260715-0031,2026-07-15,16:53,Salmon Nigiri (2pcs),Sushi,Regular,2,Rp 38.000,Rp 18.000,Rp 76.000,card
+TRX-SUSHI-20260715-0031,2026-07-15,16:53,California Roll,Sushi,Regular,3,Rp 48.000,Rp 20.000,Rp 144.000,card
+TRX-SUSHI-20260715-0032,2026-07-15,14:50,Salmon Nigiri (2pcs),Sushi,Regular,3,Rp 38.000,Rp 18.000,Rp 114.000,e-wallet
+TRX-SUSHI-20260715-0032,2026-07-15,14:50,Dragon Roll,Sushi,Regular,3,Rp 62.000,Rp 28.000,Rp 186.000,e-wallet
+TRX-SUSHI-20260715-0032,2026-07-15,14:50,Tuna Sashimi (5pcs),Sashimi,Regular,3,Rp 65.000,Rp 32.000,Rp 195.000,e-wallet
+TRX-SUSHI-20260715-0033,2026-07-15,15:40,California Roll,Sushi,Regular,3,Rp 48.000,Rp 20.000,Rp 144.000,e-wallet
+TRX-SUSHI-20260715-0033,2026-07-15,15:40,Chicken Katsu Curry,Ramen,Regular,3,Rp 58.000,Rp 26.000,Rp 174.000,e-wallet
+TRX-SUSHI-20260715-0034,2026-07-15,15:55,California Roll,Sushi,Regular,3,Rp 48.000,Rp 20.000,Rp 144.000,e-wallet
+TRX-SUSHI-20260715-0034,2026-07-15,15:55,Tuna Sashimi (5pcs),Sashimi,Regular,3,Rp 65.000,Rp 32.000,Rp 195.000,e-wallet
+TRX-SUSHI-20260715-0035,2026-07-15,20:19,Tuna Sashimi (5pcs),Sashimi,Regular,2,Rp 65.000,Rp 32.000,Rp 130.000,e-wallet
+TRX-SUSHI-20260715-0036,2026-07-15,15:33,Tuna Sashimi (5pcs),Sashimi,Regular,2,Rp 65.000,Rp 32.000,Rp 130.000,e-wallet
+TRX-SUSHI-20260715-0036,2026-07-15,15:33,Salmon Nigiri (2pcs),Sushi,Regular,2,Rp 38.000,Rp 18.000,Rp 76.000,e-wallet
+TRX-SUSHI-20260716-0001,2026-07-16,16:18,Miso Soup,Appetizer,Regular,2,Rp 18.000,Rp 6.000,Rp 36.000,e-wallet
+TRX-SUSHI-20260716-0001,2026-07-16,16:18,Dragon Roll,Sushi,Regular,3,Rp 62.000,Rp 28.000,Rp 186.000,e-wallet
+TRX-SUSHI-20260716-0001,2026-07-16,16:18,Salmon Nigiri (2pcs),Sushi,Regular,3,Rp 38.000,Rp 18.000,Rp 114.000,e-wallet
+TRX-SUSHI-20260716-0002,2026-07-16,20:14,Tuna Sashimi (5pcs),Sashimi,Regular,3,Rp 65.000,Rp 32.000,Rp 195.000,card
+TRX-SUSHI-20260716-0002,2026-07-16,20:14,Dragon Roll,Sushi,Regular,2,Rp 62.000,Rp 28.000,Rp 124.000,card
+TRX-SUSHI-20260716-0002,2026-07-16,20:14,California Roll,Sushi,Regular,2,Rp 48.000,Rp 20.000,Rp 96.000,card
+TRX-SUSHI-20260716-0003,2026-07-16,17:54,Tuna Sashimi (5pcs),Sashimi,Regular,2,Rp 65.000,Rp 32.000,Rp 130.000,card
+TRX-SUSHI-20260716-0004,2026-07-16,17:34,Salmon Nigiri (2pcs),Sushi,Regular,3,Rp 38.000,Rp 18.000,Rp 114.000,e-wallet
+TRX-SUSHI-20260716-0005,2026-07-16,12:21,Salmon Nigiri (2pcs),Sushi,Regular,3,Rp 38.000,Rp 18.000,Rp 114.000,card
+TRX-SUSHI-20260716-0005,2026-07-16,12:21,Dragon Roll,Sushi,Regular,3,Rp 62.000,Rp 28.000,Rp 186.000,card
+TRX-SUSHI-20260716-0006,2026-07-16,12:06,Ramen Tonkotsu,Ramen,Regular,1,Rp 65.000,Rp 29.000,Rp 65.000,cash
+TRX-SUSHI-20260716-0006,2026-07-16,12:06,Salmon Nigiri (2pcs),Sushi,Regular,1,Rp 38.000,Rp 18.000,Rp 38.000,cash
+TRX-SUSHI-20260716-0007,2026-07-16,15:26,Edamame,Appetizer,Regular,1,Rp 22.000,Rp 8.000,Rp 22.000,card
+TRX-SUSHI-20260716-0007,2026-07-16,15:26,California Roll,Sushi,Regular,2,Rp 48.000,Rp 20.000,Rp 96.000,card
+TRX-SUSHI-20260716-0008,2026-07-16,11:40,Salmon Nigiri (2pcs),Sushi,Regular,3,Rp 38.000,Rp 18.000,Rp 114.000,cash
+TRX-SUSHI-20260716-0008,2026-07-16,11:40,Dragon Roll,Sushi,Regular,1,Rp 62.000,Rp 28.000,Rp 62.000,cash
+TRX-SUSHI-20260716-0009,2026-07-16,19:01,Mochi Ice Cream (3pcs),Dessert,Regular,1,Rp 32.000,Rp 13.000,Rp 32.000,cash
+TRX-SUSHI-20260716-0009,2026-07-16,19:01,Dragon Roll,Sushi,Regular,1,Rp 62.000,Rp 28.000,Rp 62.000,cash
+TRX-SUSHI-20260716-0010,2026-07-16,17:38,Salmon Nigiri (2pcs),Sushi,Regular,3,Rp 38.000,Rp 18.000,Rp 114.000,e-wallet
+TRX-SUSHI-20260716-0010,2026-07-16,17:38,Edamame,Appetizer,Regular,1,Rp 22.000,Rp 8.000,Rp 22.000,e-wallet
+TRX-SUSHI-20260716-0010,2026-07-16,17:38,Dragon Roll,Sushi,Regular,3,Rp 62.000,Rp 28.000,Rp 186.000,e-wallet
+TRX-SUSHI-20260716-0011,2026-07-16,20:16,Dragon Roll,Sushi,Regular,3,Rp 62.000,Rp 28.000,Rp 186.000,cash
+TRX-SUSHI-20260716-0012,2026-07-16,14:17,Salmon Nigiri (2pcs),Sushi,Regular,3,Rp 38.000,Rp 18.000,Rp 114.000,e-wallet
+TRX-SUSHI-20260716-0013,2026-07-16,11:53,Tuna Sashimi (5pcs),Sashimi,Regular,2,Rp 65.000,Rp 32.000,Rp 130.000,cash
+TRX-SUSHI-20260716-0013,2026-07-16,11:53,California Roll,Sushi,Regular,1,Rp 48.000,Rp 20.000,Rp 48.000,cash
+TRX-SUSHI-20260716-0013,2026-07-16,11:53,Chicken Katsu Curry,Ramen,Regular,2,Rp 58.000,Rp 26.000,Rp 116.000,cash
+TRX-SUSHI-20260716-0014,2026-07-16,11:04,Edamame,Appetizer,Regular,2,Rp 22.000,Rp 8.000,Rp 44.000,e-wallet
+TRX-SUSHI-20260716-0014,2026-07-16,11:04,Dragon Roll,Sushi,Regular,1,Rp 62.000,Rp 28.000,Rp 62.000,e-wallet
+TRX-SUSHI-20260716-0014,2026-07-16,11:04,California Roll,Sushi,Regular,2,Rp 48.000,Rp 20.000,Rp 96.000,e-wallet
+TRX-SUSHI-20260716-0015,2026-07-16,13:02,Green Tea,Beverage,Regular,1,Rp 15.000,Rp 5.000,Rp 15.000,card
+TRX-SUSHI-20260716-0015,2026-07-16,13:02,Dragon Roll,Sushi,Regular,1,Rp 62.000,Rp 28.000,Rp 62.000,card
+TRX-SUSHI-20260716-0015,2026-07-16,13:02,Salmon Nigiri (2pcs),Sushi,Regular,2,Rp 38.000,Rp 18.000,Rp 76.000,card
+TRX-SUSHI-20260716-0016,2026-07-16,20:27,California Roll,Sushi,Regular,1,Rp 48.000,Rp 20.000,Rp 48.000,e-wallet
+TRX-SUSHI-20260716-0016,2026-07-16,20:27,Green Tea,Beverage,Regular,2,Rp 15.000,Rp 5.000,Rp 30.000,e-wallet
+TRX-SUSHI-20260716-0016,2026-07-16,20:27,Tuna Sashimi (5pcs),Sashimi,Regular,2,Rp 65.000,Rp 32.000,Rp 130.000,e-wallet
+TRX-SUSHI-20260716-0017,2026-07-16,14:46,Miso Soup,Appetizer,Regular,3,Rp 18.000,Rp 6.000,Rp 54.000,e-wallet
+TRX-SUSHI-20260716-0018,2026-07-16,16:20,California Roll,Sushi,Regular,3,Rp 48.000,Rp 20.000,Rp 144.000,e-wallet
+TRX-SUSHI-20260716-0018,2026-07-16,16:20,Chicken Katsu Curry,Ramen,Regular,1,Rp 58.000,Rp 26.000,Rp 58.000,e-wallet
+TRX-SUSHI-20260716-0018,2026-07-16,16:20,Tuna Sashimi (5pcs),Sashimi,Regular,2,Rp 65.000,Rp 32.000,Rp 130.000,e-wallet
+TRX-SUSHI-20260716-0019,2026-07-16,14:54,Tuna Sashimi (5pcs),Sashimi,Regular,1,Rp 65.000,Rp 32.000,Rp 65.000,e-wallet
+TRX-SUSHI-20260716-0020,2026-07-16,19:56,Green Tea,Beverage,Regular,1,Rp 15.000,Rp 5.000,Rp 15.000,e-wallet
+TRX-SUSHI-20260716-0020,2026-07-16,19:56,Dragon Roll,Sushi,Regular,1,Rp 62.000,Rp 28.000,Rp 62.000,e-wallet
+TRX-SUSHI-20260716-0021,2026-07-16,17:10,California Roll,Sushi,Regular,1,Rp 48.000,Rp 20.000,Rp 48.000,cash
+TRX-SUSHI-20260716-0021,2026-07-16,17:10,Salmon Nigiri (2pcs),Sushi,Regular,2,Rp 38.000,Rp 18.000,Rp 76.000,cash
+TRX-SUSHI-20260716-0021,2026-07-16,17:10,Mochi Ice Cream (3pcs),Dessert,Regular,1,Rp 32.000,Rp 13.000,Rp 32.000,cash
+TRX-SUSHI-20260716-0022,2026-07-16,14:27,Tuna Sashimi (5pcs),Sashimi,Regular,2,Rp 65.000,Rp 32.000,Rp 130.000,e-wallet
+TRX-SUSHI-20260716-0022,2026-07-16,14:27,Salmon Nigiri (2pcs),Sushi,Regular,1,Rp 38.000,Rp 18.000,Rp 38.000,e-wallet
+TRX-SUSHI-20260716-0022,2026-07-16,14:27,Dragon Roll,Sushi,Regular,1,Rp 62.000,Rp 28.000,Rp 62.000,e-wallet
+TRX-SUSHI-20260716-0023,2026-07-16,19:13,Salmon Nigiri (2pcs),Sushi,Regular,1,Rp 38.000,Rp 18.000,Rp 38.000,card
+TRX-SUSHI-20260716-0023,2026-07-16,19:13,Tuna Sashimi (5pcs),Sashimi,Regular,1,Rp 65.000,Rp 32.000,Rp 65.000,card
+TRX-SUSHI-20260716-0023,2026-07-16,19:13,Dragon Roll,Sushi,Regular,1,Rp 62.000,Rp 28.000,Rp 62.000,card
+TRX-SUSHI-20260716-0024,2026-07-16,11:50,Dragon Roll,Sushi,Regular,2,Rp 62.000,Rp 28.000,Rp 124.000,e-wallet
+TRX-SUSHI-20260716-0024,2026-07-16,11:50,Chicken Katsu Curry,Ramen,Regular,3,Rp 58.000,Rp 26.000,Rp 174.000,e-wallet
+TRX-SUSHI-20260716-0025,2026-07-16,18:31,Salmon Nigiri (2pcs),Sushi,Regular,1,Rp 38.000,Rp 18.000,Rp 38.000,e-wallet
+TRX-SUSHI-20260716-0025,2026-07-16,18:31,Dragon Roll,Sushi,Regular,3,Rp 62.000,Rp 28.000,Rp 186.000,e-wallet
+TRX-SUSHI-20260716-0026,2026-07-16,19:03,Dragon Roll,Sushi,Regular,3,Rp 62.000,Rp 28.000,Rp 186.000,e-wallet
+TRX-SUSHI-20260716-0026,2026-07-16,19:03,Chicken Katsu Curry,Ramen,Regular,2,Rp 58.000,Rp 26.000,Rp 116.000,e-wallet
+TRX-SUSHI-20260716-0027,2026-07-16,18:52,Salmon Nigiri (2pcs),Sushi,Regular,1,Rp 38.000,Rp 18.000,Rp 38.000,card
+TRX-SUSHI-20260716-0028,2026-07-16,20:16,Salmon Nigiri (2pcs),Sushi,Regular,2,Rp 38.000,Rp 18.000,Rp 76.000,cash
+TRX-SUSHI-20260716-0028,2026-07-16,20:16,Edamame,Appetizer,Regular,1,Rp 22.000,Rp 8.000,Rp 22.000,cash
+TRX-SUSHI-20260716-0028,2026-07-16,20:16,California Roll,Sushi,Regular,1,Rp 48.000,Rp 20.000,Rp 48.000,cash
+TRX-SUSHI-20260716-0029,2026-07-16,16:21,Tuna Sashimi (5pcs),Sashimi,Regular,1,Rp 65.000,Rp 32.000,Rp 65.000,e-wallet
+TRX-SUSHI-20260716-0029,2026-07-16,16:21,Salmon Nigiri (2pcs),Sushi,Regular,1,Rp 38.000,Rp 18.000,Rp 38.000,e-wallet
+TRX-SUSHI-20260716-0029,2026-07-16,16:21,Dragon Roll,Sushi,Regular,3,Rp 62.000,Rp 28.000,Rp 186.000,e-wallet
+TRX-SUSHI-20260716-0030,2026-07-16,12:46,Ramen Tonkotsu,Ramen,Regular,1,Rp 65.000,Rp 29.000,Rp 65.000,e-wallet
+TRX-SUSHI-20260716-0030,2026-07-16,12:46,California Roll,Sushi,Regular,1,Rp 48.000,Rp 20.000,Rp 48.000,e-wallet
+TRX-SUSHI-20260716-0031,2026-07-16,15:13,California Roll,Sushi,Regular,3,Rp 48.000,Rp 20.000,Rp 144.000,card
+TRX-SUSHI-20260716-0031,2026-07-16,15:13,Dragon Roll,Sushi,Regular,3,Rp 62.000,Rp 28.000,Rp 186.000,card
+TRX-SUSHI-20260716-0032,2026-07-16,18:10,Salmon Nigiri (2pcs),Sushi,Regular,3,Rp 38.000,Rp 18.000,Rp 114.000,card
+TRX-SUSHI-20260716-0032,2026-07-16,18:10,Dragon Roll,Sushi,Regular,1,Rp 62.000,Rp 28.000,Rp 62.000,card
+TRX-SUSHI-20260716-0032,2026-07-16,18:10,Tuna Sashimi (5pcs),Sashimi,Regular,1,Rp 65.000,Rp 32.000,Rp 65.000,card
+TRX-SUSHI-20260717-0001,2026-07-17,20:36,Green Tea,Beverage,Regular,3,Rp 15.000,Rp 5.000,Rp 45.000,card
+TRX-SUSHI-20260717-0001,2026-07-17,20:36,Dragon Roll,Sushi,Regular,3,Rp 62.000,Rp 28.000,Rp 186.000,card
+TRX-SUSHI-20260717-0001,2026-07-17,20:36,Edamame,Appetizer,Regular,2,Rp 22.000,Rp 8.000,Rp 44.000,card
+TRX-SUSHI-20260717-0002,2026-07-17,19:47,Edamame,Appetizer,Regular,1,Rp 22.000,Rp 8.000,Rp 22.000,card
+TRX-SUSHI-20260717-0003,2026-07-17,14:22,California Roll,Sushi,Regular,1,Rp 48.000,Rp 20.000,Rp 48.000,cash
+TRX-SUSHI-20260717-0003,2026-07-17,14:22,Green Tea,Beverage,Regular,2,Rp 15.000,Rp 5.000,Rp 30.000,cash
+TRX-SUSHI-20260717-0004,2026-07-17,14:50,Dragon Roll,Sushi,Regular,2,Rp 62.000,Rp 28.000,Rp 124.000,cash
+TRX-SUSHI-20260717-0004,2026-07-17,14:50,Green Tea,Beverage,Regular,2,Rp 15.000,Rp 5.000,Rp 30.000,cash
+TRX-SUSHI-20260717-0004,2026-07-17,14:50,Salmon Nigiri (2pcs),Sushi,Regular,2,Rp 38.000,Rp 18.000,Rp 76.000,cash
+TRX-SUSHI-20260717-0005,2026-07-17,14:28,California Roll,Sushi,Regular,2,Rp 48.000,Rp 20.000,Rp 96.000,e-wallet
+TRX-SUSHI-20260717-0006,2026-07-17,14:06,California Roll,Sushi,Regular,1,Rp 48.000,Rp 20.000,Rp 48.000,cash
+TRX-SUSHI-20260717-0006,2026-07-17,14:06,Mochi Ice Cream (3pcs),Dessert,Regular,2,Rp 32.000,Rp 13.000,Rp 64.000,cash
+TRX-SUSHI-20260717-0006,2026-07-17,14:06,Tuna Sashimi (5pcs),Sashimi,Regular,1,Rp 65.000,Rp 32.000,Rp 65.000,cash
+TRX-SUSHI-20260717-0007,2026-07-17,16:25,California Roll,Sushi,Regular,2,Rp 48.000,Rp 20.000,Rp 96.000,cash
+TRX-SUSHI-20260717-0008,2026-07-17,17:06,Tuna Sashimi (5pcs),Sashimi,Regular,3,Rp 65.000,Rp 32.000,Rp 195.000,card
+TRX-SUSHI-20260717-0008,2026-07-17,17:06,Dragon Roll,Sushi,Regular,3,Rp 62.000,Rp 28.000,Rp 186.000,card
+TRX-SUSHI-20260717-0009,2026-07-17,20:31,California Roll,Sushi,Regular,2,Rp 48.000,Rp 20.000,Rp 96.000,e-wallet
+TRX-SUSHI-20260717-0009,2026-07-17,20:31,Chicken Katsu Curry,Ramen,Regular,1,Rp 58.000,Rp 26.000,Rp 58.000,e-wallet
+TRX-SUSHI-20260717-0009,2026-07-17,20:31,Tuna Sashimi (5pcs),Sashimi,Regular,1,Rp 65.000,Rp 32.000,Rp 65.000,e-wallet
+TRX-SUSHI-20260717-0010,2026-07-17,16:50,Dragon Roll,Sushi,Regular,1,Rp 62.000,Rp 28.000,Rp 62.000,card
+TRX-SUSHI-20260717-0010,2026-07-17,16:50,Tuna Sashimi (5pcs),Sashimi,Regular,3,Rp 65.000,Rp 32.000,Rp 195.000,card
+TRX-SUSHI-20260717-0010,2026-07-17,16:50,California Roll,Sushi,Regular,1,Rp 48.000,Rp 20.000,Rp 48.000,card
+TRX-SUSHI-20260717-0011,2026-07-17,14:35,Dragon Roll,Sushi,Regular,3,Rp 62.000,Rp 28.000,Rp 186.000,card
+TRX-SUSHI-20260717-0012,2026-07-17,14:55,Salmon Nigiri (2pcs),Sushi,Regular,1,Rp 38.000,Rp 18.000,Rp 38.000,e-wallet
+TRX-SUSHI-20260717-0013,2026-07-17,19:17,Salmon Nigiri (2pcs),Sushi,Regular,3,Rp 38.000,Rp 18.000,Rp 114.000,e-wallet
+TRX-SUSHI-20260717-0013,2026-07-17,19:17,California Roll,Sushi,Regular,1,Rp 48.000,Rp 20.000,Rp 48.000,e-wallet
+TRX-SUSHI-20260717-0014,2026-07-17,18:01,California Roll,Sushi,Regular,2,Rp 48.000,Rp 20.000,Rp 96.000,e-wallet
+TRX-SUSHI-20260717-0015,2026-07-17,12:17,Dragon Roll,Sushi,Regular,2,Rp 62.000,Rp 28.000,Rp 124.000,e-wallet
+TRX-SUSHI-20260717-0015,2026-07-17,12:17,Tuna Sashimi (5pcs),Sashimi,Regular,3,Rp 65.000,Rp 32.000,Rp 195.000,e-wallet
+TRX-SUSHI-20260717-0015,2026-07-17,12:17,California Roll,Sushi,Regular,1,Rp 48.000,Rp 20.000,Rp 48.000,e-wallet
+TRX-SUSHI-20260717-0016,2026-07-17,15:22,Salmon Nigiri (2pcs),Sushi,Regular,2,Rp 38.000,Rp 18.000,Rp 76.000,e-wallet
+TRX-SUSHI-20260717-0016,2026-07-17,15:22,Tuna Sashimi (5pcs),Sashimi,Regular,1,Rp 65.000,Rp 32.000,Rp 65.000,e-wallet
+TRX-SUSHI-20260717-0017,2026-07-17,17:02,Ramen Tonkotsu,Ramen,Regular,3,Rp 65.000,Rp 29.000,Rp 195.000,cash
+TRX-SUSHI-20260717-0017,2026-07-17,17:02,Edamame,Appetizer,Regular,1,Rp 22.000,Rp 8.000,Rp 22.000,cash
+TRX-SUSHI-20260717-0018,2026-07-17,18:51,California Roll,Sushi,Regular,3,Rp 48.000,Rp 20.000,Rp 144.000,cash
+TRX-SUSHI-20260717-0019,2026-07-17,20:44,Chicken Katsu Curry,Ramen,Regular,1,Rp 58.000,Rp 26.000,Rp 58.000,e-wallet
+TRX-SUSHI-20260717-0019,2026-07-17,20:44,Dragon Roll,Sushi,Regular,2,Rp 62.000,Rp 28.000,Rp 124.000,e-wallet
+TRX-SUSHI-20260717-0020,2026-07-17,12:49,Dragon Roll,Sushi,Regular,2,Rp 62.000,Rp 28.000,Rp 124.000,cash
+TRX-SUSHI-20260717-0020,2026-07-17,12:49,Tuna Sashimi (5pcs),Sashimi,Regular,3,Rp 65.000,Rp 32.000,Rp 195.000,cash
+TRX-SUSHI-20260717-0021,2026-07-17,16:04,Ramen Tonkotsu,Ramen,Regular,3,Rp 65.000,Rp 29.000,Rp 195.000,cash
+TRX-SUSHI-20260717-0022,2026-07-17,13:06,Salmon Nigiri (2pcs),Sushi,Regular,1,Rp 38.000,Rp 18.000,Rp 38.000,cash
+TRX-SUSHI-20260717-0022,2026-07-17,13:06,Miso Soup,Appetizer,Regular,1,Rp 18.000,Rp 6.000,Rp 18.000,cash
+TRX-SUSHI-20260717-0023,2026-07-17,19:43,Dragon Roll,Sushi,Regular,3,Rp 62.000,Rp 28.000,Rp 186.000,e-wallet
+TRX-SUSHI-20260717-0023,2026-07-17,19:43,California Roll,Sushi,Regular,2,Rp 48.000,Rp 20.000,Rp 96.000,e-wallet
+TRX-SUSHI-20260717-0023,2026-07-17,19:43,Salmon Nigiri (2pcs),Sushi,Regular,1,Rp 38.000,Rp 18.000,Rp 38.000,e-wallet
+TRX-SUSHI-20260717-0024,2026-07-17,13:17,Green Tea,Beverage,Regular,3,Rp 15.000,Rp 5.000,Rp 45.000,card
+TRX-SUSHI-20260717-0024,2026-07-17,13:17,Dragon Roll,Sushi,Regular,1,Rp 62.000,Rp 28.000,Rp 62.000,card
+TRX-SUSHI-20260717-0025,2026-07-17,16:39,Tuna Sashimi (5pcs),Sashimi,Regular,3,Rp 65.000,Rp 32.000,Rp 195.000,cash
+TRX-SUSHI-20260717-0026,2026-07-17,16:44,Salmon Nigiri (2pcs),Sushi,Regular,3,Rp 38.000,Rp 18.000,Rp 114.000,e-wallet
+TRX-SUSHI-20260717-0027,2026-07-17,19:12,Dragon Roll,Sushi,Regular,1,Rp 62.000,Rp 28.000,Rp 62.000,e-wallet
+TRX-SUSHI-20260717-0027,2026-07-17,19:12,California Roll,Sushi,Regular,2,Rp 48.000,Rp 20.000,Rp 96.000,e-wallet
+TRX-SUSHI-20260717-0027,2026-07-17,19:12,Salmon Nigiri (2pcs),Sushi,Regular,2,Rp 38.000,Rp 18.000,Rp 76.000,e-wallet
+TRX-SUSHI-20260717-0028,2026-07-17,20:54,Tuna Sashimi (5pcs),Sashimi,Regular,1,Rp 65.000,Rp 32.000,Rp 65.000,e-wallet
+TRX-SUSHI-20260717-0029,2026-07-17,17:44,Tuna Sashimi (5pcs),Sashimi,Regular,2,Rp 65.000,Rp 32.000,Rp 130.000,cash
+TRX-SUSHI-20260717-0030,2026-07-17,20:44,Dragon Roll,Sushi,Regular,1,Rp 62.000,Rp 28.000,Rp 62.000,e-wallet
+TRX-SUSHI-20260717-0031,2026-07-17,20:20,Tuna Sashimi (5pcs),Sashimi,Regular,1,Rp 65.000,Rp 32.000,Rp 65.000,e-wallet
+TRX-SUSHI-20260717-0032,2026-07-17,17:36,Tuna Sashimi (5pcs),Sashimi,Regular,3,Rp 65.000,Rp 32.000,Rp 195.000,cash
+TRX-SUSHI-20260717-0032,2026-07-17,17:36,Ramen Tonkotsu,Ramen,Regular,2,Rp 65.000,Rp 29.000,Rp 130.000,cash
+TRX-SUSHI-20260718-0001,2026-07-18,17:45,Mochi Ice Cream (3pcs),Dessert,Regular,2,Rp 32.000,Rp 13.000,Rp 64.000,card
+TRX-SUSHI-20260718-0001,2026-07-18,17:45,California Roll,Sushi,Regular,1,Rp 48.000,Rp 20.000,Rp 48.000,card
+TRX-SUSHI-20260718-0002,2026-07-18,15:16,Dragon Roll,Sushi,Regular,1,Rp 62.000,Rp 28.000,Rp 62.000,e-wallet
+TRX-SUSHI-20260718-0003,2026-07-18,20:26,California Roll,Sushi,Regular,3,Rp 48.000,Rp 20.000,Rp 144.000,cash
+TRX-SUSHI-20260718-0004,2026-07-18,17:15,Tuna Sashimi (5pcs),Sashimi,Regular,2,Rp 65.000,Rp 32.000,Rp 130.000,e-wallet
+TRX-SUSHI-20260718-0004,2026-07-18,17:15,Salmon Nigiri (2pcs),Sushi,Regular,3,Rp 38.000,Rp 18.000,Rp 114.000,e-wallet
+TRX-SUSHI-20260718-0005,2026-07-18,17:12,Green Tea,Beverage,Regular,3,Rp 15.000,Rp 5.000,Rp 45.000,e-wallet
+TRX-SUSHI-20260718-0005,2026-07-18,17:12,Ramen Tonkotsu,Ramen,Regular,1,Rp 65.000,Rp 29.000,Rp 65.000,e-wallet
+TRX-SUSHI-20260718-0005,2026-07-18,17:12,Tuna Sashimi (5pcs),Sashimi,Regular,3,Rp 65.000,Rp 32.000,Rp 195.000,e-wallet
+TRX-SUSHI-20260718-0006,2026-07-18,20:01,Tuna Sashimi (5pcs),Sashimi,Regular,1,Rp 65.000,Rp 32.000,Rp 65.000,card
+TRX-SUSHI-20260718-0006,2026-07-18,20:01,Chicken Katsu Curry,Ramen,Regular,2,Rp 58.000,Rp 26.000,Rp 116.000,card
+TRX-SUSHI-20260718-0006,2026-07-18,20:01,Salmon Nigiri (2pcs),Sushi,Regular,2,Rp 38.000,Rp 18.000,Rp 76.000,card
+TRX-SUSHI-20260718-0007,2026-07-18,15:20,Dragon Roll,Sushi,Regular,3,Rp 62.000,Rp 28.000,Rp 186.000,e-wallet
+TRX-SUSHI-20260718-0007,2026-07-18,15:20,California Roll,Sushi,Regular,2,Rp 48.000,Rp 20.000,Rp 96.000,e-wallet
+TRX-SUSHI-20260718-0007,2026-07-18,15:20,Ramen Tonkotsu,Ramen,Regular,1,Rp 65.000,Rp 29.000,Rp 65.000,e-wallet
+TRX-SUSHI-20260718-0008,2026-07-18,17:41,California Roll,Sushi,Regular,2,Rp 48.000,Rp 20.000,Rp 96.000,cash
+TRX-SUSHI-20260718-0008,2026-07-18,17:41,Tuna Sashimi (5pcs),Sashimi,Regular,3,Rp 65.000,Rp 32.000,Rp 195.000,cash
+TRX-SUSHI-20260718-0008,2026-07-18,17:41,Dragon Roll,Sushi,Regular,1,Rp 62.000,Rp 28.000,Rp 62.000,cash
+TRX-SUSHI-20260718-0009,2026-07-18,15:28,Dragon Roll,Sushi,Regular,2,Rp 62.000,Rp 28.000,Rp 124.000,cash
+TRX-SUSHI-20260718-0010,2026-07-18,12:19,California Roll,Sushi,Regular,1,Rp 48.000,Rp 20.000,Rp 48.000,card
+TRX-SUSHI-20260718-0010,2026-07-18,12:19,Dragon Roll,Sushi,Regular,2,Rp 62.000,Rp 28.000,Rp 124.000,card
+TRX-SUSHI-20260718-0011,2026-07-18,12:40,Miso Soup,Appetizer,Regular,1,Rp 18.000,Rp 6.000,Rp 18.000,e-wallet
+TRX-SUSHI-20260718-0012,2026-07-18,14:03,Green Tea,Beverage,Regular,2,Rp 15.000,Rp 5.000,Rp 30.000,e-wallet
+TRX-SUSHI-20260718-0013,2026-07-18,17:52,Chicken Katsu Curry,Ramen,Regular,2,Rp 58.000,Rp 26.000,Rp 116.000,e-wallet
+TRX-SUSHI-20260718-0013,2026-07-18,17:52,Green Tea,Beverage,Regular,3,Rp 15.000,Rp 5.000,Rp 45.000,e-wallet
+TRX-SUSHI-20260718-0013,2026-07-18,17:52,Tuna Sashimi (5pcs),Sashimi,Regular,1,Rp 65.000,Rp 32.000,Rp 65.000,e-wallet
+TRX-SUSHI-20260718-0014,2026-07-18,18:58,Miso Soup,Appetizer,Regular,2,Rp 18.000,Rp 6.000,Rp 36.000,e-wallet
+TRX-SUSHI-20260718-0015,2026-07-18,15:52,Salmon Nigiri (2pcs),Sushi,Regular,3,Rp 38.000,Rp 18.000,Rp 114.000,e-wallet
+TRX-SUSHI-20260718-0015,2026-07-18,15:52,Miso Soup,Appetizer,Regular,2,Rp 18.000,Rp 6.000,Rp 36.000,e-wallet
+TRX-SUSHI-20260718-0015,2026-07-18,15:52,Ramen Tonkotsu,Ramen,Regular,2,Rp 65.000,Rp 29.000,Rp 130.000,e-wallet
+TRX-SUSHI-20260718-0016,2026-07-18,18:28,Dragon Roll,Sushi,Regular,2,Rp 62.000,Rp 28.000,Rp 124.000,e-wallet
+TRX-SUSHI-20260718-0016,2026-07-18,18:28,California Roll,Sushi,Regular,3,Rp 48.000,Rp 20.000,Rp 144.000,e-wallet
+TRX-SUSHI-20260718-0016,2026-07-18,18:28,Tuna Sashimi (5pcs),Sashimi,Regular,2,Rp 65.000,Rp 32.000,Rp 130.000,e-wallet
+TRX-SUSHI-20260718-0017,2026-07-18,13:56,California Roll,Sushi,Regular,3,Rp 48.000,Rp 20.000,Rp 144.000,cash
+TRX-SUSHI-20260718-0017,2026-07-18,13:56,Dragon Roll,Sushi,Regular,3,Rp 62.000,Rp 28.000,Rp 186.000,cash
+TRX-SUSHI-20260718-0017,2026-07-18,13:56,Tuna Sashimi (5pcs),Sashimi,Regular,3,Rp 65.000,Rp 32.000,Rp 195.000,cash
+TRX-SUSHI-20260718-0018,2026-07-18,14:48,Mochi Ice Cream (3pcs),Dessert,Regular,1,Rp 32.000,Rp 13.000,Rp 32.000,cash
+TRX-SUSHI-20260718-0019,2026-07-18,17:38,Green Tea,Beverage,Regular,3,Rp 15.000,Rp 5.000,Rp 45.000,e-wallet
+TRX-SUSHI-20260718-0020,2026-07-18,12:31,Dragon Roll,Sushi,Regular,2,Rp 62.000,Rp 28.000,Rp 124.000,cash
+TRX-SUSHI-20260718-0021,2026-07-18,11:44,Tuna Sashimi (5pcs),Sashimi,Regular,3,Rp 65.000,Rp 32.000,Rp 195.000,cash
+TRX-SUSHI-20260718-0021,2026-07-18,11:44,California Roll,Sushi,Regular,1,Rp 48.000,Rp 20.000,Rp 48.000,cash
+TRX-SUSHI-20260718-0021,2026-07-18,11:44,Salmon Nigiri (2pcs),Sushi,Regular,2,Rp 38.000,Rp 18.000,Rp 76.000,cash
+TRX-SUSHI-20260718-0022,2026-07-18,17:47,Chicken Katsu Curry,Ramen,Regular,1,Rp 58.000,Rp 26.000,Rp 58.000,e-wallet
+TRX-SUSHI-20260718-0022,2026-07-18,17:47,Tuna Sashimi (5pcs),Sashimi,Regular,1,Rp 65.000,Rp 32.000,Rp 65.000,e-wallet
+TRX-SUSHI-20260718-0023,2026-07-18,18:16,Salmon Nigiri (2pcs),Sushi,Regular,3,Rp 38.000,Rp 18.000,Rp 114.000,cash
+TRX-SUSHI-20260718-0023,2026-07-18,18:16,Dragon Roll,Sushi,Regular,3,Rp 62.000,Rp 28.000,Rp 186.000,cash
+TRX-SUSHI-20260718-0024,2026-07-18,13:03,Salmon Nigiri (2pcs),Sushi,Regular,3,Rp 38.000,Rp 18.000,Rp 114.000,e-wallet
+TRX-SUSHI-20260718-0024,2026-07-18,13:03,Miso Soup,Appetizer,Regular,3,Rp 18.000,Rp 6.000,Rp 54.000,e-wallet
+TRX-SUSHI-20260718-0024,2026-07-18,13:03,Ramen Tonkotsu,Ramen,Regular,1,Rp 65.000,Rp 29.000,Rp 65.000,e-wallet
+TRX-SUSHI-20260718-0025,2026-07-18,14:30,Salmon Nigiri (2pcs),Sushi,Regular,2,Rp 38.000,Rp 18.000,Rp 76.000,cash
+TRX-SUSHI-20260718-0026,2026-07-18,15:07,Tuna Sashimi (5pcs),Sashimi,Regular,2,Rp 65.000,Rp 32.000,Rp 130.000,card
+TRX-SUSHI-20260718-0027,2026-07-18,17:25,Salmon Nigiri (2pcs),Sushi,Regular,2,Rp 38.000,Rp 18.000,Rp 76.000,e-wallet
+TRX-SUSHI-20260718-0027,2026-07-18,17:25,Dragon Roll,Sushi,Regular,1,Rp 62.000,Rp 28.000,Rp 62.000,e-wallet
+TRX-SUSHI-20260718-0027,2026-07-18,17:25,Tuna Sashimi (5pcs),Sashimi,Regular,1,Rp 65.000,Rp 32.000,Rp 65.000,e-wallet
+TRX-SUSHI-20260718-0028,2026-07-18,20:00,Salmon Nigiri (2pcs),Sushi,Regular,3,Rp 38.000,Rp 18.000,Rp 114.000,cash
+TRX-SUSHI-20260718-0028,2026-07-18,20:00,Tuna Sashimi (5pcs),Sashimi,Regular,3,Rp 65.000,Rp 32.000,Rp 195.000,cash
+TRX-SUSHI-20260718-0028,2026-07-18,20:00,Dragon Roll,Sushi,Regular,3,Rp 62.000,Rp 28.000,Rp 186.000,cash
+TRX-SUSHI-20260718-0029,2026-07-18,20:39,California Roll,Sushi,Regular,3,Rp 48.000,Rp 20.000,Rp 144.000,cash
+TRX-SUSHI-20260718-0030,2026-07-18,18:02,Dragon Roll,Sushi,Regular,1,Rp 62.000,Rp 28.000,Rp 62.000,cash
+TRX-SUSHI-20260718-0031,2026-07-18,14:00,Tuna Sashimi (5pcs),Sashimi,Regular,3,Rp 65.000,Rp 32.000,Rp 195.000,e-wallet
+TRX-SUSHI-20260718-0031,2026-07-18,14:00,Dragon Roll,Sushi,Regular,2,Rp 62.000,Rp 28.000,Rp 124.000,e-wallet
+TRX-SUSHI-20260718-0032,2026-07-18,19:48,Salmon Nigiri (2pcs),Sushi,Regular,1,Rp 38.000,Rp 18.000,Rp 38.000,card
+TRX-SUSHI-20260718-0032,2026-07-18,19:48,Tuna Sashimi (5pcs),Sashimi,Regular,1,Rp 65.000,Rp 32.000,Rp 65.000,card
+TRX-SUSHI-20260718-0033,2026-07-18,17:48,Tuna Sashimi (5pcs),Sashimi,Regular,3,Rp 65.000,Rp 32.000,Rp 195.000,card
+TRX-SUSHI-20260718-0034,2026-07-18,19:15,Miso Soup,Appetizer,Regular,2,Rp 18.000,Rp 6.000,Rp 36.000,card
+TRX-SUSHI-20260718-0035,2026-07-18,15:58,Tuna Sashimi (5pcs),Sashimi,Regular,3,Rp 65.000,Rp 32.000,Rp 195.000,card
+TRX-SUSHI-20260718-0035,2026-07-18,15:58,Salmon Nigiri (2pcs),Sushi,Regular,3,Rp 38.000,Rp 18.000,Rp 114.000,card
+TRX-SUSHI-20260718-0035,2026-07-18,15:58,Chicken Katsu Curry,Ramen,Regular,1,Rp 58.000,Rp 26.000,Rp 58.000,card
+TRX-SUSHI-20260718-0036,2026-07-18,14:16,Miso Soup,Appetizer,Regular,3,Rp 18.000,Rp 6.000,Rp 54.000,e-wallet
+TRX-SUSHI-20260718-0037,2026-07-18,18:17,Tuna Sashimi (5pcs),Sashimi,Regular,1,Rp 65.000,Rp 32.000,Rp 65.000,e-wallet
+TRX-SUSHI-20260718-0037,2026-07-18,18:17,California Roll,Sushi,Regular,2,Rp 48.000,Rp 20.000,Rp 96.000,e-wallet
+TRX-SUSHI-20260718-0037,2026-07-18,18:17,Salmon Nigiri (2pcs),Sushi,Regular,1,Rp 38.000,Rp 18.000,Rp 38.000,e-wallet
+TRX-SUSHI-20260718-0038,2026-07-18,17:43,Salmon Nigiri (2pcs),Sushi,Regular,3,Rp 38.000,Rp 18.000,Rp 114.000,e-wallet
+TRX-SUSHI-20260718-0038,2026-07-18,17:43,Tuna Sashimi (5pcs),Sashimi,Regular,2,Rp 65.000,Rp 32.000,Rp 130.000,e-wallet
+TRX-SUSHI-20260718-0038,2026-07-18,17:43,Edamame,Appetizer,Regular,1,Rp 22.000,Rp 8.000,Rp 22.000,e-wallet
+TRX-SUSHI-20260718-0039,2026-07-18,20:41,Tuna Sashimi (5pcs),Sashimi,Regular,1,Rp 65.000,Rp 32.000,Rp 65.000,e-wallet
+TRX-SUSHI-20260718-0039,2026-07-18,20:41,Salmon Nigiri (2pcs),Sushi,Regular,1,Rp 38.000,Rp 18.000,Rp 38.000,e-wallet
+TRX-SUSHI-20260718-0040,2026-07-18,17:43,Salmon Nigiri (2pcs),Sushi,Regular,2,Rp 38.000,Rp 18.000,Rp 76.000,cash
+TRX-SUSHI-20260718-0041,2026-07-18,17:07,Dragon Roll,Sushi,Regular,1,Rp 62.000,Rp 28.000,Rp 62.000,e-wallet
+TRX-SUSHI-20260718-0041,2026-07-18,17:07,California Roll,Sushi,Regular,2,Rp 48.000,Rp 20.000,Rp 96.000,e-wallet
+TRX-SUSHI-20260718-0042,2026-07-18,18:40,Ramen Tonkotsu,Ramen,Regular,2,Rp 65.000,Rp 29.000,Rp 130.000,cash
+TRX-SUSHI-20260718-0042,2026-07-18,18:40,Tuna Sashimi (5pcs),Sashimi,Regular,1,Rp 65.000,Rp 32.000,Rp 65.000,cash
+TRX-SUSHI-20260718-0042,2026-07-18,18:40,California Roll,Sushi,Regular,3,Rp 48.000,Rp 20.000,Rp 144.000,cash
+TRX-SUSHI-20260718-0043,2026-07-18,16:40,California Roll,Sushi,Regular,2,Rp 48.000,Rp 20.000,Rp 96.000,cash
+TRX-SUSHI-20260718-0043,2026-07-18,16:40,Ramen Tonkotsu,Ramen,Regular,2,Rp 65.000,Rp 29.000,Rp 130.000,cash
+TRX-SUSHI-20260718-0043,2026-07-18,16:40,Salmon Nigiri (2pcs),Sushi,Regular,2,Rp 38.000,Rp 18.000,Rp 76.000,cash
+TRX-SUSHI-20260718-0044,2026-07-18,16:12,California Roll,Sushi,Regular,2,Rp 48.000,Rp 20.000,Rp 96.000,e-wallet
+TRX-SUSHI-20260718-0045,2026-07-18,12:46,California Roll,Sushi,Regular,2,Rp 48.000,Rp 20.000,Rp 96.000,e-wallet
+TRX-SUSHI-20260718-0046,2026-07-18,19:06,Salmon Nigiri (2pcs),Sushi,Regular,2,Rp 38.000,Rp 18.000,Rp 76.000,cash
+TRX-SUSHI-20260718-0046,2026-07-18,19:06,Tuna Sashimi (5pcs),Sashimi,Regular,2,Rp 65.000,Rp 32.000,Rp 130.000,cash
+TRX-SUSHI-20260719-0001,2026-07-19,18:56,Salmon Nigiri (2pcs),Sushi,Regular,3,Rp 38.000,Rp 18.000,Rp 114.000,card
+TRX-SUSHI-20260719-0001,2026-07-19,18:56,Tuna Sashimi (5pcs),Sashimi,Regular,2,Rp 65.000,Rp 32.000,Rp 130.000,card
+TRX-SUSHI-20260719-0001,2026-07-19,18:56,Dragon Roll,Sushi,Regular,2,Rp 62.000,Rp 28.000,Rp 124.000,card
+TRX-SUSHI-20260719-0002,2026-07-19,12:43,Dragon Roll,Sushi,Regular,2,Rp 62.000,Rp 28.000,Rp 124.000,e-wallet
+TRX-SUSHI-20260719-0002,2026-07-19,12:43,Chicken Katsu Curry,Ramen,Regular,1,Rp 58.000,Rp 26.000,Rp 58.000,e-wallet
+TRX-SUSHI-20260719-0003,2026-07-19,17:29,Salmon Nigiri (2pcs),Sushi,Regular,3,Rp 38.000,Rp 18.000,Rp 114.000,e-wallet
+TRX-SUSHI-20260719-0003,2026-07-19,17:29,Edamame,Appetizer,Regular,2,Rp 22.000,Rp 8.000,Rp 44.000,e-wallet
+TRX-SUSHI-20260719-0003,2026-07-19,17:29,Tuna Sashimi (5pcs),Sashimi,Regular,1,Rp 65.000,Rp 32.000,Rp 65.000,e-wallet
+TRX-SUSHI-20260719-0004,2026-07-19,14:28,Chicken Katsu Curry,Ramen,Regular,3,Rp 58.000,Rp 26.000,Rp 174.000,e-wallet
+TRX-SUSHI-20260719-0004,2026-07-19,14:28,Miso Soup,Appetizer,Regular,3,Rp 18.000,Rp 6.000,Rp 54.000,e-wallet
+TRX-SUSHI-20260719-0005,2026-07-19,15:59,Salmon Nigiri (2pcs),Sushi,Regular,1,Rp 38.000,Rp 18.000,Rp 38.000,e-wallet
+TRX-SUSHI-20260719-0006,2026-07-19,17:42,Tuna Sashimi (5pcs),Sashimi,Regular,2,Rp 65.000,Rp 32.000,Rp 130.000,e-wallet
+TRX-SUSHI-20260719-0006,2026-07-19,17:42,Salmon Nigiri (2pcs),Sushi,Regular,3,Rp 38.000,Rp 18.000,Rp 114.000,e-wallet
+TRX-SUSHI-20260719-0007,2026-07-19,15:37,Salmon Nigiri (2pcs),Sushi,Regular,3,Rp 38.000,Rp 18.000,Rp 114.000,card
+TRX-SUSHI-20260719-0007,2026-07-19,15:37,Mochi Ice Cream (3pcs),Dessert,Regular,2,Rp 32.000,Rp 13.000,Rp 64.000,card
+TRX-SUSHI-20260719-0008,2026-07-19,14:59,Ramen Tonkotsu,Ramen,Regular,2,Rp 65.000,Rp 29.000,Rp 130.000,card
+TRX-SUSHI-20260719-0009,2026-07-19,11:53,California Roll,Sushi,Regular,1,Rp 48.000,Rp 20.000,Rp 48.000,e-wallet
+TRX-SUSHI-20260719-0010,2026-07-19,15:09,Dragon Roll,Sushi,Regular,2,Rp 62.000,Rp 28.000,Rp 124.000,e-wallet
+TRX-SUSHI-20260719-0010,2026-07-19,15:09,California Roll,Sushi,Regular,2,Rp 48.000,Rp 20.000,Rp 96.000,e-wallet
+TRX-SUSHI-20260719-0010,2026-07-19,15:09,Tuna Sashimi (5pcs),Sashimi,Regular,3,Rp 65.000,Rp 32.000,Rp 195.000,e-wallet
+TRX-SUSHI-20260719-0011,2026-07-19,18:37,Salmon Nigiri (2pcs),Sushi,Regular,3,Rp 38.000,Rp 18.000,Rp 114.000,e-wallet
+TRX-SUSHI-20260719-0011,2026-07-19,18:37,Tuna Sashimi (5pcs),Sashimi,Regular,3,Rp 65.000,Rp 32.000,Rp 195.000,e-wallet
+TRX-SUSHI-20260719-0012,2026-07-19,12:18,Tuna Sashimi (5pcs),Sashimi,Regular,3,Rp 65.000,Rp 32.000,Rp 195.000,e-wallet
+TRX-SUSHI-20260719-0012,2026-07-19,12:18,Dragon Roll,Sushi,Regular,1,Rp 62.000,Rp 28.000,Rp 62.000,e-wallet
+TRX-SUSHI-20260719-0013,2026-07-19,20:34,Dragon Roll,Sushi,Regular,3,Rp 62.000,Rp 28.000,Rp 186.000,e-wallet
+TRX-SUSHI-20260719-0013,2026-07-19,20:34,Salmon Nigiri (2pcs),Sushi,Regular,1,Rp 38.000,Rp 18.000,Rp 38.000,e-wallet
+TRX-SUSHI-20260719-0014,2026-07-19,15:40,Dragon Roll,Sushi,Regular,1,Rp 62.000,Rp 28.000,Rp 62.000,e-wallet
+TRX-SUSHI-20260719-0014,2026-07-19,15:40,Salmon Nigiri (2pcs),Sushi,Regular,1,Rp 38.000,Rp 18.000,Rp 38.000,e-wallet
+TRX-SUSHI-20260719-0014,2026-07-19,15:40,California Roll,Sushi,Regular,1,Rp 48.000,Rp 20.000,Rp 48.000,e-wallet
+TRX-SUSHI-20260719-0015,2026-07-19,14:24,Salmon Nigiri (2pcs),Sushi,Regular,2,Rp 38.000,Rp 18.000,Rp 76.000,e-wallet
+TRX-SUSHI-20260719-0015,2026-07-19,14:24,Dragon Roll,Sushi,Regular,3,Rp 62.000,Rp 28.000,Rp 186.000,e-wallet
+TRX-SUSHI-20260719-0015,2026-07-19,14:24,Miso Soup,Appetizer,Regular,3,Rp 18.000,Rp 6.000,Rp 54.000,e-wallet
+TRX-SUSHI-20260719-0016,2026-07-19,17:03,Edamame,Appetizer,Regular,2,Rp 22.000,Rp 8.000,Rp 44.000,e-wallet
+TRX-SUSHI-20260719-0016,2026-07-19,17:03,Salmon Nigiri (2pcs),Sushi,Regular,3,Rp 38.000,Rp 18.000,Rp 114.000,e-wallet
+TRX-SUSHI-20260719-0016,2026-07-19,17:03,Tuna Sashimi (5pcs),Sashimi,Regular,1,Rp 65.000,Rp 32.000,Rp 65.000,e-wallet
+TRX-SUSHI-20260719-0017,2026-07-19,13:17,Tuna Sashimi (5pcs),Sashimi,Regular,2,Rp 65.000,Rp 32.000,Rp 130.000,e-wallet
+TRX-SUSHI-20260719-0017,2026-07-19,13:17,Miso Soup,Appetizer,Regular,1,Rp 18.000,Rp 6.000,Rp 18.000,e-wallet
+TRX-SUSHI-20260719-0017,2026-07-19,13:17,Chicken Katsu Curry,Ramen,Regular,2,Rp 58.000,Rp 26.000,Rp 116.000,e-wallet
+TRX-SUSHI-20260719-0018,2026-07-19,15:11,Salmon Nigiri (2pcs),Sushi,Regular,1,Rp 38.000,Rp 18.000,Rp 38.000,e-wallet
+TRX-SUSHI-20260719-0019,2026-07-19,18:48,Dragon Roll,Sushi,Regular,3,Rp 62.000,Rp 28.000,Rp 186.000,e-wallet
+TRX-SUSHI-20260719-0019,2026-07-19,18:48,Tuna Sashimi (5pcs),Sashimi,Regular,1,Rp 65.000,Rp 32.000,Rp 65.000,e-wallet
+TRX-SUSHI-20260719-0019,2026-07-19,18:48,Salmon Nigiri (2pcs),Sushi,Regular,3,Rp 38.000,Rp 18.000,Rp 114.000,e-wallet
+TRX-SUSHI-20260719-0020,2026-07-19,12:14,Ramen Tonkotsu,Ramen,Regular,2,Rp 65.000,Rp 29.000,Rp 130.000,e-wallet
+TRX-SUSHI-20260719-0020,2026-07-19,12:14,Dragon Roll,Sushi,Regular,1,Rp 62.000,Rp 28.000,Rp 62.000,e-wallet
+TRX-SUSHI-20260719-0020,2026-07-19,12:14,Salmon Nigiri (2pcs),Sushi,Regular,2,Rp 38.000,Rp 18.000,Rp 76.000,e-wallet
+TRX-SUSHI-20260719-0021,2026-07-19,13:39,Dragon Roll,Sushi,Regular,1,Rp 62.000,Rp 28.000,Rp 62.000,e-wallet
+TRX-SUSHI-20260719-0021,2026-07-19,13:39,California Roll,Sushi,Regular,3,Rp 48.000,Rp 20.000,Rp 144.000,e-wallet
+TRX-SUSHI-20260719-0021,2026-07-19,13:39,Chicken Katsu Curry,Ramen,Regular,2,Rp 58.000,Rp 26.000,Rp 116.000,e-wallet
+TRX-SUSHI-20260719-0022,2026-07-19,13:40,Tuna Sashimi (5pcs),Sashimi,Regular,3,Rp 65.000,Rp 32.000,Rp 195.000,e-wallet
+TRX-SUSHI-20260719-0023,2026-07-19,13:36,Chicken Katsu Curry,Ramen,Regular,2,Rp 58.000,Rp 26.000,Rp 116.000,cash
+TRX-SUSHI-20260719-0023,2026-07-19,13:36,Tuna Sashimi (5pcs),Sashimi,Regular,2,Rp 65.000,Rp 32.000,Rp 130.000,cash
+TRX-SUSHI-20260719-0024,2026-07-19,15:17,California Roll,Sushi,Regular,1,Rp 48.000,Rp 20.000,Rp 48.000,card
+TRX-SUSHI-20260719-0025,2026-07-19,17:39,Dragon Roll,Sushi,Regular,2,Rp 62.000,Rp 28.000,Rp 124.000,e-wallet
+TRX-SUSHI-20260719-0025,2026-07-19,17:39,Tuna Sashimi (5pcs),Sashimi,Regular,2,Rp 65.000,Rp 32.000,Rp 130.000,e-wallet
+TRX-SUSHI-20260719-0025,2026-07-19,17:39,California Roll,Sushi,Regular,3,Rp 48.000,Rp 20.000,Rp 144.000,e-wallet
+TRX-SUSHI-20260719-0026,2026-07-19,20:17,Tuna Sashimi (5pcs),Sashimi,Regular,3,Rp 65.000,Rp 32.000,Rp 195.000,card
+TRX-SUSHI-20260719-0026,2026-07-19,20:17,Dragon Roll,Sushi,Regular,2,Rp 62.000,Rp 28.000,Rp 124.000,card
+TRX-SUSHI-20260719-0026,2026-07-19,20:17,California Roll,Sushi,Regular,3,Rp 48.000,Rp 20.000,Rp 144.000,card
+TRX-SUSHI-20260719-0027,2026-07-19,20:57,Tuna Sashimi (5pcs),Sashimi,Regular,3,Rp 65.000,Rp 32.000,Rp 195.000,e-wallet
+TRX-SUSHI-20260719-0028,2026-07-19,14:21,Tuna Sashimi (5pcs),Sashimi,Regular,2,Rp 65.000,Rp 32.000,Rp 130.000,card
+TRX-SUSHI-20260719-0028,2026-07-19,14:21,California Roll,Sushi,Regular,3,Rp 48.000,Rp 20.000,Rp 144.000,card
+TRX-SUSHI-20260719-0028,2026-07-19,14:21,Green Tea,Beverage,Regular,3,Rp 15.000,Rp 5.000,Rp 45.000,card
+TRX-SUSHI-20260719-0029,2026-07-19,14:27,Salmon Nigiri (2pcs),Sushi,Regular,2,Rp 38.000,Rp 18.000,Rp 76.000,cash
+TRX-SUSHI-20260719-0029,2026-07-19,14:27,Edamame,Appetizer,Regular,1,Rp 22.000,Rp 8.000,Rp 22.000,cash
+TRX-SUSHI-20260719-0030,2026-07-19,16:33,Salmon Nigiri (2pcs),Sushi,Regular,1,Rp 38.000,Rp 18.000,Rp 38.000,e-wallet
+TRX-SUSHI-20260719-0030,2026-07-19,16:33,Tuna Sashimi (5pcs),Sashimi,Regular,1,Rp 65.000,Rp 32.000,Rp 65.000,e-wallet
+TRX-SUSHI-20260719-0031,2026-07-19,11:41,Tuna Sashimi (5pcs),Sashimi,Regular,1,Rp 65.000,Rp 32.000,Rp 65.000,cash
+TRX-SUSHI-20260719-0032,2026-07-19,12:19,Salmon Nigiri (2pcs),Sushi,Regular,3,Rp 38.000,Rp 18.000,Rp 114.000,e-wallet
+TRX-SUSHI-20260719-0033,2026-07-19,19:42,Salmon Nigiri (2pcs),Sushi,Regular,1,Rp 38.000,Rp 18.000,Rp 38.000,card
+TRX-SUSHI-20260719-0034,2026-07-19,11:33,Salmon Nigiri (2pcs),Sushi,Regular,1,Rp 38.000,Rp 18.000,Rp 38.000,card
+TRX-SUSHI-20260719-0034,2026-07-19,11:33,Dragon Roll,Sushi,Regular,3,Rp 62.000,Rp 28.000,Rp 186.000,card
+TRX-SUSHI-20260719-0034,2026-07-19,11:33,California Roll,Sushi,Regular,2,Rp 48.000,Rp 20.000,Rp 96.000,card
+TRX-SUSHI-20260719-0035,2026-07-19,12:00,Miso Soup,Appetizer,Regular,3,Rp 18.000,Rp 6.000,Rp 54.000,card
+TRX-SUSHI-20260719-0036,2026-07-19,19:40,California Roll,Sushi,Regular,3,Rp 48.000,Rp 20.000,Rp 144.000,e-wallet
+TRX-SUSHI-20260719-0036,2026-07-19,19:40,Tuna Sashimi (5pcs),Sashimi,Regular,1,Rp 65.000,Rp 32.000,Rp 65.000,e-wallet
+TRX-SUSHI-20260720-0001,2026-07-20,13:11,Dragon Roll,Sushi,Regular,1,Rp 62.000,Rp 28.000,Rp 62.000,e-wallet
+TRX-SUSHI-20260720-0001,2026-07-20,13:11,Salmon Nigiri (2pcs),Sushi,Regular,1,Rp 38.000,Rp 18.000,Rp 38.000,e-wallet
+TRX-SUSHI-20260720-0002,2026-07-20,14:18,Salmon Nigiri (2pcs),Sushi,Regular,1,Rp 38.000,Rp 18.000,Rp 38.000,e-wallet
+TRX-SUSHI-20260720-0002,2026-07-20,14:18,California Roll,Sushi,Regular,3,Rp 48.000,Rp 20.000,Rp 144.000,e-wallet
+TRX-SUSHI-20260720-0002,2026-07-20,14:18,Tuna Sashimi (5pcs),Sashimi,Regular,1,Rp 65.000,Rp 32.000,Rp 65.000,e-wallet
+TRX-SUSHI-20260720-0003,2026-07-20,19:15,Green Tea,Beverage,Regular,2,Rp 15.000,Rp 5.000,Rp 30.000,e-wallet
+TRX-SUSHI-20260720-0003,2026-07-20,19:15,Edamame,Appetizer,Regular,2,Rp 22.000,Rp 8.000,Rp 44.000,e-wallet
+TRX-SUSHI-20260720-0004,2026-07-20,14:23,Tuna Sashimi (5pcs),Sashimi,Regular,2,Rp 65.000,Rp 32.000,Rp 130.000,cash
+TRX-SUSHI-20260720-0004,2026-07-20,14:23,California Roll,Sushi,Regular,1,Rp 48.000,Rp 20.000,Rp 48.000,cash
+TRX-SUSHI-20260720-0004,2026-07-20,14:23,Salmon Nigiri (2pcs),Sushi,Regular,3,Rp 38.000,Rp 18.000,Rp 114.000,cash
+TRX-SUSHI-20260720-0005,2026-07-20,17:34,Tuna Sashimi (5pcs),Sashimi,Regular,3,Rp 65.000,Rp 32.000,Rp 195.000,e-wallet
+TRX-SUSHI-20260720-0006,2026-07-20,17:32,California Roll,Sushi,Regular,2,Rp 48.000,Rp 20.000,Rp 96.000,card
+TRX-SUSHI-20260720-0007,2026-07-20,15:08,Mochi Ice Cream (3pcs),Dessert,Regular,2,Rp 32.000,Rp 13.000,Rp 64.000,cash
+TRX-SUSHI-20260720-0007,2026-07-20,15:08,Salmon Nigiri (2pcs),Sushi,Regular,1,Rp 38.000,Rp 18.000,Rp 38.000,cash
+TRX-SUSHI-20260720-0008,2026-07-20,19:50,Chicken Katsu Curry,Ramen,Regular,3,Rp 58.000,Rp 26.000,Rp 174.000,card
+TRX-SUSHI-20260720-0008,2026-07-20,19:50,Dragon Roll,Sushi,Regular,1,Rp 62.000,Rp 28.000,Rp 62.000,card
+TRX-SUSHI-20260720-0009,2026-07-20,13:19,Tuna Sashimi (5pcs),Sashimi,Regular,1,Rp 65.000,Rp 32.000,Rp 65.000,e-wallet
+TRX-SUSHI-20260720-0009,2026-07-20,13:19,Dragon Roll,Sushi,Regular,2,Rp 62.000,Rp 28.000,Rp 124.000,e-wallet
+TRX-SUSHI-20260720-0009,2026-07-20,13:19,Salmon Nigiri (2pcs),Sushi,Regular,3,Rp 38.000,Rp 18.000,Rp 114.000,e-wallet
+TRX-SUSHI-20260720-0010,2026-07-20,16:42,Salmon Nigiri (2pcs),Sushi,Regular,3,Rp 38.000,Rp 18.000,Rp 114.000,card
+TRX-SUSHI-20260720-0010,2026-07-20,16:42,Tuna Sashimi (5pcs),Sashimi,Regular,1,Rp 65.000,Rp 32.000,Rp 65.000,card
+TRX-SUSHI-20260720-0011,2026-07-20,19:31,California Roll,Sushi,Regular,3,Rp 48.000,Rp 20.000,Rp 144.000,e-wallet
+TRX-SUSHI-20260720-0011,2026-07-20,19:31,Green Tea,Beverage,Regular,2,Rp 15.000,Rp 5.000,Rp 30.000,e-wallet
+TRX-SUSHI-20260720-0011,2026-07-20,19:31,Dragon Roll,Sushi,Regular,1,Rp 62.000,Rp 28.000,Rp 62.000,e-wallet
+TRX-SUSHI-20260720-0012,2026-07-20,18:02,California Roll,Sushi,Regular,1,Rp 48.000,Rp 20.000,Rp 48.000,e-wallet
+TRX-SUSHI-20260720-0013,2026-07-20,16:28,Tuna Sashimi (5pcs),Sashimi,Regular,1,Rp 65.000,Rp 32.000,Rp 65.000,e-wallet
+TRX-SUSHI-20260720-0013,2026-07-20,16:28,Dragon Roll,Sushi,Regular,2,Rp 62.000,Rp 28.000,Rp 124.000,e-wallet
+TRX-SUSHI-20260720-0013,2026-07-20,16:28,California Roll,Sushi,Regular,1,Rp 48.000,Rp 20.000,Rp 48.000,e-wallet
+TRX-SUSHI-20260720-0014,2026-07-20,18:45,Miso Soup,Appetizer,Regular,3,Rp 18.000,Rp 6.000,Rp 54.000,card
+TRX-SUSHI-20260720-0014,2026-07-20,18:45,California Roll,Sushi,Regular,1,Rp 48.000,Rp 20.000,Rp 48.000,card
+TRX-SUSHI-20260720-0014,2026-07-20,18:45,Tuna Sashimi (5pcs),Sashimi,Regular,1,Rp 65.000,Rp 32.000,Rp 65.000,card
+TRX-SUSHI-20260720-0015,2026-07-20,18:41,Dragon Roll,Sushi,Regular,1,Rp 62.000,Rp 28.000,Rp 62.000,e-wallet
+TRX-SUSHI-20260720-0015,2026-07-20,18:41,Salmon Nigiri (2pcs),Sushi,Regular,1,Rp 38.000,Rp 18.000,Rp 38.000,e-wallet
+TRX-SUSHI-20260720-0015,2026-07-20,18:41,Edamame,Appetizer,Regular,3,Rp 22.000,Rp 8.000,Rp 66.000,e-wallet
+TRX-SUSHI-20260720-0016,2026-07-20,15:33,Salmon Nigiri (2pcs),Sushi,Regular,2,Rp 38.000,Rp 18.000,Rp 76.000,cash
+TRX-SUSHI-20260720-0016,2026-07-20,15:33,Mochi Ice Cream (3pcs),Dessert,Regular,3,Rp 32.000,Rp 13.000,Rp 96.000,cash
+TRX-SUSHI-20260720-0017,2026-07-20,14:45,Salmon Nigiri (2pcs),Sushi,Regular,2,Rp 38.000,Rp 18.000,Rp 76.000,e-wallet
+TRX-SUSHI-20260720-0018,2026-07-20,20:19,California Roll,Sushi,Regular,3,Rp 48.000,Rp 20.000,Rp 144.000,card
+TRX-SUSHI-20260720-0018,2026-07-20,20:19,Miso Soup,Appetizer,Regular,3,Rp 18.000,Rp 6.000,Rp 54.000,card
+TRX-SUSHI-20260720-0018,2026-07-20,20:19,Dragon Roll,Sushi,Regular,3,Rp 62.000,Rp 28.000,Rp 186.000,card
+TRX-SUSHI-20260720-0019,2026-07-20,11:56,Chicken Katsu Curry,Ramen,Regular,1,Rp 58.000,Rp 26.000,Rp 58.000,cash
+TRX-SUSHI-20260720-0019,2026-07-20,11:56,Mochi Ice Cream (3pcs),Dessert,Regular,2,Rp 32.000,Rp 13.000,Rp 64.000,cash
+TRX-SUSHI-20260721-0001,2026-07-21,12:21,California Roll,Sushi,Regular,1,Rp 48.000,Rp 20.000,Rp 48.000,cash
+TRX-SUSHI-20260721-0001,2026-07-21,12:21,Tuna Sashimi (5pcs),Sashimi,Regular,3,Rp 65.000,Rp 32.000,Rp 195.000,cash
+TRX-SUSHI-20260721-0001,2026-07-21,12:21,Dragon Roll,Sushi,Regular,3,Rp 62.000,Rp 28.000,Rp 186.000,cash
+TRX-SUSHI-20260721-0002,2026-07-21,14:45,Tuna Sashimi (5pcs),Sashimi,Regular,2,Rp 65.000,Rp 32.000,Rp 130.000,e-wallet
+TRX-SUSHI-20260721-0002,2026-07-21,14:45,California Roll,Sushi,Regular,1,Rp 48.000,Rp 20.000,Rp 48.000,e-wallet
+TRX-SUSHI-20260721-0003,2026-07-21,14:28,Salmon Nigiri (2pcs),Sushi,Regular,1,Rp 38.000,Rp 18.000,Rp 38.000,e-wallet
+TRX-SUSHI-20260721-0003,2026-07-21,14:28,Mochi Ice Cream (3pcs),Dessert,Regular,1,Rp 32.000,Rp 13.000,Rp 32.000,e-wallet
+TRX-SUSHI-20260721-0004,2026-07-21,15:54,Dragon Roll,Sushi,Regular,2,Rp 62.000,Rp 28.000,Rp 124.000,cash
+TRX-SUSHI-20260721-0004,2026-07-21,15:54,Tuna Sashimi (5pcs),Sashimi,Regular,1,Rp 65.000,Rp 32.000,Rp 65.000,cash
+TRX-SUSHI-20260721-0004,2026-07-21,15:54,Ramen Tonkotsu,Ramen,Regular,3,Rp 65.000,Rp 29.000,Rp 195.000,cash
+TRX-SUSHI-20260721-0005,2026-07-21,19:46,Dragon Roll,Sushi,Regular,1,Rp 62.000,Rp 28.000,Rp 62.000,cash
+TRX-SUSHI-20260721-0006,2026-07-21,20:45,Salmon Nigiri (2pcs),Sushi,Regular,2,Rp 38.000,Rp 18.000,Rp 76.000,card
+TRX-SUSHI-20260721-0006,2026-07-21,20:45,Mochi Ice Cream (3pcs),Dessert,Regular,2,Rp 32.000,Rp 13.000,Rp 64.000,card
+TRX-SUSHI-20260721-0007,2026-07-21,20:23,Miso Soup,Appetizer,Regular,1,Rp 18.000,Rp 6.000,Rp 18.000,cash
+TRX-SUSHI-20260721-0008,2026-07-21,12:13,Chicken Katsu Curry,Ramen,Regular,3,Rp 58.000,Rp 26.000,Rp 174.000,card
+TRX-SUSHI-20260721-0008,2026-07-21,12:13,California Roll,Sushi,Regular,3,Rp 48.000,Rp 20.000,Rp 144.000,card
+TRX-SUSHI-20260721-0008,2026-07-21,12:13,Salmon Nigiri (2pcs),Sushi,Regular,1,Rp 38.000,Rp 18.000,Rp 38.000,card
+TRX-SUSHI-20260721-0009,2026-07-21,14:14,Chicken Katsu Curry,Ramen,Regular,3,Rp 58.000,Rp 26.000,Rp 174.000,card
+TRX-SUSHI-20260721-0010,2026-07-21,20:34,Salmon Nigiri (2pcs),Sushi,Regular,2,Rp 38.000,Rp 18.000,Rp 76.000,e-wallet
+TRX-SUSHI-20260721-0011,2026-07-21,16:52,Tuna Sashimi (5pcs),Sashimi,Regular,2,Rp 65.000,Rp 32.000,Rp 130.000,cash
+TRX-SUSHI-20260721-0011,2026-07-21,16:52,Dragon Roll,Sushi,Regular,2,Rp 62.000,Rp 28.000,Rp 124.000,cash
+TRX-SUSHI-20260721-0012,2026-07-21,19:42,Salmon Nigiri (2pcs),Sushi,Regular,1,Rp 38.000,Rp 18.000,Rp 38.000,e-wallet
+TRX-SUSHI-20260721-0013,2026-07-21,17:44,California Roll,Sushi,Regular,1,Rp 48.000,Rp 20.000,Rp 48.000,cash
+TRX-SUSHI-20260721-0014,2026-07-21,18:57,Dragon Roll,Sushi,Regular,2,Rp 62.000,Rp 28.000,Rp 124.000,e-wallet
+TRX-SUSHI-20260721-0014,2026-07-21,18:57,California Roll,Sushi,Regular,2,Rp 48.000,Rp 20.000,Rp 96.000,e-wallet
+TRX-SUSHI-20260721-0015,2026-07-21,13:15,California Roll,Sushi,Regular,2,Rp 48.000,Rp 20.000,Rp 96.000,e-wallet
+TRX-SUSHI-20260721-0015,2026-07-21,13:15,Dragon Roll,Sushi,Regular,2,Rp 62.000,Rp 28.000,Rp 124.000,e-wallet
+TRX-SUSHI-20260721-0015,2026-07-21,13:15,Edamame,Appetizer,Regular,2,Rp 22.000,Rp 8.000,Rp 44.000,e-wallet
+TRX-SUSHI-20260721-0016,2026-07-21,19:04,Tuna Sashimi (5pcs),Sashimi,Regular,3,Rp 65.000,Rp 32.000,Rp 195.000,cash
+TRX-SUSHI-20260721-0016,2026-07-21,19:04,Miso Soup,Appetizer,Regular,1,Rp 18.000,Rp 6.000,Rp 18.000,cash
+TRX-SUSHI-20260721-0017,2026-07-21,19:11,Edamame,Appetizer,Regular,1,Rp 22.000,Rp 8.000,Rp 22.000,cash
+TRX-SUSHI-20260721-0017,2026-07-21,19:11,Salmon Nigiri (2pcs),Sushi,Regular,2,Rp 38.000,Rp 18.000,Rp 76.000,cash
+TRX-SUSHI-20260721-0018,2026-07-21,15:05,Green Tea,Beverage,Regular,3,Rp 15.000,Rp 5.000,Rp 45.000,e-wallet
+TRX-SUSHI-20260721-0019,2026-07-21,14:35,Tuna Sashimi (5pcs),Sashimi,Regular,3,Rp 65.000,Rp 32.000,Rp 195.000,card
+TRX-SUSHI-20260721-0019,2026-07-21,14:35,Salmon Nigiri (2pcs),Sushi,Regular,1,Rp 38.000,Rp 18.000,Rp 38.000,card
+TRX-SUSHI-20260721-0019,2026-07-21,14:35,Dragon Roll,Sushi,Regular,2,Rp 62.000,Rp 28.000,Rp 124.000,card
+TRX-SUSHI-20260721-0020,2026-07-21,17:57,Tuna Sashimi (5pcs),Sashimi,Regular,1,Rp 65.000,Rp 32.000,Rp 65.000,card
+TRX-SUSHI-20260721-0020,2026-07-21,17:57,Ramen Tonkotsu,Ramen,Regular,1,Rp 65.000,Rp 29.000,Rp 65.000,card
+TRX-SUSHI-20260722-0001,2026-07-22,18:03,California Roll,Sushi,Regular,1,Rp 48.000,Rp 20.000,Rp 48.000,e-wallet
+TRX-SUSHI-20260722-0001,2026-07-22,18:03,Dragon Roll,Sushi,Regular,1,Rp 62.000,Rp 28.000,Rp 62.000,e-wallet
+TRX-SUSHI-20260722-0002,2026-07-22,19:16,Green Tea,Beverage,Regular,3,Rp 15.000,Rp 5.000,Rp 45.000,card
+TRX-SUSHI-20260722-0003,2026-07-22,15:27,Salmon Nigiri (2pcs),Sushi,Regular,2,Rp 38.000,Rp 18.000,Rp 76.000,cash
+TRX-SUSHI-20260722-0004,2026-07-22,17:29,Dragon Roll,Sushi,Regular,3,Rp 62.000,Rp 28.000,Rp 186.000,e-wallet
+TRX-SUSHI-20260722-0004,2026-07-22,17:29,Salmon Nigiri (2pcs),Sushi,Regular,3,Rp 38.000,Rp 18.000,Rp 114.000,e-wallet
+TRX-SUSHI-20260722-0005,2026-07-22,14:42,California Roll,Sushi,Regular,3,Rp 48.000,Rp 20.000,Rp 144.000,card
+TRX-SUSHI-20260722-0005,2026-07-22,14:42,Green Tea,Beverage,Regular,3,Rp 15.000,Rp 5.000,Rp 45.000,card
+TRX-SUSHI-20260722-0006,2026-07-22,17:07,California Roll,Sushi,Regular,2,Rp 48.000,Rp 20.000,Rp 96.000,cash
+TRX-SUSHI-20260722-0006,2026-07-22,17:07,Miso Soup,Appetizer,Regular,1,Rp 18.000,Rp 6.000,Rp 18.000,cash
+TRX-SUSHI-20260722-0006,2026-07-22,17:07,Tuna Sashimi (5pcs),Sashimi,Regular,3,Rp 65.000,Rp 32.000,Rp 195.000,cash
+TRX-SUSHI-20260722-0007,2026-07-22,19:19,Edamame,Appetizer,Regular,2,Rp 22.000,Rp 8.000,Rp 44.000,e-wallet
+TRX-SUSHI-20260722-0008,2026-07-22,17:26,Tuna Sashimi (5pcs),Sashimi,Regular,1,Rp 65.000,Rp 32.000,Rp 65.000,e-wallet
+TRX-SUSHI-20260722-0008,2026-07-22,17:26,Chicken Katsu Curry,Ramen,Regular,1,Rp 58.000,Rp 26.000,Rp 58.000,e-wallet
+TRX-SUSHI-20260722-0008,2026-07-22,17:26,Miso Soup,Appetizer,Regular,3,Rp 18.000,Rp 6.000,Rp 54.000,e-wallet
+TRX-SUSHI-20260722-0009,2026-07-22,11:37,Tuna Sashimi (5pcs),Sashimi,Regular,1,Rp 65.000,Rp 32.000,Rp 65.000,e-wallet
+TRX-SUSHI-20260722-0009,2026-07-22,11:37,Dragon Roll,Sushi,Regular,1,Rp 62.000,Rp 28.000,Rp 62.000,e-wallet
+TRX-SUSHI-20260722-0009,2026-07-22,11:37,California Roll,Sushi,Regular,1,Rp 48.000,Rp 20.000,Rp 48.000,e-wallet
+TRX-SUSHI-20260722-0010,2026-07-22,13:14,Salmon Nigiri (2pcs),Sushi,Regular,3,Rp 38.000,Rp 18.000,Rp 114.000,cash
+TRX-SUSHI-20260722-0011,2026-07-22,20:37,Salmon Nigiri (2pcs),Sushi,Regular,2,Rp 38.000,Rp 18.000,Rp 76.000,e-wallet
+TRX-SUSHI-20260722-0011,2026-07-22,20:37,California Roll,Sushi,Regular,1,Rp 48.000,Rp 20.000,Rp 48.000,e-wallet
+TRX-SUSHI-20260722-0011,2026-07-22,20:37,Dragon Roll,Sushi,Regular,2,Rp 62.000,Rp 28.000,Rp 124.000,e-wallet
+TRX-SUSHI-20260722-0012,2026-07-22,18:37,Edamame,Appetizer,Regular,2,Rp 22.000,Rp 8.000,Rp 44.000,e-wallet
+TRX-SUSHI-20260722-0012,2026-07-22,18:37,Tuna Sashimi (5pcs),Sashimi,Regular,1,Rp 65.000,Rp 32.000,Rp 65.000,e-wallet
+TRX-SUSHI-20260722-0012,2026-07-22,18:37,California Roll,Sushi,Regular,1,Rp 48.000,Rp 20.000,Rp 48.000,e-wallet
+TRX-SUSHI-20260722-0013,2026-07-22,13:28,Tuna Sashimi (5pcs),Sashimi,Regular,1,Rp 65.000,Rp 32.000,Rp 65.000,e-wallet
+TRX-SUSHI-20260722-0014,2026-07-22,14:44,Dragon Roll,Sushi,Regular,2,Rp 62.000,Rp 28.000,Rp 124.000,cash
+TRX-SUSHI-20260722-0014,2026-07-22,14:44,California Roll,Sushi,Regular,3,Rp 48.000,Rp 20.000,Rp 144.000,cash
+TRX-SUSHI-20260722-0015,2026-07-22,16:59,Dragon Roll,Sushi,Regular,3,Rp 62.000,Rp 28.000,Rp 186.000,card
+TRX-SUSHI-20260722-0016,2026-07-22,11:14,Salmon Nigiri (2pcs),Sushi,Regular,3,Rp 38.000,Rp 18.000,Rp 114.000,e-wallet
+TRX-SUSHI-20260722-0017,2026-07-22,17:51,Salmon Nigiri (2pcs),Sushi,Regular,1,Rp 38.000,Rp 18.000,Rp 38.000,e-wallet
+TRX-SUSHI-20260722-0017,2026-07-22,17:51,Chicken Katsu Curry,Ramen,Regular,2,Rp 58.000,Rp 26.000,Rp 116.000,e-wallet
+TRX-SUSHI-20260722-0018,2026-07-22,15:47,Tuna Sashimi (5pcs),Sashimi,Regular,3,Rp 65.000,Rp 32.000,Rp 195.000,cash
+TRX-SUSHI-20260722-0019,2026-07-22,12:06,Mochi Ice Cream (3pcs),Dessert,Regular,2,Rp 32.000,Rp 13.000,Rp 64.000,e-wallet
+TRX-SUSHI-20260722-0019,2026-07-22,12:06,Dragon Roll,Sushi,Regular,2,Rp 62.000,Rp 28.000,Rp 124.000,e-wallet
+TRX-SUSHI-20260722-0019,2026-07-22,12:06,California Roll,Sushi,Regular,2,Rp 48.000,Rp 20.000,Rp 96.000,e-wallet
+TRX-SUSHI-20260722-0020,2026-07-22,16:59,Salmon Nigiri (2pcs),Sushi,Regular,1,Rp 38.000,Rp 18.000,Rp 38.000,e-wallet
+TRX-SUSHI-20260723-0001,2026-07-23,15:07,Green Tea,Beverage,Regular,2,Rp 15.000,Rp 5.000,Rp 30.000,card
+TRX-SUSHI-20260723-0001,2026-07-23,15:07,Salmon Nigiri (2pcs),Sushi,Regular,3,Rp 38.000,Rp 18.000,Rp 114.000,card
+TRX-SUSHI-20260723-0001,2026-07-23,15:07,Dragon Roll,Sushi,Regular,2,Rp 62.000,Rp 28.000,Rp 124.000,card
+TRX-SUSHI-20260723-0002,2026-07-23,18:46,Dragon Roll,Sushi,Regular,2,Rp 62.000,Rp 28.000,Rp 124.000,e-wallet
+TRX-SUSHI-20260723-0003,2026-07-23,18:24,Dragon Roll,Sushi,Regular,2,Rp 62.000,Rp 28.000,Rp 124.000,e-wallet
+TRX-SUSHI-20260723-0003,2026-07-23,18:24,Ramen Tonkotsu,Ramen,Regular,1,Rp 65.000,Rp 29.000,Rp 65.000,e-wallet
+TRX-SUSHI-20260723-0003,2026-07-23,18:24,California Roll,Sushi,Regular,1,Rp 48.000,Rp 20.000,Rp 48.000,e-wallet
+TRX-SUSHI-20260723-0004,2026-07-23,13:34,Ramen Tonkotsu,Ramen,Regular,1,Rp 65.000,Rp 29.000,Rp 65.000,e-wallet
+TRX-SUSHI-20260723-0005,2026-07-23,18:02,Dragon Roll,Sushi,Regular,2,Rp 62.000,Rp 28.000,Rp 124.000,e-wallet
+TRX-SUSHI-20260723-0006,2026-07-23,18:30,Dragon Roll,Sushi,Regular,1,Rp 62.000,Rp 28.000,Rp 62.000,cash
+TRX-SUSHI-20260723-0006,2026-07-23,18:30,Salmon Nigiri (2pcs),Sushi,Regular,2,Rp 38.000,Rp 18.000,Rp 76.000,cash
+TRX-SUSHI-20260723-0007,2026-07-23,12:22,Tuna Sashimi (5pcs),Sashimi,Regular,1,Rp 65.000,Rp 32.000,Rp 65.000,e-wallet
+TRX-SUSHI-20260723-0008,2026-07-23,15:18,California Roll,Sushi,Regular,1,Rp 48.000,Rp 20.000,Rp 48.000,e-wallet
+TRX-SUSHI-20260723-0009,2026-07-23,17:00,California Roll,Sushi,Regular,2,Rp 48.000,Rp 20.000,Rp 96.000,cash
+TRX-SUSHI-20260723-0009,2026-07-23,17:00,Dragon Roll,Sushi,Regular,2,Rp 62.000,Rp 28.000,Rp 124.000,cash
+TRX-SUSHI-20260723-0009,2026-07-23,17:00,Tuna Sashimi (5pcs),Sashimi,Regular,1,Rp 65.000,Rp 32.000,Rp 65.000,cash
+TRX-SUSHI-20260723-0010,2026-07-23,13:48,Edamame,Appetizer,Regular,3,Rp 22.000,Rp 8.000,Rp 66.000,cash
+TRX-SUSHI-20260723-0010,2026-07-23,13:48,Salmon Nigiri (2pcs),Sushi,Regular,3,Rp 38.000,Rp 18.000,Rp 114.000,cash
+TRX-SUSHI-20260723-0011,2026-07-23,13:41,Tuna Sashimi (5pcs),Sashimi,Regular,2,Rp 65.000,Rp 32.000,Rp 130.000,e-wallet
+TRX-SUSHI-20260723-0011,2026-07-23,13:41,California Roll,Sushi,Regular,1,Rp 48.000,Rp 20.000,Rp 48.000,e-wallet
+TRX-SUSHI-20260723-0011,2026-07-23,13:41,Dragon Roll,Sushi,Regular,1,Rp 62.000,Rp 28.000,Rp 62.000,e-wallet
+TRX-SUSHI-20260723-0012,2026-07-23,15:57,Ramen Tonkotsu,Ramen,Regular,3,Rp 65.000,Rp 29.000,Rp 195.000,e-wallet
+TRX-SUSHI-20260723-0012,2026-07-23,15:57,California Roll,Sushi,Regular,2,Rp 48.000,Rp 20.000,Rp 96.000,e-wallet
+TRX-SUSHI-20260723-0013,2026-07-23,11:10,Dragon Roll,Sushi,Regular,3,Rp 62.000,Rp 28.000,Rp 186.000,e-wallet
+TRX-SUSHI-20260723-0013,2026-07-23,11:10,Salmon Nigiri (2pcs),Sushi,Regular,3,Rp 38.000,Rp 18.000,Rp 114.000,e-wallet
+TRX-SUSHI-20260723-0014,2026-07-23,15:43,Dragon Roll,Sushi,Regular,3,Rp 62.000,Rp 28.000,Rp 186.000,card
+TRX-SUSHI-20260723-0014,2026-07-23,15:43,Ramen Tonkotsu,Ramen,Regular,1,Rp 65.000,Rp 29.000,Rp 65.000,card
+TRX-SUSHI-20260723-0015,2026-07-23,16:02,Salmon Nigiri (2pcs),Sushi,Regular,2,Rp 38.000,Rp 18.000,Rp 76.000,cash
+TRX-SUSHI-20260723-0016,2026-07-23,18:59,Ramen Tonkotsu,Ramen,Regular,2,Rp 65.000,Rp 29.000,Rp 130.000,cash
+TRX-SUSHI-20260723-0016,2026-07-23,18:59,Salmon Nigiri (2pcs),Sushi,Regular,1,Rp 38.000,Rp 18.000,Rp 38.000,cash
+TRX-SUSHI-20260723-0016,2026-07-23,18:59,California Roll,Sushi,Regular,2,Rp 48.000,Rp 20.000,Rp 96.000,cash
+TRX-SUSHI-20260723-0017,2026-07-23,17:01,Dragon Roll,Sushi,Regular,3,Rp 62.000,Rp 28.000,Rp 186.000,e-wallet
+TRX-SUSHI-20260723-0018,2026-07-23,14:21,Tuna Sashimi (5pcs),Sashimi,Regular,2,Rp 65.000,Rp 32.000,Rp 130.000,e-wallet
+TRX-SUSHI-20260723-0019,2026-07-23,20:20,Mochi Ice Cream (3pcs),Dessert,Regular,1,Rp 32.000,Rp 13.000,Rp 32.000,e-wallet
+TRX-SUSHI-20260723-0019,2026-07-23,20:20,Salmon Nigiri (2pcs),Sushi,Regular,3,Rp 38.000,Rp 18.000,Rp 114.000,e-wallet
+TRX-SUSHI-20260723-0020,2026-07-23,17:21,Tuna Sashimi (5pcs),Sashimi,Regular,1,Rp 65.000,Rp 32.000,Rp 65.000,cash
+TRX-SUSHI-20260723-0020,2026-07-23,17:21,Dragon Roll,Sushi,Regular,1,Rp 62.000,Rp 28.000,Rp 62.000,cash
+TRX-SUSHI-20260723-0021,2026-07-23,20:55,Salmon Nigiri (2pcs),Sushi,Regular,2,Rp 38.000,Rp 18.000,Rp 76.000,e-wallet
+TRX-SUSHI-20260723-0021,2026-07-23,20:55,Dragon Roll,Sushi,Regular,2,Rp 62.000,Rp 28.000,Rp 124.000,e-wallet
+TRX-SUSHI-20260723-0022,2026-07-23,15:22,California Roll,Sushi,Regular,2,Rp 48.000,Rp 20.000,Rp 96.000,e-wallet
+TRX-SUSHI-20260723-0022,2026-07-23,15:22,Ramen Tonkotsu,Ramen,Regular,2,Rp 65.000,Rp 29.000,Rp 130.000,e-wallet
+TRX-SUSHI-20260723-0022,2026-07-23,15:22,Tuna Sashimi (5pcs),Sashimi,Regular,2,Rp 65.000,Rp 32.000,Rp 130.000,e-wallet
+TRX-SUSHI-20260723-0023,2026-07-23,19:18,Edamame,Appetizer,Regular,1,Rp 22.000,Rp 8.000,Rp 22.000,e-wallet
+TRX-SUSHI-20260723-0023,2026-07-23,19:18,California Roll,Sushi,Regular,3,Rp 48.000,Rp 20.000,Rp 144.000,e-wallet
+TRX-SUSHI-20260723-0024,2026-07-23,17:30,Salmon Nigiri (2pcs),Sushi,Regular,1,Rp 38.000,Rp 18.000,Rp 38.000,e-wallet
+TRX-SUSHI-20260723-0025,2026-07-23,19:48,Ramen Tonkotsu,Ramen,Regular,3,Rp 65.000,Rp 29.000,Rp 195.000,e-wallet
+TRX-SUSHI-20260723-0025,2026-07-23,19:48,Dragon Roll,Sushi,Regular,3,Rp 62.000,Rp 28.000,Rp 186.000,e-wallet
+TRX-SUSHI-20260723-0025,2026-07-23,19:48,Tuna Sashimi (5pcs),Sashimi,Regular,2,Rp 65.000,Rp 32.000,Rp 130.000,e-wallet
+TRX-SUSHI-20260723-0026,2026-07-23,20:15,Ramen Tonkotsu,Ramen,Regular,1,Rp 65.000,Rp 29.000,Rp 65.000,cash
+TRX-SUSHI-20260723-0027,2026-07-23,13:01,Tuna Sashimi (5pcs),Sashimi,Regular,2,Rp 65.000,Rp 32.000,Rp 130.000,card
+TRX-SUSHI-20260723-0028,2026-07-23,17:32,California Roll,Sushi,Regular,2,Rp 48.000,Rp 20.000,Rp 96.000,cash
+TRX-SUSHI-20260723-0028,2026-07-23,17:32,Salmon Nigiri (2pcs),Sushi,Regular,3,Rp 38.000,Rp 18.000,Rp 114.000,cash
+TRX-SUSHI-20260723-0028,2026-07-23,17:32,Dragon Roll,Sushi,Regular,1,Rp 62.000,Rp 28.000,Rp 62.000,cash
+TRX-SUSHI-20260724-0001,2026-07-24,20:34,Edamame,Appetizer,Regular,1,Rp 22.000,Rp 8.000,Rp 22.000,card
+TRX-SUSHI-20260724-0001,2026-07-24,20:34,California Roll,Sushi,Regular,2,Rp 48.000,Rp 20.000,Rp 96.000,card
+TRX-SUSHI-20260724-0002,2026-07-24,16:42,Salmon Nigiri (2pcs),Sushi,Regular,2,Rp 38.000,Rp 18.000,Rp 76.000,card
+TRX-SUSHI-20260724-0003,2026-07-24,12:18,Tuna Sashimi (5pcs),Sashimi,Regular,1,Rp 65.000,Rp 32.000,Rp 65.000,e-wallet
+TRX-SUSHI-20260724-0003,2026-07-24,12:18,Salmon Nigiri (2pcs),Sushi,Regular,1,Rp 38.000,Rp 18.000,Rp 38.000,e-wallet
+TRX-SUSHI-20260724-0004,2026-07-24,19:01,Tuna Sashimi (5pcs),Sashimi,Regular,3,Rp 65.000,Rp 32.000,Rp 195.000,cash
+TRX-SUSHI-20260724-0004,2026-07-24,19:01,California Roll,Sushi,Regular,2,Rp 48.000,Rp 20.000,Rp 96.000,cash
+TRX-SUSHI-20260724-0004,2026-07-24,19:01,Salmon Nigiri (2pcs),Sushi,Regular,1,Rp 38.000,Rp 18.000,Rp 38.000,cash
+TRX-SUSHI-20260724-0005,2026-07-24,19:25,Dragon Roll,Sushi,Regular,2,Rp 62.000,Rp 28.000,Rp 124.000,e-wallet
+TRX-SUSHI-20260724-0006,2026-07-24,18:23,Miso Soup,Appetizer,Regular,1,Rp 18.000,Rp 6.000,Rp 18.000,e-wallet
+TRX-SUSHI-20260724-0007,2026-07-24,20:33,Tuna Sashimi (5pcs),Sashimi,Regular,1,Rp 65.000,Rp 32.000,Rp 65.000,e-wallet
+TRX-SUSHI-20260724-0007,2026-07-24,20:33,Salmon Nigiri (2pcs),Sushi,Regular,1,Rp 38.000,Rp 18.000,Rp 38.000,e-wallet
+TRX-SUSHI-20260724-0007,2026-07-24,20:33,California Roll,Sushi,Regular,2,Rp 48.000,Rp 20.000,Rp 96.000,e-wallet
+TRX-SUSHI-20260724-0008,2026-07-24,14:25,Mochi Ice Cream (3pcs),Dessert,Regular,3,Rp 32.000,Rp 13.000,Rp 96.000,cash
+TRX-SUSHI-20260724-0009,2026-07-24,20:22,Miso Soup,Appetizer,Regular,2,Rp 18.000,Rp 6.000,Rp 36.000,e-wallet
+TRX-SUSHI-20260724-0010,2026-07-24,11:26,Tuna Sashimi (5pcs),Sashimi,Regular,3,Rp 65.000,Rp 32.000,Rp 195.000,e-wallet
+TRX-SUSHI-20260724-0010,2026-07-24,11:26,Salmon Nigiri (2pcs),Sushi,Regular,3,Rp 38.000,Rp 18.000,Rp 114.000,e-wallet
+TRX-SUSHI-20260724-0011,2026-07-24,15:28,Salmon Nigiri (2pcs),Sushi,Regular,1,Rp 38.000,Rp 18.000,Rp 38.000,e-wallet
+TRX-SUSHI-20260724-0012,2026-07-24,17:46,Edamame,Appetizer,Regular,2,Rp 22.000,Rp 8.000,Rp 44.000,e-wallet
+TRX-SUSHI-20260724-0012,2026-07-24,17:46,Mochi Ice Cream (3pcs),Dessert,Regular,1,Rp 32.000,Rp 13.000,Rp 32.000,e-wallet
+TRX-SUSHI-20260724-0013,2026-07-24,12:09,Dragon Roll,Sushi,Regular,1,Rp 62.000,Rp 28.000,Rp 62.000,card
+TRX-SUSHI-20260724-0014,2026-07-24,18:08,Miso Soup,Appetizer,Regular,3,Rp 18.000,Rp 6.000,Rp 54.000,card
+TRX-SUSHI-20260724-0015,2026-07-24,17:28,California Roll,Sushi,Regular,3,Rp 48.000,Rp 20.000,Rp 144.000,e-wallet
+TRX-SUSHI-20260724-0015,2026-07-24,17:28,Dragon Roll,Sushi,Regular,2,Rp 62.000,Rp 28.000,Rp 124.000,e-wallet
+TRX-SUSHI-20260724-0016,2026-07-24,14:58,Tuna Sashimi (5pcs),Sashimi,Regular,2,Rp 65.000,Rp 32.000,Rp 130.000,e-wallet
+TRX-SUSHI-20260724-0016,2026-07-24,14:58,Dragon Roll,Sushi,Regular,3,Rp 62.000,Rp 28.000,Rp 186.000,e-wallet
+TRX-SUSHI-20260724-0016,2026-07-24,14:58,California Roll,Sushi,Regular,1,Rp 48.000,Rp 20.000,Rp 48.000,e-wallet
+TRX-SUSHI-20260724-0017,2026-07-24,11:35,Tuna Sashimi (5pcs),Sashimi,Regular,3,Rp 65.000,Rp 32.000,Rp 195.000,cash
+TRX-SUSHI-20260724-0017,2026-07-24,11:35,Green Tea,Beverage,Regular,3,Rp 15.000,Rp 5.000,Rp 45.000,cash
+TRX-SUSHI-20260724-0018,2026-07-24,11:21,Salmon Nigiri (2pcs),Sushi,Regular,2,Rp 38.000,Rp 18.000,Rp 76.000,e-wallet
+TRX-SUSHI-20260724-0018,2026-07-24,11:21,Dragon Roll,Sushi,Regular,2,Rp 62.000,Rp 28.000,Rp 124.000,e-wallet
+TRX-SUSHI-20260724-0018,2026-07-24,11:21,Tuna Sashimi (5pcs),Sashimi,Regular,2,Rp 65.000,Rp 32.000,Rp 130.000,e-wallet
+TRX-SUSHI-20260724-0019,2026-07-24,13:00,California Roll,Sushi,Regular,1,Rp 48.000,Rp 20.000,Rp 48.000,card
+TRX-SUSHI-20260724-0019,2026-07-24,13:00,Salmon Nigiri (2pcs),Sushi,Regular,1,Rp 38.000,Rp 18.000,Rp 38.000,card
+TRX-SUSHI-20260724-0020,2026-07-24,11:11,Chicken Katsu Curry,Ramen,Regular,3,Rp 58.000,Rp 26.000,Rp 174.000,cash
+TRX-SUSHI-20260724-0021,2026-07-24,19:31,Ramen Tonkotsu,Ramen,Regular,2,Rp 65.000,Rp 29.000,Rp 130.000,e-wallet
+TRX-SUSHI-20260724-0021,2026-07-24,19:31,Edamame,Appetizer,Regular,3,Rp 22.000,Rp 8.000,Rp 66.000,e-wallet
+TRX-SUSHI-20260724-0021,2026-07-24,19:31,Miso Soup,Appetizer,Regular,2,Rp 18.000,Rp 6.000,Rp 36.000,e-wallet
+TRX-SUSHI-20260724-0022,2026-07-24,19:38,Tuna Sashimi (5pcs),Sashimi,Regular,1,Rp 65.000,Rp 32.000,Rp 65.000,e-wallet
+TRX-SUSHI-20260724-0022,2026-07-24,19:38,California Roll,Sushi,Regular,1,Rp 48.000,Rp 20.000,Rp 48.000,e-wallet
+TRX-SUSHI-20260724-0022,2026-07-24,19:38,Salmon Nigiri (2pcs),Sushi,Regular,2,Rp 38.000,Rp 18.000,Rp 76.000,e-wallet
+TRX-SUSHI-20260724-0023,2026-07-24,13:54,California Roll,Sushi,Regular,1,Rp 48.000,Rp 20.000,Rp 48.000,cash
+TRX-SUSHI-20260724-0024,2026-07-24,18:12,California Roll,Sushi,Regular,1,Rp 48.000,Rp 20.000,Rp 48.000,card
+TRX-SUSHI-20260724-0025,2026-07-24,19:08,California Roll,Sushi,Regular,3,Rp 48.000,Rp 20.000,Rp 144.000,cash
+TRX-SUSHI-20260724-0026,2026-07-24,19:01,Tuna Sashimi (5pcs),Sashimi,Regular,2,Rp 65.000,Rp 32.000,Rp 130.000,e-wallet
+TRX-SUSHI-20260724-0027,2026-07-24,16:24,Tuna Sashimi (5pcs),Sashimi,Regular,1,Rp 65.000,Rp 32.000,Rp 65.000,e-wallet
+TRX-SUSHI-20260724-0027,2026-07-24,16:24,California Roll,Sushi,Regular,2,Rp 48.000,Rp 20.000,Rp 96.000,e-wallet
+TRX-SUSHI-20260724-0027,2026-07-24,16:24,Dragon Roll,Sushi,Regular,2,Rp 62.000,Rp 28.000,Rp 124.000,e-wallet
+TRX-SUSHI-20260724-0028,2026-07-24,13:11,Dragon Roll,Sushi,Regular,2,Rp 62.000,Rp 28.000,Rp 124.000,e-wallet
+TRX-SUSHI-20260724-0028,2026-07-24,13:11,Green Tea,Beverage,Regular,2,Rp 15.000,Rp 5.000,Rp 30.000,e-wallet
+TRX-SUSHI-20260724-0028,2026-07-24,13:11,California Roll,Sushi,Regular,1,Rp 48.000,Rp 20.000,Rp 48.000,e-wallet
+TRX-SUSHI-20260724-0029,2026-07-24,16:29,Ramen Tonkotsu,Ramen,Regular,2,Rp 65.000,Rp 29.000,Rp 130.000,e-wallet
+TRX-SUSHI-20260724-0029,2026-07-24,16:29,Chicken Katsu Curry,Ramen,Regular,2,Rp 58.000,Rp 26.000,Rp 116.000,e-wallet
+TRX-SUSHI-20260724-0030,2026-07-24,11:25,Tuna Sashimi (5pcs),Sashimi,Regular,1,Rp 65.000,Rp 32.000,Rp 65.000,card
+TRX-SUSHI-20260724-0030,2026-07-24,11:25,Chicken Katsu Curry,Ramen,Regular,3,Rp 58.000,Rp 26.000,Rp 174.000,card
+TRX-SUSHI-20260724-0030,2026-07-24,11:25,Dragon Roll,Sushi,Regular,1,Rp 62.000,Rp 28.000,Rp 62.000,card
+TRX-SUSHI-20260724-0031,2026-07-24,18:25,California Roll,Sushi,Regular,1,Rp 48.000,Rp 20.000,Rp 48.000,e-wallet
+TRX-SUSHI-20260724-0031,2026-07-24,18:25,Edamame,Appetizer,Regular,2,Rp 22.000,Rp 8.000,Rp 44.000,e-wallet
+TRX-SUSHI-20260724-0032,2026-07-24,19:34,Tuna Sashimi (5pcs),Sashimi,Regular,3,Rp 65.000,Rp 32.000,Rp 195.000,e-wallet
+TRX-SUSHI-20260724-0032,2026-07-24,19:34,Dragon Roll,Sushi,Regular,1,Rp 62.000,Rp 28.000,Rp 62.000,e-wallet
+TRX-SUSHI-20260724-0032,2026-07-24,19:34,California Roll,Sushi,Regular,2,Rp 48.000,Rp 20.000,Rp 96.000,e-wallet
+TRX-SUSHI-20260724-0033,2026-07-24,14:19,Dragon Roll,Sushi,Regular,1,Rp 62.000,Rp 28.000,Rp 62.000,card
+TRX-SUSHI-20260724-0033,2026-07-24,14:19,Salmon Nigiri (2pcs),Sushi,Regular,1,Rp 38.000,Rp 18.000,Rp 38.000,card
+TRX-SUSHI-20260724-0033,2026-07-24,14:19,Ramen Tonkotsu,Ramen,Regular,2,Rp 65.000,Rp 29.000,Rp 130.000,card
+TRX-SUSHI-20260724-0034,2026-07-24,14:22,Green Tea,Beverage,Regular,2,Rp 15.000,Rp 5.000,Rp 30.000,e-wallet
+TRX-SUSHI-20260724-0035,2026-07-24,15:09,Tuna Sashimi (5pcs),Sashimi,Regular,1,Rp 65.000,Rp 32.000,Rp 65.000,e-wallet
+TRX-SUSHI-20260724-0036,2026-07-24,16:05,Edamame,Appetizer,Regular,1,Rp 22.000,Rp 8.000,Rp 22.000,e-wallet
+TRX-SUSHI-20260724-0037,2026-07-24,14:18,Mochi Ice Cream (3pcs),Dessert,Regular,2,Rp 32.000,Rp 13.000,Rp 64.000,card
+TRX-SUSHI-20260725-0001,2026-07-25,16:45,California Roll,Sushi,Regular,3,Rp 48.000,Rp 20.000,Rp 144.000,cash
+TRX-SUSHI-20260725-0002,2026-07-25,16:53,Salmon Nigiri (2pcs),Sushi,Regular,3,Rp 38.000,Rp 18.000,Rp 114.000,e-wallet
+TRX-SUSHI-20260725-0002,2026-07-25,16:53,California Roll,Sushi,Regular,3,Rp 48.000,Rp 20.000,Rp 144.000,e-wallet
+TRX-SUSHI-20260725-0002,2026-07-25,16:53,Dragon Roll,Sushi,Regular,1,Rp 62.000,Rp 28.000,Rp 62.000,e-wallet
+TRX-SUSHI-20260725-0003,2026-07-25,15:52,Tuna Sashimi (5pcs),Sashimi,Regular,3,Rp 65.000,Rp 32.000,Rp 195.000,cash
+TRX-SUSHI-20260725-0004,2026-07-25,19:28,Salmon Nigiri (2pcs),Sushi,Regular,2,Rp 38.000,Rp 18.000,Rp 76.000,e-wallet
+TRX-SUSHI-20260725-0004,2026-07-25,19:28,Edamame,Appetizer,Regular,2,Rp 22.000,Rp 8.000,Rp 44.000,e-wallet
+TRX-SUSHI-20260725-0005,2026-07-25,11:05,Dragon Roll,Sushi,Regular,3,Rp 62.000,Rp 28.000,Rp 186.000,card
+TRX-SUSHI-20260725-0006,2026-07-25,20:26,Tuna Sashimi (5pcs),Sashimi,Regular,2,Rp 65.000,Rp 32.000,Rp 130.000,card
+TRX-SUSHI-20260725-0006,2026-07-25,20:26,Edamame,Appetizer,Regular,1,Rp 22.000,Rp 8.000,Rp 22.000,card
+TRX-SUSHI-20260725-0006,2026-07-25,20:26,Dragon Roll,Sushi,Regular,2,Rp 62.000,Rp 28.000,Rp 124.000,card
+TRX-SUSHI-20260725-0007,2026-07-25,15:09,Dragon Roll,Sushi,Regular,3,Rp 62.000,Rp 28.000,Rp 186.000,cash
+TRX-SUSHI-20260725-0008,2026-07-25,15:22,Edamame,Appetizer,Regular,3,Rp 22.000,Rp 8.000,Rp 66.000,cash
+TRX-SUSHI-20260725-0008,2026-07-25,15:22,Mochi Ice Cream (3pcs),Dessert,Regular,1,Rp 32.000,Rp 13.000,Rp 32.000,cash
+TRX-SUSHI-20260725-0009,2026-07-25,18:15,California Roll,Sushi,Regular,1,Rp 48.000,Rp 20.000,Rp 48.000,cash
+TRX-SUSHI-20260725-0009,2026-07-25,18:15,Dragon Roll,Sushi,Regular,3,Rp 62.000,Rp 28.000,Rp 186.000,cash
+TRX-SUSHI-20260725-0009,2026-07-25,18:15,Tuna Sashimi (5pcs),Sashimi,Regular,3,Rp 65.000,Rp 32.000,Rp 195.000,cash
+TRX-SUSHI-20260725-0010,2026-07-25,17:21,Dragon Roll,Sushi,Regular,2,Rp 62.000,Rp 28.000,Rp 124.000,card
+TRX-SUSHI-20260725-0010,2026-07-25,17:21,Mochi Ice Cream (3pcs),Dessert,Regular,2,Rp 32.000,Rp 13.000,Rp 64.000,card
+TRX-SUSHI-20260725-0010,2026-07-25,17:21,Tuna Sashimi (5pcs),Sashimi,Regular,3,Rp 65.000,Rp 32.000,Rp 195.000,card
+TRX-SUSHI-20260725-0011,2026-07-25,19:28,Chicken Katsu Curry,Ramen,Regular,2,Rp 58.000,Rp 26.000,Rp 116.000,card
+TRX-SUSHI-20260725-0011,2026-07-25,19:28,Ramen Tonkotsu,Ramen,Regular,2,Rp 65.000,Rp 29.000,Rp 130.000,card
+TRX-SUSHI-20260725-0011,2026-07-25,19:28,Tuna Sashimi (5pcs),Sashimi,Regular,1,Rp 65.000,Rp 32.000,Rp 65.000,card
+TRX-SUSHI-20260725-0012,2026-07-25,14:20,Tuna Sashimi (5pcs),Sashimi,Regular,1,Rp 65.000,Rp 32.000,Rp 65.000,card
+TRX-SUSHI-20260725-0012,2026-07-25,14:20,Dragon Roll,Sushi,Regular,1,Rp 62.000,Rp 28.000,Rp 62.000,card
+TRX-SUSHI-20260725-0012,2026-07-25,14:20,Edamame,Appetizer,Regular,2,Rp 22.000,Rp 8.000,Rp 44.000,card
+TRX-SUSHI-20260725-0013,2026-07-25,12:14,Dragon Roll,Sushi,Regular,3,Rp 62.000,Rp 28.000,Rp 186.000,card
+TRX-SUSHI-20260725-0014,2026-07-25,17:02,California Roll,Sushi,Regular,1,Rp 48.000,Rp 20.000,Rp 48.000,e-wallet
+TRX-SUSHI-20260725-0014,2026-07-25,17:02,Tuna Sashimi (5pcs),Sashimi,Regular,1,Rp 65.000,Rp 32.000,Rp 65.000,e-wallet
+TRX-SUSHI-20260725-0015,2026-07-25,17:41,California Roll,Sushi,Regular,3,Rp 48.000,Rp 20.000,Rp 144.000,card
+TRX-SUSHI-20260725-0015,2026-07-25,17:41,Tuna Sashimi (5pcs),Sashimi,Regular,1,Rp 65.000,Rp 32.000,Rp 65.000,card
+TRX-SUSHI-20260725-0016,2026-07-25,16:11,Edamame,Appetizer,Regular,2,Rp 22.000,Rp 8.000,Rp 44.000,e-wallet
+TRX-SUSHI-20260725-0016,2026-07-25,16:11,California Roll,Sushi,Regular,3,Rp 48.000,Rp 20.000,Rp 144.000,e-wallet
+TRX-SUSHI-20260725-0016,2026-07-25,16:11,Salmon Nigiri (2pcs),Sushi,Regular,1,Rp 38.000,Rp 18.000,Rp 38.000,e-wallet
+TRX-SUSHI-20260725-0017,2026-07-25,18:12,Salmon Nigiri (2pcs),Sushi,Regular,3,Rp 38.000,Rp 18.000,Rp 114.000,cash
+TRX-SUSHI-20260725-0018,2026-07-25,13:44,Edamame,Appetizer,Regular,3,Rp 22.000,Rp 8.000,Rp 66.000,e-wallet
+TRX-SUSHI-20260725-0018,2026-07-25,13:44,California Roll,Sushi,Regular,1,Rp 48.000,Rp 20.000,Rp 48.000,e-wallet
+TRX-SUSHI-20260725-0019,2026-07-25,13:39,Ramen Tonkotsu,Ramen,Regular,3,Rp 65.000,Rp 29.000,Rp 195.000,card
+TRX-SUSHI-20260725-0019,2026-07-25,13:39,Tuna Sashimi (5pcs),Sashimi,Regular,3,Rp 65.000,Rp 32.000,Rp 195.000,card
+TRX-SUSHI-20260725-0020,2026-07-25,18:20,California Roll,Sushi,Regular,2,Rp 48.000,Rp 20.000,Rp 96.000,e-wallet
+TRX-SUSHI-20260725-0020,2026-07-25,18:20,Edamame,Appetizer,Regular,3,Rp 22.000,Rp 8.000,Rp 66.000,e-wallet
+TRX-SUSHI-20260725-0021,2026-07-25,20:14,Ramen Tonkotsu,Ramen,Regular,3,Rp 65.000,Rp 29.000,Rp 195.000,e-wallet
+TRX-SUSHI-20260725-0021,2026-07-25,20:14,Dragon Roll,Sushi,Regular,1,Rp 62.000,Rp 28.000,Rp 62.000,e-wallet
+TRX-SUSHI-20260725-0022,2026-07-25,18:11,Tuna Sashimi (5pcs),Sashimi,Regular,2,Rp 65.000,Rp 32.000,Rp 130.000,e-wallet
+TRX-SUSHI-20260725-0023,2026-07-25,16:08,California Roll,Sushi,Regular,1,Rp 48.000,Rp 20.000,Rp 48.000,e-wallet
+TRX-SUSHI-20260725-0023,2026-07-25,16:08,Dragon Roll,Sushi,Regular,1,Rp 62.000,Rp 28.000,Rp 62.000,e-wallet
+TRX-SUSHI-20260725-0024,2026-07-25,13:40,California Roll,Sushi,Regular,2,Rp 48.000,Rp 20.000,Rp 96.000,e-wallet
+TRX-SUSHI-20260725-0024,2026-07-25,13:40,Miso Soup,Appetizer,Regular,3,Rp 18.000,Rp 6.000,Rp 54.000,e-wallet
+TRX-SUSHI-20260725-0024,2026-07-25,13:40,Edamame,Appetizer,Regular,3,Rp 22.000,Rp 8.000,Rp 66.000,e-wallet
+TRX-SUSHI-20260725-0025,2026-07-25,12:41,Tuna Sashimi (5pcs),Sashimi,Regular,3,Rp 65.000,Rp 32.000,Rp 195.000,cash
+TRX-SUSHI-20260725-0025,2026-07-25,12:41,Salmon Nigiri (2pcs),Sushi,Regular,1,Rp 38.000,Rp 18.000,Rp 38.000,cash
+TRX-SUSHI-20260725-0026,2026-07-25,14:06,Dragon Roll,Sushi,Regular,2,Rp 62.000,Rp 28.000,Rp 124.000,e-wallet
+TRX-SUSHI-20260725-0026,2026-07-25,14:06,Ramen Tonkotsu,Ramen,Regular,2,Rp 65.000,Rp 29.000,Rp 130.000,e-wallet
+TRX-SUSHI-20260725-0026,2026-07-25,14:06,California Roll,Sushi,Regular,3,Rp 48.000,Rp 20.000,Rp 144.000,e-wallet
+TRX-SUSHI-20260725-0027,2026-07-25,11:29,California Roll,Sushi,Regular,1,Rp 48.000,Rp 20.000,Rp 48.000,e-wallet
+TRX-SUSHI-20260725-0028,2026-07-25,18:55,Salmon Nigiri (2pcs),Sushi,Regular,2,Rp 38.000,Rp 18.000,Rp 76.000,e-wallet
+TRX-SUSHI-20260725-0028,2026-07-25,18:55,California Roll,Sushi,Regular,2,Rp 48.000,Rp 20.000,Rp 96.000,e-wallet
+TRX-SUSHI-20260725-0028,2026-07-25,18:55,Tuna Sashimi (5pcs),Sashimi,Regular,1,Rp 65.000,Rp 32.000,Rp 65.000,e-wallet
+TRX-SUSHI-20260725-0029,2026-07-25,15:44,Dragon Roll,Sushi,Regular,1,Rp 62.000,Rp 28.000,Rp 62.000,e-wallet
+TRX-SUSHI-20260725-0029,2026-07-25,15:44,California Roll,Sushi,Regular,2,Rp 48.000,Rp 20.000,Rp 96.000,e-wallet
+TRX-SUSHI-20260725-0030,2026-07-25,18:41,Dragon Roll,Sushi,Regular,1,Rp 62.000,Rp 28.000,Rp 62.000,e-wallet
+TRX-SUSHI-20260725-0031,2026-07-25,12:51,Tuna Sashimi (5pcs),Sashimi,Regular,2,Rp 65.000,Rp 32.000,Rp 130.000,e-wallet
+TRX-SUSHI-20260725-0032,2026-07-25,16:47,Tuna Sashimi (5pcs),Sashimi,Regular,2,Rp 65.000,Rp 32.000,Rp 130.000,e-wallet
+TRX-SUSHI-20260725-0032,2026-07-25,16:47,Chicken Katsu Curry,Ramen,Regular,1,Rp 58.000,Rp 26.000,Rp 58.000,e-wallet
+TRX-SUSHI-20260725-0032,2026-07-25,16:47,Ramen Tonkotsu,Ramen,Regular,1,Rp 65.000,Rp 29.000,Rp 65.000,e-wallet
+TRX-SUSHI-20260725-0033,2026-07-25,17:45,Chicken Katsu Curry,Ramen,Regular,3,Rp 58.000,Rp 26.000,Rp 174.000,card
+TRX-SUSHI-20260725-0033,2026-07-25,17:45,Ramen Tonkotsu,Ramen,Regular,2,Rp 65.000,Rp 29.000,Rp 130.000,card
+TRX-SUSHI-20260725-0033,2026-07-25,17:45,California Roll,Sushi,Regular,1,Rp 48.000,Rp 20.000,Rp 48.000,card
+TRX-SUSHI-20260725-0034,2026-07-25,20:09,California Roll,Sushi,Regular,1,Rp 48.000,Rp 20.000,Rp 48.000,e-wallet
+TRX-SUSHI-20260725-0035,2026-07-25,15:32,Dragon Roll,Sushi,Regular,2,Rp 62.000,Rp 28.000,Rp 124.000,card
+TRX-SUSHI-20260725-0035,2026-07-25,15:32,California Roll,Sushi,Regular,1,Rp 48.000,Rp 20.000,Rp 48.000,card
+TRX-SUSHI-20260725-0035,2026-07-25,15:32,Salmon Nigiri (2pcs),Sushi,Regular,3,Rp 38.000,Rp 18.000,Rp 114.000,card
+TRX-SUSHI-20260725-0036,2026-07-25,20:52,Salmon Nigiri (2pcs),Sushi,Regular,1,Rp 38.000,Rp 18.000,Rp 38.000,e-wallet
+TRX-SUSHI-20260725-0036,2026-07-25,20:52,California Roll,Sushi,Regular,2,Rp 48.000,Rp 20.000,Rp 96.000,e-wallet
+TRX-SUSHI-20260725-0037,2026-07-25,18:47,Salmon Nigiri (2pcs),Sushi,Regular,3,Rp 38.000,Rp 18.000,Rp 114.000,cash
+TRX-SUSHI-20260725-0038,2026-07-25,16:41,California Roll,Sushi,Regular,2,Rp 48.000,Rp 20.000,Rp 96.000,cash
+TRX-SUSHI-20260725-0039,2026-07-25,14:46,Tuna Sashimi (5pcs),Sashimi,Regular,1,Rp 65.000,Rp 32.000,Rp 65.000,e-wallet
+TRX-SUSHI-20260725-0040,2026-07-25,19:21,Mochi Ice Cream (3pcs),Dessert,Regular,2,Rp 32.000,Rp 13.000,Rp 64.000,card
+TRX-SUSHI-20260725-0041,2026-07-25,16:12,Miso Soup,Appetizer,Regular,1,Rp 18.000,Rp 6.000,Rp 18.000,cash
+TRX-SUSHI-20260725-0041,2026-07-25,16:12,Tuna Sashimi (5pcs),Sashimi,Regular,3,Rp 65.000,Rp 32.000,Rp 195.000,cash
+TRX-SUSHI-20260725-0041,2026-07-25,16:12,Edamame,Appetizer,Regular,2,Rp 22.000,Rp 8.000,Rp 44.000,cash
+TRX-SUSHI-20260725-0042,2026-07-25,12:58,Edamame,Appetizer,Regular,3,Rp 22.000,Rp 8.000,Rp 66.000,cash
+TRX-SUSHI-20260725-0042,2026-07-25,12:58,Salmon Nigiri (2pcs),Sushi,Regular,3,Rp 38.000,Rp 18.000,Rp 114.000,cash
+TRX-SUSHI-20260725-0043,2026-07-25,16:17,Tuna Sashimi (5pcs),Sashimi,Regular,2,Rp 65.000,Rp 32.000,Rp 130.000,cash
+TRX-SUSHI-20260725-0043,2026-07-25,16:17,Salmon Nigiri (2pcs),Sushi,Regular,3,Rp 38.000,Rp 18.000,Rp 114.000,cash
+TRX-SUSHI-20260725-0043,2026-07-25,16:17,Edamame,Appetizer,Regular,1,Rp 22.000,Rp 8.000,Rp 22.000,cash
+TRX-SUSHI-20260725-0044,2026-07-25,12:10,Miso Soup,Appetizer,Regular,2,Rp 18.000,Rp 6.000,Rp 36.000,card
+TRX-SUSHI-20260725-0044,2026-07-25,12:10,Dragon Roll,Sushi,Regular,1,Rp 62.000,Rp 28.000,Rp 62.000,card
+TRX-SUSHI-20260725-0044,2026-07-25,12:10,Tuna Sashimi (5pcs),Sashimi,Regular,2,Rp 65.000,Rp 32.000,Rp 130.000,card
+TRX-SUSHI-20260725-0045,2026-07-25,18:00,Salmon Nigiri (2pcs),Sushi,Regular,2,Rp 38.000,Rp 18.000,Rp 76.000,e-wallet
+TRX-SUSHI-20260725-0046,2026-07-25,19:05,Dragon Roll,Sushi,Regular,1,Rp 62.000,Rp 28.000,Rp 62.000,card
+TRX-SUSHI-20260725-0046,2026-07-25,19:05,California Roll,Sushi,Regular,3,Rp 48.000,Rp 20.000,Rp 144.000,card
+TRX-SUSHI-20260725-0046,2026-07-25,19:05,Salmon Nigiri (2pcs),Sushi,Regular,1,Rp 38.000,Rp 18.000,Rp 38.000,card
+TRX-SUSHI-20260725-0047,2026-07-25,14:25,Tuna Sashimi (5pcs),Sashimi,Regular,2,Rp 65.000,Rp 32.000,Rp 130.000,card
+TRX-SUSHI-20260725-0047,2026-07-25,14:25,Dragon Roll,Sushi,Regular,2,Rp 62.000,Rp 28.000,Rp 124.000,card
+TRX-SUSHI-20260725-0047,2026-07-25,14:25,Salmon Nigiri (2pcs),Sushi,Regular,2,Rp 38.000,Rp 18.000,Rp 76.000,card
+TRX-SUSHI-20260725-0048,2026-07-25,16:46,California Roll,Sushi,Regular,3,Rp 48.000,Rp 20.000,Rp 144.000,e-wallet
+TRX-SUSHI-20260725-0048,2026-07-25,16:46,Tuna Sashimi (5pcs),Sashimi,Regular,1,Rp 65.000,Rp 32.000,Rp 65.000,e-wallet
+TRX-SUSHI-20260725-0048,2026-07-25,16:46,Edamame,Appetizer,Regular,2,Rp 22.000,Rp 8.000,Rp 44.000,e-wallet
+TRX-SUSHI-20260725-0049,2026-07-25,20:46,Salmon Nigiri (2pcs),Sushi,Regular,2,Rp 38.000,Rp 18.000,Rp 76.000,card
+TRX-SUSHI-20260725-0049,2026-07-25,20:46,Tuna Sashimi (5pcs),Sashimi,Regular,2,Rp 65.000,Rp 32.000,Rp 130.000,card
+TRX-SUSHI-20260725-0049,2026-07-25,20:46,California Roll,Sushi,Regular,1,Rp 48.000,Rp 20.000,Rp 48.000,card
+TRX-SUSHI-20260725-0050,2026-07-25,11:07,Dragon Roll,Sushi,Regular,1,Rp 62.000,Rp 28.000,Rp 62.000,card
+TRX-SUSHI-20260725-0050,2026-07-25,11:07,California Roll,Sushi,Regular,3,Rp 48.000,Rp 20.000,Rp 144.000,card
+TRX-SUSHI-20260725-0050,2026-07-25,11:07,Mochi Ice Cream (3pcs),Dessert,Regular,2,Rp 32.000,Rp 13.000,Rp 64.000,card
+TRX-SUSHI-20260725-0051,2026-07-25,19:16,Tuna Sashimi (5pcs),Sashimi,Regular,3,Rp 65.000,Rp 32.000,Rp 195.000,cash
+TRX-SUSHI-20260725-0051,2026-07-25,19:16,California Roll,Sushi,Regular,1,Rp 48.000,Rp 20.000,Rp 48.000,cash
+TRX-SUSHI-20260725-0052,2026-07-25,15:28,Salmon Nigiri (2pcs),Sushi,Regular,2,Rp 38.000,Rp 18.000,Rp 76.000,card
+TRX-SUSHI-20260725-0053,2026-07-25,11:26,Salmon Nigiri (2pcs),Sushi,Regular,3,Rp 38.000,Rp 18.000,Rp 114.000,e-wallet
+TRX-SUSHI-20260725-0053,2026-07-25,11:26,Edamame,Appetizer,Regular,2,Rp 22.000,Rp 8.000,Rp 44.000,e-wallet
+TRX-SUSHI-20260726-0001,2026-07-26,16:30,Dragon Roll,Sushi,Regular,3,Rp 62.000,Rp 28.000,Rp 186.000,e-wallet
+TRX-SUSHI-20260726-0002,2026-07-26,19:15,Dragon Roll,Sushi,Regular,3,Rp 62.000,Rp 28.000,Rp 186.000,e-wallet
+TRX-SUSHI-20260726-0002,2026-07-26,19:15,Salmon Nigiri (2pcs),Sushi,Regular,2,Rp 38.000,Rp 18.000,Rp 76.000,e-wallet
+TRX-SUSHI-20260726-0003,2026-07-26,13:47,Dragon Roll,Sushi,Regular,2,Rp 62.000,Rp 28.000,Rp 124.000,e-wallet
+TRX-SUSHI-20260726-0004,2026-07-26,17:21,Ramen Tonkotsu,Ramen,Regular,2,Rp 65.000,Rp 29.000,Rp 130.000,cash
+TRX-SUSHI-20260726-0005,2026-07-26,15:07,Dragon Roll,Sushi,Regular,2,Rp 62.000,Rp 28.000,Rp 124.000,cash
+TRX-SUSHI-20260726-0006,2026-07-26,12:04,Salmon Nigiri (2pcs),Sushi,Regular,1,Rp 38.000,Rp 18.000,Rp 38.000,cash
+TRX-SUSHI-20260726-0006,2026-07-26,12:04,Ramen Tonkotsu,Ramen,Regular,2,Rp 65.000,Rp 29.000,Rp 130.000,cash
+TRX-SUSHI-20260726-0007,2026-07-26,18:15,Green Tea,Beverage,Regular,1,Rp 15.000,Rp 5.000,Rp 15.000,e-wallet
+TRX-SUSHI-20260726-0007,2026-07-26,18:15,Salmon Nigiri (2pcs),Sushi,Regular,2,Rp 38.000,Rp 18.000,Rp 76.000,e-wallet
+TRX-SUSHI-20260726-0008,2026-07-26,17:28,Dragon Roll,Sushi,Regular,3,Rp 62.000,Rp 28.000,Rp 186.000,e-wallet
+TRX-SUSHI-20260726-0008,2026-07-26,17:28,Ramen Tonkotsu,Ramen,Regular,1,Rp 65.000,Rp 29.000,Rp 65.000,e-wallet
+TRX-SUSHI-20260726-0009,2026-07-26,11:26,Dragon Roll,Sushi,Regular,1,Rp 62.000,Rp 28.000,Rp 62.000,card
+TRX-SUSHI-20260726-0009,2026-07-26,11:26,Salmon Nigiri (2pcs),Sushi,Regular,1,Rp 38.000,Rp 18.000,Rp 38.000,card
+TRX-SUSHI-20260726-0009,2026-07-26,11:26,Tuna Sashimi (5pcs),Sashimi,Regular,2,Rp 65.000,Rp 32.000,Rp 130.000,card
+TRX-SUSHI-20260726-0010,2026-07-26,12:28,Ramen Tonkotsu,Ramen,Regular,2,Rp 65.000,Rp 29.000,Rp 130.000,card
+TRX-SUSHI-20260726-0010,2026-07-26,12:28,Tuna Sashimi (5pcs),Sashimi,Regular,3,Rp 65.000,Rp 32.000,Rp 195.000,card
+TRX-SUSHI-20260726-0010,2026-07-26,12:28,Dragon Roll,Sushi,Regular,3,Rp 62.000,Rp 28.000,Rp 186.000,card
+TRX-SUSHI-20260726-0011,2026-07-26,20:07,Dragon Roll,Sushi,Regular,3,Rp 62.000,Rp 28.000,Rp 186.000,e-wallet
+TRX-SUSHI-20260726-0011,2026-07-26,20:07,Tuna Sashimi (5pcs),Sashimi,Regular,1,Rp 65.000,Rp 32.000,Rp 65.000,e-wallet
+TRX-SUSHI-20260726-0012,2026-07-26,14:25,Tuna Sashimi (5pcs),Sashimi,Regular,3,Rp 65.000,Rp 32.000,Rp 195.000,e-wallet
+TRX-SUSHI-20260726-0012,2026-07-26,14:25,Edamame,Appetizer,Regular,2,Rp 22.000,Rp 8.000,Rp 44.000,e-wallet
+TRX-SUSHI-20260726-0012,2026-07-26,14:25,Dragon Roll,Sushi,Regular,3,Rp 62.000,Rp 28.000,Rp 186.000,e-wallet
+TRX-SUSHI-20260726-0013,2026-07-26,13:01,Tuna Sashimi (5pcs),Sashimi,Regular,3,Rp 65.000,Rp 32.000,Rp 195.000,e-wallet
+TRX-SUSHI-20260726-0013,2026-07-26,13:01,Dragon Roll,Sushi,Regular,2,Rp 62.000,Rp 28.000,Rp 124.000,e-wallet
+TRX-SUSHI-20260726-0013,2026-07-26,13:01,Ramen Tonkotsu,Ramen,Regular,3,Rp 65.000,Rp 29.000,Rp 195.000,e-wallet
+TRX-SUSHI-20260726-0014,2026-07-26,16:07,Mochi Ice Cream (3pcs),Dessert,Regular,1,Rp 32.000,Rp 13.000,Rp 32.000,e-wallet
+TRX-SUSHI-20260726-0014,2026-07-26,16:07,Dragon Roll,Sushi,Regular,1,Rp 62.000,Rp 28.000,Rp 62.000,e-wallet
+TRX-SUSHI-20260726-0014,2026-07-26,16:07,California Roll,Sushi,Regular,3,Rp 48.000,Rp 20.000,Rp 144.000,e-wallet
+TRX-SUSHI-20260726-0015,2026-07-26,19:58,Ramen Tonkotsu,Ramen,Regular,2,Rp 65.000,Rp 29.000,Rp 130.000,card
+TRX-SUSHI-20260726-0015,2026-07-26,19:58,Mochi Ice Cream (3pcs),Dessert,Regular,1,Rp 32.000,Rp 13.000,Rp 32.000,card
+TRX-SUSHI-20260726-0015,2026-07-26,19:58,Dragon Roll,Sushi,Regular,2,Rp 62.000,Rp 28.000,Rp 124.000,card
+TRX-SUSHI-20260726-0016,2026-07-26,12:37,Miso Soup,Appetizer,Regular,3,Rp 18.000,Rp 6.000,Rp 54.000,e-wallet
+TRX-SUSHI-20260726-0017,2026-07-26,19:19,Mochi Ice Cream (3pcs),Dessert,Regular,2,Rp 32.000,Rp 13.000,Rp 64.000,e-wallet
+TRX-SUSHI-20260726-0018,2026-07-26,14:13,Tuna Sashimi (5pcs),Sashimi,Regular,1,Rp 65.000,Rp 32.000,Rp 65.000,e-wallet
+TRX-SUSHI-20260726-0019,2026-07-26,11:18,Tuna Sashimi (5pcs),Sashimi,Regular,2,Rp 65.000,Rp 32.000,Rp 130.000,cash
+TRX-SUSHI-20260726-0019,2026-07-26,11:18,California Roll,Sushi,Regular,2,Rp 48.000,Rp 20.000,Rp 96.000,cash
+TRX-SUSHI-20260726-0019,2026-07-26,11:18,Salmon Nigiri (2pcs),Sushi,Regular,2,Rp 38.000,Rp 18.000,Rp 76.000,cash
+TRX-SUSHI-20260726-0020,2026-07-26,19:35,Dragon Roll,Sushi,Regular,1,Rp 62.000,Rp 28.000,Rp 62.000,cash
+TRX-SUSHI-20260726-0020,2026-07-26,19:35,Tuna Sashimi (5pcs),Sashimi,Regular,3,Rp 65.000,Rp 32.000,Rp 195.000,cash
+TRX-SUSHI-20260726-0021,2026-07-26,14:11,Salmon Nigiri (2pcs),Sushi,Regular,3,Rp 38.000,Rp 18.000,Rp 114.000,cash
+TRX-SUSHI-20260726-0021,2026-07-26,14:11,Tuna Sashimi (5pcs),Sashimi,Regular,1,Rp 65.000,Rp 32.000,Rp 65.000,cash
+TRX-SUSHI-20260726-0022,2026-07-26,11:55,Tuna Sashimi (5pcs),Sashimi,Regular,3,Rp 65.000,Rp 32.000,Rp 195.000,card
+TRX-SUSHI-20260726-0023,2026-07-26,19:44,California Roll,Sushi,Regular,1,Rp 48.000,Rp 20.000,Rp 48.000,e-wallet
+TRX-SUSHI-20260726-0023,2026-07-26,19:44,Edamame,Appetizer,Regular,3,Rp 22.000,Rp 8.000,Rp 66.000,e-wallet
+TRX-SUSHI-20260726-0024,2026-07-26,15:11,Salmon Nigiri (2pcs),Sushi,Regular,3,Rp 38.000,Rp 18.000,Rp 114.000,cash
+TRX-SUSHI-20260726-0025,2026-07-26,12:45,Ramen Tonkotsu,Ramen,Regular,3,Rp 65.000,Rp 29.000,Rp 195.000,cash
+TRX-SUSHI-20260726-0026,2026-07-26,15:44,Dragon Roll,Sushi,Regular,1,Rp 62.000,Rp 28.000,Rp 62.000,card
+TRX-SUSHI-20260726-0027,2026-07-26,20:22,Mochi Ice Cream (3pcs),Dessert,Regular,3,Rp 32.000,Rp 13.000,Rp 96.000,e-wallet
+TRX-SUSHI-20260726-0028,2026-07-26,20:34,Miso Soup,Appetizer,Regular,1,Rp 18.000,Rp 6.000,Rp 18.000,e-wallet
+TRX-SUSHI-20260726-0028,2026-07-26,20:34,Tuna Sashimi (5pcs),Sashimi,Regular,2,Rp 65.000,Rp 32.000,Rp 130.000,e-wallet
+TRX-SUSHI-20260726-0029,2026-07-26,13:03,California Roll,Sushi,Regular,1,Rp 48.000,Rp 20.000,Rp 48.000,e-wallet
+TRX-SUSHI-20260726-0030,2026-07-26,14:45,Salmon Nigiri (2pcs),Sushi,Regular,2,Rp 38.000,Rp 18.000,Rp 76.000,cash
+TRX-SUSHI-20260726-0030,2026-07-26,14:45,Edamame,Appetizer,Regular,2,Rp 22.000,Rp 8.000,Rp 44.000,cash
+TRX-SUSHI-20260726-0031,2026-07-26,19:51,Miso Soup,Appetizer,Regular,3,Rp 18.000,Rp 6.000,Rp 54.000,card
+TRX-SUSHI-20260726-0031,2026-07-26,19:51,Green Tea,Beverage,Regular,3,Rp 15.000,Rp 5.000,Rp 45.000,card
+TRX-SUSHI-20260726-0032,2026-07-26,15:18,Green Tea,Beverage,Regular,3,Rp 15.000,Rp 5.000,Rp 45.000,e-wallet
+TRX-SUSHI-20260726-0032,2026-07-26,15:18,Salmon Nigiri (2pcs),Sushi,Regular,3,Rp 38.000,Rp 18.000,Rp 114.000,e-wallet
+TRX-SUSHI-20260726-0033,2026-07-26,15:41,Dragon Roll,Sushi,Regular,2,Rp 62.000,Rp 28.000,Rp 124.000,cash
+TRX-SUSHI-20260726-0033,2026-07-26,15:41,California Roll,Sushi,Regular,1,Rp 48.000,Rp 20.000,Rp 48.000,cash
+TRX-SUSHI-20260726-0034,2026-07-26,18:59,Tuna Sashimi (5pcs),Sashimi,Regular,3,Rp 65.000,Rp 32.000,Rp 195.000,cash
+TRX-SUSHI-20260726-0035,2026-07-26,20:34,Dragon Roll,Sushi,Regular,3,Rp 62.000,Rp 28.000,Rp 186.000,e-wallet
+TRX-SUSHI-20260726-0035,2026-07-26,20:34,Tuna Sashimi (5pcs),Sashimi,Regular,2,Rp 65.000,Rp 32.000,Rp 130.000,e-wallet
+TRX-SUSHI-20260726-0035,2026-07-26,20:34,Edamame,Appetizer,Regular,3,Rp 22.000,Rp 8.000,Rp 66.000,e-wallet
+TRX-SUSHI-20260726-0036,2026-07-26,15:42,Green Tea,Beverage,Regular,2,Rp 15.000,Rp 5.000,Rp 30.000,cash
+TRX-SUSHI-20260726-0037,2026-07-26,15:23,Dragon Roll,Sushi,Regular,2,Rp 62.000,Rp 28.000,Rp 124.000,e-wallet
+TRX-SUSHI-20260726-0038,2026-07-26,13:51,Salmon Nigiri (2pcs),Sushi,Regular,1,Rp 38.000,Rp 18.000,Rp 38.000,e-wallet
+TRX-SUSHI-20260726-0039,2026-07-26,18:03,Dragon Roll,Sushi,Regular,1,Rp 62.000,Rp 28.000,Rp 62.000,e-wallet
+TRX-SUSHI-20260726-0039,2026-07-26,18:03,Salmon Nigiri (2pcs),Sushi,Regular,1,Rp 38.000,Rp 18.000,Rp 38.000,e-wallet
+TRX-SUSHI-20260726-0039,2026-07-26,18:03,Tuna Sashimi (5pcs),Sashimi,Regular,2,Rp 65.000,Rp 32.000,Rp 130.000,e-wallet
+TRX-SUSHI-20260726-0040,2026-07-26,18:17,Tuna Sashimi (5pcs),Sashimi,Regular,2,Rp 65.000,Rp 32.000,Rp 130.000,e-wallet
+TRX-SUSHI-20260726-0040,2026-07-26,18:17,Dragon Roll,Sushi,Regular,2,Rp 62.000,Rp 28.000,Rp 124.000,e-wallet
+TRX-SUSHI-20260726-0041,2026-07-26,11:42,Salmon Nigiri (2pcs),Sushi,Regular,2,Rp 38.000,Rp 18.000,Rp 76.000,cash
+TRX-SUSHI-20260726-0042,2026-07-26,16:54,Tuna Sashimi (5pcs),Sashimi,Regular,2,Rp 65.000,Rp 32.000,Rp 130.000,card
+TRX-SUSHI-20260726-0042,2026-07-26,16:54,Salmon Nigiri (2pcs),Sushi,Regular,3,Rp 38.000,Rp 18.000,Rp 114.000,card
+TRX-SUSHI-20260726-0042,2026-07-26,16:54,Chicken Katsu Curry,Ramen,Regular,2,Rp 58.000,Rp 26.000,Rp 116.000,card
+TRX-SUSHI-20260726-0043,2026-07-26,20:33,Ramen Tonkotsu,Ramen,Regular,3,Rp 65.000,Rp 29.000,Rp 195.000,card
+TRX-SUSHI-20260726-0044,2026-07-26,13:22,Chicken Katsu Curry,Ramen,Regular,1,Rp 58.000,Rp 26.000,Rp 58.000,e-wallet
+TRX-SUSHI-20260726-0044,2026-07-26,13:22,Miso Soup,Appetizer,Regular,2,Rp 18.000,Rp 6.000,Rp 36.000,e-wallet
+TRX-SUSHI-20260726-0044,2026-07-26,13:22,Salmon Nigiri (2pcs),Sushi,Regular,1,Rp 38.000,Rp 18.000,Rp 38.000,e-wallet
+TRX-SUSHI-20260726-0045,2026-07-26,11:16,Tuna Sashimi (5pcs),Sashimi,Regular,1,Rp 65.000,Rp 32.000,Rp 65.000,card
+TRX-SUSHI-20260726-0045,2026-07-26,11:16,Edamame,Appetizer,Regular,3,Rp 22.000,Rp 8.000,Rp 66.000,card
+TRX-SUSHI-20260726-0046,2026-07-26,11:38,California Roll,Sushi,Regular,1,Rp 48.000,Rp 20.000,Rp 48.000,e-wallet
+TRX-SUSHI-20260726-0046,2026-07-26,11:38,Tuna Sashimi (5pcs),Sashimi,Regular,3,Rp 65.000,Rp 32.000,Rp 195.000,e-wallet
+TRX-SUSHI-20260726-0046,2026-07-26,11:38,Chicken Katsu Curry,Ramen,Regular,3,Rp 58.000,Rp 26.000,Rp 174.000,e-wallet
+TRX-SUSHI-20260726-0047,2026-07-26,19:27,Salmon Nigiri (2pcs),Sushi,Regular,1,Rp 38.000,Rp 18.000,Rp 38.000,cash
+TRX-SUSHI-20260726-0048,2026-07-26,15:17,Dragon Roll,Sushi,Regular,3,Rp 62.000,Rp 28.000,Rp 186.000,e-wallet
+TRX-SUSHI-20260726-0049,2026-07-26,13:34,Miso Soup,Appetizer,Regular,1,Rp 18.000,Rp 6.000,Rp 18.000,cash
+TRX-SUSHI-20260726-0049,2026-07-26,13:34,California Roll,Sushi,Regular,2,Rp 48.000,Rp 20.000,Rp 96.000,cash
+TRX-SUSHI-20260726-0050,2026-07-26,13:42,Dragon Roll,Sushi,Regular,1,Rp 62.000,Rp 28.000,Rp 62.000,e-wallet
+TRX-SUSHI-20260726-0051,2026-07-26,14:03,Miso Soup,Appetizer,Regular,2,Rp 18.000,Rp 6.000,Rp 36.000,e-wallet
+TRX-SUSHI-20260726-0052,2026-07-26,12:42,Edamame,Appetizer,Regular,3,Rp 22.000,Rp 8.000,Rp 66.000,cash
+TRX-SUSHI-20260726-0052,2026-07-26,12:42,Dragon Roll,Sushi,Regular,1,Rp 62.000,Rp 28.000,Rp 62.000,cash
+TRX-SUSHI-20260726-0052,2026-07-26,12:42,Salmon Nigiri (2pcs),Sushi,Regular,1,Rp 38.000,Rp 18.000,Rp 38.000,cash
+TRX-SUSHI-20260726-0053,2026-07-26,13:33,Tuna Sashimi (5pcs),Sashimi,Regular,2,Rp 65.000,Rp 32.000,Rp 130.000,e-wallet
+TRX-SUSHI-20260726-0053,2026-07-26,13:33,California Roll,Sushi,Regular,3,Rp 48.000,Rp 20.000,Rp 144.000,e-wallet
+TRX-SUSHI-20260726-0053,2026-07-26,13:33,Salmon Nigiri (2pcs),Sushi,Regular,2,Rp 38.000,Rp 18.000,Rp 76.000,e-wallet
+TRX-SUSHI-20260726-0054,2026-07-26,11:23,Dragon Roll,Sushi,Regular,3,Rp 62.000,Rp 28.000,Rp 186.000,e-wallet
+TRX-SUSHI-20260726-0054,2026-07-26,11:23,Tuna Sashimi (5pcs),Sashimi,Regular,2,Rp 65.000,Rp 32.000,Rp 130.000,e-wallet
+TRX-SUSHI-20260726-0055,2026-07-26,18:59,Tuna Sashimi (5pcs),Sashimi,Regular,2,Rp 65.000,Rp 32.000,Rp 130.000,cash
+TRX-SUSHI-20260727-0001,2026-07-27,16:53,Edamame,Appetizer,Regular,2,Rp 22.000,Rp 8.000,Rp 44.000,card
+TRX-SUSHI-20260727-0002,2026-07-27,15:33,Tuna Sashimi (5pcs),Sashimi,Regular,1,Rp 65.000,Rp 32.000,Rp 65.000,cash
+TRX-SUSHI-20260727-0003,2026-07-27,19:23,California Roll,Sushi,Regular,3,Rp 48.000,Rp 20.000,Rp 144.000,e-wallet
+TRX-SUSHI-20260727-0003,2026-07-27,19:23,Green Tea,Beverage,Regular,3,Rp 15.000,Rp 5.000,Rp 45.000,e-wallet
+TRX-SUSHI-20260727-0004,2026-07-27,17:20,Tuna Sashimi (5pcs),Sashimi,Regular,1,Rp 65.000,Rp 32.000,Rp 65.000,e-wallet
+TRX-SUSHI-20260727-0005,2026-07-27,14:12,Chicken Katsu Curry,Ramen,Regular,1,Rp 58.000,Rp 26.000,Rp 58.000,e-wallet
+TRX-SUSHI-20260727-0005,2026-07-27,14:12,Salmon Nigiri (2pcs),Sushi,Regular,2,Rp 38.000,Rp 18.000,Rp 76.000,e-wallet
+TRX-SUSHI-20260727-0005,2026-07-27,14:12,Green Tea,Beverage,Regular,1,Rp 15.000,Rp 5.000,Rp 15.000,e-wallet
+TRX-SUSHI-20260727-0006,2026-07-27,20:42,Miso Soup,Appetizer,Regular,1,Rp 18.000,Rp 6.000,Rp 18.000,card
+TRX-SUSHI-20260727-0007,2026-07-27,18:22,Dragon Roll,Sushi,Regular,2,Rp 62.000,Rp 28.000,Rp 124.000,cash
+TRX-SUSHI-20260727-0007,2026-07-27,18:22,California Roll,Sushi,Regular,1,Rp 48.000,Rp 20.000,Rp 48.000,cash
+TRX-SUSHI-20260727-0007,2026-07-27,18:22,Miso Soup,Appetizer,Regular,1,Rp 18.000,Rp 6.000,Rp 18.000,cash
+TRX-SUSHI-20260727-0008,2026-07-27,16:40,Green Tea,Beverage,Regular,3,Rp 15.000,Rp 5.000,Rp 45.000,card
+TRX-SUSHI-20260727-0008,2026-07-27,16:40,California Roll,Sushi,Regular,3,Rp 48.000,Rp 20.000,Rp 144.000,card
+TRX-SUSHI-20260727-0008,2026-07-27,16:40,Tuna Sashimi (5pcs),Sashimi,Regular,3,Rp 65.000,Rp 32.000,Rp 195.000,card
+TRX-SUSHI-20260727-0009,2026-07-27,20:31,California Roll,Sushi,Regular,3,Rp 48.000,Rp 20.000,Rp 144.000,cash
+TRX-SUSHI-20260727-0009,2026-07-27,20:31,Green Tea,Beverage,Regular,3,Rp 15.000,Rp 5.000,Rp 45.000,cash
+TRX-SUSHI-20260727-0009,2026-07-27,20:31,Salmon Nigiri (2pcs),Sushi,Regular,3,Rp 38.000,Rp 18.000,Rp 114.000,cash
+TRX-SUSHI-20260727-0010,2026-07-27,14:52,Edamame,Appetizer,Regular,3,Rp 22.000,Rp 8.000,Rp 66.000,e-wallet
+TRX-SUSHI-20260727-0011,2026-07-27,20:18,Salmon Nigiri (2pcs),Sushi,Regular,3,Rp 38.000,Rp 18.000,Rp 114.000,e-wallet
+TRX-SUSHI-20260727-0011,2026-07-27,20:18,Chicken Katsu Curry,Ramen,Regular,1,Rp 58.000,Rp 26.000,Rp 58.000,e-wallet
+TRX-SUSHI-20260727-0012,2026-07-27,16:49,Salmon Nigiri (2pcs),Sushi,Regular,1,Rp 38.000,Rp 18.000,Rp 38.000,card
+TRX-SUSHI-20260727-0012,2026-07-27,16:49,Dragon Roll,Sushi,Regular,1,Rp 62.000,Rp 28.000,Rp 62.000,card
+TRX-SUSHI-20260727-0012,2026-07-27,16:49,California Roll,Sushi,Regular,3,Rp 48.000,Rp 20.000,Rp 144.000,card
+TRX-SUSHI-20260727-0013,2026-07-27,17:38,Tuna Sashimi (5pcs),Sashimi,Regular,1,Rp 65.000,Rp 32.000,Rp 65.000,e-wallet
+TRX-SUSHI-20260727-0013,2026-07-27,17:38,Chicken Katsu Curry,Ramen,Regular,3,Rp 58.000,Rp 26.000,Rp 174.000,e-wallet
+TRX-SUSHI-20260727-0013,2026-07-27,17:38,Dragon Roll,Sushi,Regular,2,Rp 62.000,Rp 28.000,Rp 124.000,e-wallet
+TRX-SUSHI-20260727-0014,2026-07-27,12:01,Tuna Sashimi (5pcs),Sashimi,Regular,2,Rp 65.000,Rp 32.000,Rp 130.000,e-wallet
+TRX-SUSHI-20260727-0014,2026-07-27,12:01,Dragon Roll,Sushi,Regular,3,Rp 62.000,Rp 28.000,Rp 186.000,e-wallet
+TRX-SUSHI-20260727-0015,2026-07-27,16:19,Tuna Sashimi (5pcs),Sashimi,Regular,3,Rp 65.000,Rp 32.000,Rp 195.000,e-wallet
+TRX-SUSHI-20260727-0015,2026-07-27,16:19,Edamame,Appetizer,Regular,2,Rp 22.000,Rp 8.000,Rp 44.000,e-wallet
+TRX-SUSHI-20260727-0016,2026-07-27,14:37,Tuna Sashimi (5pcs),Sashimi,Regular,2,Rp 65.000,Rp 32.000,Rp 130.000,e-wallet
+TRX-SUSHI-20260727-0017,2026-07-27,11:06,California Roll,Sushi,Regular,3,Rp 48.000,Rp 20.000,Rp 144.000,e-wallet
+TRX-SUSHI-20260727-0017,2026-07-27,11:06,Dragon Roll,Sushi,Regular,1,Rp 62.000,Rp 28.000,Rp 62.000,e-wallet
+TRX-SUSHI-20260727-0017,2026-07-27,11:06,Edamame,Appetizer,Regular,3,Rp 22.000,Rp 8.000,Rp 66.000,e-wallet
+TRX-SUSHI-20260727-0018,2026-07-27,19:34,California Roll,Sushi,Regular,1,Rp 48.000,Rp 20.000,Rp 48.000,cash
+TRX-SUSHI-20260727-0018,2026-07-27,19:34,Green Tea,Beverage,Regular,2,Rp 15.000,Rp 5.000,Rp 30.000,cash
+TRX-SUSHI-20260727-0018,2026-07-27,19:34,Dragon Roll,Sushi,Regular,3,Rp 62.000,Rp 28.000,Rp 186.000,cash
+TRX-SUSHI-20260727-0019,2026-07-27,17:29,Dragon Roll,Sushi,Regular,1,Rp 62.000,Rp 28.000,Rp 62.000,e-wallet
+TRX-SUSHI-20260727-0019,2026-07-27,17:29,Salmon Nigiri (2pcs),Sushi,Regular,2,Rp 38.000,Rp 18.000,Rp 76.000,e-wallet
+TRX-SUSHI-20260727-0019,2026-07-27,17:29,Tuna Sashimi (5pcs),Sashimi,Regular,1,Rp 65.000,Rp 32.000,Rp 65.000,e-wallet
+TRX-SUSHI-20260727-0020,2026-07-27,19:09,California Roll,Sushi,Regular,3,Rp 48.000,Rp 20.000,Rp 144.000,card
+TRX-SUSHI-20260727-0020,2026-07-27,19:09,Dragon Roll,Sushi,Regular,3,Rp 62.000,Rp 28.000,Rp 186.000,card
+TRX-SUSHI-20260727-0020,2026-07-27,19:09,Tuna Sashimi (5pcs),Sashimi,Regular,3,Rp 65.000,Rp 32.000,Rp 195.000,card
+TRX-SUSHI-20260727-0021,2026-07-27,11:52,Dragon Roll,Sushi,Regular,3,Rp 62.000,Rp 28.000,Rp 186.000,e-wallet
+TRX-SUSHI-20260727-0022,2026-07-27,19:36,Salmon Nigiri (2pcs),Sushi,Regular,3,Rp 38.000,Rp 18.000,Rp 114.000,e-wallet
+TRX-SUSHI-20260727-0023,2026-07-27,17:48,Tuna Sashimi (5pcs),Sashimi,Regular,1,Rp 65.000,Rp 32.000,Rp 65.000,cash
+TRX-SUSHI-20260727-0023,2026-07-27,17:48,Salmon Nigiri (2pcs),Sushi,Regular,2,Rp 38.000,Rp 18.000,Rp 76.000,cash
+TRX-SUSHI-20260727-0024,2026-07-27,17:17,Chicken Katsu Curry,Ramen,Regular,3,Rp 58.000,Rp 26.000,Rp 174.000,cash
+TRX-SUSHI-20260727-0024,2026-07-27,17:17,Tuna Sashimi (5pcs),Sashimi,Regular,1,Rp 65.000,Rp 32.000,Rp 65.000,cash
+TRX-SUSHI-20260727-0024,2026-07-27,17:17,California Roll,Sushi,Regular,2,Rp 48.000,Rp 20.000,Rp 96.000,cash
+TRX-SUSHI-20260728-0001,2026-07-28,15:14,Salmon Nigiri (2pcs),Sushi,Regular,1,Rp 38.000,Rp 18.000,Rp 38.000,card
+TRX-SUSHI-20260728-0001,2026-07-28,15:14,Chicken Katsu Curry,Ramen,Regular,3,Rp 58.000,Rp 26.000,Rp 174.000,card
+TRX-SUSHI-20260728-0001,2026-07-28,15:14,Dragon Roll,Sushi,Regular,3,Rp 62.000,Rp 28.000,Rp 186.000,card
+TRX-SUSHI-20260728-0002,2026-07-28,12:36,Dragon Roll,Sushi,Regular,3,Rp 62.000,Rp 28.000,Rp 186.000,cash
+TRX-SUSHI-20260728-0003,2026-07-28,18:30,California Roll,Sushi,Regular,1,Rp 48.000,Rp 20.000,Rp 48.000,card
+TRX-SUSHI-20260728-0004,2026-07-28,13:54,Salmon Nigiri (2pcs),Sushi,Regular,2,Rp 38.000,Rp 18.000,Rp 76.000,cash
+TRX-SUSHI-20260728-0004,2026-07-28,13:54,California Roll,Sushi,Regular,1,Rp 48.000,Rp 20.000,Rp 48.000,cash
+TRX-SUSHI-20260728-0005,2026-07-28,14:21,Dragon Roll,Sushi,Regular,2,Rp 62.000,Rp 28.000,Rp 124.000,card
+TRX-SUSHI-20260728-0005,2026-07-28,14:21,Chicken Katsu Curry,Ramen,Regular,3,Rp 58.000,Rp 26.000,Rp 174.000,card
+TRX-SUSHI-20260728-0006,2026-07-28,17:06,Dragon Roll,Sushi,Regular,2,Rp 62.000,Rp 28.000,Rp 124.000,e-wallet
+TRX-SUSHI-20260728-0006,2026-07-28,17:06,Salmon Nigiri (2pcs),Sushi,Regular,1,Rp 38.000,Rp 18.000,Rp 38.000,e-wallet
+TRX-SUSHI-20260728-0006,2026-07-28,17:06,Green Tea,Beverage,Regular,3,Rp 15.000,Rp 5.000,Rp 45.000,e-wallet
+TRX-SUSHI-20260728-0007,2026-07-28,11:24,Tuna Sashimi (5pcs),Sashimi,Regular,1,Rp 65.000,Rp 32.000,Rp 65.000,cash
+TRX-SUSHI-20260728-0007,2026-07-28,11:24,California Roll,Sushi,Regular,3,Rp 48.000,Rp 20.000,Rp 144.000,cash
+TRX-SUSHI-20260728-0007,2026-07-28,11:24,Dragon Roll,Sushi,Regular,2,Rp 62.000,Rp 28.000,Rp 124.000,cash
+TRX-SUSHI-20260728-0008,2026-07-28,20:51,Dragon Roll,Sushi,Regular,2,Rp 62.000,Rp 28.000,Rp 124.000,e-wallet
+TRX-SUSHI-20260728-0008,2026-07-28,20:51,Tuna Sashimi (5pcs),Sashimi,Regular,3,Rp 65.000,Rp 32.000,Rp 195.000,e-wallet
+TRX-SUSHI-20260728-0009,2026-07-28,16:06,California Roll,Sushi,Regular,3,Rp 48.000,Rp 20.000,Rp 144.000,e-wallet
+TRX-SUSHI-20260728-0009,2026-07-28,16:06,Salmon Nigiri (2pcs),Sushi,Regular,3,Rp 38.000,Rp 18.000,Rp 114.000,e-wallet
+TRX-SUSHI-20260728-0010,2026-07-28,11:12,Tuna Sashimi (5pcs),Sashimi,Regular,3,Rp 65.000,Rp 32.000,Rp 195.000,e-wallet
+TRX-SUSHI-20260728-0010,2026-07-28,11:12,Dragon Roll,Sushi,Regular,3,Rp 62.000,Rp 28.000,Rp 186.000,e-wallet
+TRX-SUSHI-20260728-0011,2026-07-28,12:10,California Roll,Sushi,Regular,2,Rp 48.000,Rp 20.000,Rp 96.000,cash
+TRX-SUSHI-20260728-0012,2026-07-28,19:54,California Roll,Sushi,Regular,2,Rp 48.000,Rp 20.000,Rp 96.000,cash
+TRX-SUSHI-20260728-0012,2026-07-28,19:54,Tuna Sashimi (5pcs),Sashimi,Regular,2,Rp 65.000,Rp 32.000,Rp 130.000,cash
+TRX-SUSHI-20260728-0012,2026-07-28,19:54,Edamame,Appetizer,Regular,2,Rp 22.000,Rp 8.000,Rp 44.000,cash
+TRX-SUSHI-20260728-0013,2026-07-28,13:56,California Roll,Sushi,Regular,1,Rp 48.000,Rp 20.000,Rp 48.000,e-wallet
+TRX-SUSHI-20260728-0013,2026-07-28,13:56,Salmon Nigiri (2pcs),Sushi,Regular,3,Rp 38.000,Rp 18.000,Rp 114.000,e-wallet
+TRX-SUSHI-20260728-0013,2026-07-28,13:56,Ramen Tonkotsu,Ramen,Regular,2,Rp 65.000,Rp 29.000,Rp 130.000,e-wallet
+TRX-SUSHI-20260728-0014,2026-07-28,13:24,Tuna Sashimi (5pcs),Sashimi,Regular,3,Rp 65.000,Rp 32.000,Rp 195.000,e-wallet
+TRX-SUSHI-20260728-0014,2026-07-28,13:24,Salmon Nigiri (2pcs),Sushi,Regular,1,Rp 38.000,Rp 18.000,Rp 38.000,e-wallet
+TRX-SUSHI-20260728-0015,2026-07-28,20:08,Mochi Ice Cream (3pcs),Dessert,Regular,3,Rp 32.000,Rp 13.000,Rp 96.000,cash
+TRX-SUSHI-20260728-0015,2026-07-28,20:08,Salmon Nigiri (2pcs),Sushi,Regular,2,Rp 38.000,Rp 18.000,Rp 76.000,cash
+TRX-SUSHI-20260728-0016,2026-07-28,13:38,Miso Soup,Appetizer,Regular,2,Rp 18.000,Rp 6.000,Rp 36.000,e-wallet
+TRX-SUSHI-20260728-0016,2026-07-28,13:38,Dragon Roll,Sushi,Regular,1,Rp 62.000,Rp 28.000,Rp 62.000,e-wallet
+TRX-SUSHI-20260728-0016,2026-07-28,13:38,Salmon Nigiri (2pcs),Sushi,Regular,2,Rp 38.000,Rp 18.000,Rp 76.000,e-wallet
+TRX-SUSHI-20260728-0017,2026-07-28,20:25,Ramen Tonkotsu,Ramen,Regular,3,Rp 65.000,Rp 29.000,Rp 195.000,card
+TRX-SUSHI-20260728-0017,2026-07-28,20:25,Dragon Roll,Sushi,Regular,1,Rp 62.000,Rp 28.000,Rp 62.000,card
+TRX-SUSHI-20260728-0017,2026-07-28,20:25,Mochi Ice Cream (3pcs),Dessert,Regular,1,Rp 32.000,Rp 13.000,Rp 32.000,card
+TRX-SUSHI-20260728-0018,2026-07-28,17:43,Chicken Katsu Curry,Ramen,Regular,2,Rp 58.000,Rp 26.000,Rp 116.000,e-wallet
+TRX-SUSHI-20260728-0019,2026-07-28,17:06,Dragon Roll,Sushi,Regular,3,Rp 62.000,Rp 28.000,Rp 186.000,cash
+TRX-SUSHI-20260728-0019,2026-07-28,17:06,California Roll,Sushi,Regular,3,Rp 48.000,Rp 20.000,Rp 144.000,cash
+TRX-SUSHI-20260728-0020,2026-07-28,14:41,Tuna Sashimi (5pcs),Sashimi,Regular,1,Rp 65.000,Rp 32.000,Rp 65.000,cash
+TRX-SUSHI-20260728-0021,2026-07-28,16:37,Tuna Sashimi (5pcs),Sashimi,Regular,2,Rp 65.000,Rp 32.000,Rp 130.000,e-wallet
+TRX-SUSHI-20260728-0021,2026-07-28,16:37,California Roll,Sushi,Regular,2,Rp 48.000,Rp 20.000,Rp 96.000,e-wallet
+TRX-SUSHI-20260728-0022,2026-07-28,19:56,California Roll,Sushi,Regular,3,Rp 48.000,Rp 20.000,Rp 144.000,e-wallet
+TRX-SUSHI-20260728-0023,2026-07-28,18:55,Salmon Nigiri (2pcs),Sushi,Regular,3,Rp 38.000,Rp 18.000,Rp 114.000,card
+TRX-SUSHI-20260728-0024,2026-07-28,16:58,Tuna Sashimi (5pcs),Sashimi,Regular,1,Rp 65.000,Rp 32.000,Rp 65.000,e-wallet
+TRX-SUSHI-20260728-0024,2026-07-28,16:58,Salmon Nigiri (2pcs),Sushi,Regular,2,Rp 38.000,Rp 18.000,Rp 76.000,e-wallet
+TRX-SUSHI-20260728-0024,2026-07-28,16:58,Dragon Roll,Sushi,Regular,2,Rp 62.000,Rp 28.000,Rp 124.000,e-wallet
+TRX-SUSHI-20260728-0025,2026-07-28,17:38,Tuna Sashimi (5pcs),Sashimi,Regular,2,Rp 65.000,Rp 32.000,Rp 130.000,card
+TRX-SUSHI-20260728-0025,2026-07-28,17:38,California Roll,Sushi,Regular,3,Rp 48.000,Rp 20.000,Rp 144.000,card
+TRX-SUSHI-20260728-0026,2026-07-28,16:56,California Roll,Sushi,Regular,3,Rp 48.000,Rp 20.000,Rp 144.000,e-wallet
+TRX-SUSHI-20260728-0026,2026-07-28,16:56,Dragon Roll,Sushi,Regular,2,Rp 62.000,Rp 28.000,Rp 124.000,e-wallet
+TRX-SUSHI-20260728-0026,2026-07-28,16:56,Green Tea,Beverage,Regular,1,Rp 15.000,Rp 5.000,Rp 15.000,e-wallet
+TRX-SUSHI-20260728-0027,2026-07-28,11:16,California Roll,Sushi,Regular,2,Rp 48.000,Rp 20.000,Rp 96.000,e-wallet
+TRX-SUSHI-20260728-0027,2026-07-28,11:16,Dragon Roll,Sushi,Regular,1,Rp 62.000,Rp 28.000,Rp 62.000,e-wallet
+TRX-SUSHI-20260728-0028,2026-07-28,14:54,Salmon Nigiri (2pcs),Sushi,Regular,3,Rp 38.000,Rp 18.000,Rp 114.000,cash
+TRX-SUSHI-20260728-0028,2026-07-28,14:54,Dragon Roll,Sushi,Regular,3,Rp 62.000,Rp 28.000,Rp 186.000,cash
+TRX-SUSHI-20260728-0028,2026-07-28,14:54,California Roll,Sushi,Regular,1,Rp 48.000,Rp 20.000,Rp 48.000,cash
+TRX-SUSHI-20260728-0029,2026-07-28,19:26,Dragon Roll,Sushi,Regular,3,Rp 62.000,Rp 28.000,Rp 186.000,e-wallet
+TRX-SUSHI-20260728-0029,2026-07-28,19:26,Salmon Nigiri (2pcs),Sushi,Regular,1,Rp 38.000,Rp 18.000,Rp 38.000,e-wallet
+TRX-SUSHI-20260728-0029,2026-07-28,19:26,Tuna Sashimi (5pcs),Sashimi,Regular,1,Rp 65.000,Rp 32.000,Rp 65.000,e-wallet
+TRX-SUSHI-20260728-0030,2026-07-28,11:45,California Roll,Sushi,Regular,3,Rp 48.000,Rp 20.000,Rp 144.000,e-wallet
+TRX-SUSHI-20260728-0031,2026-07-28,17:00,Dragon Roll,Sushi,Regular,2,Rp 62.000,Rp 28.000,Rp 124.000,e-wallet
+TRX-SUSHI-20260728-0031,2026-07-28,17:00,Ramen Tonkotsu,Ramen,Regular,1,Rp 65.000,Rp 29.000,Rp 65.000,e-wallet
+TRX-SUSHI-20260728-0032,2026-07-28,11:58,California Roll,Sushi,Regular,3,Rp 48.000,Rp 20.000,Rp 144.000,cash
+TRX-SUSHI-20260728-0032,2026-07-28,11:58,Tuna Sashimi (5pcs),Sashimi,Regular,2,Rp 65.000,Rp 32.000,Rp 130.000,cash
+TRX-SUSHI-20260729-0001,2026-07-29,13:03,Green Tea,Beverage,Regular,3,Rp 15.000,Rp 5.000,Rp 45.000,e-wallet
+TRX-SUSHI-20260729-0001,2026-07-29,13:03,Salmon Nigiri (2pcs),Sushi,Regular,3,Rp 38.000,Rp 18.000,Rp 114.000,e-wallet
+TRX-SUSHI-20260729-0001,2026-07-29,13:03,Dragon Roll,Sushi,Regular,1,Rp 62.000,Rp 28.000,Rp 62.000,e-wallet
+TRX-SUSHI-20260729-0002,2026-07-29,17:36,Miso Soup,Appetizer,Regular,2,Rp 18.000,Rp 6.000,Rp 36.000,cash
+TRX-SUSHI-20260729-0002,2026-07-29,17:36,Salmon Nigiri (2pcs),Sushi,Regular,3,Rp 38.000,Rp 18.000,Rp 114.000,cash
+TRX-SUSHI-20260729-0003,2026-07-29,15:18,Salmon Nigiri (2pcs),Sushi,Regular,2,Rp 38.000,Rp 18.000,Rp 76.000,e-wallet
+TRX-SUSHI-20260729-0003,2026-07-29,15:18,Dragon Roll,Sushi,Regular,3,Rp 62.000,Rp 28.000,Rp 186.000,e-wallet
+TRX-SUSHI-20260729-0003,2026-07-29,15:18,Green Tea,Beverage,Regular,2,Rp 15.000,Rp 5.000,Rp 30.000,e-wallet
+TRX-SUSHI-20260729-0004,2026-07-29,11:37,California Roll,Sushi,Regular,2,Rp 48.000,Rp 20.000,Rp 96.000,cash
+TRX-SUSHI-20260729-0005,2026-07-29,20:49,Dragon Roll,Sushi,Regular,1,Rp 62.000,Rp 28.000,Rp 62.000,e-wallet
+TRX-SUSHI-20260729-0006,2026-07-29,16:18,Tuna Sashimi (5pcs),Sashimi,Regular,1,Rp 65.000,Rp 32.000,Rp 65.000,e-wallet
+TRX-SUSHI-20260729-0006,2026-07-29,16:18,Mochi Ice Cream (3pcs),Dessert,Regular,3,Rp 32.000,Rp 13.000,Rp 96.000,e-wallet
+TRX-SUSHI-20260729-0006,2026-07-29,16:18,Edamame,Appetizer,Regular,1,Rp 22.000,Rp 8.000,Rp 22.000,e-wallet
+TRX-SUSHI-20260729-0007,2026-07-29,19:19,California Roll,Sushi,Regular,3,Rp 48.000,Rp 20.000,Rp 144.000,card
+TRX-SUSHI-20260729-0008,2026-07-29,20:37,Dragon Roll,Sushi,Regular,2,Rp 62.000,Rp 28.000,Rp 124.000,cash
+TRX-SUSHI-20260729-0009,2026-07-29,20:12,Chicken Katsu Curry,Ramen,Regular,2,Rp 58.000,Rp 26.000,Rp 116.000,e-wallet
+TRX-SUSHI-20260729-0009,2026-07-29,20:12,Edamame,Appetizer,Regular,3,Rp 22.000,Rp 8.000,Rp 66.000,e-wallet
+TRX-SUSHI-20260729-0010,2026-07-29,18:38,Tuna Sashimi (5pcs),Sashimi,Regular,3,Rp 65.000,Rp 32.000,Rp 195.000,cash
+TRX-SUSHI-20260729-0010,2026-07-29,18:38,Miso Soup,Appetizer,Regular,2,Rp 18.000,Rp 6.000,Rp 36.000,cash
+TRX-SUSHI-20260729-0010,2026-07-29,18:38,Dragon Roll,Sushi,Regular,3,Rp 62.000,Rp 28.000,Rp 186.000,cash
+TRX-SUSHI-20260729-0011,2026-07-29,17:20,Mochi Ice Cream (3pcs),Dessert,Regular,2,Rp 32.000,Rp 13.000,Rp 64.000,card
+TRX-SUSHI-20260729-0011,2026-07-29,17:20,Dragon Roll,Sushi,Regular,2,Rp 62.000,Rp 28.000,Rp 124.000,card
+TRX-SUSHI-20260729-0012,2026-07-29,14:58,Salmon Nigiri (2pcs),Sushi,Regular,3,Rp 38.000,Rp 18.000,Rp 114.000,e-wallet
+TRX-SUSHI-20260729-0012,2026-07-29,14:58,California Roll,Sushi,Regular,2,Rp 48.000,Rp 20.000,Rp 96.000,e-wallet
+TRX-SUSHI-20260729-0013,2026-07-29,13:02,Tuna Sashimi (5pcs),Sashimi,Regular,1,Rp 65.000,Rp 32.000,Rp 65.000,e-wallet
+TRX-SUSHI-20260729-0013,2026-07-29,13:02,Salmon Nigiri (2pcs),Sushi,Regular,1,Rp 38.000,Rp 18.000,Rp 38.000,e-wallet
+TRX-SUSHI-20260729-0013,2026-07-29,13:02,Mochi Ice Cream (3pcs),Dessert,Regular,3,Rp 32.000,Rp 13.000,Rp 96.000,e-wallet
+TRX-SUSHI-20260729-0014,2026-07-29,12:15,California Roll,Sushi,Regular,1,Rp 48.000,Rp 20.000,Rp 48.000,e-wallet
+TRX-SUSHI-20260729-0014,2026-07-29,12:15,Dragon Roll,Sushi,Regular,1,Rp 62.000,Rp 28.000,Rp 62.000,e-wallet
+TRX-SUSHI-20260729-0015,2026-07-29,14:59,Salmon Nigiri (2pcs),Sushi,Regular,1,Rp 38.000,Rp 18.000,Rp 38.000,e-wallet
+TRX-SUSHI-20260729-0015,2026-07-29,14:59,Green Tea,Beverage,Regular,2,Rp 15.000,Rp 5.000,Rp 30.000,e-wallet
+TRX-SUSHI-20260729-0015,2026-07-29,14:59,California Roll,Sushi,Regular,1,Rp 48.000,Rp 20.000,Rp 48.000,e-wallet
+TRX-SUSHI-20260729-0016,2026-07-29,14:44,Tuna Sashimi (5pcs),Sashimi,Regular,1,Rp 65.000,Rp 32.000,Rp 65.000,e-wallet
+TRX-SUSHI-20260729-0016,2026-07-29,14:44,Salmon Nigiri (2pcs),Sushi,Regular,3,Rp 38.000,Rp 18.000,Rp 114.000,e-wallet
+TRX-SUSHI-20260729-0017,2026-07-29,19:18,Tuna Sashimi (5pcs),Sashimi,Regular,1,Rp 65.000,Rp 32.000,Rp 65.000,e-wallet
+TRX-SUSHI-20260729-0017,2026-07-29,19:18,Salmon Nigiri (2pcs),Sushi,Regular,1,Rp 38.000,Rp 18.000,Rp 38.000,e-wallet
+TRX-SUSHI-20260729-0017,2026-07-29,19:18,Ramen Tonkotsu,Ramen,Regular,3,Rp 65.000,Rp 29.000,Rp 195.000,e-wallet
+TRX-SUSHI-20260729-0018,2026-07-29,12:27,Dragon Roll,Sushi,Regular,3,Rp 62.000,Rp 28.000,Rp 186.000,cash
+TRX-SUSHI-20260729-0018,2026-07-29,12:27,Salmon Nigiri (2pcs),Sushi,Regular,2,Rp 38.000,Rp 18.000,Rp 76.000,cash
+TRX-SUSHI-20260729-0019,2026-07-29,11:48,Tuna Sashimi (5pcs),Sashimi,Regular,2,Rp 65.000,Rp 32.000,Rp 130.000,cash
+TRX-SUSHI-20260729-0019,2026-07-29,11:48,California Roll,Sushi,Regular,3,Rp 48.000,Rp 20.000,Rp 144.000,cash
+TRX-SUSHI-20260729-0019,2026-07-29,11:48,Salmon Nigiri (2pcs),Sushi,Regular,3,Rp 38.000,Rp 18.000,Rp 114.000,cash
+TRX-SUSHI-20260729-0020,2026-07-29,20:03,Tuna Sashimi (5pcs),Sashimi,Regular,3,Rp 65.000,Rp 32.000,Rp 195.000,e-wallet
+TRX-SUSHI-20260729-0021,2026-07-29,13:15,Ramen Tonkotsu,Ramen,Regular,1,Rp 65.000,Rp 29.000,Rp 65.000,card
+TRX-SUSHI-20260729-0021,2026-07-29,13:15,Green Tea,Beverage,Regular,2,Rp 15.000,Rp 5.000,Rp 30.000,card
+TRX-SUSHI-20260729-0022,2026-07-29,14:27,Dragon Roll,Sushi,Regular,2,Rp 62.000,Rp 28.000,Rp 124.000,card
+TRX-SUSHI-20260729-0022,2026-07-29,14:27,Miso Soup,Appetizer,Regular,1,Rp 18.000,Rp 6.000,Rp 18.000,card
+TRX-SUSHI-20260729-0022,2026-07-29,14:27,Salmon Nigiri (2pcs),Sushi,Regular,1,Rp 38.000,Rp 18.000,Rp 38.000,card
+TRX-SUSHI-20260729-0023,2026-07-29,12:40,Edamame,Appetizer,Regular,2,Rp 22.000,Rp 8.000,Rp 44.000,e-wallet
+TRX-SUSHI-20260729-0023,2026-07-29,12:40,Dragon Roll,Sushi,Regular,1,Rp 62.000,Rp 28.000,Rp 62.000,e-wallet
+TRX-SUSHI-20260729-0023,2026-07-29,12:40,Salmon Nigiri (2pcs),Sushi,Regular,2,Rp 38.000,Rp 18.000,Rp 76.000,e-wallet
+TRX-SUSHI-20260729-0024,2026-07-29,16:37,California Roll,Sushi,Regular,1,Rp 48.000,Rp 20.000,Rp 48.000,cash
+TRX-SUSHI-20260729-0024,2026-07-29,16:37,Tuna Sashimi (5pcs),Sashimi,Regular,2,Rp 65.000,Rp 32.000,Rp 130.000,cash
+TRX-SUSHI-20260729-0024,2026-07-29,16:37,Ramen Tonkotsu,Ramen,Regular,2,Rp 65.000,Rp 29.000,Rp 130.000,cash
+TRX-SUSHI-20260729-0025,2026-07-29,14:15,Salmon Nigiri (2pcs),Sushi,Regular,1,Rp 38.000,Rp 18.000,Rp 38.000,e-wallet
+TRX-SUSHI-20260729-0026,2026-07-29,14:54,Dragon Roll,Sushi,Regular,2,Rp 62.000,Rp 28.000,Rp 124.000,card
+TRX-SUSHI-20260729-0027,2026-07-29,11:20,Dragon Roll,Sushi,Regular,3,Rp 62.000,Rp 28.000,Rp 186.000,e-wallet
+TRX-SUSHI-20260729-0027,2026-07-29,11:20,Tuna Sashimi (5pcs),Sashimi,Regular,2,Rp 65.000,Rp 32.000,Rp 130.000,e-wallet
+TRX-SUSHI-20260729-0027,2026-07-29,11:20,Salmon Nigiri (2pcs),Sushi,Regular,1,Rp 38.000,Rp 18.000,Rp 38.000,e-wallet
+TRX-SUSHI-20260729-0028,2026-07-29,19:02,Salmon Nigiri (2pcs),Sushi,Regular,1,Rp 38.000,Rp 18.000,Rp 38.000,cash
+TRX-SUSHI-20260729-0028,2026-07-29,19:02,Green Tea,Beverage,Regular,2,Rp 15.000,Rp 5.000,Rp 30.000,cash
+TRX-SUSHI-20260729-0028,2026-07-29,19:02,Miso Soup,Appetizer,Regular,2,Rp 18.000,Rp 6.000,Rp 36.000,cash
+TRX-SUSHI-20260729-0029,2026-07-29,13:41,Tuna Sashimi (5pcs),Sashimi,Regular,3,Rp 65.000,Rp 32.000,Rp 195.000,e-wallet
+TRX-SUSHI-20260729-0030,2026-07-29,15:31,Dragon Roll,Sushi,Regular,1,Rp 62.000,Rp 28.000,Rp 62.000,e-wallet
+TRX-SUSHI-20260729-0031,2026-07-29,19:21,Edamame,Appetizer,Regular,1,Rp 22.000,Rp 8.000,Rp 22.000,cash
+TRX-SUSHI-20260729-0031,2026-07-29,19:21,Mochi Ice Cream (3pcs),Dessert,Regular,2,Rp 32.000,Rp 13.000,Rp 64.000,cash
+TRX-SUSHI-20260729-0032,2026-07-29,15:28,California Roll,Sushi,Regular,1,Rp 48.000,Rp 20.000,Rp 48.000,cash
+TRX-SUSHI-20260729-0033,2026-07-29,13:48,California Roll,Sushi,Regular,3,Rp 48.000,Rp 20.000,Rp 144.000,card
+TRX-SUSHI-20260729-0034,2026-07-29,11:41,California Roll,Sushi,Regular,3,Rp 48.000,Rp 20.000,Rp 144.000,e-wallet
+TRX-SUSHI-20260729-0034,2026-07-29,11:41,Salmon Nigiri (2pcs),Sushi,Regular,2,Rp 38.000,Rp 18.000,Rp 76.000,e-wallet
+TRX-SUSHI-20260729-0034,2026-07-29,11:41,Dragon Roll,Sushi,Regular,1,Rp 62.000,Rp 28.000,Rp 62.000,e-wallet
+TRX-SUSHI-20260729-0035,2026-07-29,15:46,Green Tea,Beverage,Regular,2,Rp 15.000,Rp 5.000,Rp 30.000,card
+TRX-SUSHI-20260729-0035,2026-07-29,15:46,Dragon Roll,Sushi,Regular,1,Rp 62.000,Rp 28.000,Rp 62.000,card
+TRX-SUSHI-20260729-0036,2026-07-29,18:09,Tuna Sashimi (5pcs),Sashimi,Regular,2,Rp 65.000,Rp 32.000,Rp 130.000,e-wallet
+TRX-SUSHI-20260729-0036,2026-07-29,18:09,Mochi Ice Cream (3pcs),Dessert,Regular,2,Rp 32.000,Rp 13.000,Rp 64.000,e-wallet
+TRX-SUSHI-20260729-0037,2026-07-29,15:10,Tuna Sashimi (5pcs),Sashimi,Regular,2,Rp 65.000,Rp 32.000,Rp 130.000,card
+TRX-SUSHI-20260729-0037,2026-07-29,15:10,California Roll,Sushi,Regular,2,Rp 48.000,Rp 20.000,Rp 96.000,card
+TRX-SUSHI-20260729-0038,2026-07-29,20:49,Salmon Nigiri (2pcs),Sushi,Regular,1,Rp 38.000,Rp 18.000,Rp 38.000,e-wallet
+TRX-SUSHI-20260729-0038,2026-07-29,20:49,California Roll,Sushi,Regular,3,Rp 48.000,Rp 20.000,Rp 144.000,e-wallet
+TRX-SUSHI-20260729-0038,2026-07-29,20:49,Chicken Katsu Curry,Ramen,Regular,3,Rp 58.000,Rp 26.000,Rp 174.000,e-wallet
+TRX-SUSHI-20260730-0001,2026-07-30,12:22,California Roll,Sushi,Regular,3,Rp 48.000,Rp 20.000,Rp 144.000,e-wallet
+TRX-SUSHI-20260730-0002,2026-07-30,12:58,Tuna Sashimi (5pcs),Sashimi,Regular,2,Rp 65.000,Rp 32.000,Rp 130.000,cash
+TRX-SUSHI-20260730-0002,2026-07-30,12:58,Dragon Roll,Sushi,Regular,2,Rp 62.000,Rp 28.000,Rp 124.000,cash
+TRX-SUSHI-20260730-0003,2026-07-30,14:32,Green Tea,Beverage,Regular,1,Rp 15.000,Rp 5.000,Rp 15.000,e-wallet
+TRX-SUSHI-20260730-0004,2026-07-30,20:37,Tuna Sashimi (5pcs),Sashimi,Regular,1,Rp 65.000,Rp 32.000,Rp 65.000,e-wallet
+TRX-SUSHI-20260730-0004,2026-07-30,20:37,Miso Soup,Appetizer,Regular,1,Rp 18.000,Rp 6.000,Rp 18.000,e-wallet
+TRX-SUSHI-20260730-0004,2026-07-30,20:37,Salmon Nigiri (2pcs),Sushi,Regular,2,Rp 38.000,Rp 18.000,Rp 76.000,e-wallet
+TRX-SUSHI-20260730-0005,2026-07-30,11:05,Tuna Sashimi (5pcs),Sashimi,Regular,2,Rp 65.000,Rp 32.000,Rp 130.000,e-wallet
+TRX-SUSHI-20260730-0005,2026-07-30,11:05,Green Tea,Beverage,Regular,3,Rp 15.000,Rp 5.000,Rp 45.000,e-wallet
+TRX-SUSHI-20260730-0005,2026-07-30,11:05,California Roll,Sushi,Regular,1,Rp 48.000,Rp 20.000,Rp 48.000,e-wallet
+TRX-SUSHI-20260730-0006,2026-07-30,17:44,Tuna Sashimi (5pcs),Sashimi,Regular,1,Rp 65.000,Rp 32.000,Rp 65.000,cash
+TRX-SUSHI-20260730-0006,2026-07-30,17:44,California Roll,Sushi,Regular,2,Rp 48.000,Rp 20.000,Rp 96.000,cash
+TRX-SUSHI-20260730-0006,2026-07-30,17:44,Dragon Roll,Sushi,Regular,3,Rp 62.000,Rp 28.000,Rp 186.000,cash
+TRX-SUSHI-20260730-0007,2026-07-30,18:48,Dragon Roll,Sushi,Regular,1,Rp 62.000,Rp 28.000,Rp 62.000,cash
+TRX-SUSHI-20260730-0008,2026-07-30,16:03,California Roll,Sushi,Regular,3,Rp 48.000,Rp 20.000,Rp 144.000,card
+TRX-SUSHI-20260730-0008,2026-07-30,16:03,Miso Soup,Appetizer,Regular,1,Rp 18.000,Rp 6.000,Rp 18.000,card
+TRX-SUSHI-20260730-0009,2026-07-30,17:18,Dragon Roll,Sushi,Regular,1,Rp 62.000,Rp 28.000,Rp 62.000,e-wallet
+TRX-SUSHI-20260730-0009,2026-07-30,17:18,California Roll,Sushi,Regular,1,Rp 48.000,Rp 20.000,Rp 48.000,e-wallet
+TRX-SUSHI-20260730-0009,2026-07-30,17:18,Miso Soup,Appetizer,Regular,3,Rp 18.000,Rp 6.000,Rp 54.000,e-wallet
+TRX-SUSHI-20260730-0010,2026-07-30,13:26,California Roll,Sushi,Regular,1,Rp 48.000,Rp 20.000,Rp 48.000,e-wallet
+TRX-SUSHI-20260730-0010,2026-07-30,13:26,Tuna Sashimi (5pcs),Sashimi,Regular,2,Rp 65.000,Rp 32.000,Rp 130.000,e-wallet
+TRX-SUSHI-20260730-0011,2026-07-30,11:58,Dragon Roll,Sushi,Regular,1,Rp 62.000,Rp 28.000,Rp 62.000,card
+TRX-SUSHI-20260730-0012,2026-07-30,20:19,Chicken Katsu Curry,Ramen,Regular,3,Rp 58.000,Rp 26.000,Rp 174.000,e-wallet
+TRX-SUSHI-20260730-0012,2026-07-30,20:19,California Roll,Sushi,Regular,1,Rp 48.000,Rp 20.000,Rp 48.000,e-wallet
+TRX-SUSHI-20260730-0012,2026-07-30,20:19,Dragon Roll,Sushi,Regular,1,Rp 62.000,Rp 28.000,Rp 62.000,e-wallet
+TRX-SUSHI-20260730-0013,2026-07-30,17:23,Tuna Sashimi (5pcs),Sashimi,Regular,2,Rp 65.000,Rp 32.000,Rp 130.000,card
+TRX-SUSHI-20260730-0013,2026-07-30,17:23,Salmon Nigiri (2pcs),Sushi,Regular,2,Rp 38.000,Rp 18.000,Rp 76.000,card
+TRX-SUSHI-20260730-0013,2026-07-30,17:23,California Roll,Sushi,Regular,3,Rp 48.000,Rp 20.000,Rp 144.000,card
+TRX-SUSHI-20260730-0014,2026-07-30,15:22,California Roll,Sushi,Regular,1,Rp 48.000,Rp 20.000,Rp 48.000,e-wallet
+TRX-SUSHI-20260730-0015,2026-07-30,14:44,Dragon Roll,Sushi,Regular,3,Rp 62.000,Rp 28.000,Rp 186.000,card
+TRX-SUSHI-20260730-0015,2026-07-30,14:44,Salmon Nigiri (2pcs),Sushi,Regular,2,Rp 38.000,Rp 18.000,Rp 76.000,card
+TRX-SUSHI-20260730-0016,2026-07-30,13:01,California Roll,Sushi,Regular,2,Rp 48.000,Rp 20.000,Rp 96.000,e-wallet
+TRX-SUSHI-20260730-0016,2026-07-30,13:01,Dragon Roll,Sushi,Regular,3,Rp 62.000,Rp 28.000,Rp 186.000,e-wallet
+TRX-SUSHI-20260730-0016,2026-07-30,13:01,Salmon Nigiri (2pcs),Sushi,Regular,1,Rp 38.000,Rp 18.000,Rp 38.000,e-wallet
+TRX-SUSHI-20260730-0017,2026-07-30,19:32,California Roll,Sushi,Regular,3,Rp 48.000,Rp 20.000,Rp 144.000,e-wallet
+TRX-SUSHI-20260730-0017,2026-07-30,19:32,Dragon Roll,Sushi,Regular,1,Rp 62.000,Rp 28.000,Rp 62.000,e-wallet
+TRX-SUSHI-20260730-0017,2026-07-30,19:32,Green Tea,Beverage,Regular,3,Rp 15.000,Rp 5.000,Rp 45.000,e-wallet
+TRX-SUSHI-20260730-0018,2026-07-30,20:11,Tuna Sashimi (5pcs),Sashimi,Regular,1,Rp 65.000,Rp 32.000,Rp 65.000,e-wallet
+TRX-SUSHI-20260730-0018,2026-07-30,20:11,Dragon Roll,Sushi,Regular,2,Rp 62.000,Rp 28.000,Rp 124.000,e-wallet
+TRX-SUSHI-20260730-0019,2026-07-30,15:25,Dragon Roll,Sushi,Regular,3,Rp 62.000,Rp 28.000,Rp 186.000,e-wallet
+TRX-SUSHI-20260730-0020,2026-07-30,20:49,Dragon Roll,Sushi,Regular,3,Rp 62.000,Rp 28.000,Rp 186.000,e-wallet
+TRX-SUSHI-20260730-0021,2026-07-30,14:20,Salmon Nigiri (2pcs),Sushi,Regular,2,Rp 38.000,Rp 18.000,Rp 76.000,e-wallet
+TRX-SUSHI-20260730-0021,2026-07-30,14:20,Miso Soup,Appetizer,Regular,2,Rp 18.000,Rp 6.000,Rp 36.000,e-wallet
+TRX-SUSHI-20260730-0022,2026-07-30,19:57,Dragon Roll,Sushi,Regular,3,Rp 62.000,Rp 28.000,Rp 186.000,card
+TRX-SUSHI-20260730-0022,2026-07-30,19:57,Tuna Sashimi (5pcs),Sashimi,Regular,2,Rp 65.000,Rp 32.000,Rp 130.000,card
+TRX-SUSHI-20260730-0023,2026-07-30,11:28,Edamame,Appetizer,Regular,1,Rp 22.000,Rp 8.000,Rp 22.000,card
+TRX-SUSHI-20260730-0023,2026-07-30,11:28,Salmon Nigiri (2pcs),Sushi,Regular,1,Rp 38.000,Rp 18.000,Rp 38.000,card
+TRX-SUSHI-20260730-0023,2026-07-30,11:28,Tuna Sashimi (5pcs),Sashimi,Regular,1,Rp 65.000,Rp 32.000,Rp 65.000,card
+TRX-SUSHI-20260730-0024,2026-07-30,17:47,California Roll,Sushi,Regular,2,Rp 48.000,Rp 20.000,Rp 96.000,card
+TRX-SUSHI-20260730-0025,2026-07-30,18:14,Salmon Nigiri (2pcs),Sushi,Regular,3,Rp 38.000,Rp 18.000,Rp 114.000,e-wallet
+TRX-SUSHI-20260730-0025,2026-07-30,18:14,Dragon Roll,Sushi,Regular,2,Rp 62.000,Rp 28.000,Rp 124.000,e-wallet
+TRX-SUSHI-20260730-0025,2026-07-30,18:14,California Roll,Sushi,Regular,1,Rp 48.000,Rp 20.000,Rp 48.000,e-wallet
+TRX-SUSHI-20260730-0026,2026-07-30,18:52,Tuna Sashimi (5pcs),Sashimi,Regular,3,Rp 65.000,Rp 32.000,Rp 195.000,e-wallet
+TRX-SUSHI-20260730-0027,2026-07-30,15:14,Salmon Nigiri (2pcs),Sushi,Regular,1,Rp 38.000,Rp 18.000,Rp 38.000,e-wallet
+TRX-SUSHI-20260730-0027,2026-07-30,15:14,Tuna Sashimi (5pcs),Sashimi,Regular,3,Rp 65.000,Rp 32.000,Rp 195.000,e-wallet
+TRX-SUSHI-20260730-0028,2026-07-30,15:08,Dragon Roll,Sushi,Regular,1,Rp 62.000,Rp 28.000,Rp 62.000,e-wallet
+TRX-SUSHI-20260730-0028,2026-07-30,15:08,Tuna Sashimi (5pcs),Sashimi,Regular,3,Rp 65.000,Rp 32.000,Rp 195.000,e-wallet
+TRX-SUSHI-20260730-0028,2026-07-30,15:08,Mochi Ice Cream (3pcs),Dessert,Regular,3,Rp 32.000,Rp 13.000,Rp 96.000,e-wallet
+TRX-SUSHI-20260730-0029,2026-07-30,18:02,Miso Soup,Appetizer,Regular,1,Rp 18.000,Rp 6.000,Rp 18.000,card
+TRX-SUSHI-20260730-0030,2026-07-30,19:11,Salmon Nigiri (2pcs),Sushi,Regular,1,Rp 38.000,Rp 18.000,Rp 38.000,card
+TRX-SUSHI-20260730-0031,2026-07-30,15:26,Green Tea,Beverage,Regular,3,Rp 15.000,Rp 5.000,Rp 45.000,card
+TRX-SUSHI-20260730-0031,2026-07-30,15:26,California Roll,Sushi,Regular,2,Rp 48.000,Rp 20.000,Rp 96.000,card
+TRX-SUSHI-20260730-0031,2026-07-30,15:26,Miso Soup,Appetizer,Regular,3,Rp 18.000,Rp 6.000,Rp 54.000,card
+TRX-SUSHI-20260730-0032,2026-07-30,15:15,California Roll,Sushi,Regular,2,Rp 48.000,Rp 20.000,Rp 96.000,card
+TRX-SUSHI-20260730-0032,2026-07-30,15:15,Salmon Nigiri (2pcs),Sushi,Regular,1,Rp 38.000,Rp 18.000,Rp 38.000,card
+TRX-SUSHI-20260730-0033,2026-07-30,18:59,Miso Soup,Appetizer,Regular,2,Rp 18.000,Rp 6.000,Rp 36.000,cash
+TRX-SUSHI-20260730-0034,2026-07-30,12:34,Mochi Ice Cream (3pcs),Dessert,Regular,2,Rp 32.000,Rp 13.000,Rp 64.000,e-wallet
+TRX-SUSHI-20260730-0034,2026-07-30,12:34,Chicken Katsu Curry,Ramen,Regular,2,Rp 58.000,Rp 26.000,Rp 116.000,e-wallet
+TRX-SUSHI-20260730-0035,2026-07-30,14:08,Salmon Nigiri (2pcs),Sushi,Regular,3,Rp 38.000,Rp 18.000,Rp 114.000,card
+TRX-SUSHI-20260730-0036,2026-07-30,13:40,Tuna Sashimi (5pcs),Sashimi,Regular,3,Rp 65.000,Rp 32.000,Rp 195.000,e-wallet
+TRX-SUSHI-20260730-0036,2026-07-30,13:40,Miso Soup,Appetizer,Regular,2,Rp 18.000,Rp 6.000,Rp 36.000,e-wallet
+TRX-SUSHI-20260730-0036,2026-07-30,13:40,Salmon Nigiri (2pcs),Sushi,Regular,2,Rp 38.000,Rp 18.000,Rp 76.000,e-wallet
+TRX-SUSHI-20260730-0037,2026-07-30,11:24,Salmon Nigiri (2pcs),Sushi,Regular,2,Rp 38.000,Rp 18.000,Rp 76.000,card
+TRX-SUSHI-20260730-0037,2026-07-30,11:24,Mochi Ice Cream (3pcs),Dessert,Regular,3,Rp 32.000,Rp 13.000,Rp 96.000,card
+TRX-SUSHI-20260730-0037,2026-07-30,11:24,Chicken Katsu Curry,Ramen,Regular,3,Rp 58.000,Rp 26.000,Rp 174.000,card
+TRX-SUSHI-20260731-0001,2026-07-31,16:52,Tuna Sashimi (5pcs),Sashimi,Regular,1,Rp 65.000,Rp 32.000,Rp 65.000,e-wallet
+TRX-SUSHI-20260731-0001,2026-07-31,16:52,Dragon Roll,Sushi,Regular,1,Rp 62.000,Rp 28.000,Rp 62.000,e-wallet
+TRX-SUSHI-20260731-0002,2026-07-31,17:22,Salmon Nigiri (2pcs),Sushi,Regular,3,Rp 38.000,Rp 18.000,Rp 114.000,cash
+TRX-SUSHI-20260731-0003,2026-07-31,16:11,Salmon Nigiri (2pcs),Sushi,Regular,2,Rp 38.000,Rp 18.000,Rp 76.000,e-wallet
+TRX-SUSHI-20260731-0003,2026-07-31,16:11,Dragon Roll,Sushi,Regular,3,Rp 62.000,Rp 28.000,Rp 186.000,e-wallet
+TRX-SUSHI-20260731-0003,2026-07-31,16:11,Tuna Sashimi (5pcs),Sashimi,Regular,2,Rp 65.000,Rp 32.000,Rp 130.000,e-wallet
+TRX-SUSHI-20260731-0004,2026-07-31,11:58,Dragon Roll,Sushi,Regular,2,Rp 62.000,Rp 28.000,Rp 124.000,e-wallet
+TRX-SUSHI-20260731-0004,2026-07-31,11:58,Edamame,Appetizer,Regular,3,Rp 22.000,Rp 8.000,Rp 66.000,e-wallet
+TRX-SUSHI-20260731-0004,2026-07-31,11:58,Salmon Nigiri (2pcs),Sushi,Regular,1,Rp 38.000,Rp 18.000,Rp 38.000,e-wallet
+TRX-SUSHI-20260731-0005,2026-07-31,18:19,Tuna Sashimi (5pcs),Sashimi,Regular,1,Rp 65.000,Rp 32.000,Rp 65.000,e-wallet
+TRX-SUSHI-20260731-0005,2026-07-31,18:19,California Roll,Sushi,Regular,1,Rp 48.000,Rp 20.000,Rp 48.000,e-wallet
+TRX-SUSHI-20260731-0005,2026-07-31,18:19,Dragon Roll,Sushi,Regular,3,Rp 62.000,Rp 28.000,Rp 186.000,e-wallet
+TRX-SUSHI-20260731-0006,2026-07-31,19:02,Salmon Nigiri (2pcs),Sushi,Regular,3,Rp 38.000,Rp 18.000,Rp 114.000,e-wallet
+TRX-SUSHI-20260731-0007,2026-07-31,11:45,Salmon Nigiri (2pcs),Sushi,Regular,3,Rp 38.000,Rp 18.000,Rp 114.000,e-wallet
+TRX-SUSHI-20260731-0007,2026-07-31,11:45,Green Tea,Beverage,Regular,3,Rp 15.000,Rp 5.000,Rp 45.000,e-wallet
+TRX-SUSHI-20260731-0007,2026-07-31,11:45,Edamame,Appetizer,Regular,1,Rp 22.000,Rp 8.000,Rp 22.000,e-wallet
+TRX-SUSHI-20260731-0008,2026-07-31,20:53,Tuna Sashimi (5pcs),Sashimi,Regular,2,Rp 65.000,Rp 32.000,Rp 130.000,card
+TRX-SUSHI-20260731-0008,2026-07-31,20:53,Green Tea,Beverage,Regular,1,Rp 15.000,Rp 5.000,Rp 15.000,card
+TRX-SUSHI-20260731-0009,2026-07-31,14:54,Salmon Nigiri (2pcs),Sushi,Regular,1,Rp 38.000,Rp 18.000,Rp 38.000,cash
+TRX-SUSHI-20260731-0009,2026-07-31,14:54,Dragon Roll,Sushi,Regular,3,Rp 62.000,Rp 28.000,Rp 186.000,cash
+TRX-SUSHI-20260731-0009,2026-07-31,14:54,Green Tea,Beverage,Regular,3,Rp 15.000,Rp 5.000,Rp 45.000,cash
+TRX-SUSHI-20260731-0010,2026-07-31,17:06,Ramen Tonkotsu,Ramen,Regular,3,Rp 65.000,Rp 29.000,Rp 195.000,card
+TRX-SUSHI-20260731-0010,2026-07-31,17:06,California Roll,Sushi,Regular,3,Rp 48.000,Rp 20.000,Rp 144.000,card
+TRX-SUSHI-20260731-0010,2026-07-31,17:06,Salmon Nigiri (2pcs),Sushi,Regular,2,Rp 38.000,Rp 18.000,Rp 76.000,card
+TRX-SUSHI-20260731-0011,2026-07-31,20:04,Salmon Nigiri (2pcs),Sushi,Regular,2,Rp 38.000,Rp 18.000,Rp 76.000,e-wallet
+TRX-SUSHI-20260731-0011,2026-07-31,20:04,California Roll,Sushi,Regular,3,Rp 48.000,Rp 20.000,Rp 144.000,e-wallet
+TRX-SUSHI-20260731-0011,2026-07-31,20:04,Dragon Roll,Sushi,Regular,2,Rp 62.000,Rp 28.000,Rp 124.000,e-wallet
+TRX-SUSHI-20260731-0012,2026-07-31,17:03,Dragon Roll,Sushi,Regular,2,Rp 62.000,Rp 28.000,Rp 124.000,card
+TRX-SUSHI-20260731-0013,2026-07-31,11:27,Salmon Nigiri (2pcs),Sushi,Regular,3,Rp 38.000,Rp 18.000,Rp 114.000,card
+TRX-SUSHI-20260731-0014,2026-07-31,20:41,Dragon Roll,Sushi,Regular,1,Rp 62.000,Rp 28.000,Rp 62.000,e-wallet
+TRX-SUSHI-20260731-0014,2026-07-31,20:41,California Roll,Sushi,Regular,2,Rp 48.000,Rp 20.000,Rp 96.000,e-wallet
+TRX-SUSHI-20260731-0015,2026-07-31,14:10,Tuna Sashimi (5pcs),Sashimi,Regular,3,Rp 65.000,Rp 32.000,Rp 195.000,card
+TRX-SUSHI-20260731-0015,2026-07-31,14:10,California Roll,Sushi,Regular,3,Rp 48.000,Rp 20.000,Rp 144.000,card
+TRX-SUSHI-20260731-0016,2026-07-31,15:59,California Roll,Sushi,Regular,1,Rp 48.000,Rp 20.000,Rp 48.000,cash
+TRX-SUSHI-20260731-0016,2026-07-31,15:59,Mochi Ice Cream (3pcs),Dessert,Regular,3,Rp 32.000,Rp 13.000,Rp 96.000,cash
+TRX-SUSHI-20260731-0017,2026-07-31,16:14,Salmon Nigiri (2pcs),Sushi,Regular,1,Rp 38.000,Rp 18.000,Rp 38.000,card
+TRX-SUSHI-20260731-0018,2026-07-31,13:42,Dragon Roll,Sushi,Regular,1,Rp 62.000,Rp 28.000,Rp 62.000,e-wallet
+TRX-SUSHI-20260731-0019,2026-07-31,16:26,Tuna Sashimi (5pcs),Sashimi,Regular,3,Rp 65.000,Rp 32.000,Rp 195.000,e-wallet
+TRX-SUSHI-20260731-0019,2026-07-31,16:26,Salmon Nigiri (2pcs),Sushi,Regular,1,Rp 38.000,Rp 18.000,Rp 38.000,e-wallet
+TRX-SUSHI-20260731-0019,2026-07-31,16:26,California Roll,Sushi,Regular,2,Rp 48.000,Rp 20.000,Rp 96.000,e-wallet
+TRX-SUSHI-20260731-0020,2026-07-31,18:04,Tuna Sashimi (5pcs),Sashimi,Regular,3,Rp 65.000,Rp 32.000,Rp 195.000,e-wallet
+TRX-SUSHI-20260731-0020,2026-07-31,18:04,Salmon Nigiri (2pcs),Sushi,Regular,1,Rp 38.000,Rp 18.000,Rp 38.000,e-wallet
+TRX-SUSHI-20260731-0021,2026-07-31,17:12,Edamame,Appetizer,Regular,1,Rp 22.000,Rp 8.000,Rp 22.000,cash
+TRX-SUSHI-20260731-0021,2026-07-31,17:12,Green Tea,Beverage,Regular,3,Rp 15.000,Rp 5.000,Rp 45.000,cash
+TRX-SUSHI-20260731-0021,2026-07-31,17:12,Tuna Sashimi (5pcs),Sashimi,Regular,1,Rp 65.000,Rp 32.000,Rp 65.000,cash
+TRX-SUSHI-20260731-0022,2026-07-31,16:59,Ramen Tonkotsu,Ramen,Regular,1,Rp 65.000,Rp 29.000,Rp 65.000,e-wallet
+TRX-SUSHI-20260731-0022,2026-07-31,16:59,California Roll,Sushi,Regular,1,Rp 48.000,Rp 20.000,Rp 48.000,e-wallet
+TRX-SUSHI-20260731-0022,2026-07-31,16:59,Tuna Sashimi (5pcs),Sashimi,Regular,3,Rp 65.000,Rp 32.000,Rp 195.000,e-wallet
+TRX-SUSHI-20260731-0023,2026-07-31,12:51,California Roll,Sushi,Regular,3,Rp 48.000,Rp 20.000,Rp 144.000,e-wallet
+TRX-SUSHI-20260731-0023,2026-07-31,12:51,Tuna Sashimi (5pcs),Sashimi,Regular,2,Rp 65.000,Rp 32.000,Rp 130.000,e-wallet
+TRX-SUSHI-20260731-0023,2026-07-31,12:51,Dragon Roll,Sushi,Regular,1,Rp 62.000,Rp 28.000,Rp 62.000,e-wallet
+TRX-SUSHI-20260731-0024,2026-07-31,20:04,Salmon Nigiri (2pcs),Sushi,Regular,3,Rp 38.000,Rp 18.000,Rp 114.000,e-wallet
+TRX-SUSHI-20260731-0025,2026-07-31,19:42,Chicken Katsu Curry,Ramen,Regular,1,Rp 58.000,Rp 26.000,Rp 58.000,cash
+TRX-SUSHI-20260731-0025,2026-07-31,19:42,Dragon Roll,Sushi,Regular,3,Rp 62.000,Rp 28.000,Rp 186.000,cash
+TRX-SUSHI-20260731-0026,2026-07-31,18:48,Dragon Roll,Sushi,Regular,2,Rp 62.000,Rp 28.000,Rp 124.000,e-wallet
+TRX-SUSHI-20260731-0026,2026-07-31,18:48,Tuna Sashimi (5pcs),Sashimi,Regular,2,Rp 65.000,Rp 32.000,Rp 130.000,e-wallet
+TRX-SUSHI-20260731-0027,2026-07-31,14:49,California Roll,Sushi,Regular,3,Rp 48.000,Rp 20.000,Rp 144.000,cash
+TRX-SUSHI-20260731-0027,2026-07-31,14:49,Salmon Nigiri (2pcs),Sushi,Regular,2,Rp 38.000,Rp 18.000,Rp 76.000,cash
+TRX-SUSHI-20260731-0028,2026-07-31,16:54,Dragon Roll,Sushi,Regular,2,Rp 62.000,Rp 28.000,Rp 124.000,cash
+TRX-SUSHI-20260731-0028,2026-07-31,16:54,Salmon Nigiri (2pcs),Sushi,Regular,1,Rp 38.000,Rp 18.000,Rp 38.000,cash
+TRX-SUSHI-20260731-0028,2026-07-31,16:54,Tuna Sashimi (5pcs),Sashimi,Regular,2,Rp 65.000,Rp 32.000,Rp 130.000,cash
+TRX-SUSHI-20260731-0029,2026-07-31,20:32,Tuna Sashimi (5pcs),Sashimi,Regular,2,Rp 65.000,Rp 32.000,Rp 130.000,card
+TRX-SUSHI-20260731-0029,2026-07-31,20:32,Dragon Roll,Sushi,Regular,1,Rp 62.000,Rp 28.000,Rp 62.000,card
+TRX-SUSHI-20260731-0029,2026-07-31,20:32,Salmon Nigiri (2pcs),Sushi,Regular,3,Rp 38.000,Rp 18.000,Rp 114.000,card
+TRX-SUSHI-20260731-0030,2026-07-31,20:30,Tuna Sashimi (5pcs),Sashimi,Regular,1,Rp 65.000,Rp 32.000,Rp 65.000,cash
+TRX-SUSHI-20260731-0030,2026-07-31,20:30,Dragon Roll,Sushi,Regular,1,Rp 62.000,Rp 28.000,Rp 62.000,cash
+TRX-SUSHI-20260731-0030,2026-07-31,20:30,Miso Soup,Appetizer,Regular,2,Rp 18.000,Rp 6.000,Rp 36.000,cash
+TRX-SUSHI-20260731-0031,2026-07-31,17:55,Salmon Nigiri (2pcs),Sushi,Regular,2,Rp 38.000,Rp 18.000,Rp 76.000,card
+TRX-SUSHI-20260731-0032,2026-07-31,13:23,Dragon Roll,Sushi,Regular,3,Rp 62.000,Rp 28.000,Rp 186.000,card
+TRX-SUSHI-20260731-0032,2026-07-31,13:23,Tuna Sashimi (5pcs),Sashimi,Regular,3,Rp 65.000,Rp 32.000,Rp 195.000,card
+TRX-SUSHI-20260731-0033,2026-07-31,16:02,Tuna Sashimi (5pcs),Sashimi,Regular,2,Rp 65.000,Rp 32.000,Rp 130.000,cash
+TRX-SUSHI-20260731-0033,2026-07-31,16:02,Dragon Roll,Sushi,Regular,2,Rp 62.000,Rp 28.000,Rp 124.000,cash
+TRX-SUSHI-20260731-0034,2026-07-31,20:16,Tuna Sashimi (5pcs),Sashimi,Regular,2,Rp 65.000,Rp 32.000,Rp 130.000,cash
+TRX-SUSHI-20260731-0034,2026-07-31,20:16,Dragon Roll,Sushi,Regular,1,Rp 62.000,Rp 28.000,Rp 62.000,cash
+TRX-SUSHI-20260731-0035,2026-07-31,20:41,Green Tea,Beverage,Regular,2,Rp 15.000,Rp 5.000,Rp 30.000,card
+TRX-SUSHI-20260731-0035,2026-07-31,20:41,Salmon Nigiri (2pcs),Sushi,Regular,3,Rp 38.000,Rp 18.000,Rp 114.000,card
+TRX-SUSHI-20260731-0035,2026-07-31,20:41,Tuna Sashimi (5pcs),Sashimi,Regular,2,Rp 65.000,Rp 32.000,Rp 130.000,card
+TRX-SUSHI-20260801-0001,2026-08-01,11:59,California Roll,Sushi,Regular,3,Rp 48.000,Rp 20.000,Rp 144.000,e-wallet
+TRX-SUSHI-20260801-0001,2026-08-01,11:59,Salmon Nigiri (2pcs),Sushi,Regular,3,Rp 38.000,Rp 18.000,Rp 114.000,e-wallet
+TRX-SUSHI-20260801-0002,2026-08-01,12:28,Tuna Sashimi (5pcs),Sashimi,Regular,3,Rp 65.000,Rp 32.000,Rp 195.000,card
+TRX-SUSHI-20260801-0002,2026-08-01,12:28,California Roll,Sushi,Regular,2,Rp 48.000,Rp 20.000,Rp 96.000,card
+TRX-SUSHI-20260801-0002,2026-08-01,12:28,Miso Soup,Appetizer,Regular,2,Rp 18.000,Rp 6.000,Rp 36.000,card
+TRX-SUSHI-20260801-0003,2026-08-01,15:43,Green Tea,Beverage,Regular,2,Rp 15.000,Rp 5.000,Rp 30.000,e-wallet
+TRX-SUSHI-20260801-0003,2026-08-01,15:43,Mochi Ice Cream (3pcs),Dessert,Regular,3,Rp 32.000,Rp 13.000,Rp 96.000,e-wallet
+TRX-SUSHI-20260801-0003,2026-08-01,15:43,Tuna Sashimi (5pcs),Sashimi,Regular,1,Rp 65.000,Rp 32.000,Rp 65.000,e-wallet
+TRX-SUSHI-20260801-0004,2026-08-01,19:36,Edamame,Appetizer,Regular,1,Rp 22.000,Rp 8.000,Rp 22.000,e-wallet
+TRX-SUSHI-20260801-0004,2026-08-01,19:36,Salmon Nigiri (2pcs),Sushi,Regular,2,Rp 38.000,Rp 18.000,Rp 76.000,e-wallet
+TRX-SUSHI-20260801-0005,2026-08-01,18:13,Tuna Sashimi (5pcs),Sashimi,Regular,3,Rp 65.000,Rp 32.000,Rp 195.000,card
+TRX-SUSHI-20260801-0005,2026-08-01,18:13,Edamame,Appetizer,Regular,2,Rp 22.000,Rp 8.000,Rp 44.000,card
+TRX-SUSHI-20260801-0005,2026-08-01,18:13,Mochi Ice Cream (3pcs),Dessert,Regular,1,Rp 32.000,Rp 13.000,Rp 32.000,card
+TRX-SUSHI-20260801-0006,2026-08-01,16:00,Tuna Sashimi (5pcs),Sashimi,Regular,2,Rp 65.000,Rp 32.000,Rp 130.000,cash
+TRX-SUSHI-20260801-0007,2026-08-01,13:51,Miso Soup,Appetizer,Regular,2,Rp 18.000,Rp 6.000,Rp 36.000,e-wallet
+TRX-SUSHI-20260801-0007,2026-08-01,13:51,California Roll,Sushi,Regular,3,Rp 48.000,Rp 20.000,Rp 144.000,e-wallet
+TRX-SUSHI-20260801-0008,2026-08-01,15:58,Chicken Katsu Curry,Ramen,Regular,2,Rp 58.000,Rp 26.000,Rp 116.000,e-wallet
+TRX-SUSHI-20260801-0008,2026-08-01,15:58,Tuna Sashimi (5pcs),Sashimi,Regular,1,Rp 65.000,Rp 32.000,Rp 65.000,e-wallet
+TRX-SUSHI-20260801-0009,2026-08-01,16:21,Dragon Roll,Sushi,Regular,2,Rp 62.000,Rp 28.000,Rp 124.000,cash
+TRX-SUSHI-20260801-0009,2026-08-01,16:21,Tuna Sashimi (5pcs),Sashimi,Regular,1,Rp 65.000,Rp 32.000,Rp 65.000,cash
+TRX-SUSHI-20260801-0009,2026-08-01,16:21,Miso Soup,Appetizer,Regular,3,Rp 18.000,Rp 6.000,Rp 54.000,cash
+TRX-SUSHI-20260801-0010,2026-08-01,14:08,Tuna Sashimi (5pcs),Sashimi,Regular,3,Rp 65.000,Rp 32.000,Rp 195.000,e-wallet
+TRX-SUSHI-20260801-0010,2026-08-01,14:08,Salmon Nigiri (2pcs),Sushi,Regular,1,Rp 38.000,Rp 18.000,Rp 38.000,e-wallet
+TRX-SUSHI-20260801-0010,2026-08-01,14:08,Dragon Roll,Sushi,Regular,1,Rp 62.000,Rp 28.000,Rp 62.000,e-wallet
+TRX-SUSHI-20260801-0011,2026-08-01,15:24,Edamame,Appetizer,Regular,2,Rp 22.000,Rp 8.000,Rp 44.000,e-wallet
+TRX-SUSHI-20260801-0011,2026-08-01,15:24,Chicken Katsu Curry,Ramen,Regular,1,Rp 58.000,Rp 26.000,Rp 58.000,e-wallet
+TRX-SUSHI-20260801-0011,2026-08-01,15:24,California Roll,Sushi,Regular,2,Rp 48.000,Rp 20.000,Rp 96.000,e-wallet
+TRX-SUSHI-20260801-0012,2026-08-01,20:48,Dragon Roll,Sushi,Regular,1,Rp 62.000,Rp 28.000,Rp 62.000,e-wallet
+TRX-SUSHI-20260801-0012,2026-08-01,20:48,California Roll,Sushi,Regular,1,Rp 48.000,Rp 20.000,Rp 48.000,e-wallet
+TRX-SUSHI-20260801-0012,2026-08-01,20:48,Miso Soup,Appetizer,Regular,1,Rp 18.000,Rp 6.000,Rp 18.000,e-wallet
+TRX-SUSHI-20260801-0013,2026-08-01,20:08,Dragon Roll,Sushi,Regular,3,Rp 62.000,Rp 28.000,Rp 186.000,cash
+TRX-SUSHI-20260801-0013,2026-08-01,20:08,Chicken Katsu Curry,Ramen,Regular,2,Rp 58.000,Rp 26.000,Rp 116.000,cash
+TRX-SUSHI-20260801-0013,2026-08-01,20:08,California Roll,Sushi,Regular,1,Rp 48.000,Rp 20.000,Rp 48.000,cash
+TRX-SUSHI-20260801-0014,2026-08-01,11:55,Salmon Nigiri (2pcs),Sushi,Regular,3,Rp 38.000,Rp 18.000,Rp 114.000,card
+TRX-SUSHI-20260801-0015,2026-08-01,14:29,California Roll,Sushi,Regular,3,Rp 48.000,Rp 20.000,Rp 144.000,cash
+TRX-SUSHI-20260801-0015,2026-08-01,14:29,Dragon Roll,Sushi,Regular,3,Rp 62.000,Rp 28.000,Rp 186.000,cash
+TRX-SUSHI-20260801-0016,2026-08-01,16:26,Miso Soup,Appetizer,Regular,2,Rp 18.000,Rp 6.000,Rp 36.000,card
+TRX-SUSHI-20260801-0016,2026-08-01,16:26,California Roll,Sushi,Regular,2,Rp 48.000,Rp 20.000,Rp 96.000,card
+TRX-SUSHI-20260801-0017,2026-08-01,15:27,California Roll,Sushi,Regular,2,Rp 48.000,Rp 20.000,Rp 96.000,cash
+TRX-SUSHI-20260801-0017,2026-08-01,15:27,Salmon Nigiri (2pcs),Sushi,Regular,1,Rp 38.000,Rp 18.000,Rp 38.000,cash
+TRX-SUSHI-20260801-0017,2026-08-01,15:27,Miso Soup,Appetizer,Regular,2,Rp 18.000,Rp 6.000,Rp 36.000,cash
+TRX-SUSHI-20260801-0018,2026-08-01,14:34,Tuna Sashimi (5pcs),Sashimi,Regular,2,Rp 65.000,Rp 32.000,Rp 130.000,e-wallet
+TRX-SUSHI-20260801-0018,2026-08-01,14:34,Dragon Roll,Sushi,Regular,3,Rp 62.000,Rp 28.000,Rp 186.000,e-wallet
+TRX-SUSHI-20260801-0019,2026-08-01,14:19,California Roll,Sushi,Regular,1,Rp 48.000,Rp 20.000,Rp 48.000,e-wallet
+TRX-SUSHI-20260801-0019,2026-08-01,14:19,Salmon Nigiri (2pcs),Sushi,Regular,3,Rp 38.000,Rp 18.000,Rp 114.000,e-wallet
+TRX-SUSHI-20260801-0019,2026-08-01,14:19,Ramen Tonkotsu,Ramen,Regular,3,Rp 65.000,Rp 29.000,Rp 195.000,e-wallet
+TRX-SUSHI-20260801-0020,2026-08-01,19:35,Tuna Sashimi (5pcs),Sashimi,Regular,2,Rp 65.000,Rp 32.000,Rp 130.000,e-wallet
+TRX-SUSHI-20260801-0021,2026-08-01,11:48,Salmon Nigiri (2pcs),Sushi,Regular,2,Rp 38.000,Rp 18.000,Rp 76.000,card
+TRX-SUSHI-20260801-0021,2026-08-01,11:48,Tuna Sashimi (5pcs),Sashimi,Regular,3,Rp 65.000,Rp 32.000,Rp 195.000,card
+TRX-SUSHI-20260801-0022,2026-08-01,11:20,Dragon Roll,Sushi,Regular,3,Rp 62.000,Rp 28.000,Rp 186.000,card
+TRX-SUSHI-20260801-0022,2026-08-01,11:20,Salmon Nigiri (2pcs),Sushi,Regular,1,Rp 38.000,Rp 18.000,Rp 38.000,card
+TRX-SUSHI-20260801-0022,2026-08-01,11:20,Green Tea,Beverage,Regular,1,Rp 15.000,Rp 5.000,Rp 15.000,card
+TRX-SUSHI-20260801-0023,2026-08-01,12:10,Green Tea,Beverage,Regular,2,Rp 15.000,Rp 5.000,Rp 30.000,e-wallet
+TRX-SUSHI-20260801-0023,2026-08-01,12:10,Tuna Sashimi (5pcs),Sashimi,Regular,2,Rp 65.000,Rp 32.000,Rp 130.000,e-wallet
+TRX-SUSHI-20260801-0024,2026-08-01,20:03,Dragon Roll,Sushi,Regular,2,Rp 62.000,Rp 28.000,Rp 124.000,e-wallet
+TRX-SUSHI-20260801-0024,2026-08-01,20:03,Salmon Nigiri (2pcs),Sushi,Regular,2,Rp 38.000,Rp 18.000,Rp 76.000,e-wallet
+TRX-SUSHI-20260801-0024,2026-08-01,20:03,Green Tea,Beverage,Regular,3,Rp 15.000,Rp 5.000,Rp 45.000,e-wallet
+TRX-SUSHI-20260801-0025,2026-08-01,14:57,California Roll,Sushi,Regular,1,Rp 48.000,Rp 20.000,Rp 48.000,card
+TRX-SUSHI-20260801-0025,2026-08-01,14:57,Dragon Roll,Sushi,Regular,1,Rp 62.000,Rp 28.000,Rp 62.000,card
+TRX-SUSHI-20260801-0025,2026-08-01,14:57,Edamame,Appetizer,Regular,1,Rp 22.000,Rp 8.000,Rp 22.000,card
+TRX-SUSHI-20260801-0026,2026-08-01,15:32,Salmon Nigiri (2pcs),Sushi,Regular,3,Rp 38.000,Rp 18.000,Rp 114.000,e-wallet
+TRX-SUSHI-20260801-0027,2026-08-01,18:55,Miso Soup,Appetizer,Regular,3,Rp 18.000,Rp 6.000,Rp 54.000,cash
+TRX-SUSHI-20260801-0027,2026-08-01,18:55,Tuna Sashimi (5pcs),Sashimi,Regular,1,Rp 65.000,Rp 32.000,Rp 65.000,cash
+TRX-SUSHI-20260801-0028,2026-08-01,16:37,Tuna Sashimi (5pcs),Sashimi,Regular,3,Rp 65.000,Rp 32.000,Rp 195.000,cash
+TRX-SUSHI-20260801-0029,2026-08-01,12:15,Salmon Nigiri (2pcs),Sushi,Regular,2,Rp 38.000,Rp 18.000,Rp 76.000,card
+TRX-SUSHI-20260801-0029,2026-08-01,12:15,California Roll,Sushi,Regular,1,Rp 48.000,Rp 20.000,Rp 48.000,card
+TRX-SUSHI-20260801-0029,2026-08-01,12:15,Dragon Roll,Sushi,Regular,2,Rp 62.000,Rp 28.000,Rp 124.000,card
+TRX-SUSHI-20260801-0030,2026-08-01,15:59,Tuna Sashimi (5pcs),Sashimi,Regular,1,Rp 65.000,Rp 32.000,Rp 65.000,e-wallet
+TRX-SUSHI-20260801-0031,2026-08-01,18:23,Tuna Sashimi (5pcs),Sashimi,Regular,2,Rp 65.000,Rp 32.000,Rp 130.000,cash
+TRX-SUSHI-20260801-0032,2026-08-01,14:40,Salmon Nigiri (2pcs),Sushi,Regular,1,Rp 38.000,Rp 18.000,Rp 38.000,e-wallet
+TRX-SUSHI-20260801-0032,2026-08-01,14:40,Dragon Roll,Sushi,Regular,2,Rp 62.000,Rp 28.000,Rp 124.000,e-wallet
+TRX-SUSHI-20260801-0033,2026-08-01,17:28,California Roll,Sushi,Regular,2,Rp 48.000,Rp 20.000,Rp 96.000,cash
+TRX-SUSHI-20260801-0034,2026-08-01,11:23,Miso Soup,Appetizer,Regular,1,Rp 18.000,Rp 6.000,Rp 18.000,cash
+TRX-SUSHI-20260801-0034,2026-08-01,11:23,Salmon Nigiri (2pcs),Sushi,Regular,2,Rp 38.000,Rp 18.000,Rp 76.000,cash
+TRX-SUSHI-20260801-0034,2026-08-01,11:23,Dragon Roll,Sushi,Regular,3,Rp 62.000,Rp 28.000,Rp 186.000,cash
+TRX-SUSHI-20260801-0035,2026-08-01,13:53,California Roll,Sushi,Regular,1,Rp 48.000,Rp 20.000,Rp 48.000,e-wallet
+TRX-SUSHI-20260801-0036,2026-08-01,12:32,Tuna Sashimi (5pcs),Sashimi,Regular,2,Rp 65.000,Rp 32.000,Rp 130.000,e-wallet
+TRX-SUSHI-20260801-0037,2026-08-01,20:27,California Roll,Sushi,Regular,1,Rp 48.000,Rp 20.000,Rp 48.000,e-wallet
+TRX-SUSHI-20260801-0037,2026-08-01,20:27,Salmon Nigiri (2pcs),Sushi,Regular,1,Rp 38.000,Rp 18.000,Rp 38.000,e-wallet
+TRX-SUSHI-20260801-0037,2026-08-01,20:27,Miso Soup,Appetizer,Regular,3,Rp 18.000,Rp 6.000,Rp 54.000,e-wallet
+TRX-SUSHI-20260801-0038,2026-08-01,19:03,Salmon Nigiri (2pcs),Sushi,Regular,1,Rp 38.000,Rp 18.000,Rp 38.000,e-wallet
+TRX-SUSHI-20260801-0039,2026-08-01,18:00,Dragon Roll,Sushi,Regular,1,Rp 62.000,Rp 28.000,Rp 62.000,e-wallet
+TRX-SUSHI-20260801-0039,2026-08-01,18:00,Green Tea,Beverage,Regular,2,Rp 15.000,Rp 5.000,Rp 30.000,e-wallet
+TRX-SUSHI-20260801-0040,2026-08-01,16:14,Dragon Roll,Sushi,Regular,3,Rp 62.000,Rp 28.000,Rp 186.000,e-wallet
+TRX-SUSHI-20260801-0041,2026-08-01,12:17,California Roll,Sushi,Regular,1,Rp 48.000,Rp 20.000,Rp 48.000,cash
+TRX-SUSHI-20260801-0041,2026-08-01,12:17,Tuna Sashimi (5pcs),Sashimi,Regular,3,Rp 65.000,Rp 32.000,Rp 195.000,cash
+TRX-SUSHI-20260801-0042,2026-08-01,13:14,Tuna Sashimi (5pcs),Sashimi,Regular,1,Rp 65.000,Rp 32.000,Rp 65.000,e-wallet
+TRX-SUSHI-20260801-0043,2026-08-01,14:32,California Roll,Sushi,Regular,2,Rp 48.000,Rp 20.000,Rp 96.000,cash
+TRX-SUSHI-20260801-0044,2026-08-01,20:57,California Roll,Sushi,Regular,3,Rp 48.000,Rp 20.000,Rp 144.000,e-wallet
+TRX-SUSHI-20260801-0045,2026-08-01,15:57,Tuna Sashimi (5pcs),Sashimi,Regular,2,Rp 65.000,Rp 32.000,Rp 130.000,e-wallet
+TRX-SUSHI-20260801-0046,2026-08-01,17:52,Salmon Nigiri (2pcs),Sushi,Regular,2,Rp 38.000,Rp 18.000,Rp 76.000,cash
+TRX-SUSHI-20260801-0046,2026-08-01,17:52,Chicken Katsu Curry,Ramen,Regular,3,Rp 58.000,Rp 26.000,Rp 174.000,cash
+TRX-SUSHI-20260801-0047,2026-08-01,11:55,Tuna Sashimi (5pcs),Sashimi,Regular,2,Rp 65.000,Rp 32.000,Rp 130.000,card
+TRX-SUSHI-20260801-0047,2026-08-01,11:55,Salmon Nigiri (2pcs),Sushi,Regular,3,Rp 38.000,Rp 18.000,Rp 114.000,card
+TRX-SUSHI-20260801-0047,2026-08-01,11:55,Green Tea,Beverage,Regular,1,Rp 15.000,Rp 5.000,Rp 15.000,card
+TRX-SUSHI-20260801-0048,2026-08-01,15:24,Chicken Katsu Curry,Ramen,Regular,1,Rp 58.000,Rp 26.000,Rp 58.000,e-wallet
+TRX-SUSHI-20260801-0049,2026-08-01,17:54,California Roll,Sushi,Regular,3,Rp 48.000,Rp 20.000,Rp 144.000,e-wallet
+TRX-SUSHI-20260801-0049,2026-08-01,17:54,Salmon Nigiri (2pcs),Sushi,Regular,2,Rp 38.000,Rp 18.000,Rp 76.000,e-wallet
+TRX-SUSHI-20260801-0049,2026-08-01,17:54,Dragon Roll,Sushi,Regular,1,Rp 62.000,Rp 28.000,Rp 62.000,e-wallet
+TRX-SUSHI-20260801-0050,2026-08-01,12:57,California Roll,Sushi,Regular,1,Rp 48.000,Rp 20.000,Rp 48.000,e-wallet
+TRX-SUSHI-20260801-0050,2026-08-01,12:57,Salmon Nigiri (2pcs),Sushi,Regular,3,Rp 38.000,Rp 18.000,Rp 114.000,e-wallet
+TRX-SUSHI-20260801-0051,2026-08-01,12:40,Edamame,Appetizer,Regular,2,Rp 22.000,Rp 8.000,Rp 44.000,e-wallet
+TRX-SUSHI-20260801-0052,2026-08-01,20:10,Tuna Sashimi (5pcs),Sashimi,Regular,2,Rp 65.000,Rp 32.000,Rp 130.000,cash
+TRX-SUSHI-20260801-0052,2026-08-01,20:10,California Roll,Sushi,Regular,3,Rp 48.000,Rp 20.000,Rp 144.000,cash
+TRX-SUSHI-20260801-0052,2026-08-01,20:10,Salmon Nigiri (2pcs),Sushi,Regular,2,Rp 38.000,Rp 18.000,Rp 76.000,cash
+TRX-SUSHI-20260801-0053,2026-08-01,13:26,Ramen Tonkotsu,Ramen,Regular,3,Rp 65.000,Rp 29.000,Rp 195.000,cash
+TRX-SUSHI-20260801-0053,2026-08-01,13:26,Chicken Katsu Curry,Ramen,Regular,3,Rp 58.000,Rp 26.000,Rp 174.000,cash
+TRX-SUSHI-20260801-0053,2026-08-01,13:26,Salmon Nigiri (2pcs),Sushi,Regular,1,Rp 38.000,Rp 18.000,Rp 38.000,cash
+TRX-SUSHI-20260801-0054,2026-08-01,12:46,Tuna Sashimi (5pcs),Sashimi,Regular,2,Rp 65.000,Rp 32.000,Rp 130.000,card
+TRX-SUSHI-20260801-0054,2026-08-01,12:46,Salmon Nigiri (2pcs),Sushi,Regular,3,Rp 38.000,Rp 18.000,Rp 114.000,card
+TRX-SUSHI-20260801-0054,2026-08-01,12:46,California Roll,Sushi,Regular,3,Rp 48.000,Rp 20.000,Rp 144.000,card
+TRX-SUSHI-20260801-0055,2026-08-01,20:39,California Roll,Sushi,Regular,3,Rp 48.000,Rp 20.000,Rp 144.000,e-wallet
+TRX-SUSHI-20260801-0055,2026-08-01,20:39,Tuna Sashimi (5pcs),Sashimi,Regular,3,Rp 65.000,Rp 32.000,Rp 195.000,e-wallet
+TRX-SUSHI-20260801-0056,2026-08-01,12:43,Edamame,Appetizer,Regular,3,Rp 22.000,Rp 8.000,Rp 66.000,e-wallet
+TRX-SUSHI-20260801-0057,2026-08-01,20:17,Ramen Tonkotsu,Ramen,Regular,3,Rp 65.000,Rp 29.000,Rp 195.000,card
+TRX-SUSHI-20260802-0001,2026-08-02,15:14,Dragon Roll,Sushi,Regular,2,Rp 62.000,Rp 28.000,Rp 124.000,e-wallet
+TRX-SUSHI-20260802-0001,2026-08-02,15:14,Tuna Sashimi (5pcs),Sashimi,Regular,2,Rp 65.000,Rp 32.000,Rp 130.000,e-wallet
+TRX-SUSHI-20260802-0002,2026-08-02,16:47,Dragon Roll,Sushi,Regular,3,Rp 62.000,Rp 28.000,Rp 186.000,e-wallet
+TRX-SUSHI-20260802-0003,2026-08-02,19:04,Tuna Sashimi (5pcs),Sashimi,Regular,1,Rp 65.000,Rp 32.000,Rp 65.000,cash
+TRX-SUSHI-20260802-0003,2026-08-02,19:04,Salmon Nigiri (2pcs),Sushi,Regular,2,Rp 38.000,Rp 18.000,Rp 76.000,cash
+TRX-SUSHI-20260802-0003,2026-08-02,19:04,Green Tea,Beverage,Regular,3,Rp 15.000,Rp 5.000,Rp 45.000,cash
+TRX-SUSHI-20260802-0004,2026-08-02,15:50,Dragon Roll,Sushi,Regular,2,Rp 62.000,Rp 28.000,Rp 124.000,card
+TRX-SUSHI-20260802-0004,2026-08-02,15:50,Salmon Nigiri (2pcs),Sushi,Regular,1,Rp 38.000,Rp 18.000,Rp 38.000,card
+TRX-SUSHI-20260802-0005,2026-08-02,20:06,Dragon Roll,Sushi,Regular,1,Rp 62.000,Rp 28.000,Rp 62.000,e-wallet
+TRX-SUSHI-20260802-0006,2026-08-02,17:38,Mochi Ice Cream (3pcs),Dessert,Regular,2,Rp 32.000,Rp 13.000,Rp 64.000,card
+TRX-SUSHI-20260802-0007,2026-08-02,19:28,Edamame,Appetizer,Regular,2,Rp 22.000,Rp 8.000,Rp 44.000,e-wallet
+TRX-SUSHI-20260802-0008,2026-08-02,18:49,Dragon Roll,Sushi,Regular,2,Rp 62.000,Rp 28.000,Rp 124.000,e-wallet
+TRX-SUSHI-20260802-0009,2026-08-02,16:17,Dragon Roll,Sushi,Regular,1,Rp 62.000,Rp 28.000,Rp 62.000,cash
+TRX-SUSHI-20260802-0009,2026-08-02,16:17,Miso Soup,Appetizer,Regular,2,Rp 18.000,Rp 6.000,Rp 36.000,cash
+TRX-SUSHI-20260802-0009,2026-08-02,16:17,Ramen Tonkotsu,Ramen,Regular,3,Rp 65.000,Rp 29.000,Rp 195.000,cash
+TRX-SUSHI-20260802-0010,2026-08-02,13:25,Tuna Sashimi (5pcs),Sashimi,Regular,3,Rp 65.000,Rp 32.000,Rp 195.000,card
+TRX-SUSHI-20260802-0010,2026-08-02,13:25,California Roll,Sushi,Regular,3,Rp 48.000,Rp 20.000,Rp 144.000,card
+TRX-SUSHI-20260802-0011,2026-08-02,11:05,Dragon Roll,Sushi,Regular,2,Rp 62.000,Rp 28.000,Rp 124.000,card
+TRX-SUSHI-20260802-0012,2026-08-02,18:39,California Roll,Sushi,Regular,3,Rp 48.000,Rp 20.000,Rp 144.000,e-wallet
+TRX-SUSHI-20260802-0012,2026-08-02,18:39,Salmon Nigiri (2pcs),Sushi,Regular,1,Rp 38.000,Rp 18.000,Rp 38.000,e-wallet
+TRX-SUSHI-20260802-0013,2026-08-02,17:57,Salmon Nigiri (2pcs),Sushi,Regular,1,Rp 38.000,Rp 18.000,Rp 38.000,card
+TRX-SUSHI-20260802-0013,2026-08-02,17:57,Ramen Tonkotsu,Ramen,Regular,1,Rp 65.000,Rp 29.000,Rp 65.000,card
+TRX-SUSHI-20260802-0014,2026-08-02,20:24,California Roll,Sushi,Regular,2,Rp 48.000,Rp 20.000,Rp 96.000,card
+TRX-SUSHI-20260802-0015,2026-08-02,14:35,Tuna Sashimi (5pcs),Sashimi,Regular,2,Rp 65.000,Rp 32.000,Rp 130.000,card
+TRX-SUSHI-20260802-0015,2026-08-02,14:35,California Roll,Sushi,Regular,3,Rp 48.000,Rp 20.000,Rp 144.000,card
+TRX-SUSHI-20260802-0015,2026-08-02,14:35,Edamame,Appetizer,Regular,2,Rp 22.000,Rp 8.000,Rp 44.000,card
+TRX-SUSHI-20260802-0016,2026-08-02,14:19,Salmon Nigiri (2pcs),Sushi,Regular,1,Rp 38.000,Rp 18.000,Rp 38.000,e-wallet
+TRX-SUSHI-20260802-0016,2026-08-02,14:19,Dragon Roll,Sushi,Regular,2,Rp 62.000,Rp 28.000,Rp 124.000,e-wallet
+TRX-SUSHI-20260802-0017,2026-08-02,11:06,California Roll,Sushi,Regular,2,Rp 48.000,Rp 20.000,Rp 96.000,cash
+TRX-SUSHI-20260802-0017,2026-08-02,11:06,Dragon Roll,Sushi,Regular,2,Rp 62.000,Rp 28.000,Rp 124.000,cash
+TRX-SUSHI-20260802-0017,2026-08-02,11:06,Tuna Sashimi (5pcs),Sashimi,Regular,3,Rp 65.000,Rp 32.000,Rp 195.000,cash
+TRX-SUSHI-20260802-0018,2026-08-02,20:48,Dragon Roll,Sushi,Regular,1,Rp 62.000,Rp 28.000,Rp 62.000,cash
+TRX-SUSHI-20260802-0018,2026-08-02,20:48,Ramen Tonkotsu,Ramen,Regular,1,Rp 65.000,Rp 29.000,Rp 65.000,cash
+TRX-SUSHI-20260802-0019,2026-08-02,14:24,Tuna Sashimi (5pcs),Sashimi,Regular,2,Rp 65.000,Rp 32.000,Rp 130.000,cash
+TRX-SUSHI-20260802-0019,2026-08-02,14:24,Dragon Roll,Sushi,Regular,1,Rp 62.000,Rp 28.000,Rp 62.000,cash
+TRX-SUSHI-20260802-0019,2026-08-02,14:24,California Roll,Sushi,Regular,3,Rp 48.000,Rp 20.000,Rp 144.000,cash
+TRX-SUSHI-20260802-0020,2026-08-02,20:58,California Roll,Sushi,Regular,2,Rp 48.000,Rp 20.000,Rp 96.000,cash
+TRX-SUSHI-20260802-0020,2026-08-02,20:58,Dragon Roll,Sushi,Regular,3,Rp 62.000,Rp 28.000,Rp 186.000,cash
+TRX-SUSHI-20260802-0020,2026-08-02,20:58,Salmon Nigiri (2pcs),Sushi,Regular,1,Rp 38.000,Rp 18.000,Rp 38.000,cash
+TRX-SUSHI-20260802-0021,2026-08-02,15:25,Salmon Nigiri (2pcs),Sushi,Regular,2,Rp 38.000,Rp 18.000,Rp 76.000,e-wallet
+TRX-SUSHI-20260802-0022,2026-08-02,11:21,Dragon Roll,Sushi,Regular,2,Rp 62.000,Rp 28.000,Rp 124.000,e-wallet
+TRX-SUSHI-20260802-0022,2026-08-02,11:21,Miso Soup,Appetizer,Regular,1,Rp 18.000,Rp 6.000,Rp 18.000,e-wallet
+TRX-SUSHI-20260802-0022,2026-08-02,11:21,California Roll,Sushi,Regular,1,Rp 48.000,Rp 20.000,Rp 48.000,e-wallet
+TRX-SUSHI-20260802-0023,2026-08-02,14:46,Dragon Roll,Sushi,Regular,2,Rp 62.000,Rp 28.000,Rp 124.000,card
+TRX-SUSHI-20260802-0024,2026-08-02,11:26,Salmon Nigiri (2pcs),Sushi,Regular,1,Rp 38.000,Rp 18.000,Rp 38.000,card
+TRX-SUSHI-20260802-0024,2026-08-02,11:26,Dragon Roll,Sushi,Regular,1,Rp 62.000,Rp 28.000,Rp 62.000,card
+TRX-SUSHI-20260802-0025,2026-08-02,13:08,Green Tea,Beverage,Regular,2,Rp 15.000,Rp 5.000,Rp 30.000,cash
+TRX-SUSHI-20260802-0026,2026-08-02,18:35,Tuna Sashimi (5pcs),Sashimi,Regular,2,Rp 65.000,Rp 32.000,Rp 130.000,cash
+TRX-SUSHI-20260802-0026,2026-08-02,18:35,Dragon Roll,Sushi,Regular,3,Rp 62.000,Rp 28.000,Rp 186.000,cash
+TRX-SUSHI-20260802-0027,2026-08-02,20:57,California Roll,Sushi,Regular,3,Rp 48.000,Rp 20.000,Rp 144.000,e-wallet
+TRX-SUSHI-20260802-0028,2026-08-02,17:46,Mochi Ice Cream (3pcs),Dessert,Regular,1,Rp 32.000,Rp 13.000,Rp 32.000,e-wallet
+TRX-SUSHI-20260802-0029,2026-08-02,14:30,Tuna Sashimi (5pcs),Sashimi,Regular,2,Rp 65.000,Rp 32.000,Rp 130.000,cash
+TRX-SUSHI-20260802-0029,2026-08-02,14:30,Ramen Tonkotsu,Ramen,Regular,2,Rp 65.000,Rp 29.000,Rp 130.000,cash
+TRX-SUSHI-20260802-0030,2026-08-02,14:38,Salmon Nigiri (2pcs),Sushi,Regular,1,Rp 38.000,Rp 18.000,Rp 38.000,card
+TRX-SUSHI-20260802-0030,2026-08-02,14:38,Tuna Sashimi (5pcs),Sashimi,Regular,1,Rp 65.000,Rp 32.000,Rp 65.000,card
+TRX-SUSHI-20260802-0030,2026-08-02,14:38,California Roll,Sushi,Regular,2,Rp 48.000,Rp 20.000,Rp 96.000,card
+TRX-SUSHI-20260802-0031,2026-08-02,19:21,Salmon Nigiri (2pcs),Sushi,Regular,1,Rp 38.000,Rp 18.000,Rp 38.000,cash
+TRX-SUSHI-20260802-0032,2026-08-02,19:24,Tuna Sashimi (5pcs),Sashimi,Regular,3,Rp 65.000,Rp 32.000,Rp 195.000,cash
+TRX-SUSHI-20260802-0032,2026-08-02,19:24,Salmon Nigiri (2pcs),Sushi,Regular,1,Rp 38.000,Rp 18.000,Rp 38.000,cash
+TRX-SUSHI-20260802-0032,2026-08-02,19:24,California Roll,Sushi,Regular,3,Rp 48.000,Rp 20.000,Rp 144.000,cash
+TRX-SUSHI-20260802-0033,2026-08-02,15:55,Dragon Roll,Sushi,Regular,3,Rp 62.000,Rp 28.000,Rp 186.000,e-wallet
+TRX-SUSHI-20260802-0034,2026-08-02,20:04,Chicken Katsu Curry,Ramen,Regular,2,Rp 58.000,Rp 26.000,Rp 116.000,e-wallet
+TRX-SUSHI-20260802-0034,2026-08-02,20:04,California Roll,Sushi,Regular,3,Rp 48.000,Rp 20.000,Rp 144.000,e-wallet
+TRX-SUSHI-20260802-0034,2026-08-02,20:04,Tuna Sashimi (5pcs),Sashimi,Regular,2,Rp 65.000,Rp 32.000,Rp 130.000,e-wallet
+TRX-SUSHI-20260802-0035,2026-08-02,16:10,Salmon Nigiri (2pcs),Sushi,Regular,3,Rp 38.000,Rp 18.000,Rp 114.000,e-wallet
+TRX-SUSHI-20260802-0035,2026-08-02,16:10,California Roll,Sushi,Regular,2,Rp 48.000,Rp 20.000,Rp 96.000,e-wallet
+TRX-SUSHI-20260802-0035,2026-08-02,16:10,Dragon Roll,Sushi,Regular,1,Rp 62.000,Rp 28.000,Rp 62.000,e-wallet
+TRX-SUSHI-20260802-0036,2026-08-02,14:45,Tuna Sashimi (5pcs),Sashimi,Regular,1,Rp 65.000,Rp 32.000,Rp 65.000,card
+TRX-SUSHI-20260802-0036,2026-08-02,14:45,Ramen Tonkotsu,Ramen,Regular,1,Rp 65.000,Rp 29.000,Rp 65.000,card
+TRX-SUSHI-20260802-0037,2026-08-02,13:54,Salmon Nigiri (2pcs),Sushi,Regular,1,Rp 38.000,Rp 18.000,Rp 38.000,cash
+TRX-SUSHI-20260802-0037,2026-08-02,13:54,Mochi Ice Cream (3pcs),Dessert,Regular,3,Rp 32.000,Rp 13.000,Rp 96.000,cash
+TRX-SUSHI-20260802-0038,2026-08-02,18:55,California Roll,Sushi,Regular,3,Rp 48.000,Rp 20.000,Rp 144.000,e-wallet
+TRX-SUSHI-20260802-0038,2026-08-02,18:55,Salmon Nigiri (2pcs),Sushi,Regular,3,Rp 38.000,Rp 18.000,Rp 114.000,e-wallet
+TRX-SUSHI-20260802-0038,2026-08-02,18:55,Dragon Roll,Sushi,Regular,3,Rp 62.000,Rp 28.000,Rp 186.000,e-wallet
+TRX-SUSHI-20260802-0039,2026-08-02,20:24,Tuna Sashimi (5pcs),Sashimi,Regular,3,Rp 65.000,Rp 32.000,Rp 195.000,cash
+TRX-SUSHI-20260802-0039,2026-08-02,20:24,Dragon Roll,Sushi,Regular,3,Rp 62.000,Rp 28.000,Rp 186.000,cash
+TRX-SUSHI-20260802-0039,2026-08-02,20:24,Miso Soup,Appetizer,Regular,3,Rp 18.000,Rp 6.000,Rp 54.000,cash
+TRX-SUSHI-20260802-0040,2026-08-02,11:07,Salmon Nigiri (2pcs),Sushi,Regular,1,Rp 38.000,Rp 18.000,Rp 38.000,cash
+TRX-SUSHI-20260802-0040,2026-08-02,11:07,Dragon Roll,Sushi,Regular,3,Rp 62.000,Rp 28.000,Rp 186.000,cash
+TRX-SUSHI-20260802-0040,2026-08-02,11:07,Edamame,Appetizer,Regular,3,Rp 22.000,Rp 8.000,Rp 66.000,cash
+TRX-SUSHI-20260802-0041,2026-08-02,15:36,California Roll,Sushi,Regular,1,Rp 48.000,Rp 20.000,Rp 48.000,e-wallet
+TRX-SUSHI-20260802-0041,2026-08-02,15:36,Edamame,Appetizer,Regular,1,Rp 22.000,Rp 8.000,Rp 22.000,e-wallet
+TRX-SUSHI-20260802-0042,2026-08-02,16:01,Ramen Tonkotsu,Ramen,Regular,1,Rp 65.000,Rp 29.000,Rp 65.000,e-wallet
+TRX-SUSHI-20260802-0042,2026-08-02,16:01,California Roll,Sushi,Regular,1,Rp 48.000,Rp 20.000,Rp 48.000,e-wallet
+TRX-SUSHI-20260802-0042,2026-08-02,16:01,Tuna Sashimi (5pcs),Sashimi,Regular,2,Rp 65.000,Rp 32.000,Rp 130.000,e-wallet
+TRX-SUSHI-20260802-0043,2026-08-02,19:04,Tuna Sashimi (5pcs),Sashimi,Regular,1,Rp 65.000,Rp 32.000,Rp 65.000,card
+TRX-SUSHI-20260802-0044,2026-08-02,15:02,Tuna Sashimi (5pcs),Sashimi,Regular,3,Rp 65.000,Rp 32.000,Rp 195.000,cash
+TRX-SUSHI-20260802-0044,2026-08-02,15:02,Dragon Roll,Sushi,Regular,3,Rp 62.000,Rp 28.000,Rp 186.000,cash
+TRX-SUSHI-20260802-0045,2026-08-02,17:23,Tuna Sashimi (5pcs),Sashimi,Regular,2,Rp 65.000,Rp 32.000,Rp 130.000,card
+TRX-SUSHI-20260802-0045,2026-08-02,17:23,California Roll,Sushi,Regular,3,Rp 48.000,Rp 20.000,Rp 144.000,card
+TRX-SUSHI-20260802-0045,2026-08-02,17:23,Salmon Nigiri (2pcs),Sushi,Regular,2,Rp 38.000,Rp 18.000,Rp 76.000,card
+TRX-SUSHI-20260802-0046,2026-08-02,15:33,Dragon Roll,Sushi,Regular,3,Rp 62.000,Rp 28.000,Rp 186.000,e-wallet
+TRX-SUSHI-20260802-0046,2026-08-02,15:33,Tuna Sashimi (5pcs),Sashimi,Regular,3,Rp 65.000,Rp 32.000,Rp 195.000,e-wallet
+TRX-SUSHI-20260802-0046,2026-08-02,15:33,California Roll,Sushi,Regular,3,Rp 48.000,Rp 20.000,Rp 144.000,e-wallet
+TRX-SUSHI-20260802-0047,2026-08-02,16:05,Miso Soup,Appetizer,Regular,1,Rp 18.000,Rp 6.000,Rp 18.000,e-wallet
+TRX-SUSHI-20260802-0048,2026-08-02,16:25,Edamame,Appetizer,Regular,2,Rp 22.000,Rp 8.000,Rp 44.000,e-wallet
+TRX-SUSHI-20260802-0048,2026-08-02,16:25,Salmon Nigiri (2pcs),Sushi,Regular,1,Rp 38.000,Rp 18.000,Rp 38.000,e-wallet
+TRX-SUSHI-20260802-0048,2026-08-02,16:25,Tuna Sashimi (5pcs),Sashimi,Regular,3,Rp 65.000,Rp 32.000,Rp 195.000,e-wallet
+TRX-SUSHI-20260802-0049,2026-08-02,14:15,Dragon Roll,Sushi,Regular,3,Rp 62.000,Rp 28.000,Rp 186.000,cash
+TRX-SUSHI-20260802-0050,2026-08-02,13:41,Tuna Sashimi (5pcs),Sashimi,Regular,1,Rp 65.000,Rp 32.000,Rp 65.000,card
+TRX-SUSHI-20260802-0051,2026-08-02,16:25,Salmon Nigiri (2pcs),Sushi,Regular,1,Rp 38.000,Rp 18.000,Rp 38.000,cash
+TRX-SUSHI-20260802-0051,2026-08-02,16:25,California Roll,Sushi,Regular,2,Rp 48.000,Rp 20.000,Rp 96.000,cash
+TRX-SUSHI-20260802-0052,2026-08-02,16:44,Dragon Roll,Sushi,Regular,2,Rp 62.000,Rp 28.000,Rp 124.000,card
+TRX-SUSHI-20260802-0052,2026-08-02,16:44,Miso Soup,Appetizer,Regular,2,Rp 18.000,Rp 6.000,Rp 36.000,card
+TRX-SUSHI-20260802-0053,2026-08-02,18:11,Tuna Sashimi (5pcs),Sashimi,Regular,3,Rp 65.000,Rp 32.000,Rp 195.000,card
+TRX-SUSHI-20260802-0054,2026-08-02,11:28,California Roll,Sushi,Regular,3,Rp 48.000,Rp 20.000,Rp 144.000,card
+TRX-SUSHI-20260802-0054,2026-08-02,11:28,Salmon Nigiri (2pcs),Sushi,Regular,3,Rp 38.000,Rp 18.000,Rp 114.000,card
+TRX-SUSHI-20260802-0055,2026-08-02,11:25,Tuna Sashimi (5pcs),Sashimi,Regular,2,Rp 65.000,Rp 32.000,Rp 130.000,card
+TRX-SUSHI-20260802-0055,2026-08-02,11:25,California Roll,Sushi,Regular,1,Rp 48.000,Rp 20.000,Rp 48.000,card
+TRX-SUSHI-20260802-0055,2026-08-02,11:25,Chicken Katsu Curry,Ramen,Regular,3,Rp 58.000,Rp 26.000,Rp 174.000,card
+TRX-SUSHI-20260802-0056,2026-08-02,18:31,Miso Soup,Appetizer,Regular,3,Rp 18.000,Rp 6.000,Rp 54.000,card
+TRX-SUSHI-20260802-0057,2026-08-02,20:23,Dragon Roll,Sushi,Regular,3,Rp 62.000,Rp 28.000,Rp 186.000,cash
+TRX-SUSHI-20260802-0057,2026-08-02,20:23,Salmon Nigiri (2pcs),Sushi,Regular,2,Rp 38.000,Rp 18.000,Rp 76.000,cash
+TRX-SUSHI-20260802-0057,2026-08-02,20:23,Edamame,Appetizer,Regular,3,Rp 22.000,Rp 8.000,Rp 66.000,cash
+TRX-SUSHI-20260802-0058,2026-08-02,17:23,Tuna Sashimi (5pcs),Sashimi,Regular,2,Rp 65.000,Rp 32.000,Rp 130.000,e-wallet
+TRX-SUSHI-20260802-0058,2026-08-02,17:23,Salmon Nigiri (2pcs),Sushi,Regular,2,Rp 38.000,Rp 18.000,Rp 76.000,e-wallet
+TRX-SUSHI-20260802-0059,2026-08-02,11:16,Salmon Nigiri (2pcs),Sushi,Regular,1,Rp 38.000,Rp 18.000,Rp 38.000,e-wallet
+TRX-SUSHI-20260802-0060,2026-08-02,20:03,Dragon Roll,Sushi,Regular,1,Rp 62.000,Rp 28.000,Rp 62.000,card
+TRX-SUSHI-20260802-0060,2026-08-02,20:03,Miso Soup,Appetizer,Regular,3,Rp 18.000,Rp 6.000,Rp 54.000,card
+TRX-SUSHI-20260802-0060,2026-08-02,20:03,Salmon Nigiri (2pcs),Sushi,Regular,1,Rp 38.000,Rp 18.000,Rp 38.000,card
+TRX-SUSHI-20260802-0061,2026-08-02,15:30,Salmon Nigiri (2pcs),Sushi,Regular,3,Rp 38.000,Rp 18.000,Rp 114.000,card
+TRX-SUSHI-20260802-0061,2026-08-02,15:30,Tuna Sashimi (5pcs),Sashimi,Regular,2,Rp 65.000,Rp 32.000,Rp 130.000,card
+TRX-SUSHI-20260802-0062,2026-08-02,16:31,Salmon Nigiri (2pcs),Sushi,Regular,2,Rp 38.000,Rp 18.000,Rp 76.000,e-wallet
+TRX-SUSHI-20260802-0063,2026-08-02,14:27,Tuna Sashimi (5pcs),Sashimi,Regular,3,Rp 65.000,Rp 32.000,Rp 195.000,card
+TRX-SUSHI-20260802-0063,2026-08-02,14:27,California Roll,Sushi,Regular,1,Rp 48.000,Rp 20.000,Rp 48.000,card
+TRX-SUSHI-20260802-0063,2026-08-02,14:27,Dragon Roll,Sushi,Regular,3,Rp 62.000,Rp 28.000,Rp 186.000,card
+TRX-SUSHI-20260802-0064,2026-08-02,13:18,California Roll,Sushi,Regular,3,Rp 48.000,Rp 20.000,Rp 144.000,cash
+TRX-SUSHI-20260802-0064,2026-08-02,13:18,Salmon Nigiri (2pcs),Sushi,Regular,2,Rp 38.000,Rp 18.000,Rp 76.000,cash
+TRX-SUSHI-20260802-0065,2026-08-02,13:02,Miso Soup,Appetizer,Regular,1,Rp 18.000,Rp 6.000,Rp 18.000,e-wallet
+TRX-SUSHI-20260802-0065,2026-08-02,13:02,Tuna Sashimi (5pcs),Sashimi,Regular,3,Rp 65.000,Rp 32.000,Rp 195.000,e-wallet
+TRX-SUSHI-20260802-0065,2026-08-02,13:02,Dragon Roll,Sushi,Regular,2,Rp 62.000,Rp 28.000,Rp 124.000,e-wallet
+TRX-SUSHI-20260802-0066,2026-08-02,15:01,Salmon Nigiri (2pcs),Sushi,Regular,1,Rp 38.000,Rp 18.000,Rp 38.000,e-wallet
+TRX-SUSHI-20260802-0066,2026-08-02,15:01,Tuna Sashimi (5pcs),Sashimi,Regular,1,Rp 65.000,Rp 32.000,Rp 65.000,e-wallet
+TRX-SUSHI-20260802-0067,2026-08-02,19:47,Salmon Nigiri (2pcs),Sushi,Regular,2,Rp 38.000,Rp 18.000,Rp 76.000,cash
+TRX-SUSHI-20260802-0067,2026-08-02,19:47,Dragon Roll,Sushi,Regular,2,Rp 62.000,Rp 28.000,Rp 124.000,cash
+TRX-SUSHI-20260802-0067,2026-08-02,19:47,Miso Soup,Appetizer,Regular,2,Rp 18.000,Rp 6.000,Rp 36.000,cash
+TRX-SUSHI-20260803-0001,2026-08-03,11:03,Dragon Roll,Sushi,Regular,1,Rp 62.000,Rp 28.000,Rp 62.000,card
+TRX-SUSHI-20260803-0001,2026-08-03,11:03,Tuna Sashimi (5pcs),Sashimi,Regular,1,Rp 65.000,Rp 32.000,Rp 65.000,card
+TRX-SUSHI-20260803-0002,2026-08-03,17:10,California Roll,Sushi,Regular,1,Rp 48.000,Rp 20.000,Rp 48.000,card
+TRX-SUSHI-20260803-0002,2026-08-03,17:10,Chicken Katsu Curry,Ramen,Regular,2,Rp 58.000,Rp 26.000,Rp 116.000,card
+TRX-SUSHI-20260803-0002,2026-08-03,17:10,Ramen Tonkotsu,Ramen,Regular,1,Rp 65.000,Rp 29.000,Rp 65.000,card
+TRX-SUSHI-20260803-0003,2026-08-03,16:59,Salmon Nigiri (2pcs),Sushi,Regular,3,Rp 38.000,Rp 18.000,Rp 114.000,e-wallet
+TRX-SUSHI-20260803-0003,2026-08-03,16:59,Miso Soup,Appetizer,Regular,1,Rp 18.000,Rp 6.000,Rp 18.000,e-wallet
+TRX-SUSHI-20260803-0003,2026-08-03,16:59,Ramen Tonkotsu,Ramen,Regular,1,Rp 65.000,Rp 29.000,Rp 65.000,e-wallet
+TRX-SUSHI-20260803-0004,2026-08-03,15:00,Green Tea,Beverage,Regular,1,Rp 15.000,Rp 5.000,Rp 15.000,e-wallet
+TRX-SUSHI-20260803-0005,2026-08-03,12:09,Salmon Nigiri (2pcs),Sushi,Regular,1,Rp 38.000,Rp 18.000,Rp 38.000,e-wallet
+TRX-SUSHI-20260803-0006,2026-08-03,11:23,Tuna Sashimi (5pcs),Sashimi,Regular,2,Rp 65.000,Rp 32.000,Rp 130.000,card
+TRX-SUSHI-20260803-0006,2026-08-03,11:23,California Roll,Sushi,Regular,3,Rp 48.000,Rp 20.000,Rp 144.000,card
+TRX-SUSHI-20260803-0006,2026-08-03,11:23,Ramen Tonkotsu,Ramen,Regular,2,Rp 65.000,Rp 29.000,Rp 130.000,card
+TRX-SUSHI-20260803-0007,2026-08-03,14:57,Tuna Sashimi (5pcs),Sashimi,Regular,2,Rp 65.000,Rp 32.000,Rp 130.000,card
+TRX-SUSHI-20260803-0007,2026-08-03,14:57,Dragon Roll,Sushi,Regular,2,Rp 62.000,Rp 28.000,Rp 124.000,card
+TRX-SUSHI-20260803-0007,2026-08-03,14:57,Salmon Nigiri (2pcs),Sushi,Regular,2,Rp 38.000,Rp 18.000,Rp 76.000,card
+TRX-SUSHI-20260803-0008,2026-08-03,15:07,Dragon Roll,Sushi,Regular,3,Rp 62.000,Rp 28.000,Rp 186.000,e-wallet
+TRX-SUSHI-20260803-0008,2026-08-03,15:07,Salmon Nigiri (2pcs),Sushi,Regular,3,Rp 38.000,Rp 18.000,Rp 114.000,e-wallet
+TRX-SUSHI-20260803-0009,2026-08-03,14:56,California Roll,Sushi,Regular,1,Rp 48.000,Rp 20.000,Rp 48.000,e-wallet
+TRX-SUSHI-20260803-0010,2026-08-03,18:41,Salmon Nigiri (2pcs),Sushi,Regular,2,Rp 38.000,Rp 18.000,Rp 76.000,card
+TRX-SUSHI-20260803-0010,2026-08-03,18:41,California Roll,Sushi,Regular,2,Rp 48.000,Rp 20.000,Rp 96.000,card
+TRX-SUSHI-20260803-0011,2026-08-03,15:21,Salmon Nigiri (2pcs),Sushi,Regular,3,Rp 38.000,Rp 18.000,Rp 114.000,e-wallet
+TRX-SUSHI-20260803-0011,2026-08-03,15:21,California Roll,Sushi,Regular,3,Rp 48.000,Rp 20.000,Rp 144.000,e-wallet
+TRX-SUSHI-20260803-0011,2026-08-03,15:21,Tuna Sashimi (5pcs),Sashimi,Regular,3,Rp 65.000,Rp 32.000,Rp 195.000,e-wallet
+TRX-SUSHI-20260803-0012,2026-08-03,20:14,Salmon Nigiri (2pcs),Sushi,Regular,1,Rp 38.000,Rp 18.000,Rp 38.000,e-wallet
+TRX-SUSHI-20260803-0012,2026-08-03,20:14,Tuna Sashimi (5pcs),Sashimi,Regular,2,Rp 65.000,Rp 32.000,Rp 130.000,e-wallet
+TRX-SUSHI-20260803-0012,2026-08-03,20:14,California Roll,Sushi,Regular,1,Rp 48.000,Rp 20.000,Rp 48.000,e-wallet
+TRX-SUSHI-20260803-0013,2026-08-03,12:21,Green Tea,Beverage,Regular,2,Rp 15.000,Rp 5.000,Rp 30.000,card
+TRX-SUSHI-20260803-0013,2026-08-03,12:21,Mochi Ice Cream (3pcs),Dessert,Regular,1,Rp 32.000,Rp 13.000,Rp 32.000,card
+TRX-SUSHI-20260803-0014,2026-08-03,12:17,Salmon Nigiri (2pcs),Sushi,Regular,3,Rp 38.000,Rp 18.000,Rp 114.000,cash
+TRX-SUSHI-20260803-0014,2026-08-03,12:17,California Roll,Sushi,Regular,1,Rp 48.000,Rp 20.000,Rp 48.000,cash
+TRX-SUSHI-20260803-0014,2026-08-03,12:17,Mochi Ice Cream (3pcs),Dessert,Regular,3,Rp 32.000,Rp 13.000,Rp 96.000,cash
+TRX-SUSHI-20260803-0015,2026-08-03,18:30,Dragon Roll,Sushi,Regular,2,Rp 62.000,Rp 28.000,Rp 124.000,cash
+TRX-SUSHI-20260803-0016,2026-08-03,11:10,Salmon Nigiri (2pcs),Sushi,Regular,2,Rp 38.000,Rp 18.000,Rp 76.000,card
+TRX-SUSHI-20260803-0017,2026-08-03,11:14,Tuna Sashimi (5pcs),Sashimi,Regular,2,Rp 65.000,Rp 32.000,Rp 130.000,cash
+TRX-SUSHI-20260803-0017,2026-08-03,11:14,Salmon Nigiri (2pcs),Sushi,Regular,3,Rp 38.000,Rp 18.000,Rp 114.000,cash
+TRX-SUSHI-20260803-0017,2026-08-03,11:14,California Roll,Sushi,Regular,2,Rp 48.000,Rp 20.000,Rp 96.000,cash
+TRX-SUSHI-20260803-0018,2026-08-03,15:12,Dragon Roll,Sushi,Regular,3,Rp 62.000,Rp 28.000,Rp 186.000,card
+TRX-SUSHI-20260803-0019,2026-08-03,19:50,Miso Soup,Appetizer,Regular,3,Rp 18.000,Rp 6.000,Rp 54.000,e-wallet
+TRX-SUSHI-20260803-0019,2026-08-03,19:50,Dragon Roll,Sushi,Regular,3,Rp 62.000,Rp 28.000,Rp 186.000,e-wallet
+TRX-SUSHI-20260803-0020,2026-08-03,20:55,California Roll,Sushi,Regular,1,Rp 48.000,Rp 20.000,Rp 48.000,card
+TRX-SUSHI-20260803-0020,2026-08-03,20:55,Salmon Nigiri (2pcs),Sushi,Regular,3,Rp 38.000,Rp 18.000,Rp 114.000,card
+TRX-SUSHI-20260803-0021,2026-08-03,13:10,Dragon Roll,Sushi,Regular,2,Rp 62.000,Rp 28.000,Rp 124.000,e-wallet
+TRX-SUSHI-20260803-0022,2026-08-03,17:23,Green Tea,Beverage,Regular,2,Rp 15.000,Rp 5.000,Rp 30.000,e-wallet
+TRX-SUSHI-20260803-0022,2026-08-03,17:23,Dragon Roll,Sushi,Regular,1,Rp 62.000,Rp 28.000,Rp 62.000,e-wallet
+TRX-SUSHI-20260803-0022,2026-08-03,17:23,Miso Soup,Appetizer,Regular,2,Rp 18.000,Rp 6.000,Rp 36.000,e-wallet
+TRX-SUSHI-20260803-0023,2026-08-03,18:13,Chicken Katsu Curry,Ramen,Regular,1,Rp 58.000,Rp 26.000,Rp 58.000,card
+TRX-SUSHI-20260803-0023,2026-08-03,18:13,Miso Soup,Appetizer,Regular,3,Rp 18.000,Rp 6.000,Rp 54.000,card
+TRX-SUSHI-20260803-0023,2026-08-03,18:13,Salmon Nigiri (2pcs),Sushi,Regular,2,Rp 38.000,Rp 18.000,Rp 76.000,card
+TRX-SUSHI-20260803-0024,2026-08-03,12:01,Chicken Katsu Curry,Ramen,Regular,1,Rp 58.000,Rp 26.000,Rp 58.000,e-wallet
+TRX-SUSHI-20260803-0025,2026-08-03,18:15,Tuna Sashimi (5pcs),Sashimi,Regular,3,Rp 65.000,Rp 32.000,Rp 195.000,e-wallet
+TRX-SUSHI-20260803-0026,2026-08-03,17:09,Chicken Katsu Curry,Ramen,Regular,2,Rp 58.000,Rp 26.000,Rp 116.000,e-wallet
+TRX-SUSHI-20260803-0026,2026-08-03,17:09,California Roll,Sushi,Regular,3,Rp 48.000,Rp 20.000,Rp 144.000,e-wallet
+TRX-SUSHI-20260803-0027,2026-08-03,17:25,Dragon Roll,Sushi,Regular,3,Rp 62.000,Rp 28.000,Rp 186.000,e-wallet
+TRX-SUSHI-20260803-0027,2026-08-03,17:25,Tuna Sashimi (5pcs),Sashimi,Regular,3,Rp 65.000,Rp 32.000,Rp 195.000,e-wallet
+TRX-SUSHI-20260803-0027,2026-08-03,17:25,Salmon Nigiri (2pcs),Sushi,Regular,2,Rp 38.000,Rp 18.000,Rp 76.000,e-wallet
+TRX-SUSHI-20260803-0028,2026-08-03,17:24,Dragon Roll,Sushi,Regular,3,Rp 62.000,Rp 28.000,Rp 186.000,e-wallet
+TRX-SUSHI-20260803-0028,2026-08-03,17:24,California Roll,Sushi,Regular,1,Rp 48.000,Rp 20.000,Rp 48.000,e-wallet
+TRX-SUSHI-20260803-0029,2026-08-03,17:09,Tuna Sashimi (5pcs),Sashimi,Regular,2,Rp 65.000,Rp 32.000,Rp 130.000,cash
+TRX-SUSHI-20260803-0029,2026-08-03,17:09,California Roll,Sushi,Regular,1,Rp 48.000,Rp 20.000,Rp 48.000,cash
+TRX-SUSHI-20260803-0029,2026-08-03,17:09,Salmon Nigiri (2pcs),Sushi,Regular,1,Rp 38.000,Rp 18.000,Rp 38.000,cash
+TRX-SUSHI-20260803-0030,2026-08-03,18:20,Salmon Nigiri (2pcs),Sushi,Regular,1,Rp 38.000,Rp 18.000,Rp 38.000,e-wallet
+TRX-SUSHI-20260803-0031,2026-08-03,20:29,Tuna Sashimi (5pcs),Sashimi,Regular,2,Rp 65.000,Rp 32.000,Rp 130.000,e-wallet
+TRX-SUSHI-20260803-0031,2026-08-03,20:29,Dragon Roll,Sushi,Regular,1,Rp 62.000,Rp 28.000,Rp 62.000,e-wallet
+TRX-SUSHI-20260803-0032,2026-08-03,11:06,Green Tea,Beverage,Regular,2,Rp 15.000,Rp 5.000,Rp 30.000,cash
+TRX-SUSHI-20260803-0032,2026-08-03,11:06,Ramen Tonkotsu,Ramen,Regular,3,Rp 65.000,Rp 29.000,Rp 195.000,cash
+TRX-SUSHI-20260803-0033,2026-08-03,13:57,Dragon Roll,Sushi,Regular,2,Rp 62.000,Rp 28.000,Rp 124.000,cash
+TRX-SUSHI-20260803-0033,2026-08-03,13:57,Tuna Sashimi (5pcs),Sashimi,Regular,2,Rp 65.000,Rp 32.000,Rp 130.000,cash
+TRX-SUSHI-20260803-0033,2026-08-03,13:57,California Roll,Sushi,Regular,3,Rp 48.000,Rp 20.000,Rp 144.000,cash
+TRX-SUSHI-20260803-0034,2026-08-03,14:12,Dragon Roll,Sushi,Regular,3,Rp 62.000,Rp 28.000,Rp 186.000,cash
+TRX-SUSHI-20260803-0034,2026-08-03,14:12,Salmon Nigiri (2pcs),Sushi,Regular,3,Rp 38.000,Rp 18.000,Rp 114.000,cash
+TRX-SUSHI-20260803-0034,2026-08-03,14:12,Edamame,Appetizer,Regular,3,Rp 22.000,Rp 8.000,Rp 66.000,cash
+TRX-SUSHI-20260804-0001,2026-08-04,19:50,Salmon Nigiri (2pcs),Sushi,Regular,1,Rp 38.000,Rp 18.000,Rp 38.000,e-wallet
+TRX-SUSHI-20260804-0001,2026-08-04,19:50,Tuna Sashimi (5pcs),Sashimi,Regular,1,Rp 65.000,Rp 32.000,Rp 65.000,e-wallet
+TRX-SUSHI-20260804-0001,2026-08-04,19:50,California Roll,Sushi,Regular,2,Rp 48.000,Rp 20.000,Rp 96.000,e-wallet
+TRX-SUSHI-20260804-0002,2026-08-04,14:38,Dragon Roll,Sushi,Regular,2,Rp 62.000,Rp 28.000,Rp 124.000,card
+TRX-SUSHI-20260804-0002,2026-08-04,14:38,Salmon Nigiri (2pcs),Sushi,Regular,1,Rp 38.000,Rp 18.000,Rp 38.000,card
+TRX-SUSHI-20260804-0002,2026-08-04,14:38,California Roll,Sushi,Regular,1,Rp 48.000,Rp 20.000,Rp 48.000,card
+TRX-SUSHI-20260804-0003,2026-08-04,18:13,Salmon Nigiri (2pcs),Sushi,Regular,1,Rp 38.000,Rp 18.000,Rp 38.000,e-wallet
+TRX-SUSHI-20260804-0003,2026-08-04,18:13,Miso Soup,Appetizer,Regular,2,Rp 18.000,Rp 6.000,Rp 36.000,e-wallet
+TRX-SUSHI-20260804-0003,2026-08-04,18:13,Tuna Sashimi (5pcs),Sashimi,Regular,3,Rp 65.000,Rp 32.000,Rp 195.000,e-wallet
+TRX-SUSHI-20260804-0004,2026-08-04,17:01,Miso Soup,Appetizer,Regular,2,Rp 18.000,Rp 6.000,Rp 36.000,card
+TRX-SUSHI-20260804-0004,2026-08-04,17:01,Dragon Roll,Sushi,Regular,1,Rp 62.000,Rp 28.000,Rp 62.000,card
+TRX-SUSHI-20260804-0005,2026-08-04,14:26,California Roll,Sushi,Regular,2,Rp 48.000,Rp 20.000,Rp 96.000,cash
+TRX-SUSHI-20260804-0006,2026-08-04,20:11,Mochi Ice Cream (3pcs),Dessert,Regular,1,Rp 32.000,Rp 13.000,Rp 32.000,card
+TRX-SUSHI-20260804-0006,2026-08-04,20:11,California Roll,Sushi,Regular,2,Rp 48.000,Rp 20.000,Rp 96.000,card
+TRX-SUSHI-20260804-0007,2026-08-04,17:01,Salmon Nigiri (2pcs),Sushi,Regular,3,Rp 38.000,Rp 18.000,Rp 114.000,cash
+TRX-SUSHI-20260804-0008,2026-08-04,11:42,Chicken Katsu Curry,Ramen,Regular,3,Rp 58.000,Rp 26.000,Rp 174.000,e-wallet
+TRX-SUSHI-20260804-0009,2026-08-04,11:12,Salmon Nigiri (2pcs),Sushi,Regular,3,Rp 38.000,Rp 18.000,Rp 114.000,e-wallet
+TRX-SUSHI-20260804-0009,2026-08-04,11:12,California Roll,Sushi,Regular,2,Rp 48.000,Rp 20.000,Rp 96.000,e-wallet
+TRX-SUSHI-20260804-0010,2026-08-04,16:23,Green Tea,Beverage,Regular,1,Rp 15.000,Rp 5.000,Rp 15.000,card
+TRX-SUSHI-20260804-0010,2026-08-04,16:23,Salmon Nigiri (2pcs),Sushi,Regular,1,Rp 38.000,Rp 18.000,Rp 38.000,card
+TRX-SUSHI-20260804-0011,2026-08-04,13:25,Tuna Sashimi (5pcs),Sashimi,Regular,3,Rp 65.000,Rp 32.000,Rp 195.000,cash
+TRX-SUSHI-20260804-0012,2026-08-04,19:35,Tuna Sashimi (5pcs),Sashimi,Regular,1,Rp 65.000,Rp 32.000,Rp 65.000,e-wallet
+TRX-SUSHI-20260804-0013,2026-08-04,15:01,Salmon Nigiri (2pcs),Sushi,Regular,3,Rp 38.000,Rp 18.000,Rp 114.000,card
+TRX-SUSHI-20260804-0014,2026-08-04,18:58,Dragon Roll,Sushi,Regular,1,Rp 62.000,Rp 28.000,Rp 62.000,e-wallet
+TRX-SUSHI-20260804-0015,2026-08-04,13:44,Dragon Roll,Sushi,Regular,3,Rp 62.000,Rp 28.000,Rp 186.000,e-wallet
+TRX-SUSHI-20260804-0016,2026-08-04,11:45,Dragon Roll,Sushi,Regular,3,Rp 62.000,Rp 28.000,Rp 186.000,cash
+TRX-SUSHI-20260804-0017,2026-08-04,19:06,Dragon Roll,Sushi,Regular,3,Rp 62.000,Rp 28.000,Rp 186.000,e-wallet
+TRX-SUSHI-20260804-0017,2026-08-04,19:06,Tuna Sashimi (5pcs),Sashimi,Regular,1,Rp 65.000,Rp 32.000,Rp 65.000,e-wallet
+TRX-SUSHI-20260804-0018,2026-08-04,19:15,Miso Soup,Appetizer,Regular,1,Rp 18.000,Rp 6.000,Rp 18.000,card
+TRX-SUSHI-20260804-0018,2026-08-04,19:15,Salmon Nigiri (2pcs),Sushi,Regular,2,Rp 38.000,Rp 18.000,Rp 76.000,card
+TRX-SUSHI-20260804-0018,2026-08-04,19:15,California Roll,Sushi,Regular,2,Rp 48.000,Rp 20.000,Rp 96.000,card
+TRX-SUSHI-20260804-0019,2026-08-04,17:47,Salmon Nigiri (2pcs),Sushi,Regular,3,Rp 38.000,Rp 18.000,Rp 114.000,e-wallet
+TRX-SUSHI-20260804-0019,2026-08-04,17:47,California Roll,Sushi,Regular,2,Rp 48.000,Rp 20.000,Rp 96.000,e-wallet
+TRX-SUSHI-20260804-0020,2026-08-04,13:27,Edamame,Appetizer,Regular,1,Rp 22.000,Rp 8.000,Rp 22.000,e-wallet
+TRX-SUSHI-20260804-0020,2026-08-04,13:27,Tuna Sashimi (5pcs),Sashimi,Regular,1,Rp 65.000,Rp 32.000,Rp 65.000,e-wallet
+TRX-SUSHI-20260804-0020,2026-08-04,13:27,California Roll,Sushi,Regular,3,Rp 48.000,Rp 20.000,Rp 144.000,e-wallet
+TRX-SUSHI-20260804-0021,2026-08-04,16:30,Green Tea,Beverage,Regular,3,Rp 15.000,Rp 5.000,Rp 45.000,card
+TRX-SUSHI-20260804-0022,2026-08-04,15:46,Salmon Nigiri (2pcs),Sushi,Regular,2,Rp 38.000,Rp 18.000,Rp 76.000,card
+TRX-SUSHI-20260804-0023,2026-08-04,13:21,Chicken Katsu Curry,Ramen,Regular,2,Rp 58.000,Rp 26.000,Rp 116.000,e-wallet
+TRX-SUSHI-20260804-0023,2026-08-04,13:21,Dragon Roll,Sushi,Regular,2,Rp 62.000,Rp 28.000,Rp 124.000,e-wallet
+TRX-SUSHI-20260804-0024,2026-08-04,12:34,Salmon Nigiri (2pcs),Sushi,Regular,1,Rp 38.000,Rp 18.000,Rp 38.000,e-wallet
+TRX-SUSHI-20260804-0025,2026-08-04,12:25,Salmon Nigiri (2pcs),Sushi,Regular,3,Rp 38.000,Rp 18.000,Rp 114.000,e-wallet
+TRX-SUSHI-20260804-0025,2026-08-04,12:25,Dragon Roll,Sushi,Regular,2,Rp 62.000,Rp 28.000,Rp 124.000,e-wallet
+TRX-SUSHI-20260804-0025,2026-08-04,12:25,Mochi Ice Cream (3pcs),Dessert,Regular,1,Rp 32.000,Rp 13.000,Rp 32.000,e-wallet
+TRX-SUSHI-20260804-0026,2026-08-04,15:14,Ramen Tonkotsu,Ramen,Regular,2,Rp 65.000,Rp 29.000,Rp 130.000,card
+TRX-SUSHI-20260804-0027,2026-08-04,17:41,California Roll,Sushi,Regular,3,Rp 48.000,Rp 20.000,Rp 144.000,cash
+TRX-SUSHI-20260804-0027,2026-08-04,17:41,Dragon Roll,Sushi,Regular,2,Rp 62.000,Rp 28.000,Rp 124.000,cash
+TRX-SUSHI-20260804-0027,2026-08-04,17:41,Salmon Nigiri (2pcs),Sushi,Regular,1,Rp 38.000,Rp 18.000,Rp 38.000,cash
+TRX-SUSHI-20260804-0028,2026-08-04,15:56,Salmon Nigiri (2pcs),Sushi,Regular,2,Rp 38.000,Rp 18.000,Rp 76.000,e-wallet
+TRX-SUSHI-20260804-0028,2026-08-04,15:56,Chicken Katsu Curry,Ramen,Regular,3,Rp 58.000,Rp 26.000,Rp 174.000,e-wallet
+TRX-SUSHI-20260804-0028,2026-08-04,15:56,California Roll,Sushi,Regular,2,Rp 48.000,Rp 20.000,Rp 96.000,e-wallet
+TRX-SUSHI-20260804-0029,2026-08-04,17:55,Salmon Nigiri (2pcs),Sushi,Regular,1,Rp 38.000,Rp 18.000,Rp 38.000,cash
+TRX-SUSHI-20260804-0029,2026-08-04,17:55,California Roll,Sushi,Regular,1,Rp 48.000,Rp 20.000,Rp 48.000,cash
+TRX-SUSHI-20260804-0030,2026-08-04,18:47,Salmon Nigiri (2pcs),Sushi,Regular,2,Rp 38.000,Rp 18.000,Rp 76.000,e-wallet
+TRX-SUSHI-20260804-0031,2026-08-04,14:44,Tuna Sashimi (5pcs),Sashimi,Regular,1,Rp 65.000,Rp 32.000,Rp 65.000,e-wallet
+TRX-SUSHI-20260804-0031,2026-08-04,14:44,Chicken Katsu Curry,Ramen,Regular,3,Rp 58.000,Rp 26.000,Rp 174.000,e-wallet
+TRX-SUSHI-20260804-0032,2026-08-04,15:05,Salmon Nigiri (2pcs),Sushi,Regular,3,Rp 38.000,Rp 18.000,Rp 114.000,cash
+TRX-SUSHI-20260804-0033,2026-08-04,17:34,Salmon Nigiri (2pcs),Sushi,Regular,2,Rp 38.000,Rp 18.000,Rp 76.000,e-wallet
+TRX-SUSHI-20260804-0033,2026-08-04,17:34,California Roll,Sushi,Regular,1,Rp 48.000,Rp 20.000,Rp 48.000,e-wallet
+TRX-SUSHI-20260804-0033,2026-08-04,17:34,Miso Soup,Appetizer,Regular,2,Rp 18.000,Rp 6.000,Rp 36.000,e-wallet
+TRX-SUSHI-20260804-0034,2026-08-04,19:53,Salmon Nigiri (2pcs),Sushi,Regular,2,Rp 38.000,Rp 18.000,Rp 76.000,card
+TRX-SUSHI-20260804-0034,2026-08-04,19:53,Mochi Ice Cream (3pcs),Dessert,Regular,1,Rp 32.000,Rp 13.000,Rp 32.000,card
+TRX-SUSHI-20260804-0035,2026-08-04,14:35,Dragon Roll,Sushi,Regular,3,Rp 62.000,Rp 28.000,Rp 186.000,e-wallet
+TRX-SUSHI-20260804-0035,2026-08-04,14:35,California Roll,Sushi,Regular,2,Rp 48.000,Rp 20.000,Rp 96.000,e-wallet
+TRX-SUSHI-20260804-0035,2026-08-04,14:35,Tuna Sashimi (5pcs),Sashimi,Regular,2,Rp 65.000,Rp 32.000,Rp 130.000,e-wallet
+TRX-SUSHI-20260804-0036,2026-08-04,13:01,Salmon Nigiri (2pcs),Sushi,Regular,3,Rp 38.000,Rp 18.000,Rp 114.000,e-wallet
+TRX-SUSHI-20260804-0037,2026-08-04,19:21,Tuna Sashimi (5pcs),Sashimi,Regular,2,Rp 65.000,Rp 32.000,Rp 130.000,card
