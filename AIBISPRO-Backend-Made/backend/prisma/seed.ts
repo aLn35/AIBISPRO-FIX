@@ -278,7 +278,11 @@ async function main() {
   }
 
   console.log('Seeding users...');
-  const passwordHash = await bcrypt.hash('password123', 10);
+  const seedPassword = process.env.SEED_USER_PASSWORD;
+  if (!seedPassword) {
+    throw new Error('Set SEED_USER_PASSWORD in AIBISPRO-Backend-Made/.env before seeding');
+  }
+  const passwordHash = await bcrypt.hash(seedPassword, 10);
 
   const maintainance = await prisma.users.create({ data: { name: 'Maintenance Admin', email: 'maintainance@aibispro.com', password: passwordHash, role: 'MAINTAINANCE' } });
   const owner = await prisma.users.create({ data: { name: 'Business Owner', email: 'owner@aibispro.com', password: passwordHash, role: 'OWNER' } });
@@ -359,7 +363,7 @@ async function main() {
   }
 
   console.log('Seed complete.');
-  console.log('--- Login credentials (password for all: password123) ---');
+  console.log('--- Login accounts (password for all: SEED_USER_PASSWORD from .env) ---');
   console.log(`MAINTAINANCE: ${maintainance.email} (sees all 5 companies)`);
   console.log(`OWNER:        ${owner.email} (ABC Coffee, XYZ Restaurant, Sushi House)`);
   console.log(`MANAGER:      ${manager.email} (ABC Coffee, XYZ Restaurant)`);

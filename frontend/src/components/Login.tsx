@@ -26,13 +26,14 @@ interface LoginProps {
 
 type EntryMode = "LANDING" | "STAFF";
 
-// Real backend-seeded accounts (see backend/prisma/seed.ts) - password is the same for all: password123
+// Real backend-seeded accounts (see backend/prisma/seed.ts) - password is SEED_USER_PASSWORD from the backend .env
 const SEEDED_DEMO_USERS: { email: string; name: string; role: User["role"] }[] = [
   { email: "maintainance@aibispro.com", name: "Maintenance Admin", role: "MAINTAINANCE" },
   { email: "owner@aibispro.com", name: "Business Owner", role: "OWNER" },
   { email: "manager@aibispro.com", name: "Store Manager", role: "MANAGER" },
 ];
-const SEEDED_PASSWORD = "password123";
+// Optional: set VITE_DEMO_PASSWORD in frontend/.env to enable one-click demo login.
+const SEEDED_PASSWORD = (import.meta.env.VITE_DEMO_PASSWORD as string | undefined) ?? "";
 
 // Slow-drifting ambient blobs using only the existing palette colors (no gradients).
 function AmbientBackground() {
@@ -120,6 +121,7 @@ export default function Login({ onLoginSuccess }: LoginProps) {
 
   const handleQuickLogin = (demoUser: { email: string; name: string; role: User["role"] }) => {
     setEmail(demoUser.email);
+    if (!SEEDED_PASSWORD) return;
     setPassword(SEEDED_PASSWORD);
     loginWithBackend(demoUser.email, SEEDED_PASSWORD);
   };
@@ -323,7 +325,7 @@ export default function Login({ onLoginSuccess }: LoginProps) {
                           </p>
                         </div>
                         <span className="text-[9px] text-[#5EABD6] mt-1 font-bold group-hover:underline truncate">
-                          ({SEEDED_PASSWORD})
+                          {SEEDED_PASSWORD ? "Quick login" : "Fill email"}
                         </span>
                       </button>
                     ))}

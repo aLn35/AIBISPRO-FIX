@@ -179,7 +179,7 @@ Keep credentials in ignored `.env` files only. The backend and Compose use `AIBI
 
 ## Demo Accounts
 
-Seeded by `npx prisma db seed`, all share the password **`password123`**:
+Seeded by `npx prisma db seed`; all share the password set in `SEED_USER_PASSWORD` (in `AIBISPRO-Backend-Made/.env`, never committed):
 
 | Role | Email |
 |---|---|
@@ -187,7 +187,7 @@ Seeded by `npx prisma db seed`, all share the password **`password123`**:
 | Owner | `owner@aibispro.com` |
 | Manager | `manager@aibispro.com` |
 
-The login page's "Quick Login" panel fills these in automatically. Customers need no account — use "I'm a Customer" on the landing page.
+The login page's "Quick Login" panel fills in the email; for one-click login, set `VITE_DEMO_PASSWORD` in `frontend/.env` to the same value. Customers need no account — use "I'm a Customer" on the landing page.
 
 ---
 
